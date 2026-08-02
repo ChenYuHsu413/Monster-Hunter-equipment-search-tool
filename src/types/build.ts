@@ -11,7 +11,7 @@
  * 讓資料層（game-data.ts / data.ts）可引用而不與 game-profile 形成循環依賴；
  * game-profile.ts 直接複用本型別。
  */
-export type GameId = "rise" | "world";
+export type GameId = "rise" | "world" | "wilds";
 
 export type SkillName = string;
 
@@ -95,6 +95,12 @@ export type ArmorPiece = {
    * profile.features.setBonus 為真時執行，故 Rise 行為不變。
    */
   setBonusId?: string;
+  /**
+   * 所屬群組技能 id（Wilds group skill 歸屬；指向 GroupSkill.id）。與 setBonusId 為
+   * 獨立雙軸並存（一件可同時屬 set 與 group，Phase 0 定案 #4）。新增選填欄位；
+   * Rise/World 資料無此欄，group 統計僅在 Wilds 引擎（Phase 3）啟用，行為不變。
+   */
+  groupId?: string;
 };
 
 /** 屬性 / 狀態異常類型。none 表示無屬性。 */
@@ -200,6 +206,13 @@ export type Weapon = {
   sourceMonster?: string;
 };
 
+/**
+ * 裝飾珠 / 護石洞的池別歸屬（Wilds 珠雙池）。對應 mhdb-wilds 資料的 `decoration.kind`。
+ * Wilds：武器珠只吃武器洞、防具珠只吃防具洞（Phase 0 定案，見 docs/wilds-mechanics-audit.md #2）。
+ * Rise/World 無雙池，此欄不提供時消費端視為單一池，行為不變。
+ */
+export type DecorationPool = "weapon" | "armor";
+
 export type Decoration = {
   id: string;
   nameZh: string;
@@ -213,6 +226,11 @@ export type Decoration = {
    * 新增選填欄位；未提供時消費端由 { [skillName]: skillLevel } 推導，故 Rise 資料行為不變。
    */
   skills?: SkillMap;
+  /**
+   * 池別（Wilds 珠雙池：weapon | armor）。新增選填欄位；Rise/World 資料無此欄，
+   * 洞-珠匹配不加池維度，行為不變（Wilds 引擎 Phase 3 才依此加約束）。
+   */
+  pool?: DecorationPool;
   craftable: boolean;
 };
 
@@ -221,6 +239,16 @@ export type Charm = {
   name?: string;
   skills: SkillMap;
   slots: number[];
+  /**
+   * Wilds RNG（鑑定）護石的使用者庫輸入補充欄位（Phase 0 定案 #5：mhdb 未結構化其技能池，
+   * 走使用者庫輸入）。皆選填，形狀刻意貼齊 Rise 護石庫既有型別（skills + slots 不變），
+   * 只加兩欄，故 Rise/World 護石庫行為不受影響：
+   * - `rarity`：護石稀有度（Wilds RNG 護石 5–8；選填）。
+   * - `slotPools`：與 `slots` 平行的池別陣列（各洞 weapon | armor 歸屬）；Wilds 珠雙池需要，
+   *   未提供時視為無池別約束。技能數上限（Wilds RNG ≤3）為資料/UI 層約束，型別不強制。
+   */
+  rarity?: number;
+  slotPools?: DecorationPool[];
 };
 
 /** 技能主資料（用於 UI 顯示上限、分類、描述）。 */
@@ -248,6 +276,12 @@ export type Skill = {
    * 技能的上限，不限特定技能。新增選填欄位；Rise 無此機制。
    */
   unlocksAllSecrets?: boolean;
+  /**
+   * 技能分家類別（Wilds）。對應 mhdb-wilds 的 `skill.kind`（Phase 0 定案 #1）：
+   * armor＝防具技能、weapon＝武器技能、group＝群組技能（見 GroupSkill）、set＝set bonus 子技能。
+   * 新增選填欄位；Rise/World 資料無此欄，珠池／seed 判定不依賴它時行為不變。
+   */
+  kind?: "armor" | "weapon" | "group" | "set";
 };
 
 /**
@@ -268,6 +302,44 @@ export type SetBonus = {
     skillName: string;
     skillLevel: number;
   }>;
+};
+
+/**
+ * 群組技能（Wilds group skill）：跨系列共享，任 3 件觸發（Phase 0 定案 #4：門檻恆 [3]）。
+ * 與 SetBonus 為**獨立雙軸**（skill.kind 區分：set vs group），故定為獨立型別而非 SetBonus 別名——
+ * 保留型別層的雙軸區分（ArmorPiece.setBonusId vs groupId），避免 group 統計與 set 統計混用。
+ * 門檻仍**資料驅動**（沿用 SetBonus 的 ranks 形狀承載 [{pieces:3,...}]），未硬編 3，為未來相容留餘裕。
+ * Rise/World 無此機制，資料不含 GroupSkill。
+ */
+export type GroupSkill = {
+  id: string;
+  nameZh: string;
+  nameEn?: string;
+  /** 件數門檻觸發的技能（Wilds 恆為單一 [{pieces:3,...}]，仍資料驅動不硬編）。 */
+  ranks: Array<{
+    pieces: number;
+    skillName: string;
+    skillLevel: number;
+  }>;
+};
+
+/**
+ * Wilds 資料版本 manifest（Phase 0 版本策略定案：集中 manifest，資料檔保持 bare-array）。
+ * 落點＝`src/data/wilds/manifest.json`（Phase 2 產出）。集中而非每檔頂層的理由：現行
+ * Rise/World 大資料檔為 bare array（loader 直接 import 陣列），若改物件包裹會動到所有 loader；
+ * 集中 manifest 保資料檔形狀不變、版本/pin 單點可稽核、diff 報告單一入口讀取。
+ * 本輪只定型別，不建資料檔（Phase 2 才產出）。
+ */
+export type WildsDataManifest = {
+  /** 資料版本（pin 1.041）。 */
+  dataVersion: string;
+  /** 各上游源的 pin 資訊。 */
+  sources: {
+    /** 主源 mhdb-wilds：snapshot 日期 +（若有）data_version 端點值。 */
+    mhdb?: { snapshotDate?: string; dataVersion?: string };
+    /** 交叉源 Kiranico Wilds：頁首版號字串。 */
+    kiranico?: { ver?: string };
+  };
 };
 
 /** 武器類型定義。`supported: false` 的武器為佔位，將陸續開放。 */

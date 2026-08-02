@@ -115,7 +115,10 @@
    - `ArmorPiece.groupId?`(與既有 `setBonusId?` 並存);`GroupSkill` 型別(門檻資料驅動);
    - `Weapon.skills?: SkillMap`(武器自帶技能);
    - 護石混合:固定清單項與使用者庫項共用形狀,洞位帶 `pool` 歸屬;
-   - 資料檔頂層 `dataVersion?` / `sourcePin?`。
+   - 版本策略（**Phase 0 定案追認，偏離原「資料檔頂層」**）：改採**集中 manifest**
+     `src/data/wilds/manifest.json`（型別 `WildsDataManifest`，含 `dataVersion:"1.041"` + 各源 pin），
+     資料檔保持 bare-array。理由：現行 Rise/World 大資料檔為 bare array，改物件包裹會動到所有 loader；
+     集中 manifest 保形狀不變、版本/pin 單點可稽核（見 docs/wilds-data-source-audit.md §5）。
    實際欄位命名與形狀**以 Phase 0 定案為準**,此處僅為形狀預告。
 3. `game-profile.ts` 註冊位預留(未註冊拋錯不靜默,沿用);`wilds-registry.ts` 骨架(照 world-registry 模式)。
 

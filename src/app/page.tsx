@@ -34,6 +34,9 @@ const GAMES: { key: GameId; label: string }[] = [
 const GAME_TITLE: Record<GameId, string> = {
   rise: "魔物獵人 Rise：破曉配裝",
   world: "魔物獵人 World：Iceborne 配裝",
+  // Wilds：Phase 1 僅為 GameId 型別完整所需（未列入 GAMES 切換、URL parser 不解析 'wilds'，
+  // 故此標題永不顯示）；真正 UI 於 Phase 5。
+  wilds: "魔物獵人 Wilds 配裝",
 };
 
 export default function Home() {
