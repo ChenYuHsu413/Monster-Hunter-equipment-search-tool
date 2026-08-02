@@ -4,6 +4,8 @@
 > 位於 C 槽、重開機即消失），此處把「與本專案相關、程式碼看不出來的裁決與教訓」蒸餾進版控。
 > 通用工程守則在 repo 上層的 `AI Class ChenYu/CLAUDE.md`（clone 本 repo 不會帶走，新機器另備）。
 > 詳細記錄見 `~/.claude` 備份與各 `docs/*.md`；本檔只留高價值、每個 session 都該先讀的部分。
+>
+> **現行計畫**：Monster Hunter Wilds 擴充，規劃書 `docs/PLAN-wilds.md`；動工前錨點 tag `pre-wilds`。
 
 ---
 
@@ -83,7 +85,10 @@
   重疊，推薦配裝頁為其替代）；原計畫文件 docs/ROADMAP.md、DATA-COVERAGE.md 仍在（已加移除註記），
   尾巴見 HANDOFF.md。
 
-## 6. World: Iceborne 擴充（多遊戲；Phase 0–5 已完成，Phase 6 未做）
+## 6. World: Iceborne 擴充（多遊戲；Phase 0–5 + 尾巴 A–D 已完成，狀態同 HANDOFF）
+
+> 現狀：尾巴 A（World 推薦分頁，即原 Phase 6）／B（期望斬味倍率）／C（武器強化簡化輸入）／
+> D（複合珠 solver 有界修復）四條全落地，錨點 tag `iceborne-v2-tails`（463cee2）。
 
 程式碼看不出「為什麼」的關鍵裁決（詳見 `docs/WORLD-ICEBORNE-EXPANSION-PLAN.md` 與各 audit）：
 
