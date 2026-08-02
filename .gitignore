@@ -55,3 +55,6 @@ scripts/world/.game8-mhwi-cache/
 
 # Wilds 匯入管線快取（mhdb-wilds API en+zh-Hant 抓取；重跑零抓取）
 scripts/wilds/.cache/
+
+# Wilds 推薦配裝 Game8 頁渲染快取（逐頁固化，重跑不覆蓋、跨輪續跑）
+scripts/wilds/.cache/game8/
