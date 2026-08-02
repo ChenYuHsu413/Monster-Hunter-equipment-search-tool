@@ -22,6 +22,10 @@
   （防具 `slots` 與武器 `slots` 分屬各自池）。**無 lv4 珠洞**（slot 上限 3）。
 - **引擎影響**：`Decoration.pool = kind`；solver 洞-珠匹配加 pool 一維；複合珠沿用尾巴 D solver
   （雙池下交換合法性 = 交換不得跨池，Phase 3 探測後修）。
+- **⚠️ Phase 3 實作依賴（審查批註）**：`solveDecorationsWilds` 採**池分割雙解**，其正確性**依賴
+  「珠-技能池別零跨池例外」**（audit-wilds §4 全 PASS 背書：武器珠只含 weapon 技能、防具珠只含 armor 技能）。
+  **若日後 diff 報告或 audit 偵測到任一跨池珠（如某珠同時帶 weapon+armor 技能），必須重審 solver**——
+  池分割會把該珠的另一池技能誤判為不可達，需改回單池 pool-aware 或特判。
 
 ## 3. Set bonus 門檻（含 1 件特例查證）
 

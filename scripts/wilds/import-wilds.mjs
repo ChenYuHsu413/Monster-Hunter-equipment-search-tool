@@ -147,8 +147,26 @@ const armorsOut = armorSrc.en.map((a) => {
   return out;
 });
 
-// ───────── weapons 1188（斬味 base=max 佔位，匠 inactive；Phase 4 考證再分）─────────
+// ───────── weapons 1188（Phase 4 斬味考證：base=匠0、max=handicraft 延展；attack=raw）─────────
 const SHARP_ORDER = ["red", "orange", "yellow", "green", "blue", "white", "purple"];
+/**
+ * 斬味 max（匠5）＝ base + handicraft[i]×10 加到 base 頂色（i=0）與逐級更高色階（i=1,2…）。
+ * 考證與全 947 把自洽驗證見 docs/wilds-sharpness-audit.md。回傳 [紅,橙,黃,綠,藍,白,紫] 陣列。
+ */
+function sharpnessBaseMax(sharpness, handicraft) {
+  const base = SHARP_ORDER.map((c) => sharpness[c] ?? 0);
+  const max = [...base];
+  const hc = handicraft ?? [];
+  // base 最高非零色索引
+  let topIdx = -1;
+  for (let i = 0; i < base.length; i++) if (base[i] > 0) topIdx = i;
+  for (let i = 0; i < hc.length; i++) {
+    const idx = topIdx + i; // i=0→頂色本身、i=1→上一色階…
+    if (idx >= SHARP_ORDER.length) break; // 理論上不發生（考證：0 overflow）
+    max[idx] += hc[i] * 10;
+  }
+  return { base, max };
+}
 const weaponsSrc = nameMap("weapons");
 const ELEMENT_KINDS = new Set(["fire", "water", "thunder", "ice", "dragon"]);
 let artianCount = 0;
@@ -160,17 +178,17 @@ const weaponsOut = weaponsSrc.en.map((w) => {
     nameZh: zhName("weapons", w, weaponsSrc.zhById),
     nameEn: w.name,
     weaponType: w.kind,
-    attack: w.damage?.display ?? 0, // 顯示值尺度（同 World 慣例；Phase 4 efr-wilds 沿用）
+    // Phase 4 攻擊尺度考證（Kiranico 顯示值＝raw，推翻 Phase 2 的 display 裁決）：attack = damage.raw。
+    attack: w.damage?.raw ?? 0,
     affinity: w.affinity ?? 0,
     slots: w.slots ?? [],
     tags: [],
     rarity: w.rarity,
   };
-  // 斬味（近戰）：mhdb sharpness 7 色物件 → 陣列；Phase 2 暫 base=max（匠 inactive，比照 World Phase 2），
-  // 真實 base/max split 由 Phase 4 斬味考證（cache 保有 handicraft 欄）。
+  // 斬味（近戰）：Phase 4 考證——mhdb sharpness＝匠0 base、handicraft[] 給 max 延展
+  // （docs/wilds-sharpness-audit.md，全 947 把自洽）。
   if (w.sharpness) {
-    const arr = SHARP_ORDER.map((c) => w.sharpness[c] ?? 0);
-    out.sharpness = { base: arr, max: arr };
+    out.sharpness = sharpnessBaseMax(w.sharpness, w.handicraft);
   }
   // 屬性/狀態：specials 內 kind:element/status（取 display 值；hidden 亦入，hidden 旗標不建模）。
   const elemSpecial = (w.specials ?? []).find(

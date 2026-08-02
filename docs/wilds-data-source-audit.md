@@ -141,7 +141,7 @@ Phase 0 以「版本（1.041≥1.040）+ zh 名逐一對齊 + 結構欄位齊備
 | 檔 | 筆數 | 備註 |
 |---|---|---|
 | armors.json | 714 | setBonusId/extraSetBonusIds/groupId derive；defense=base、rankLabel 上/下位 |
-| weapons.json | 1188 | 14 武種；attack=damage.display（同 World 尺度）；斬味 base=max 佔位；Artian 28 tag |
+| weapons.json | 1188 | 14 武種；**attack=damage.raw**（Phase 4 考證：Kiranico 顯示值=raw，推翻 Phase 2 的 display）；**斬味 base=匠0、max=handicraft 延展**（Phase 4，`wilds-sharpness-audit.md`）；Artian 28 tag |
 | decorations.json | 361 | pool=kind（weapon 295/armor 66）；複合珠 173 帶 SkillMap |
 | charms.json | 183 | 60 可生產家族**攤平逐級**（比照 World per-rank）；無洞 slots:[] |
 | skills.json | 179 | kind 四類 + maxLevel（=max rank level）|
