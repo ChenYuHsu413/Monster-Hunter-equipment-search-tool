@@ -1,4 +1,4 @@
-import type { ArmorPiece, Charm, SetBonus, SkillMap, Weapon } from "@/types/build";
+import type { ArmorPiece, Charm, GroupSkill, SetBonus, SkillMap, Weapon } from "@/types/build";
 
 /** 合併多個 SkillMap（累加等級）。不 mutate 輸入。 */
 export function mergeSkills(...maps: (SkillMap | undefined)[]): SkillMap {
@@ -46,12 +46,41 @@ export function computeSetBonusSkills(
   const counts: Record<string, number> = extraCounts ? { ...extraCounts } : {};
   for (const p of pieces) {
     if (p.setBonusId) counts[p.setBonusId] = (counts[p.setBonusId] ?? 0) + 1;
+    // Wilds Gogmazios 擬態（mechanics #10 義務 a）：借用 set 併入件數聯集。
+    // Rise/World 無此欄（undefined → []），迴圈零迭代，逐位元不變（回歸背書）。
+    for (const e of p.extraSetBonusIds ?? []) counts[e] = (counts[e] ?? 0) + 1;
   }
   const skills: SkillMap = {};
   for (const [id, cnt] of Object.entries(counts)) {
     const sb = setBonusById[id];
     if (!sb) continue;
     for (const rank of sb.ranks) {
+      if (cnt >= rank.pieces) {
+        skills[rank.skillName] = (skills[rank.skillName] ?? 0) + rank.skillLevel;
+      }
+    }
+  }
+  return skills;
+}
+
+/**
+ * Wilds：統計 5 件防具的 groupId 件數，回傳達門檻（Phase 0 定案恆 3 件）觸發的 group 技能表。
+ * 與 set bonus 為**獨立雙軸**（mechanics #4/#10）。GroupSkill 沿用 SetBonus 的 ranks 形狀。
+ * Rise/World 防具無 groupId，呼叫端（build-search wilds 分支）才進此路徑，其餘遊戲不呼叫。
+ */
+export function computeGroupSkills(
+  pieces: ArmorPiece[],
+  groupById: Record<string, GroupSkill>
+): SkillMap {
+  const counts: Record<string, number> = {};
+  for (const p of pieces) {
+    if (p.groupId) counts[p.groupId] = (counts[p.groupId] ?? 0) + 1;
+  }
+  const skills: SkillMap = {};
+  for (const [id, cnt] of Object.entries(counts)) {
+    const g = groupById[id];
+    if (!g) continue;
+    for (const rank of g.ranks) {
       if (cnt >= rank.pieces) {
         skills[rank.skillName] = (skills[rank.skillName] ?? 0) + rank.skillLevel;
       }

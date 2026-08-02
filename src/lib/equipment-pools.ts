@@ -25,15 +25,35 @@ export type WorldArmorRelevance = {
   setBonusById: Record<string, SetBonus>;
   demandedUnlockers: ReadonlySet<string>;
   requiredSetBonusSkills: ReadonlySet<string>;
+  /**
+   * Wilds group 技能表（可選）。給定時，件的 groupId 貢獻的技能名亦納入相關度判定。
+   * World 不給（undefined）→ group 相關度 inert，World 逐位元不變。
+   */
+  groupById?: Record<string, { ranks: Array<{ skillName: string }> }>;
 };
 
-/** 該件 setBonus 可提供的技能名（任一 rank）。無 setBonus 回空。 */
+/**
+ * 該件經 set/group 提供的技能名（任一 rank）。
+ * setBonusId + **extraSetBonusIds（Wilds Gogmazios 借用，mechanics #10 義務 b）** + groupId。
+ * World 件無 extraSetBonusIds（[]）、rel 無 groupById → 僅 setBonusId，逐位元一致。
+ */
 function pieceSetBonusSkillNames(
   piece: ArmorPiece,
-  setBonusById: Record<string, SetBonus>
+  setBonusById: Record<string, SetBonus>,
+  groupById?: Record<string, { ranks: Array<{ skillName: string }> }>
 ): string[] {
+  const names: string[] = [];
   const sb = piece.setBonusId ? setBonusById[piece.setBonusId] : undefined;
-  return sb ? sb.ranks.map((r) => r.skillName) : [];
+  if (sb) for (const r of sb.ranks) names.push(r.skillName);
+  for (const e of piece.extraSetBonusIds ?? []) {
+    const es = setBonusById[e];
+    if (es) for (const r of es.ranks) names.push(r.skillName);
+  }
+  if (groupById && piece.groupId) {
+    const g = groupById[piece.groupId];
+    if (g) for (const r of g.ranks) names.push(r.skillName);
+  }
+  return names;
 }
 
 /** 該件的 set bonus 是否貢獻「需解放的 secret」或「被要求的 set bonus 技能」。 */
@@ -41,7 +61,7 @@ function pieceContributesSetBonus(
   piece: ArmorPiece,
   rel: WorldArmorRelevance
 ): boolean {
-  const names = pieceSetBonusSkillNames(piece, rel.setBonusById);
+  const names = pieceSetBonusSkillNames(piece, rel.setBonusById, rel.groupById);
   return names.some(
     (n) => rel.demandedUnlockers.has(n) || rel.requiredSetBonusSkills.has(n)
   );
@@ -52,7 +72,7 @@ function worldSetBonusBoost(
   piece: ArmorPiece,
   rel: WorldArmorRelevance
 ): number {
-  const names = pieceSetBonusSkillNames(piece, rel.setBonusById);
+  const names = pieceSetBonusSkillNames(piece, rel.setBonusById, rel.groupById);
   let boost = 0;
   for (const n of names) {
     if (rel.demandedUnlockers.has(n)) boost += 100; // 解放件保留權重（必進候選）

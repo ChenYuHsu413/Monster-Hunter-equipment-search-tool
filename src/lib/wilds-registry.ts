@@ -3,51 +3,138 @@ import type {
   GroupSkill,
   SetBonus,
   Skill,
-  WildsDataManifest,
 } from "@/types/build";
-import type { SearchDeps } from "./build-search";
+import * as wildsEfrStub from "./efr-wilds-stub";
+import { buildStaticData, registerGameStaticData, type GameStaticData } from "./data";
+import {
+  getGameProfile,
+  registerGameProfile,
+  type GameProfile,
+} from "./game-profile";
+import type { SearchDeps, WildsSearchExt } from "./build-search";
 
 /**
- * Wilds（Monster Hunter Wilds）執行期註冊 — **Phase 1 骨架，尚未接線**。
+ * Wilds（Monster Hunter Wilds）執行期註冊（PLAN-wilds Phase 3）。
  *
- * ⚠️ 本檔為 PLAN-wilds Phase 1 的形狀預告：定義 Wilds 註冊/deps 的預期介面，但
- * **刻意不接線**（不 import `@/data/wilds/*`、不註冊 profile、stub 一律拋錯），
- * 避免半成品進 UI。真正實作分階落地：
- *  - Phase 2：`src/data/wilds/*.json` + `manifest.json`（pin 1.041）匯入產出。
- *  - Phase 3：`SearchDeps.wilds` 閘門（珠雙池約束、set/group 雙軌、護石混合池、武器 seed 技能）。
- *  - Phase 4：`efr-wilds.ts`（同介面第三實作，數值機械抽取）。
- *  - Phase 5：profile 註冊 + UI 三遊戲切換（storagePrefix、Artian 簡化輸入、珠池呈現）。
+ * 把 Phase 2 產出的 wilds 資料（src/data/wilds/*.json，pin 1.041）接上 game-profile /
+ * game-data 抽象層，並提供 loadWildsSearchDeps()（含 WildsSearchExt 閘門）給搜尋。
+ * 介面比照 world-registry.ts；所有 wilds JSON 皆動態 import → 獨立 lazy chunk、不進首屏 bundle。
  *
- * 介面比照 `world-registry.ts`。Phase 0 機制定案見 docs/wilds-mechanics-audit.md。
+ * ⚠️ profile.efr ＝ `efr-wilds-stub.ts`（**TEMP，Phase 4 置換為 efr-wilds.ts**；stub 不碰斬味）。
+ * UI（三遊戲切換）是 Phase 5——本檔**不**動 GAMES/UI 清單，確認無 UI 路徑可達 wilds。
  */
 
-/**
- * Wilds 搜尋擴充的**預期**形狀（Phase 3 落實時併入 build-search 的 SearchDeps.wilds）。
- * 此處僅為型別預告，欄位以 Phase 0 定案為據，Phase 2/3 匯入時若資料形狀不合再調整。
- */
-export type WildsStaticPlan = {
+export type WildsStatic = {
+  data: GameStaticData;
   skillByName: Record<string, Skill>;
-  /** set bonus（2/4 件門檻，Phase 0 定案全 [2,4]，仍資料驅動）。 */
   setBonusById: Record<string, SetBonus>;
-  /** 群組技能（3 件門檻，跨系列；與 set 為獨立雙軸）。 */
   groupById: Record<string, GroupSkill>;
-  /** 有 secret 的技能名（動態上限）。 */
+  /** 技能名 → 池別（skill.kind）。珠雙池分割與相關度用。 */
+  skillKind: Record<string, "weapon" | "armor" | "group" | "set" | undefined>;
   secretSkillNames: string[];
-  /** 可生產護石固定清單（craftable-list；RNG 護石走使用者庫輸入，不在此）。 */
   charms: Charm[];
-  /** 資料版本 manifest（pin 1.041）。 */
-  manifest: WildsDataManifest;
 };
 
-const NOT_IMPLEMENTED =
-  "wilds-registry：Phase 1 骨架尚未接線（資料 Phase 2、引擎 Phase 3、EFR Phase 4、UI Phase 5）";
+let wildsStatic: WildsStatic | null = null;
 
-/** TODO(Phase 2/5)：載入並註冊 wilds 小資料 + profile。目前拋錯，不靜默退回。 */
-export async function ensureWildsRegistered(): Promise<WildsStaticPlan> {
-  throw new Error(NOT_IMPLEMENTED);
+/** 載入並註冊 wilds 小資料 + profile（冪等；動態 import，不進首屏）。 */
+export async function ensureWildsRegistered(): Promise<WildsStatic> {
+  if (wildsStatic) return wildsStatic;
+  const [decMod, skMod, wtMod, sbMod, grpMod, chMod] = await Promise.all([
+    import("@/data/wilds/decorations.json"),
+    import("@/data/wilds/skills.json"),
+    import("@/data/wilds/weaponTypes.json"),
+    import("@/data/wilds/setBonuses.json"),
+    import("@/data/wilds/groupSkills.json"),
+    import("@/data/wilds/charms.json"),
+  ]);
+  const skills = skMod.default as unknown as Skill[];
+  const setBonuses = sbMod.default as unknown as SetBonus[];
+  const groups = grpMod.default as unknown as GroupSkill[];
+  const charms = chMod.default as unknown as Charm[];
+
+  const data = buildStaticData(
+    decMod.default as never,
+    skills,
+    wtMod.default as never,
+    setBonuses
+  );
+  registerGameStaticData("wilds", data);
+
+  const skillByName: Record<string, Skill> = {};
+  const skillKind: Record<string, "weapon" | "armor" | "group" | "set" | undefined> = {};
+  for (const s of skills) {
+    skillByName[s.name] = s;
+    skillKind[s.name] = s.kind;
+  }
+  const setBonusById: Record<string, SetBonus> = {};
+  for (const b of setBonuses) setBonusById[b.id] = b;
+  const groupById: Record<string, GroupSkill> = {};
+  for (const g of groups) groupById[g.id] = g;
+  // Wilds 目前無 secret 解放（skills 無 secretMaxLevel）。
+  const secretSkillNames = skills
+    .filter((s) => s.secretMaxLevel != null)
+    .map((s) => s.name);
+
+  // Wilds profile（efr = STUB；charmMode 混合；set/group 開；無 rampage/qurio/secret）。
+  const profile: GameProfile = {
+    id: "wilds",
+    labelZh: "Wilds",
+    efr: {
+      computeEfr: wildsEfrStub.computeEfr,
+      EFR_RELEVANT_SKILLS: wildsEfrStub.EFR_RELEVANT_SKILLS,
+    },
+    charmMode: "mixed",
+    features: {
+      rampage: false,
+      qurioAugment: false,
+      charmDominancePruning: false,
+      setBonus: true,
+      secretSkills: false,
+    },
+    storagePrefix: "mhwd.",
+    // Wilds 無 secret 解放路徑：恆回傳靜態上限（未列技能 Infinity＝不截斷，同 Rise 語意）。
+    resolveSkillMax(skill: string): number {
+      return data.skillMax[skill] ?? Infinity;
+    },
+  };
+  registerGameProfile(profile);
+
+  wildsStatic = { data, skillByName, setBonusById, groupById, skillKind, secretSkillNames, charms };
+  return wildsStatic;
 }
 
-/** TODO(Phase 3)：建 wilds 搜尋相依（含 SearchDeps.wilds 閘門）。目前拋錯。 */
+function indexById<T extends { id: string }>(items: T[]): Record<string, T> {
+  const m: Record<string, T> = {};
+  for (const it of items) m[it.id] = it;
+  return m;
+}
+
+/** 建 wilds 搜尋相依（含 WildsSearchExt 閘門）。armors/weapons 動態 import。 */
 export async function loadWildsSearchDeps(): Promise<SearchDeps> {
-  throw new Error(NOT_IMPLEMENTED);
+  const s = await ensureWildsRegistered();
+  const [armorsMod, weaponsMod] = await Promise.all([
+    import("@/data/wilds/armors.json"),
+    import("@/data/wilds/weapons.json"),
+  ]);
+  const armors = armorsMod.default as never[];
+  const weapons = weaponsMod.default as never[];
+  const wilds: WildsSearchExt = {
+    profile: getGameProfile("wilds"),
+    setBonusById: s.setBonusById,
+    groupById: s.groupById,
+    secretSkillNames: s.secretSkillNames,
+    skillByName: s.skillByName,
+    skillKind: s.skillKind,
+    charmPool: s.charms,
+  };
+  return {
+    armors,
+    weapons,
+    armorById: indexById(armors),
+    weaponById: indexById(weapons),
+    decorationsBySkill: s.data.decorationsBySkill,
+    skillMax: s.data.skillMax,
+    wilds,
+  };
 }

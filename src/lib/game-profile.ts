@@ -42,8 +42,8 @@ export type GameProfile = {
   labelZh: string;
   /** EFR 模組（efr-rise / efr-world，同介面）。 */
   efr: EfrModule;
-  /** 護石模式：Rise 使用者護石庫；World 固定可生產清單。 */
-  charmMode: "talisman-library" | "craftable-list";
+  /** 護石模式：Rise 使用者護石庫；World 固定可生產清單；Wilds 混合（可生產 + 使用者庫）。 */
+  charmMode: "talisman-library" | "craftable-list" | "mixed";
   features: GameFeatureFlags;
   /** localStorage 前綴（Rise "mhsb."、World "mhwib."，兩款狀態互不污染）。 */
   storagePrefix: string;

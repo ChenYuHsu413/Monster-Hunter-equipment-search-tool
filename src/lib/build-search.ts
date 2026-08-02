@@ -4,6 +4,7 @@ import type {
   BuildSearchRequest,
   Charm,
   Decoration,
+  GroupSkill,
   SetBonus,
   Skill,
   SkillMap,
@@ -29,13 +30,14 @@ import { collectSlots, formatSlots } from "./slot-utils";
 import {
   calculateSkills,
   clampSkillsToMax,
+  computeGroupSkills,
   computeSetBonusSkills,
   mergeSkills,
   resolveDynamicSkillMax,
 } from "./skill-calculator";
 import { mergeMaxSkills, resolveAutoSkills } from "./preset-resolver";
 import { formatWeaponStats } from "./weapon-utils";
-import { solveDecorations } from "./decoration-solver";
+import { solveDecorations, solveDecorationsWilds } from "./decoration-solver";
 import { computeEfr, EFR_RELEVANT_SKILLS } from "./efr";
 
 /**
@@ -60,6 +62,28 @@ export type WorldSearchExt = {
   virtualSetBonus?: Record<string, number>;
 };
 
+/**
+ * Wilds 專屬搜尋擴充（PLAN-wilds Phase 3）。存在時啟用珠雙池約束 / set+group 雙軌 /
+ * 護石混合池 / efr-wilds；`deps.wilds` 為 undefined 時（Rise/World）所有 wilds 分支短路。
+ * 結構比照 WorldSearchExt，另加 group 表與 skillKind（珠池分割用）。
+ */
+export type WildsSearchExt = {
+  profile: GameProfile;
+  /** setBonusId → SetBonus（含 Gogmazios 借用；件數統計吃 setBonusId ∪ extraSetBonusIds）。 */
+  setBonusById: Record<string, SetBonus>;
+  /** groupId → GroupSkill（3 件門檻，與 set 獨立雙軌）。 */
+  groupById: Record<string, GroupSkill>;
+  /** 有 secret 的技能名（Wilds 目前無 secret → 空；resolveSkillMax 回原生上限）。 */
+  secretSkillNames: readonly string[];
+  skillByName: Record<string, Skill>;
+  /** 技能名 → 池別（weapon 技能進武器珠池，其餘進防具珠池）。 */
+  skillKind: Record<string, "weapon" | "armor" | "group" | "set" | undefined>;
+  /** 可生產護石候選（craftable-list 183，攤平逐級）；使用者護石庫另由 request.charms 帶入合併。 */
+  charmPool: Charm[];
+  /** 武器覺醒虛擬 set bonus +1 件（比照 World；固定武器模式）。 */
+  virtualSetBonus?: Record<string, number>;
+};
+
 /** 可注入的資料相依（測試用）；預設使用本地 JSON。 */
 export type SearchDeps = {
   armors: ArmorPiece[];
@@ -72,6 +96,8 @@ export type SearchDeps = {
   unlocks?: Record<string, UnlockEntry>;
   /** World 專屬擴充（可選）。undefined＝Rise，所有 World 分支短路。 */
   world?: WorldSearchExt;
+  /** Wilds 專屬擴充（可選）。undefined＝Rise/World，所有 wilds 分支短路。 */
+  wilds?: WildsSearchExt;
 };
 
 /**
@@ -252,6 +278,24 @@ export function searchBuilds(
     });
     charmCandidates = pool.length > 0 ? pool : [NO_CHARM];
     charmsTried = pool.length;
+  } else if (deps.wilds) {
+    // Wilds（charmMode = 混合）：可生產清單（相關度裁切）+ 使用者護石庫（request.charms，
+    // Rise 式輸入，含 rarity/slotPools）。兩來源合併後同池參與搜尋（UI 輸入是 Phase 5，
+    // 本輪走資料通路 + 引擎消費）。不做支配剪枝（比照 World）。
+    const craftablePool = buildCharmPool({
+      charms: deps.wilds.charmPool,
+      requiredSkills,
+      excludedSkills: excludedSet,
+      excludedCharmIds: excludedItems.charmIds ?? [],
+      fixedCharmId: request.fixedCharmId,
+      limit: 12,
+    });
+    const userCharms = charms.filter(
+      (c) => !Object.keys(c.skills).some((s) => excludedSet.has(s))
+    );
+    const merged = [...craftablePool, ...userCharms];
+    charmCandidates = merged.length > 0 ? merged : [NO_CHARM];
+    charmsTried = merged.length;
   } else {
     // Rise：帶有排除技能的護石直接跳過；清單為空（或全被排除）＝不使用護石。
     // 再做支配剪枝剔除冗餘護石（玩家常囤數十顆，多數被完全壓過），控制組合維度。
@@ -319,7 +363,11 @@ export function searchBuilds(
   // 為 undefined）用本檔靜態 import 的 efr.ts。gated by deps.world → Rise 路徑逐位元不變
   // （回歸背書）。修 Phase 4 遺留：profile.efr 先前未被 searchBuilds 消費，World 搜尋
   // 誤用 Rise EFR 排序。
-  const computeEfrFn = deps.world ? deps.world.profile.efr.computeEfr : computeEfr;
+  const computeEfrFn = deps.world
+    ? deps.world.profile.efr.computeEfr
+    : deps.wilds
+      ? deps.wilds.profile.efr.computeEfr
+      : computeEfr;
 
   // World：預算防具相關度所需的常量（不依 effRequired，故迴圈外算一次）。
   const worldGlobalUnlockers: string[] = deps.world
@@ -361,6 +409,24 @@ export function searchBuilds(
       };
     }
 
+    // Wilds 防具相關度（mechanics #10 義務 b）：把「被要求、但由 set/group 提供」的技能標為
+    // requiredSetBonusSkills，使 prunePools 保留自身不帶該技能、但經 setBonusId ∪ extraSetBonusIds
+    // （Gogmazios 借用）或 groupId 才有價值的件。＝World「Fatalis 件裁切」教訓的 Wilds 對應。
+    let wildsRel: WorldArmorRelevance | undefined;
+    if (deps.wilds) {
+      const requiredSetBonusSkills = new Set<string>();
+      for (const skill of Object.keys(effRequired)) {
+        const k = deps.wilds.skillKind[skill];
+        if (k === "set" || k === "group") requiredSetBonusSkills.add(skill);
+      }
+      wildsRel = {
+        setBonusById: deps.wilds.setBonusById,
+        demandedUnlockers: new Set(), // Wilds 目前無 secret 解放路徑
+        requiredSetBonusSkills,
+        groupById: deps.wilds.groupById,
+      };
+    }
+
     const pools = prunePools(
       basePools,
       effRequired,
@@ -368,7 +434,7 @@ export function searchBuilds(
       fixedParts,
       weaponCandidates.length,
       charmCandidates.length,
-      worldRel
+      worldRel ?? wildsRel
     );
     for (const part of ARMOR_PARTS) {
       candidatesPerPart[part] = pools[part].length;
@@ -440,6 +506,23 @@ export function searchBuilds(
                   deps.world.profile.resolveSkillMax,
                   deps.world.secretSkillNames
                 );
+              } else if (deps.wilds?.profile.features.setBonus) {
+                // Wilds 雙軌（mechanics #4/#10）：set（setBonusId ∪ extraSetBonusIds 聯集件數，
+                // 門檻 [2,4]）+ group（groupId 件數，門檻 [3]）併入；兩軌互不干擾。
+                setBonusSkills = mergeSkills(
+                  computeSetBonusSkills(
+                    pieces,
+                    deps.wilds.setBonusById,
+                    deps.wilds.virtualSetBonus
+                  ),
+                  computeGroupSkills(pieces, deps.wilds.groupById)
+                );
+                effSkillMax = resolveDynamicSkillMax(
+                  deps.skillMax,
+                  setBonusSkills,
+                  deps.wilds.profile.resolveSkillMax,
+                  deps.wilds.secretSkillNames
+                );
               }
 
               for (const charm of charmCandidates) {
@@ -459,14 +542,42 @@ export function searchBuilds(
                   : baseCurrent;
                 const slots = collectSlots(pieces, charm, weaponSlots);
 
-                const solve = solveDecorations({
-                  slots,
-                  currentSkills,
-                  requiredSkills: effRequired,
-                  reservedSlots,
-                  decorationsBySkill: deps.decorationsBySkill,
-                  skillMax: effSkillMax,
-                });
+                // Wilds：珠雙池 → 池分割雙解（solveDecorationsWilds）；武器洞=weapon 池、
+                // 5 防具洞=armor 池、護石洞依 slotPools 逐洞分池（craftable 無洞、只有使用者護石帶洞）。
+                // Rise/World（deps.wilds undefined）走既有 solveDecorations，逐位元不變（回歸背書）。
+                let solve;
+                if (deps.wilds) {
+                  const cSlots = charm.slots ?? [];
+                  const cPools = charm.slotPools;
+                  const weaponCharmSlots = cPools
+                    ? cSlots.filter((_, i) => cPools[i] === "weapon")
+                    : [];
+                  const armorCharmSlots = cPools
+                    ? cSlots.filter((_, i) => cPools[i] === "armor")
+                    : cSlots; // 無 slotPools → 全歸防具池（craftable 無洞；僅影響未標池的使用者護石）
+                  solve = solveDecorationsWilds({
+                    weaponSlots: [...weaponSlots, ...weaponCharmSlots],
+                    armorSlots: [
+                      ...pieces.flatMap((p) => p.slots ?? []),
+                      ...armorCharmSlots,
+                    ],
+                    currentSkills,
+                    requiredSkills: effRequired,
+                    reservedSlots,
+                    decorationsBySkill: deps.decorationsBySkill,
+                    skillMax: effSkillMax,
+                    skillKind: deps.wilds.skillKind,
+                  });
+                } else {
+                  solve = solveDecorations({
+                    slots,
+                    currentSkills,
+                    requiredSkills: effRequired,
+                    reservedSlots,
+                    decorationsBySkill: deps.decorationsBySkill,
+                    skillMax: effSkillMax,
+                  });
+                }
 
                 if (!solve.success) continue; // 必要技能或保留洞位不符 → 淘汰
 

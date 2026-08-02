@@ -408,3 +408,89 @@ export function solveDecorations(input: SolveInput): DecorationSolveResult {
 
   return best;
 }
+
+// ════════════════════════════════════════════════════════════════════════════
+// Wilds 珠雙池補珠（PLAN-wilds Phase 3 改動點 1）
+//
+// 機制（Phase 0 定案 #2）：武器珠只吃武器洞、防具珠只吃防具洞（decoration.pool）。
+// 實作策略＝**池分割雙解**：把洞池與必要技能按 weapon/armor 池切開，各池分別呼叫既有
+// solveDecorations（含尾巴 D 有界修復）。因兩池獨立求解，**修復的交換天然不可能跨池**
+// → §3.1「交換不得跨池」由結構滿足，尾巴 D 修復程式碼**一行未改**（逐位元凍結）。
+//   - weaponSlots：武器洞 + 護石 weapon 池洞；armorSlots：5 防具洞 + 護石 armor 池洞。
+//   - requiredSkills 依 skillKind 切：weapon 技能 → 武器池；其餘（armor/set/group）→ 防具池
+//     （set/group 技能無珠、已由 currentSkills 提供，gap=0 時零消耗；未達成則該池 fail，正確）。
+//   - reservedSlots 為池無關概念：各池以 reserved=0 補滿必要技能，再對**合併剩餘洞**做保留檢核。
+// Rise/World 不呼叫此函式（build-search 僅 deps.wilds 分支選用）。
+// ════════════════════════════════════════════════════════════════════════════
+
+export type WildsSolveInput = {
+  weaponSlots: number[];
+  armorSlots: number[];
+  currentSkills: SkillMap;
+  requiredSkills: SkillMap;
+  reservedSlots: ReservedSlots;
+  decorationsBySkill: Record<string, Decoration[]>;
+  skillMax: Record<string, number>;
+  /** 技能名 → 池別（weapon 技能進武器池，其餘進防具池）。 */
+  skillKind: Record<string, "weapon" | "armor" | "group" | "set" | undefined>;
+};
+
+/** 逐技能相減（a − b，僅保留正值）；用於合併雙池補珠增益不重複計 currentSkills。 */
+function subtractSkills(a: SkillMap, b: SkillMap): SkillMap {
+  const out: SkillMap = {};
+  for (const [k, v] of Object.entries(a)) {
+    const d = v - (b[k] ?? 0);
+    if (d > 0) out[k] = d;
+  }
+  return out;
+}
+
+const NO_RESERVE: ReservedSlots = { 4: 0, 3: 0, 2: 0, 1: 0 };
+
+export function solveDecorationsWilds(
+  input: WildsSolveInput
+): DecorationSolveResult {
+  const wReq: SkillMap = {};
+  const aReq: SkillMap = {};
+  for (const [s, l] of Object.entries(input.requiredSkills)) {
+    if (input.skillKind[s] === "weapon") wReq[s] = l;
+    else aReq[s] = l; // armor / group / set / 未知 → 防具池（無珠者 gap=0 零消耗）
+  }
+  const base = {
+    currentSkills: input.currentSkills,
+    reservedSlots: NO_RESERVE,
+    decorationsBySkill: input.decorationsBySkill,
+    skillMax: input.skillMax,
+  };
+  const wSolve = solveDecorations({ ...base, slots: input.weaponSlots, requiredSkills: wReq });
+  const aSolve = solveDecorations({ ...base, slots: input.armorSlots, requiredSkills: aReq });
+
+  const assignments = [...wSolve.assignments, ...aSolve.assignments];
+  const wAdded = subtractSkills(wSolve.achievedSkills, input.currentSkills);
+  const aAdded = subtractSkills(aSolve.achievedSkills, input.currentSkills);
+  const achievedSkills = mergeSkills(input.currentSkills, wAdded, aAdded);
+
+  if (!wSolve.success || !aSolve.success) {
+    return {
+      success: false,
+      assignments,
+      achievedSkills,
+      remainingSlots: normalizeSlots([...wSolve.remainingSlots, ...aSolve.remainingSlots]),
+      missingRequired: mergeSkills(wSolve.missingRequired, aSolve.missingRequired),
+    };
+  }
+
+  // 保留洞位：對兩池合併剩餘洞做檢核（池無關）。
+  const combined = normalizeSlots([...wSolve.remainingSlots, ...aSolve.remainingSlots]);
+  const reserve = reserveSlots(combined, input.reservedSlots);
+  if (!reserve) {
+    return { success: false, assignments, achievedSkills, remainingSlots: combined, missingRequired: {} };
+  }
+  return {
+    success: true,
+    assignments,
+    achievedSkills,
+    remainingSlots: normalizeSlots([...reserve.remaining, ...reserve.held]),
+    missingRequired: {},
+  };
+}
