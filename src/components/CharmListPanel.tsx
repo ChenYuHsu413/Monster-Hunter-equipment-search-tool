@@ -30,11 +30,15 @@ const NONE = "__none__";
 
 type FormRow = { name: string; level: number };
 
+type Pool = "weapon" | "armor";
+
 type FormState = {
   /** 編輯中的護石 id；null = 新增。 */
   id: string | null;
   rows: [FormRow, FormRow];
   slotsStr: string;
+  /** Wilds 逐洞池別（3 位置，對齊 slotsStr 的 a-b-c；預設 armor）。 */
+  slotPools: [Pool, Pool, Pool];
 };
 
 const EMPTY_FORM: FormState = {
@@ -44,6 +48,7 @@ const EMPTY_FORM: FormState = {
     { name: "", level: 1 },
   ],
   slotsStr: "0-0-0",
+  slotPools: ["armor", "armor", "armor"],
 };
 
 function charmToForm(c: OwnedCharm): FormState {
@@ -56,7 +61,11 @@ function charmToForm(c: OwnedCharm): FormState {
   });
   const slots = [...c.slots];
   while (slots.length < 3) slots.push(0);
-  return { id: c.id, rows, slotsStr: slots.slice(0, 3).join("-") };
+  const pools: [Pool, Pool, Pool] = ["armor", "armor", "armor"];
+  (c.slotPools ?? []).slice(0, 3).forEach((p, i) => {
+    pools[i] = p === "weapon" ? "weapon" : "armor";
+  });
+  return { id: c.id, rows, slotsStr: slots.slice(0, 3).join("-"), slotPools: pools };
 }
 
 type Props = {
@@ -66,6 +75,8 @@ type Props = {
   onChangeCharms: (charms: OwnedCharm[]) => void;
   onChangeUseCharms: (v: boolean) => void;
   allSkills: Skill[];
+  /** Wilds 模式：每個洞位加池別（weapon/armor）選擇，寫入 slotPools。 */
+  wildsMode?: boolean;
 };
 
 /**
@@ -78,6 +89,7 @@ export function CharmListPanel({
   onChangeCharms,
   onChangeUseCharms,
   allSkills,
+  wildsMode = false,
 }: Props) {
   const [form, setForm] = useState<FormState | null>(null);
 
@@ -92,12 +104,23 @@ export function CharmListPanel({
 
   const save = () => {
     if (!form) return;
+    // slotsStr 為 a-b-c（非遞增）；逐位置去零，並在 wilds 模式帶對齊的池別。
+    const parsed = parseSlotString(form.slotsStr);
+    const slots: number[] = [];
+    const slotPools: Pool[] = [];
+    parsed.forEach((v, i) => {
+      if (v > 0) {
+        slots.push(v);
+        slotPools.push(form.slotPools[i] ?? "armor");
+      }
+    });
     const charm: OwnedCharm = {
       id: form.id ?? `charm_${Date.now()}`,
       skills: form.rows
         .filter((r) => r.name)
         .map((r) => ({ name: r.name, level: r.level })),
-      slots: parseSlotString(form.slotsStr).filter((s) => s > 0),
+      slots,
+      ...(wildsMode && slots.length ? { slotPools } : {}),
     };
     onChangeCharms(
       form.id
@@ -248,6 +271,43 @@ export function CharmListPanel({
               </SelectContent>
             </Select>
           </div>
+          {/* Wilds：逐洞池別（weapon/armor）。武器洞只接武器珠、防具洞只接防具珠。 */}
+          {wildsMode &&
+            parseSlotString(form.slotsStr).some((s) => s > 0) && (
+              <div className="space-y-1.5">
+                <span className="text-[11px] text-muted-foreground">
+                  逐洞池別（武器洞只接武器珠、防具洞只接防具珠）
+                </span>
+                {parseSlotString(form.slotsStr).map((lvl, i) =>
+                  lvl > 0 ? (
+                    <div key={i} className="flex items-center gap-2">
+                      <span className="w-16 shrink-0 font-mono text-[11px] text-muted-foreground">
+                        {lvl} 級洞
+                      </span>
+                      <Select
+                        value={form.slotPools[i]}
+                        onValueChange={(v) =>
+                          setForm((prev) => {
+                            if (!prev) return prev;
+                            const sp = [...prev.slotPools] as [Pool, Pool, Pool];
+                            sp[i] = v as Pool;
+                            return { ...prev, slotPools: sp };
+                          })
+                        }
+                      >
+                        <SelectTrigger className="h-7 flex-1 text-xs">
+                          <SelectValue />
+                        </SelectTrigger>
+                        <SelectContent>
+                          <SelectItem value="armor">防具珠池</SelectItem>
+                          <SelectItem value="weapon">武器珠池</SelectItem>
+                        </SelectContent>
+                      </Select>
+                    </div>
+                  ) : null
+                )}
+              </div>
+            )}
           <div className="flex justify-end gap-2">
             <Button
               variant="ghost"

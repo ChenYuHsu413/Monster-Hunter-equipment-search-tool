@@ -21,6 +21,11 @@ export type OwnedCharm = {
   skills: { name: string; level: number }[];
   /** 孔位等級陣列（已去零），例如 [2,1]。 */
   slots: number[];
+  /**
+   * Wilds 珠雙池：與 slots 平行的逐洞池別（weapon | armor）。Wilds RNG 護石洞位帶歸屬，
+   * 缺此欄（Rise/舊護石）→ 引擎視為防具池（build-search wilds 分支預設 armor）。
+   */
+  slotPools?: ("weapon" | "armor")[];
   /** 來源標記：由推薦配裝匯入的護石標 "reco"（可辨識、可刪，與自有護石並存）。 */
   source?: "reco";
 };
@@ -63,7 +68,13 @@ export function ownedCharmToCharm(c: OwnedCharm): Charm {
       .filter((s) => s.name)
       .map((s) => `${s.name}${s.level}`)
       .join("・") || "無技能護石";
-  return { id: c.id, name, skills, slots: c.slots };
+  return {
+    id: c.id,
+    name,
+    skills,
+    slots: c.slots,
+    ...(c.slotPools ? { slotPools: c.slotPools } : {}),
+  };
 }
 
 /** 護石的可讀標籤，例如「攻擊2・弱點特效1（2-1）」。 */
@@ -127,13 +138,28 @@ function sanitizeCharms(v: unknown): OwnedCharm[] {
           .slice(0, 2)
           .map((s) => ({ name: s.name, level: Math.max(1, Math.floor(Number(s.level))) }))
       : [];
-    const slots = Array.isArray(raw.slots)
-      ? normalizeSlots(raw.slots.map((n) => Number(n)).filter((n) => Number.isFinite(n)))
+    const rawSlots = Array.isArray(raw.slots)
+      ? raw.slots.map((n) => Number(n)).filter((n) => Number.isFinite(n))
       : [];
+    const rawPools = Array.isArray(raw.slotPools) ? raw.slotPools : null;
+    // Wilds：slots 與 slotPools 需保持對齊 → 配對後一起去零/降冪排序，再拆開（無 pools 則沿用 normalize）。
+    let slots: number[];
+    let slotPools: ("weapon" | "armor")[] | undefined;
+    if (rawPools) {
+      const paired = rawSlots
+        .map((s, i) => ({ s, p: rawPools[i] === "weapon" ? "weapon" : "armor" }) as { s: number; p: "weapon" | "armor" })
+        .filter((x) => x.s > 0)
+        .sort((a, b) => b.s - a.s);
+      slots = paired.map((x) => x.s);
+      slotPools = paired.map((x) => x.p);
+    } else {
+      slots = normalizeSlots(rawSlots);
+    }
     out.push({
       id: raw.id,
       skills,
       slots,
+      ...(slotPools ? { slotPools } : {}),
       ...(raw.source === "reco" ? { source: "reco" as const } : {}),
     });
   }

@@ -1214,7 +1214,7 @@ export function BuilderView({
                       <p className="rounded-md bg-muted/60 px-2.5 py-2 text-[11px] leading-relaxed text-muted-foreground">
                         Wilds 護石為<b>混合制</b>：可生產護石已<b>自動</b>納入候選池，此處輸入
                         <b>鑑定（RNG）護石</b>（稀有度 5–8、最多 3 技能）。
-                        <span className="opacity-80">（v1：使用者護石洞位暫視為防具珠池；逐洞武/防池別選擇為後續。）</span>
+                        <span className="opacity-80">登錄時可為每個洞位指定武器珠池／防具珠池。</span>
                       </p>
                     )}
                     {profile?.charmMode === "craftable-list" ? (
@@ -1234,6 +1234,7 @@ export function BuilderView({
                         onChangeCharms={setCharms}
                         onChangeUseCharms={setUseCharms}
                         allSkills={allSkills}
+                        wildsMode={isWilds}
                       />
                     )}
                     {/* 傀異鍊成：Rise 專屬（profile.features.qurioAugment）；World 隱藏。 */}
