@@ -96,6 +96,15 @@ export type ArmorPiece = {
    */
   setBonusId?: string;
   /**
+   * 額外借用的 set bonus id 陣列（Wilds Gogmazios「擬態」機制，Phase 2 實抓定案 #10）。
+   * Gogmazios α/β 每件除原生 setBonusId（Gogmapocalypse）外，另同時提供 5 個借用魔物的
+   * set bonus。此欄承載那些**借用** id（不含 setBonusId 自身，避免冗餘/兩欄不一致）。
+   * 新增選填欄位；僅 Gogmazios 10 件有值，其餘防具與 Rise/World 資料無此欄，行為不變。
+   * Phase 3 引擎義務：(a) computeSetBonusSkills 統計件數吃 setBonusId ∪ extraSetBonusIds；
+   * (b) equipment-pools 相關度裁切須給這 10 件借用價值評分（World Fatalis 件裁切教訓的 Wilds 對應）。
+   */
+  extraSetBonusIds?: string[];
+  /**
    * 所屬群組技能 id（Wilds group skill 歸屬；指向 GroupSkill.id）。與 setBonusId 為
    * 獨立雙軸並存（一件可同時屬 set 與 group，Phase 0 定案 #4）。新增選填欄位；
    * Rise/World 資料無此欄，group 統計僅在 Wilds 引擎（Phase 3）啟用，行為不變。
