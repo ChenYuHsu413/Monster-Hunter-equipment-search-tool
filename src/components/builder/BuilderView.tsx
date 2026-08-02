@@ -127,36 +127,47 @@ export function BuilderView({
   pendingImport,
   onConsumeImport,
 }: BuilderViewProps = {}) {
-  // localStorage 前綴：rise "mhsb." / world "mhwib."（兩款狀態互不污染）。gameId 於本
-  // 元件生命週期恆定（page.tsx 以 key=gameId 重掛載切換），故可直接由 gameId 導出。
-  const prefix = gameId === "world" ? "mhwib." : "mhsb.";
+  // localStorage 前綴：rise "mhsb." / world "mhwib." / wilds "mhwd."（三款狀態互不污染）。
+  // gameId 於本元件生命週期恆定（page.tsx 以 key=gameId 重掛載切換），故可直接由 gameId 導出。
+  const prefix =
+    gameId === "world" ? "mhwib." : gameId === "wilds" ? "mhwd." : "mhsb.";
   const isWorld = gameId === "world";
+  const isWilds = gameId === "wilds";
+  // rise 小資料模組載入時同步註冊；world/wilds 需動態 import registry 註冊（引擎維持 lazy chunk）。
+  const needsRegistry = isWorld || isWilds;
 
   // ---- 小資料（技能/武器類型/珠子索引/set bonus）與 profile：per-game ----
-  // rise 為模組載入時同步註冊，可即用；world 需先動態 import world-registry 註冊
-  // （並取護石候選池）→ 也讓 world 引擎程式維持 lazy chunk，不進首屏。
   const [gameStatic, setGameStatic] = useState<GameStaticData | null>(
-    isWorld ? null : getGameStaticData("rise")
+    needsRegistry ? null : getGameStaticData("rise")
   );
   const [profile, setProfile] = useState<GameProfile | null>(
-    isWorld ? null : getGameProfile("rise")
+    needsRegistry ? null : getGameProfile("rise")
   );
   const [worldCharmPool, setWorldCharmPool] = useState<Charm[]>([]);
   useEffect(() => {
-    if (!isWorld) return;
+    if (!needsRegistry) return;
     let alive = true;
     (async () => {
-      const { ensureWorldRegistered } = await import("@/lib/world-registry");
-      const ws = await ensureWorldRegistered();
-      if (!alive) return;
-      setGameStatic(getGameStaticData("world"));
-      setProfile(getGameProfile("world"));
-      setWorldCharmPool(ws.charms);
+      if (isWorld) {
+        const { ensureWorldRegistered } = await import("@/lib/world-registry");
+        const ws = await ensureWorldRegistered();
+        if (!alive) return;
+        setGameStatic(getGameStaticData("world"));
+        setProfile(getGameProfile("world"));
+        setWorldCharmPool(ws.charms);
+      } else if (isWilds) {
+        const { ensureWildsRegistered } = await import("@/lib/wilds-registry");
+        await ensureWildsRegistered();
+        if (!alive) return;
+        setGameStatic(getGameStaticData("wilds"));
+        setProfile(getGameProfile("wilds"));
+        // 可生產護石自動進候選池（引擎 build-search wilds 分支）；UI 護石庫收 RNG 護石，故不設 worldCharmPool。
+      }
     })();
     return () => {
       alive = false;
     };
-  }, [isWorld]);
+  }, [needsRegistry, isWorld, isWilds]);
 
   const weaponTypes = gameStatic?.weaponTypes ?? [];
   const allSkills = gameStatic?.skills ?? [];
@@ -209,6 +220,14 @@ export function BuilderView({
   // 實際會送進搜尋的強化：僅 World + 固定武器 + 有選武器 + 非空強化時才帶。
   const activeWeaponAugment =
     isWorld &&
+    weaponSearchMode === "fixed" &&
+    !!fixedWeaponId &&
+    !isNoopAugment(worldWeaponAugment)
+      ? worldWeaponAugment
+      : undefined;
+  // Wilds Artian 簡化輸入（復用同一 delta state；無 set bonus）：僅 wilds + 固定武器 + 非空。
+  const activeWildsAugment =
+    isWilds &&
     weaponSearchMode === "fixed" &&
     !!fixedWeaponId &&
     !isNoopAugment(worldWeaponAugment)
@@ -614,6 +633,7 @@ export function BuilderView({
       augments,
       gameId,
       worldWeaponAugment: activeWeaponAugment,
+      wildsWeaponAugment: activeWildsAugment,
     } satisfies SearchWorkerRequest);
   };
 
@@ -909,7 +929,7 @@ export function BuilderView({
       worldWeaponAugment: activeWeaponAugment,
     });
     // 帶 ?game=：開啟者由 page.tsx 先切到對應遊戲，再由該 BuilderView 套用 ?c=。
-    const gameQ = isWorld ? "game=world&" : "";
+    const gameQ = isWorld ? "game=world&" : isWilds ? "game=wilds&" : "";
     const query = `?${gameQ}tab=builder&c=${c}`;
     window.history.replaceState(null, "", query);
     const url = `${window.location.origin}${window.location.pathname}${query}`;
@@ -1149,6 +1169,23 @@ export function BuilderView({
                       }
                     />
                   )}
+                {/* Wilds Artian 簡化輸入：復用強化面板，無 set bonus（Artian 是武器→武器珠池）。 */}
+                {isWilds &&
+                  weaponSearchMode === "fixed" &&
+                  !!fixedWeaponId &&
+                  weaponById[fixedWeaponId] && (
+                    <WorldWeaponAugmentPanel
+                      augment={worldWeaponAugment}
+                      onChange={setWorldWeaponAugment}
+                      setBonuses={[]}
+                      showSetBonus={false}
+                      title="Artian 武器強化（隨機強化，輸入結果值）"
+                      weaponHasElement={
+                        !!weaponById[fixedWeaponId].element &&
+                        (weaponById[fixedWeaponId].element?.value ?? 0) > 0
+                      }
+                    />
+                  )}
               </CardContent>
             </Card>
 
@@ -1173,6 +1210,13 @@ export function BuilderView({
                   </TabsContent>
 
                   <TabsContent value="charms" className="space-y-4 pt-2">
+                    {isWilds && (
+                      <p className="rounded-md bg-muted/60 px-2.5 py-2 text-[11px] leading-relaxed text-muted-foreground">
+                        Wilds 護石為<b>混合制</b>：可生產護石已<b>自動</b>納入候選池，此處輸入
+                        <b>鑑定（RNG）護石</b>（稀有度 5–8、最多 3 技能）。
+                        <span className="opacity-80">（v1：使用者護石洞位暫視為防具珠池；逐洞武/防池別選擇為後續。）</span>
+                      </p>
+                    )}
                     {profile?.charmMode === "craftable-list" ? (
                       // World：固定可生產護石清單（資料選單，可固定/排除）。
                       <WorldCharmPanel

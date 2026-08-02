@@ -108,7 +108,8 @@ export function decodeShareState(raw: string): DecodedShare | null {
   const conditions = deserializeSearchConditions(obj.conditions);
   const mode = asString(obj.weaponSearchMode);
   // 舊格式（無 game 欄）視為 rise；只認識已知遊戲，其餘退回 rise。
-  const game: GameId = obj.game === "world" ? "world" : "rise";
+  const game: GameId =
+    obj.game === "world" ? "world" : obj.game === "wilds" ? "wilds" : "rise";
   // World 武器強化：缺欄（舊連結）→ undefined；有欄則消毒。只在 world 生效。
   const worldWeaponAugment =
     game === "world" && obj.worldWeaponAugment !== undefined

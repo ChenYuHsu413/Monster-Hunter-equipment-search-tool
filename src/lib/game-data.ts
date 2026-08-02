@@ -39,6 +39,13 @@ function loadRaw(gameId: GameId): Promise<[unknown, unknown]> {
       import("@/data/rise/weapons.json"),
     ]);
   }
+  if (gameId === "wilds") {
+    // Wilds（PLAN Phase 5 接上 UI）：獨立動態 chunk，不進首屏。
+    return Promise.all([
+      import("@/data/wilds/armors.json"),
+      import("@/data/wilds/weapons.json"),
+    ]);
+  }
   // World（PLAN Phase 5 接上 UI）：各自獨立動態 chunk，不進首屏。
   return Promise.all([
     import("@/data/world/armors.json"),

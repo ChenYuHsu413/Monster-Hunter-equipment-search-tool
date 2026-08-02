@@ -31,6 +31,11 @@ export type SearchWorkerRequest = {
    * 數值 delta 改武器副本、虛擬 set bonus 設 deps.world.virtualSetBonus。
    */
   worldWeaponAugment?: WorldWeaponAugment;
+  /**
+   * Wilds Artian「簡化輸入」。僅 gameId==="wilds" 且固定武器模式下套用：
+   * 數值 delta（攻擊/會心/屬性/追加洞，Artian 為武器→weapon 池）改武器副本；無 set bonus。
+   */
+  wildsWeaponAugment?: WorldWeaponAugment;
 };
 
 export type SearchWorkerResponse =
@@ -69,7 +74,7 @@ function applyWorldWeaponAugment(
 }
 
 ctx.onmessage = async (e: MessageEvent<SearchWorkerRequest>) => {
-  const { id, request, augments, gameId, worldWeaponAugment } = e.data;
+  const { id, request, augments, gameId, worldWeaponAugment, wildsWeaponAugment } = e.data;
   try {
     let deps: SearchDeps;
     if (gameId === "world") {
@@ -80,6 +85,26 @@ ctx.onmessage = async (e: MessageEvent<SearchWorkerRequest>) => {
       // 武器強化「簡化輸入」（僅固定武器模式）：改武器副本 + 虛擬 set bonus。
       // 只重建 weaponById 覆蓋單一 id，不 mutate 共享的 dynamic-import 快取資料。
       deps = applyWorldWeaponAugment(deps, request, worldWeaponAugment);
+    } else if (gameId === "wilds") {
+      // Wilds：珠雙池 + set/group 雙軌 + 護石混合池 + efr-wilds（wilds-registry 內接線）。
+      // 動態 import → 獨立 lazy chunk，不進 rise/world 路徑。使用者護石庫經 request.charms 帶入
+      // （build-search wilds 分支合併可生產池）；Artian 簡化輸入改武器副本（無 set bonus）。
+      const { loadWildsSearchDeps } = await import("./wilds-registry");
+      deps = await loadWildsSearchDeps();
+      if (
+        wildsWeaponAugment &&
+        request.weaponSearchMode === "fixed" &&
+        hasNumericDelta(wildsWeaponAugment)
+      ) {
+        const wid = request.fixedWeaponId ?? request.fixedParts?.weapon;
+        const base = wid ? deps.weaponById[wid] : undefined;
+        if (wid && base) {
+          deps = {
+            ...deps,
+            weaponById: { ...deps.weaponById, [wid]: applyWeaponAugment(base, wildsWeaponAugment) },
+          };
+        }
+      }
     } else {
       const gd = await loadGameData();
       deps = createSearchDeps(gd, augments);

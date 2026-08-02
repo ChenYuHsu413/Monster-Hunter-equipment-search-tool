@@ -28,6 +28,10 @@ type Props = {
   setBonuses: SetBonus[];
   /** 固定武器是否有既有五屬性（無則屬性 delta 無效果，僅提示）。 */
   weaponHasElement: boolean;
+  /** 面板標題（預設 World 覺醒/客製；Wilds Artian 另給）。 */
+  title?: string;
+  /** 是否顯示「覺醒套裝技（虛擬 set bonus）」區（Wilds Artian 無 set bonus → false）。 */
+  showSetBonus?: boolean;
 };
 
 const NONE = "none";
@@ -37,6 +41,8 @@ export function WorldWeaponAugmentPanel({
   onChange,
   setBonuses,
   weaponHasElement,
+  title = "武器強化（覺醒／客製強化，輸入結果值）",
+  showSetBonus = true,
 }: Props) {
   const set = <K extends keyof WorldWeaponAugment>(
     key: K,
@@ -61,7 +67,7 @@ export function WorldWeaponAugmentPanel({
       <div className="flex items-center justify-between gap-2">
         <Label className="flex items-center gap-1.5 text-xs text-muted-foreground">
           <Sparkles className="h-3.5 w-3.5 text-primary" />
-          武器強化（覺醒／客製強化，輸入結果值）
+          {title}
         </Label>
         {dirty && (
           <Button
@@ -142,32 +148,35 @@ export function WorldWeaponAugmentPanel({
             </SelectContent>
           </Select>
         </div>
-        <div className="space-y-1">
-          <span className="text-[11px] text-muted-foreground">
-            覺醒套裝技（虛擬 +1 件）
-          </span>
-          <Select
-            value={augment.setBonusId || NONE}
-            onValueChange={(v) => set("setBonusId", v === NONE ? "" : v)}
-          >
-            <SelectTrigger className="h-8 text-sm">
-              <SelectValue placeholder="無" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value={NONE}>無</SelectItem>
-              {setBonuses.map((sb) => (
-                <SelectItem key={sb.id} value={sb.id}>
-                  {sb.nameZh}
-                </SelectItem>
-              ))}
-            </SelectContent>
-          </Select>
-        </div>
+        {showSetBonus && (
+          <div className="space-y-1">
+            <span className="text-[11px] text-muted-foreground">
+              覺醒套裝技（虛擬 +1 件）
+            </span>
+            <Select
+              value={augment.setBonusId || NONE}
+              onValueChange={(v) => set("setBonusId", v === NONE ? "" : v)}
+            >
+              <SelectTrigger className="h-8 text-sm">
+                <SelectValue placeholder="無" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value={NONE}>無</SelectItem>
+                {setBonuses.map((sb) => (
+                  <SelectItem key={sb.id} value={sb.id}>
+                    {sb.nameZh}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+        )}
       </div>
 
       <p className="text-[11px] leading-relaxed text-muted-foreground">
-        數值直接套用到此固定武器（搜尋與 EFR）。防禦僅供參考不進搜尋。覺醒套裝技以「+1 件」
-        併入套裝件數統計，可讓 3 件門檻用 2 件防具達成。
+        {showSetBonus
+          ? "數值直接套用到此固定武器（搜尋與 EFR）。防禦僅供參考不進搜尋。覺醒套裝技以「+1 件」併入套裝件數統計，可讓 3 件門檻用 2 件防具達成。"
+          : "Artian 隨機強化：直接輸入結果值 delta（攻擊/會心/屬性/追加洞，追加洞為武器＝武器珠池），套用到此固定武器（搜尋與 EFR）。防禦僅供參考不進搜尋。"}
       </p>
     </div>
   );
