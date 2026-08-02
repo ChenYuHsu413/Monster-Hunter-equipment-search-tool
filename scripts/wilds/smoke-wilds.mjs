@@ -1,6 +1,6 @@
 /**
  * Wilds 引擎冒煙（PLAN-wilds Phase 3 §4）。從 searchBuilds 消費端打，單一變因。
- * **禁對 EFR 數值斷言**（efr-wilds-stub + 斬味佔位）；只驗技能達成 / 池合法性 / 計數。
+ * 本腳本只驗技能達成 / 池合法性 / 計數（EFR 數值由 smoke-efr-wilds.mjs 另測）。
  *   node scripts/wilds/smoke-wilds.mjs
  * 決定性：見 smoke-wilds 尾端「連跑兩次逐位元」自測。
  */

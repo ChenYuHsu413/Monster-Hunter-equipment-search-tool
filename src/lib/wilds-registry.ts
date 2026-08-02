@@ -4,7 +4,7 @@ import type {
   SetBonus,
   Skill,
 } from "@/types/build";
-import * as wildsEfrStub from "./efr-wilds-stub";
+import * as wildsEfr from "./efr-wilds";
 import { buildStaticData, registerGameStaticData, type GameStaticData } from "./data";
 import {
   getGameProfile,
@@ -20,7 +20,7 @@ import type { SearchDeps, WildsSearchExt } from "./build-search";
  * game-data 抽象層，並提供 loadWildsSearchDeps()（含 WildsSearchExt 閘門）給搜尋。
  * 介面比照 world-registry.ts；所有 wilds JSON 皆動態 import → 獨立 lazy chunk、不進首屏 bundle。
  *
- * ⚠️ profile.efr ＝ `efr-wilds-stub.ts`（**TEMP，Phase 4 置換為 efr-wilds.ts**；stub 不碰斬味）。
+ * profile.efr ＝ `efr-wilds.ts`（Phase 4：斬味考證 base/max + 技能逐級值機械抽取，同介面）。
  * UI（三遊戲切換）是 Phase 5——本檔**不**動 GAMES/UI 清單，確認無 UI 路徑可達 wilds。
  */
 
@@ -81,8 +81,8 @@ export async function ensureWildsRegistered(): Promise<WildsStatic> {
     id: "wilds",
     labelZh: "Wilds",
     efr: {
-      computeEfr: wildsEfrStub.computeEfr,
-      EFR_RELEVANT_SKILLS: wildsEfrStub.EFR_RELEVANT_SKILLS,
+      computeEfr: wildsEfr.computeEfr,
+      EFR_RELEVANT_SKILLS: wildsEfr.EFR_RELEVANT_SKILLS,
     },
     charmMode: "mixed",
     features: {
