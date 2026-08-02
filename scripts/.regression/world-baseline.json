@@ -1,0 +1,8830 @@
+{
+  "W01_inheritance_challenger7_gs_exact": {
+    "fixedWeaponId": "wweapon_2009",
+    "meta": {
+      "combosEvaluated": 300001,
+      "validBuilds": 300000,
+      "truncated": true,
+      "mode": "exact",
+      "candidatesPerPart": {
+        "head": 10,
+        "chest": 10,
+        "arms": 10,
+        "waist": 10,
+        "legs": 10
+      },
+      "weaponsTried": 1,
+      "charmsTried": 5
+    },
+    "resultCount": 30,
+    "results": [
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1517|warmor_1439|warmor_1574|warmor_1520|wcharm_300",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_300",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1517|warmor_1439|warmor_1574|warmor_1520|wcharm_281",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_281",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1517|warmor_1439|warmor_1574|warmor_1520|wcharm_280",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_280",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1517|warmor_1439|warmor_1574|warmor_1520|wcharm_207",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_207",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1517|warmor_1439|warmor_1574|warmor_1520|wcharm_206",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_206",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1517|warmor_1439|warmor_1574|warmor_1515|wcharm_300",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "砥石使用高速化": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_300",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1517|warmor_1439|warmor_1574|warmor_1515|wcharm_281",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "砥石使用高速化": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_281",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1517|warmor_1439|warmor_1574|warmor_1515|wcharm_280",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "砥石使用高速化": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_280",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1517|warmor_1439|warmor_1574|warmor_1515|wcharm_207",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "砥石使用高速化": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_207",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1517|warmor_1439|warmor_1574|warmor_1515|wcharm_206",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "砥石使用高速化": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_206",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1512|warmor_1439|warmor_1574|warmor_1520|wcharm_300",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "爆破屬性強化": 3,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_300",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1512|warmor_1439|warmor_1574|warmor_1520|wcharm_281",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "爆破屬性強化": 3,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_281",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1512|warmor_1439|warmor_1574|warmor_1520|wcharm_280",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "爆破屬性強化": 3,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_280",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1512|warmor_1439|warmor_1574|warmor_1520|wcharm_207",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "爆破屬性強化": 3,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_207",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1512|warmor_1439|warmor_1574|warmor_1520|wcharm_206",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "爆破屬性強化": 3,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_206",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1512|warmor_1439|warmor_1574|warmor_1515|wcharm_300",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "爆破屬性強化": 3,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "砥石使用高速化": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_300",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1512|warmor_1439|warmor_1574|warmor_1515|wcharm_281",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "爆破屬性強化": 3,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "砥石使用高速化": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_281",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1512|warmor_1439|warmor_1574|warmor_1515|wcharm_280",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "爆破屬性強化": 3,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "砥石使用高速化": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_280",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1512|warmor_1439|warmor_1574|warmor_1515|wcharm_207",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "爆破屬性強化": 3,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "砥石使用高速化": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_207",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1512|warmor_1439|warmor_1574|warmor_1515|wcharm_206",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "爆破屬性強化": 3,
+          "攻擊": 2,
+          "弱點特效": 3,
+          "看破": 3,
+          "砥石使用高速化": 3,
+          "挑戰者‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 828,
+        "charmId": "wcharm_206",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1577|warmor_1439|warmor_1574|warmor_1520|wcharm_300",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "弱點特效": 3,
+          "迴避性能": 1,
+          "攻擊": 2,
+          "看破": 3,
+          "Inheritance": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 838,
+        "charmId": "wcharm_300",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1577|warmor_1439|warmor_1574|warmor_1520|wcharm_281",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "弱點特效": 3,
+          "迴避性能": 1,
+          "攻擊": 2,
+          "看破": 3,
+          "Inheritance": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 838,
+        "charmId": "wcharm_281",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1577|warmor_1439|warmor_1574|warmor_1520|wcharm_280",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "弱點特效": 3,
+          "迴避性能": 1,
+          "攻擊": 2,
+          "看破": 3,
+          "Inheritance": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 838,
+        "charmId": "wcharm_280",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1577|warmor_1439|warmor_1574|warmor_1520|wcharm_207",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "弱點特效": 3,
+          "迴避性能": 1,
+          "攻擊": 2,
+          "看破": 3,
+          "Inheritance": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 838,
+        "charmId": "wcharm_207",
+        "decorations": [
+          {
+            "decorationId": "wdeco_82",
+            "decorationName": "挑戰珠【２】",
+            "skillName": "挑戰者",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 3,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1577|warmor_1439|warmor_1574|warmor_1520|wcharm_206",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "弱點特效": 3,
+          "迴避性能": 1,
+          "攻擊": 2,
+          "看破": 3,
+          "Inheritance": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 838,
+        "charmId": "wcharm_206",
+        "decorations": [
+          {
+            "decorationId": "wdeco_158",
+            "decorationName": "挑戰珠Ⅱ【４】",
+            "skillName": "挑戰者",
+            "skillLevel": 2,
+            "slotLevel": 4,
+            "placedInSlotLevel": 4,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1577|warmor_1439|warmor_1574|warmor_1515|wcharm_300",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "弱點特效": 3,
+          "迴避性能": 1,
+          "攻擊": 2,
+          "看破": 3,
+          "砥石使用高速化": 3,
+          "Inheritance": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 838,
+        "charmId": "wcharm_300",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1577|warmor_1439|warmor_1574|warmor_1515|wcharm_281",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "弱點特效": 3,
+          "迴避性能": 1,
+          "攻擊": 2,
+          "看破": 3,
+          "砥石使用高速化": 3,
+          "Inheritance": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 838,
+        "charmId": "wcharm_281",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1577|warmor_1439|warmor_1574|warmor_1515|wcharm_280",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "弱點特效": 3,
+          "迴避性能": 1,
+          "攻擊": 2,
+          "看破": 3,
+          "砥石使用高速化": 3,
+          "Inheritance": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 838,
+        "charmId": "wcharm_280",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1577|warmor_1439|warmor_1574|warmor_1515|wcharm_207",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "弱點特效": 3,
+          "迴避性能": 1,
+          "攻擊": 2,
+          "看破": 3,
+          "砥石使用高速化": 3,
+          "Inheritance": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 838,
+        "charmId": "wcharm_207",
+        "decorations": [
+          {
+            "decorationId": "wdeco_82",
+            "decorationName": "挑戰珠【２】",
+            "skillName": "挑戰者",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 3,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1222|warmor_1577|warmor_1439|warmor_1574|warmor_1515|wcharm_206",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "挑戰者": 7,
+          "弱點特效": 3,
+          "迴避性能": 1,
+          "攻擊": 2,
+          "看破": 3,
+          "砥石使用高速化": 3,
+          "Inheritance": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 838,
+        "charmId": "wcharm_206",
+        "decorations": [
+          {
+            "decorationId": "wdeco_158",
+            "decorationName": "挑戰珠Ⅱ【４】",
+            "skillName": "挑戰者",
+            "skillLevel": 2,
+            "slotLevel": 4,
+            "placedInSlotLevel": 4,
+            "source": "head"
+          }
+        ]
+      }
+    ]
+  },
+  "W02_zinogre-essence_might7_excl-fatalis_exact": {
+    "fixedWeaponId": "wweapon_2009",
+    "meta": {
+      "combosEvaluated": 300001,
+      "validBuilds": 299893,
+      "truncated": true,
+      "mode": "exact",
+      "candidatesPerPart": {
+        "head": 10,
+        "chest": 10,
+        "arms": 10,
+        "waist": 10,
+        "legs": 10
+      },
+      "weaponsTried": 1,
+      "charmsTried": 5
+    },
+    "resultCount": 30,
+    "results": [
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1396|wcharm_298",
+        "efr": {
+          "raw": 2107,
+          "element": 419,
+          "total": 3781
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 5,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "看破": 2
+        },
+        "remainingSlots": [
+          4,
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 692,
+        "charmId": "wcharm_298",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1396|wcharm_279",
+        "efr": {
+          "raw": 2107,
+          "element": 419,
+          "total": 3781
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 5,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "看破": 2
+        },
+        "remainingSlots": [
+          4,
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 692,
+        "charmId": "wcharm_279",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1396|wcharm_278",
+        "efr": {
+          "raw": 2107,
+          "element": 419,
+          "total": 3781
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 5,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "看破": 2
+        },
+        "remainingSlots": [
+          4,
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 692,
+        "charmId": "wcharm_278",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1396|wcharm_205",
+        "efr": {
+          "raw": 2107,
+          "element": 419,
+          "total": 3781
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 5,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "看破": 2
+        },
+        "remainingSlots": [
+          4,
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 692,
+        "charmId": "wcharm_205",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1396|wcharm_204",
+        "efr": {
+          "raw": 2107,
+          "element": 419,
+          "total": 3781
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 5,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "看破": 2
+        },
+        "remainingSlots": [
+          4,
+          4,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 692,
+        "charmId": "wcharm_204",
+        "decorations": [
+          {
+            "decorationId": "wdeco_81",
+            "decorationName": "全開珠【２】",
+            "skillName": "力量解放",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1397|warmor_734|warmor_1493|warmor_1160|warmor_1396|wcharm_298",
+        "efr": {
+          "raw": 2107,
+          "element": 419,
+          "total": 3781
+        },
+        "finalSkills": {
+          "強化持續": 2,
+          "超會心": 1,
+          "力量解放": 5,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "看破": 2
+        },
+        "remainingSlots": [
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 692,
+        "charmId": "wcharm_298",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1397|warmor_734|warmor_1493|warmor_1160|warmor_1396|wcharm_279",
+        "efr": {
+          "raw": 2107,
+          "element": 419,
+          "total": 3781
+        },
+        "finalSkills": {
+          "強化持續": 2,
+          "超會心": 1,
+          "力量解放": 5,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "看破": 2
+        },
+        "remainingSlots": [
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 692,
+        "charmId": "wcharm_279",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1397|warmor_734|warmor_1493|warmor_1160|warmor_1396|wcharm_278",
+        "efr": {
+          "raw": 2107,
+          "element": 419,
+          "total": 3781
+        },
+        "finalSkills": {
+          "強化持續": 2,
+          "超會心": 1,
+          "力量解放": 5,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "看破": 2
+        },
+        "remainingSlots": [
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 692,
+        "charmId": "wcharm_278",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1397|warmor_734|warmor_1493|warmor_1160|warmor_1396|wcharm_205",
+        "efr": {
+          "raw": 2107,
+          "element": 419,
+          "total": 3781
+        },
+        "finalSkills": {
+          "強化持續": 2,
+          "超會心": 1,
+          "力量解放": 5,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "看破": 2
+        },
+        "remainingSlots": [
+          4,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 692,
+        "charmId": "wcharm_205",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1397|warmor_734|warmor_1493|warmor_1160|warmor_1396|wcharm_204",
+        "efr": {
+          "raw": 2107,
+          "element": 419,
+          "total": 3781
+        },
+        "finalSkills": {
+          "強化持續": 2,
+          "超會心": 1,
+          "力量解放": 5,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "看破": 2
+        },
+        "remainingSlots": [
+          4,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 692,
+        "charmId": "wcharm_204",
+        "decorations": [
+          {
+            "decorationId": "wdeco_81",
+            "decorationName": "全開珠【２】",
+            "skillName": "力量解放",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1406|wcharm_298",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "雷屬性攻擊強化": 1,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 696,
+        "charmId": "wcharm_298",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1406|wcharm_279",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "雷屬性攻擊強化": 1,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 696,
+        "charmId": "wcharm_279",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1406|wcharm_278",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "雷屬性攻擊強化": 1,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 696,
+        "charmId": "wcharm_278",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1406|wcharm_205",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "雷屬性攻擊強化": 1,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 696,
+        "charmId": "wcharm_205",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1406|wcharm_204",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "雷屬性攻擊強化": 1,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 696,
+        "charmId": "wcharm_204",
+        "decorations": [
+          {
+            "decorationId": "wdeco_81",
+            "decorationName": "全開珠【２】",
+            "skillName": "力量解放",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1401|wcharm_298",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "雷屬性攻擊強化": 3,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 696,
+        "charmId": "wcharm_298",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1401|wcharm_279",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "雷屬性攻擊強化": 3,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 696,
+        "charmId": "wcharm_279",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1401|wcharm_278",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "雷屬性攻擊強化": 3,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 696,
+        "charmId": "wcharm_278",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1401|wcharm_205",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "雷屬性攻擊強化": 3,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 696,
+        "charmId": "wcharm_205",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1401|wcharm_204",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "雷屬性攻擊強化": 3,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 696,
+        "charmId": "wcharm_204",
+        "decorations": [
+          {
+            "decorationId": "wdeco_81",
+            "decorationName": "全開珠【２】",
+            "skillName": "力量解放",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1500|wcharm_298",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "集中": 2,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 698,
+        "charmId": "wcharm_298",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1500|wcharm_279",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "集中": 2,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 698,
+        "charmId": "wcharm_279",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1500|wcharm_278",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "集中": 2,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 698,
+        "charmId": "wcharm_278",
+        "decorations": [
+          {
+            "decorationId": "wdeco_81",
+            "decorationName": "全開珠【２】",
+            "skillName": "力量解放",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1500|wcharm_205",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "集中": 2,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 698,
+        "charmId": "wcharm_205",
+        "decorations": [
+          {
+            "decorationId": "wdeco_157",
+            "decorationName": "全開珠Ⅱ【４】",
+            "skillName": "力量解放",
+            "skillLevel": 2,
+            "slotLevel": 4,
+            "placedInSlotLevel": 4,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1500|wcharm_204",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "集中": 2,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 698,
+        "charmId": "wcharm_204",
+        "decorations": [
+          {
+            "decorationId": "wdeco_157",
+            "decorationName": "全開珠Ⅱ【４】",
+            "skillName": "力量解放",
+            "skillLevel": 2,
+            "slotLevel": 4,
+            "placedInSlotLevel": 4,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_81",
+            "decorationName": "全開珠【２】",
+            "skillName": "力量解放",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1495|wcharm_298",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "集中": 2,
+          "龍封力強化": 1,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 698,
+        "charmId": "wcharm_298",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1495|wcharm_279",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "集中": 2,
+          "龍封力強化": 1,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 698,
+        "charmId": "wcharm_279",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1495|wcharm_278",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "集中": 2,
+          "龍封力強化": 1,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          4,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 698,
+        "charmId": "wcharm_278",
+        "decorations": [
+          {
+            "decorationId": "wdeco_81",
+            "decorationName": "全開珠【２】",
+            "skillName": "力量解放",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1495|wcharm_205",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "集中": 2,
+          "龍封力強化": 1,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 698,
+        "charmId": "wcharm_205",
+        "decorations": [
+          {
+            "decorationId": "wdeco_157",
+            "decorationName": "全開珠Ⅱ【４】",
+            "skillName": "力量解放",
+            "skillLevel": 2,
+            "slotLevel": 4,
+            "placedInSlotLevel": 4,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1402|warmor_734|warmor_1493|warmor_1160|warmor_1495|wcharm_204",
+        "efr": {
+          "raw": 2093,
+          "element": 419,
+          "total": 3768
+        },
+        "finalSkills": {
+          "強化持續": 1,
+          "超會心": 1,
+          "力量解放": 7,
+          "弱點特效": 1,
+          "破壞王": 2,
+          "龍屬性攻擊強化": 5,
+          "集中": 2,
+          "龍封力強化": 1,
+          "力量解放‧極意": 1
+        },
+        "remainingSlots": [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 698,
+        "charmId": "wcharm_204",
+        "decorations": [
+          {
+            "decorationId": "wdeco_157",
+            "decorationName": "全開珠Ⅱ【４】",
+            "skillName": "力量解放",
+            "skillLevel": 2,
+            "slotLevel": 4,
+            "placedInSlotLevel": 4,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_81",
+            "decorationName": "全開珠【２】",
+            "skillName": "力量解放",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      }
+    ]
+  },
+  "W03_compound-deco_free4skills_exact": {
+    "fixedWeaponId": "wweapon_2009",
+    "meta": {
+      "combosEvaluated": 12,
+      "validBuilds": 12,
+      "truncated": false,
+      "mode": "exact",
+      "candidatesPerPart": {
+        "head": 1,
+        "chest": 1,
+        "arms": 1,
+        "waist": 1,
+        "legs": 1
+      },
+      "weaponsTried": 1,
+      "charmsTried": 12
+    },
+    "resultCount": 12,
+    "results": [
+      {
+        "id": "wweapon_2009|warmor_1571|warmor_1572|warmor_1573|warmor_1574|warmor_1575|wcharm_316",
+        "efr": {
+          "raw": 2247,
+          "element": 276,
+          "total": 3351
+        },
+        "finalSkills": {
+          "昏厥耐性": 3,
+          "防禦性能": 3,
+          "弱點特效": 3,
+          "迴避性能": 3,
+          "匠": 5,
+          "看破": 3,
+          "超會心": 3,
+          "Inheritance": 1,
+          "Transcendance": 1,
+          "奪取耐力": 1,
+          "攻擊": 1,
+          "無傷": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 900,
+        "charmId": "wcharm_316",
+        "decorations": [
+          {
+            "decorationId": "wdeco_203",
+            "decorationName": "奪氣‧攻擊珠【４】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 4,
+            "placedInSlotLevel": 4,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_84",
+            "decorationName": "無傷珠【２】",
+            "skillName": "無傷",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1571|warmor_1572|warmor_1573|warmor_1574|warmor_1575|wcharm_284",
+        "efr": {
+          "raw": 2189,
+          "element": 276,
+          "total": 3293
+        },
+        "finalSkills": {
+          "昏厥耐性": 3,
+          "防禦性能": 3,
+          "弱點特效": 3,
+          "迴避性能": 3,
+          "匠": 5,
+          "看破": 3,
+          "超會心": 2,
+          "Inheritance": 1,
+          "Transcendance": 1,
+          "奪取耐力": 1,
+          "攻擊": 1,
+          "無傷": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 900,
+        "charmId": "wcharm_284",
+        "decorations": [
+          {
+            "decorationId": "wdeco_203",
+            "decorationName": "奪氣‧攻擊珠【４】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 4,
+            "placedInSlotLevel": 4,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_84",
+            "decorationName": "無傷珠【２】",
+            "skillName": "無傷",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1571|warmor_1572|warmor_1573|warmor_1574|warmor_1575|wcharm_304",
+        "efr": {
+          "raw": 2177,
+          "element": 276,
+          "total": 3281
+        },
+        "finalSkills": {
+          "昏厥耐性": 3,
+          "防禦性能": 3,
+          "弱點特效": 3,
+          "迴避性能": 3,
+          "匠": 5,
+          "看破": 3,
+          "攻擊": 5,
+          "Inheritance": 1,
+          "Transcendance": 1,
+          "奪取耐力": 1,
+          "無傷": 1,
+          "超會心": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          1
+        ],
+        "totalDefense": 900,
+        "charmId": "wcharm_304",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_84",
+            "decorationName": "無傷珠【２】",
+            "skillName": "無傷",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1571|warmor_1572|warmor_1573|warmor_1574|warmor_1575|wcharm_235",
+        "efr": {
+          "raw": 2172,
+          "element": 276,
+          "total": 3276
+        },
+        "finalSkills": {
+          "昏厥耐性": 3,
+          "防禦性能": 3,
+          "弱點特效": 3,
+          "迴避性能": 3,
+          "匠": 5,
+          "看破": 3,
+          "攻擊": 4,
+          "Inheritance": 1,
+          "Transcendance": 1,
+          "奪取耐力": 1,
+          "無傷": 1,
+          "超會心": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          1
+        ],
+        "totalDefense": 900,
+        "charmId": "wcharm_235",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_84",
+            "decorationName": "無傷珠【２】",
+            "skillName": "無傷",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1571|warmor_1572|warmor_1573|warmor_1574|warmor_1575|wcharm_315",
+        "efr": {
+          "raw": 2148,
+          "element": 276,
+          "total": 3252
+        },
+        "finalSkills": {
+          "昏厥耐性": 3,
+          "防禦性能": 3,
+          "弱點特效": 3,
+          "迴避性能": 3,
+          "匠": 5,
+          "看破": 3,
+          "無傷": 3,
+          "Inheritance": 1,
+          "Transcendance": 1,
+          "奪取耐力": 1,
+          "攻擊": 1,
+          "超會心": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 900,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_203",
+            "decorationName": "奪氣‧攻擊珠【４】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 4,
+            "placedInSlotLevel": 4,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1571|warmor_1572|warmor_1573|warmor_1574|warmor_1575|wcharm_6",
+        "efr": {
+          "raw": 2140,
+          "element": 276,
+          "total": 3244
+        },
+        "finalSkills": {
+          "昏厥耐性": 3,
+          "防禦性能": 3,
+          "弱點特效": 3,
+          "迴避性能": 3,
+          "匠": 5,
+          "看破": 3,
+          "攻擊": 3,
+          "Inheritance": 1,
+          "Transcendance": 1,
+          "奪取耐力": 1,
+          "無傷": 1,
+          "超會心": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          1
+        ],
+        "totalDefense": 900,
+        "charmId": "wcharm_6",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_84",
+            "decorationName": "無傷珠【２】",
+            "skillName": "無傷",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1571|warmor_1572|warmor_1573|warmor_1574|warmor_1575|wcharm_209",
+        "efr": {
+          "raw": 2137,
+          "element": 276,
+          "total": 3241
+        },
+        "finalSkills": {
+          "昏厥耐性": 3,
+          "防禦性能": 3,
+          "弱點特效": 3,
+          "迴避性能": 3,
+          "匠": 5,
+          "看破": 3,
+          "無傷": 2,
+          "Inheritance": 1,
+          "Transcendance": 1,
+          "奪取耐力": 1,
+          "攻擊": 1,
+          "超會心": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 900,
+        "charmId": "wcharm_209",
+        "decorations": [
+          {
+            "decorationId": "wdeco_203",
+            "decorationName": "奪氣‧攻擊珠【４】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 4,
+            "placedInSlotLevel": 4,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1571|warmor_1572|warmor_1573|warmor_1574|warmor_1575|wcharm_5",
+        "efr": {
+          "raw": 2135,
+          "element": 276,
+          "total": 3239
+        },
+        "finalSkills": {
+          "昏厥耐性": 3,
+          "防禦性能": 3,
+          "弱點特效": 3,
+          "迴避性能": 3,
+          "匠": 5,
+          "看破": 3,
+          "攻擊": 2,
+          "Inheritance": 1,
+          "Transcendance": 1,
+          "奪取耐力": 1,
+          "無傷": 1,
+          "超會心": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          1
+        ],
+        "totalDefense": 900,
+        "charmId": "wcharm_5",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_84",
+            "decorationName": "無傷珠【２】",
+            "skillName": "無傷",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1571|warmor_1572|warmor_1573|warmor_1574|warmor_1575|wcharm_60",
+        "efr": {
+          "raw": 2131,
+          "element": 276,
+          "total": 3235
+        },
+        "finalSkills": {
+          "昏厥耐性": 3,
+          "防禦性能": 3,
+          "弱點特效": 3,
+          "迴避性能": 3,
+          "匠": 5,
+          "看破": 3,
+          "奪取耐力": 3,
+          "Inheritance": 1,
+          "Transcendance": 1,
+          "攻擊": 1,
+          "無傷": 1,
+          "超會心": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          1
+        ],
+        "totalDefense": 900,
+        "charmId": "wcharm_60",
+        "decorations": [
+          {
+            "decorationId": "wdeco_83",
+            "decorationName": "攻擊珠【１】",
+            "skillName": "攻擊",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_84",
+            "decorationName": "無傷珠【２】",
+            "skillName": "無傷",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1571|warmor_1572|warmor_1573|warmor_1574|warmor_1575|wcharm_59",
+        "efr": {
+          "raw": 2131,
+          "element": 276,
+          "total": 3235
+        },
+        "finalSkills": {
+          "昏厥耐性": 3,
+          "防禦性能": 3,
+          "弱點特效": 3,
+          "迴避性能": 3,
+          "匠": 5,
+          "看破": 3,
+          "奪取耐力": 2,
+          "Inheritance": 1,
+          "Transcendance": 1,
+          "攻擊": 1,
+          "無傷": 1,
+          "超會心": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          1
+        ],
+        "totalDefense": 900,
+        "charmId": "wcharm_59",
+        "decorations": [
+          {
+            "decorationId": "wdeco_83",
+            "decorationName": "攻擊珠【１】",
+            "skillName": "攻擊",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_84",
+            "decorationName": "無傷珠【２】",
+            "skillName": "無傷",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1571|warmor_1572|warmor_1573|warmor_1574|warmor_1575|wcharm_4",
+        "efr": {
+          "raw": 2131,
+          "element": 276,
+          "total": 3235
+        },
+        "finalSkills": {
+          "昏厥耐性": 3,
+          "防禦性能": 3,
+          "弱點特效": 3,
+          "迴避性能": 3,
+          "匠": 5,
+          "看破": 3,
+          "攻擊": 1,
+          "Inheritance": 1,
+          "Transcendance": 1,
+          "奪取耐力": 1,
+          "無傷": 1,
+          "超會心": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          1
+        ],
+        "totalDefense": 900,
+        "charmId": "wcharm_4",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_84",
+            "decorationName": "無傷珠【２】",
+            "skillName": "無傷",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1571|warmor_1572|warmor_1573|warmor_1574|warmor_1575|wcharm_58",
+        "efr": {
+          "raw": 2131,
+          "element": 276,
+          "total": 3235
+        },
+        "finalSkills": {
+          "昏厥耐性": 3,
+          "防禦性能": 3,
+          "弱點特效": 3,
+          "迴避性能": 3,
+          "匠": 5,
+          "看破": 3,
+          "奪取耐力": 1,
+          "Inheritance": 1,
+          "Transcendance": 1,
+          "攻擊": 1,
+          "無傷": 1,
+          "超會心": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          1
+        ],
+        "totalDefense": 900,
+        "charmId": "wcharm_58",
+        "decorations": [
+          {
+            "decorationId": "wdeco_83",
+            "decorationName": "攻擊珠【１】",
+            "skillName": "攻擊",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_84",
+            "decorationName": "無傷珠【２】",
+            "skillName": "無傷",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      }
+    ]
+  },
+  "W04_repair-tension_atk2-stamina1-nohit1_exact": {
+    "fixedWeaponId": "wweapon_2009",
+    "meta": {
+      "combosEvaluated": 300001,
+      "validBuilds": 300000,
+      "truncated": true,
+      "mode": "exact",
+      "candidatesPerPart": {
+        "head": 9,
+        "chest": 9,
+        "arms": 9,
+        "waist": 9,
+        "legs": 9
+      },
+      "weaponsTried": 1,
+      "charmsTried": 12
+    },
+    "resultCount": 50,
+    "results": [
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1539|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "無傷": 3,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1544|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "無傷": 3,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1440|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "無傷": 3,
+          "拔刀術【力】": 1,
+          "加速再生": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "無傷": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        "totalDefense": 734,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_209",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "無傷": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        "totalDefense": 734,
+        "charmId": "wcharm_209",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_208",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "無傷": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        "totalDefense": 734,
+        "charmId": "wcharm_208",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1295|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "奪取耐力": 2,
+          "超會心": 1,
+          "無傷": 3,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 714,
+        "charmId": "wcharm_315",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1445|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "無傷": 3,
+          "拔刀術【力】": 1,
+          "加速再生": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1529|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "無傷": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 734,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1529|warmor_722|wcharm_209",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "無傷": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 734,
+        "charmId": "wcharm_209",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1529|warmor_722|wcharm_208",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "無傷": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 734,
+        "charmId": "wcharm_208",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1260|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "昏厥耐性": 2,
+          "超會心": 1,
+          "無傷": 3,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 710,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_571|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "超會心": 1,
+          "無傷": 3,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2
+        ],
+        "totalDefense": 622,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1092|warmor_1547|warmor_1439|warmor_1539|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "無傷": 3,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 700,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1092|warmor_1547|warmor_1439|warmor_1544|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "無傷": 3,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 700,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1092|warmor_1547|warmor_1439|warmor_1440|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "無傷": 3,
+          "拔刀術【力】": 1,
+          "加速再生": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 706,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1092|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "無傷": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 716,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1092|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_209",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "無傷": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 716,
+        "charmId": "wcharm_209",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1092|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_208",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "無傷": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 716,
+        "charmId": "wcharm_208",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1092|warmor_1547|warmor_1439|warmor_1295|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "奪取耐力": 2,
+          "超會心": 1,
+          "無傷": 3,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 696,
+        "charmId": "wcharm_315",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1092|warmor_1547|warmor_1439|warmor_1445|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "無傷": 3,
+          "拔刀術【力】": 1,
+          "加速再生": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 706,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1092|warmor_1547|warmor_1439|warmor_1529|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "無傷": 3,
+          "滿足感": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 716,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1092|warmor_1547|warmor_1439|warmor_1529|warmor_722|wcharm_209",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "無傷": 3,
+          "滿足感": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 716,
+        "charmId": "wcharm_209",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1092|warmor_1547|warmor_1439|warmor_1529|warmor_722|wcharm_208",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "無傷": 3,
+          "滿足感": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 716,
+        "charmId": "wcharm_208",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1092|warmor_1547|warmor_1439|warmor_1260|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "昏厥耐性": 2,
+          "超會心": 1,
+          "無傷": 3,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 692,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1092|warmor_1547|warmor_1439|warmor_571|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "超會心": 1,
+          "無傷": 3,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 604,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1539|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 716,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1539|warmor_722|wcharm_209",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 716,
+        "charmId": "wcharm_209",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1539|warmor_722|wcharm_208",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 716,
+        "charmId": "wcharm_208",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1544|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 716,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1544|warmor_722|wcharm_209",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 716,
+        "charmId": "wcharm_209",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1544|warmor_722|wcharm_208",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 716,
+        "charmId": "wcharm_208",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1440|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 722,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1440|warmor_722|wcharm_209",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 722,
+        "charmId": "wcharm_209",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1440|warmor_722|wcharm_208",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 722,
+        "charmId": "wcharm_208",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_304",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 732,
+        "charmId": "wcharm_304",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_235",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 732,
+        "charmId": "wcharm_235",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 732,
+        "charmId": "wcharm_6",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_60",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "超會心": 1,
+          "奪取耐力": 3,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 732,
+        "charmId": "wcharm_60",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 732,
+        "charmId": "wcharm_315",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_5",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 732,
+        "charmId": "wcharm_5",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_59",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "超會心": 1,
+          "奪取耐力": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 732,
+        "charmId": "wcharm_59",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_209",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 732,
+        "charmId": "wcharm_209",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_4",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 732,
+        "charmId": "wcharm_4",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_58",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "超會心": 1,
+          "奪取耐力": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 732,
+        "charmId": "wcharm_58",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_208",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 732,
+        "charmId": "wcharm_208",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1534|warmor_722|wcharm_234",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "超會心": 1,
+          "精靈加護": 1,
+          "拔刀術【力】": 1,
+          "奪取耐力": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 732,
+        "charmId": "wcharm_234",
+        "decorations": [
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1295|warmor_722|wcharm_315",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "奪取耐力": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 712,
+        "charmId": "wcharm_315",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1295|warmor_722|wcharm_209",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "奪取耐力": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 712,
+        "charmId": "wcharm_209",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1312|warmor_1547|warmor_1439|warmor_1295|warmor_722|wcharm_208",
+        "efr": {
+          "raw": 2001,
+          "element": 276,
+          "total": 3105
+        },
+        "finalSkills": {
+          "無傷": 3,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "奪取耐力": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 712,
+        "charmId": "wcharm_208",
+        "decorations": []
+      }
+    ]
+  },
+  "W05_charmpool-craftable_atk5_gs_fast": {
+    "fixedWeaponId": "wweapon_2009",
+    "meta": {
+      "combosEvaluated": 100842,
+      "validBuilds": 100842,
+      "truncated": false,
+      "mode": "fast",
+      "candidatesPerPart": {
+        "head": 7,
+        "chest": 7,
+        "arms": 7,
+        "waist": 7,
+        "legs": 7
+      },
+      "weaponsTried": 1,
+      "charmsTried": 6
+    },
+    "resultCount": 20,
+    "results": [
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1539|warmor_722|wcharm_304",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1539|warmor_722|wcharm_235",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_235",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1539|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1539|warmor_722|wcharm_5",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_5",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1539|warmor_722|wcharm_4",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_4",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1539|warmor_722|wcharm_234",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "精靈加護": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_234",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1544|warmor_722|wcharm_304",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1544|warmor_722|wcharm_235",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_235",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1544|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1544|warmor_722|wcharm_5",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_5",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1544|warmor_722|wcharm_4",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_4",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1544|warmor_722|wcharm_234",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "精靈加護": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_234",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1440|warmor_722|wcharm_304",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1440|warmor_722|wcharm_235",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_235",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1440|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1440|warmor_722|wcharm_5",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_5",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1440|warmor_722|wcharm_4",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_4",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1440|warmor_722|wcharm_234",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "精靈加護": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_234",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1445|warmor_722|wcharm_304",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1445|warmor_722|wcharm_235",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_235",
+        "decorations": []
+      }
+    ]
+  },
+  "W06_fixed-charm_atk5_gs_fast": {
+    "fixedWeaponId": "wweapon_2009",
+    "meta": {
+      "combosEvaluated": 59049,
+      "validBuilds": 59049,
+      "truncated": false,
+      "mode": "fast",
+      "candidatesPerPart": {
+        "head": 9,
+        "chest": 9,
+        "arms": 9,
+        "waist": 9,
+        "legs": 9
+      },
+      "weaponsTried": 1,
+      "charmsTried": 1
+    },
+    "resultCount": 20,
+    "results": [
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_720|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2059,
+          "element": 276,
+          "total": 3163
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "看破": 4,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "飛燕【屬性】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 644,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1092|warmor_1547|warmor_720|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2059,
+          "element": 276,
+          "total": 3163
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "看破": 4,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "飛燕【屬性】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 626,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1232|warmor_1547|warmor_720|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2059,
+          "element": 276,
+          "total": 3163
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "耳塞": 1,
+          "拔刀術【技】": 1,
+          "看破": 4,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "飛燕【屬性】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 628,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1242|warmor_1547|warmor_720|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2059,
+          "element": 276,
+          "total": 3163
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "看破": 4,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "飛燕【屬性】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 644,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_837|warmor_1547|warmor_720|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2059,
+          "element": 276,
+          "total": 3163
+        },
+        "finalSkills": {
+          "快吃": 2,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "看破": 4,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "飛燕【屬性】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 602,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1087|warmor_1547|warmor_720|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2059,
+          "element": 276,
+          "total": 3163
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "火屬性攻擊強化": 2,
+          "拔刀術【技】": 1,
+          "看破": 4,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "飛燕【屬性】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          2,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 626,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_477|warmor_1547|warmor_720|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2059,
+          "element": 276,
+          "total": 3163
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "看破": 4,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "飛燕【屬性】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 540,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1227|warmor_1547|warmor_720|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2059,
+          "element": 276,
+          "total": 3163
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "耳塞": 2,
+          "拔刀術【技】": 1,
+          "看破": 4,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "飛燕【屬性】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 628,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_472|warmor_1547|warmor_720|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2059,
+          "element": 276,
+          "total": 3163
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "火屬性攻擊強化": 1,
+          "拔刀術【技】": 1,
+          "看破": 4,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "飛燕【屬性】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 540,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2034,
+          "element": 276,
+          "total": 3138
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "看破": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 738,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1444|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2034,
+          "element": 276,
+          "total": 3138
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "看破": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 738,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1092|warmor_1547|warmor_1439|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2034,
+          "element": 276,
+          "total": 3138
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "看破": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 720,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1092|warmor_1547|warmor_1444|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2034,
+          "element": 276,
+          "total": 3138
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "看破": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 720,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1232|warmor_1547|warmor_1439|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2034,
+          "element": 276,
+          "total": 3138
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "耳塞": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "看破": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 722,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1232|warmor_1547|warmor_1444|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2034,
+          "element": 276,
+          "total": 3138
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "耳塞": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "看破": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 722,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1242|warmor_1547|warmor_1439|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2034,
+          "element": 276,
+          "total": 3138
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "看破": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 738,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1242|warmor_1547|warmor_1444|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2034,
+          "element": 276,
+          "total": 3138
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "看破": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 738,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_837|warmor_1547|warmor_1439|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2034,
+          "element": 276,
+          "total": 3138
+        },
+        "finalSkills": {
+          "快吃": 2,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "看破": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 696,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_837|warmor_1547|warmor_1444|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2034,
+          "element": 276,
+          "total": 3138
+        },
+        "finalSkills": {
+          "快吃": 2,
+          "攻擊": 7,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "看破": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 696,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1087|warmor_1547|warmor_1439|warmor_1579|warmor_722|wcharm_6",
+        "efr": {
+          "raw": 2034,
+          "element": 276,
+          "total": 3138
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "火屬性攻擊強化": 2,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "看破": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 720,
+        "charmId": "wcharm_6",
+        "decorations": []
+      }
+    ]
+  },
+  "W07_excluded-charm_atk5_gs_fast": {
+    "fixedWeaponId": "wweapon_2009",
+    "meta": {
+      "combosEvaluated": 67228,
+      "validBuilds": 67228,
+      "truncated": false,
+      "mode": "fast",
+      "candidatesPerPart": {
+        "head": 7,
+        "chest": 7,
+        "arms": 7,
+        "waist": 7,
+        "legs": 7
+      },
+      "weaponsTried": 1,
+      "charmsTried": 4
+    },
+    "resultCount": 20,
+    "results": [
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1539|warmor_722|wcharm_304",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1539|warmor_722|wcharm_5",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_5",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1539|warmor_722|wcharm_4",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_4",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1539|warmor_722|wcharm_234",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "精靈加護": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_234",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1544|warmor_722|wcharm_304",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1544|warmor_722|wcharm_5",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_5",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1544|warmor_722|wcharm_4",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_4",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1544|warmor_722|wcharm_234",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "超會心": 1,
+          "精靈加護": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 718,
+        "charmId": "wcharm_234",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1440|warmor_722|wcharm_304",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1440|warmor_722|wcharm_5",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_5",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1440|warmor_722|wcharm_4",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_4",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1440|warmor_722|wcharm_234",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "精靈加護": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_234",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1445|warmor_722|wcharm_304",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1445|warmor_722|wcharm_5",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_5",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1445|warmor_722|wcharm_4",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_4",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1445|warmor_722|wcharm_234",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "超會心": 1,
+          "精靈加護": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 724,
+        "charmId": "wcharm_234",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1260|warmor_722|wcharm_304",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "昏厥耐性": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 710,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1260|warmor_722|wcharm_5",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "昏厥耐性": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 710,
+        "charmId": "wcharm_5",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1260|warmor_722|wcharm_4",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "昏厥耐性": 2,
+          "超會心": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 710,
+        "charmId": "wcharm_4",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1439|warmor_1260|warmor_722|wcharm_234",
+        "efr": {
+          "raw": 1979,
+          "element": 276,
+          "total": 3083
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "昏厥耐性": 2,
+          "超會心": 1,
+          "精靈加護": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1
+        ],
+        "totalDefense": 710,
+        "charmId": "wcharm_234",
+        "decorations": []
+      }
+    ]
+  },
+  "W08_weapon-augment_delta+virtual-setbonus_exact": {
+    "fixedWeaponId": "wweapon_3237",
+    "meta": {
+      "combosEvaluated": 6000,
+      "validBuilds": 6000,
+      "truncated": false,
+      "mode": "exact",
+      "candidatesPerPart": {
+        "head": 1,
+        "chest": 1,
+        "arms": 10,
+        "waist": 10,
+        "legs": 10
+      },
+      "weaponsTried": 1,
+      "charmsTried": 6
+    },
+    "resultCount": 20,
+    "results": [
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_1319|warmor_1320|warmor_1326|wcharm_304",
+        "efr": {
+          "raw": 2501,
+          "element": 205,
+          "total": 3320
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "熱傷害無效": 1,
+          "爆破屬性強化": 3,
+          "攻擊": 5,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          2
+        ],
+        "totalDefense": 596,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_1319|warmor_1320|warmor_1321|wcharm_304",
+        "efr": {
+          "raw": 2501,
+          "element": 205,
+          "total": 3320
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "熱傷害無效": 1,
+          "爆破屬性強化": 4,
+          "攻擊": 5,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          2,
+          2
+        ],
+        "totalDefense": 596,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_1319|warmor_1320|warmor_582|wcharm_304",
+        "efr": {
+          "raw": 2501,
+          "element": 205,
+          "total": 3320
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "熱傷害無效": 1,
+          "爆破屬性強化": 2,
+          "攻擊": 5,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          2,
+          1
+        ],
+        "totalDefense": 504,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_1319|warmor_1320|warmor_577|wcharm_304",
+        "efr": {
+          "raw": 2501,
+          "element": 205,
+          "total": 3320
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "熱傷害無效": 1,
+          "爆破屬性強化": 3,
+          "攻擊": 5,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          2
+        ],
+        "totalDefense": 504,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_1319|warmor_576|warmor_1326|wcharm_304",
+        "efr": {
+          "raw": 2501,
+          "element": 205,
+          "total": 3320
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "熱傷害無效": 1,
+          "爆破屬性強化": 3,
+          "攻擊": 5,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          2
+        ],
+        "totalDefense": 504,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_1319|warmor_576|warmor_1321|wcharm_304",
+        "efr": {
+          "raw": 2501,
+          "element": 205,
+          "total": 3320
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "熱傷害無效": 1,
+          "爆破屬性強化": 4,
+          "攻擊": 5,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          2,
+          2
+        ],
+        "totalDefense": 504,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_1319|warmor_576|warmor_582|wcharm_304",
+        "efr": {
+          "raw": 2501,
+          "element": 205,
+          "total": 3320
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "熱傷害無效": 1,
+          "爆破屬性強化": 2,
+          "攻擊": 5,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          2,
+          1
+        ],
+        "totalDefense": 412,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_1319|warmor_576|warmor_577|wcharm_304",
+        "efr": {
+          "raw": 2501,
+          "element": 205,
+          "total": 3320
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "熱傷害無效": 1,
+          "爆破屬性強化": 3,
+          "攻擊": 5,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          2
+        ],
+        "totalDefense": 412,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_575|warmor_1320|warmor_1326|wcharm_304",
+        "efr": {
+          "raw": 2501,
+          "element": 205,
+          "total": 3320
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "爆破屬性強化": 3,
+          "攻擊": 5,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "totalDefense": 504,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_575|warmor_1320|warmor_1321|wcharm_304",
+        "efr": {
+          "raw": 2501,
+          "element": 205,
+          "total": 3320
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "爆破屬性強化": 4,
+          "攻擊": 5,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          2,
+          1
+        ],
+        "totalDefense": 504,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_575|warmor_1320|warmor_582|wcharm_304",
+        "efr": {
+          "raw": 2501,
+          "element": 205,
+          "total": 3320
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "爆破屬性強化": 2,
+          "攻擊": 5,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          1,
+          1
+        ],
+        "totalDefense": 412,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_575|warmor_1320|warmor_577|wcharm_304",
+        "efr": {
+          "raw": 2501,
+          "element": 205,
+          "total": 3320
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "爆破屬性強化": 3,
+          "攻擊": 5,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          1
+        ],
+        "totalDefense": 412,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_575|warmor_576|warmor_1326|wcharm_304",
+        "efr": {
+          "raw": 2501,
+          "element": 205,
+          "total": 3320
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "爆破屬性強化": 3,
+          "攻擊": 5,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          1
+        ],
+        "totalDefense": 412,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_575|warmor_576|warmor_1321|wcharm_304",
+        "efr": {
+          "raw": 2501,
+          "element": 205,
+          "total": 3320
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "爆破屬性強化": 4,
+          "攻擊": 5,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          2,
+          1
+        ],
+        "totalDefense": 412,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_575|warmor_576|warmor_582|wcharm_304",
+        "efr": {
+          "raw": 2501,
+          "element": 205,
+          "total": 3320
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "爆破屬性強化": 2,
+          "攻擊": 5,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          1,
+          1
+        ],
+        "totalDefense": 320,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_575|warmor_576|warmor_577|wcharm_304",
+        "efr": {
+          "raw": 2501,
+          "element": 205,
+          "total": 3320
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "爆破屬性強化": 3,
+          "攻擊": 5,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          1
+        ],
+        "totalDefense": 320,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_1319|warmor_1320|warmor_1326|wcharm_235",
+        "efr": {
+          "raw": 2497,
+          "element": 205,
+          "total": 3316
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "熱傷害無效": 1,
+          "爆破屬性強化": 3,
+          "攻擊": 4,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          4,
+          3,
+          2
+        ],
+        "totalDefense": 596,
+        "charmId": "wcharm_235",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_1319|warmor_1320|warmor_1321|wcharm_235",
+        "efr": {
+          "raw": 2497,
+          "element": 205,
+          "total": 3316
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "熱傷害無效": 1,
+          "爆破屬性強化": 4,
+          "攻擊": 4,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          2,
+          2
+        ],
+        "totalDefense": 596,
+        "charmId": "wcharm_235",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_1319|warmor_1320|warmor_582|wcharm_235",
+        "efr": {
+          "raw": 2497,
+          "element": 205,
+          "total": 3316
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "熱傷害無效": 1,
+          "爆破屬性強化": 2,
+          "攻擊": 4,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          2,
+          1
+        ],
+        "totalDefense": 504,
+        "charmId": "wcharm_235",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3237|warmor_573|warmor_574|warmor_1319|warmor_1320|warmor_577|wcharm_235",
+        "efr": {
+          "raw": 2497,
+          "element": 205,
+          "total": 3316
+        },
+        "finalSkills": {
+          "力量解放": 5,
+          "特殊射擊強化": 2,
+          "弱點特效": 3,
+          "熱傷害無效": 1,
+          "爆破屬性強化": 3,
+          "攻擊": 4,
+          "達人藝": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          2
+        ],
+        "totalDefense": 504,
+        "charmId": "wcharm_235",
+        "decorations": []
+      }
+    ]
+  },
+  "W09_efr-ordering_atk4-critboost3_gs_exact": {
+    "fixedWeaponId": "wweapon_2009",
+    "meta": {
+      "combosEvaluated": 300001,
+      "validBuilds": 298970,
+      "truncated": true,
+      "mode": "exact",
+      "candidatesPerPart": {
+        "head": 9,
+        "chest": 9,
+        "arms": 9,
+        "waist": 9,
+        "legs": 9
+      },
+      "weaponsTried": 1,
+      "charmsTried": 9
+    },
+    "resultCount": 20,
+    "results": [
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1539|warmor_1475|wcharm_304",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_304",
+        "decorations": [
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1539|warmor_1475|wcharm_235",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_235",
+        "decorations": [
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1539|warmor_1475|wcharm_6",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_6",
+        "decorations": [
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1539|warmor_1475|wcharm_316",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_316",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1539|warmor_1475|wcharm_5",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_5",
+        "decorations": [
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1539|warmor_1475|wcharm_284",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_284",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1539|warmor_1475|wcharm_4",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_4",
+        "decorations": [
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1539|warmor_1475|wcharm_221",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_221",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1539|warmor_1475|wcharm_234",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "精靈加護": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_234",
+        "decorations": [
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1544|warmor_1475|wcharm_304",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_304",
+        "decorations": [
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1544|warmor_1475|wcharm_235",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_235",
+        "decorations": [
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1544|warmor_1475|wcharm_6",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_6",
+        "decorations": [
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1544|warmor_1475|wcharm_316",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_316",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1544|warmor_1475|wcharm_5",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_5",
+        "decorations": [
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1544|warmor_1475|wcharm_284",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_284",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1544|warmor_1475|wcharm_4",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_4",
+        "decorations": [
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1544|warmor_1475|wcharm_221",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_221",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1544|warmor_1475|wcharm_234",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "精靈加護": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          3,
+          3,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 800,
+        "charmId": "wcharm_234",
+        "decorations": [
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1440|warmor_1475|wcharm_304",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "耳塞": 1,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 806,
+        "charmId": "wcharm_304",
+        "decorations": [
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      },
+      {
+        "id": "wweapon_2009|warmor_1237|warmor_1547|warmor_1369|warmor_1440|warmor_1475|wcharm_235",
+        "efr": {
+          "raw": 2024,
+          "element": 302,
+          "total": 3232
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "超會心": 3,
+          "轉禍為福": 1,
+          "耳塞": 1,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          3,
+          3,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        "totalDefense": 806,
+        "charmId": "wcharm_235",
+        "decorations": [
+          {
+            "decorationId": "wdeco_88",
+            "decorationName": "超心珠【２】",
+            "skillName": "超會心",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 2,
+            "source": "head"
+          }
+        ]
+      }
+    ]
+  },
+  "W10_search-ls_atk4_mindef_fast": {
+    "fixedWeaponId": null,
+    "meta": {
+      "combosEvaluated": 56250,
+      "validBuilds": 56250,
+      "truncated": false,
+      "mode": "fast",
+      "candidatesPerPart": {
+        "head": 5,
+        "chest": 5,
+        "arms": 5,
+        "waist": 5,
+        "legs": 5
+      },
+      "weaponsTried": 3,
+      "charmsTried": 6
+    },
+    "resultCount": 20,
+    "results": [
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1539|warmor_1475|wcharm_304",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 804,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1539|warmor_1475|wcharm_235",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 804,
+        "charmId": "wcharm_235",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1539|warmor_1475|wcharm_6",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 804,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1539|warmor_1475|wcharm_5",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 804,
+        "charmId": "wcharm_5",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1539|warmor_1475|wcharm_4",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 804,
+        "charmId": "wcharm_4",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1539|warmor_1475|wcharm_234",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "精靈加護": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 804,
+        "charmId": "wcharm_234",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1544|warmor_1475|wcharm_304",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 804,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1544|warmor_1475|wcharm_235",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 804,
+        "charmId": "wcharm_235",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1544|warmor_1475|wcharm_6",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 804,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1544|warmor_1475|wcharm_5",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 804,
+        "charmId": "wcharm_5",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1544|warmor_1475|wcharm_4",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 804,
+        "charmId": "wcharm_4",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1544|warmor_1475|wcharm_234",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "龍耐性": 3,
+          "怨恨": 2,
+          "精靈加護": 1,
+          "拔刀術【力】": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 804,
+        "charmId": "wcharm_234",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1440|warmor_1475|wcharm_304",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "怨恨": 2,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 810,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1440|warmor_1475|wcharm_235",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "怨恨": 2,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 810,
+        "charmId": "wcharm_235",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1440|warmor_1475|wcharm_6",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "怨恨": 2,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 810,
+        "charmId": "wcharm_6",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1440|warmor_1475|wcharm_5",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "怨恨": 2,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 810,
+        "charmId": "wcharm_5",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1440|warmor_1475|wcharm_4",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "怨恨": 2,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 810,
+        "charmId": "wcharm_4",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1440|warmor_1475|wcharm_234",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "怨恨": 2,
+          "精靈加護": 1,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 810,
+        "charmId": "wcharm_234",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1445|warmor_1475|wcharm_304",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "怨恨": 2,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 810,
+        "charmId": "wcharm_304",
+        "decorations": []
+      },
+      {
+        "id": "wweapon_3241|warmor_1237|warmor_1547|warmor_1439|warmor_1445|warmor_1475|wcharm_235",
+        "efr": {
+          "raw": 1579,
+          "element": 175,
+          "total": 2280
+        },
+        "finalSkills": {
+          "攻擊": 7,
+          "滿足感": 1,
+          "拔刀術【技】": 1,
+          "挑戰者": 2,
+          "耳塞": 1,
+          "怨恨": 2,
+          "拔刀術【力】": 1,
+          "加速再生": 1
+        },
+        "remainingSlots": [
+          4,
+          4,
+          4,
+          3,
+          3,
+          3,
+          2,
+          2,
+          2,
+          1
+        ],
+        "totalDefense": 810,
+        "charmId": "wcharm_235",
+        "decorations": []
+      }
+    ]
+  }
+}
