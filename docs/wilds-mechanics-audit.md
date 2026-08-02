@@ -96,6 +96,23 @@
 
 ---
 
+## 10. Gogmazios 擬態（Phase 2 armor→set 引用鏈實抓新增）
+
+- **先驗**：Phase 0 未取證防具→set 引用鏈；Phase 1 schema `setBonusId?: string` 單值。
+- **證據**（`scripts/wilds/.cache/armor.en.json` 實抓，714 件全掃）：
+  - 件層級 set 技能數：0 個 **398** / 1 個 **306**（乾淨）/ >1 個 **10**。
+  - 10 件全為 **Gogmazios α（armorSet 181）/ β（182）** 各 5 件。**每件恰帶 2 個 set 技能**＝
+    原生 `Gogmapocalypse`（id 178，α/β 皆有）+ **1 個借用**魔物 set；整套 5 件**聚合** 6 個 distinct set
+    （Gogmapocalypse + 5 借用）。例：Gogmazios Helm α = Gogmapocalypse + Zoh Shia's Pulse(id 51)。
+  - group：件層級 0 個 120 / 1 個 594（無多 group）；set+group 並存 **296 件**（雙軸成立）。
+- **定案**：schema 單值 `setBonusId` 裝不下 Gogmazios 多套裝，且 World 已用單值不可改陣列。
+  裁決採 **additive**：`setBonusId`＝主歸屬（Gogmazios 填原生 Gogmapocalypse；306 乾淨件與 World 零改動），
+  新增 `extraSetBonusIds?: string[]`＝借用 set（不含 setBonusId 自身）。commit `cd0f741`。
+- **⚠️ Phase 3 引擎義務（先寫進文件防遺忘，World Fatalis 件裁切教訓的 Wilds 對應）**：
+  (a) `computeSetBonusSkills` 統計件數時吃 **setBonusId ∪ extraSetBonusIds**；
+  (b) `equipment-pools` 相關度裁切**必須給這 10 件借用價值評分**，否則搜尋會把 Gogmazios 件當「自身不帶
+  目標 set 技能」剪掉（＝World 把 Fatalis 件剪掉的同型錯誤）。
+
 ## 定案總表（先驗 vs 實測）
 
 | # | 機制 | 先驗是否成立 | 關鍵定案 |

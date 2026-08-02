@@ -127,3 +127,66 @@ Phase 0 以「版本（1.041≥1.040）+ zh 名逐一對齊 + 結構欄位齊備
   本計畫僅以「自我 diff → 空報告」驗證可跑（Phase 2）。
 - **§A.3 假訊息**：本輪於 mhdb/Kiranico 官方源**未遇**任何「TU5 / Abyssal」內容；官方基礎版停在 TU4/1.041，
   與 PLAN §A 一致。若後續於非官方源遇到，一律不採信並記出處。
+
+---
+
+## §6 Phase 2 匯入結果落地（2026-08-02）
+
+管線：`scripts/wilds/fetch-mhdb.mjs`（en+zh-Hant 抓取→`.cache/`，gitignore、重跑零抓取）
+→ `import-wilds.mjs`（→`src/data/wilds/*.json`，機械產生絕不手改）
+→ `audit-wilds.mjs`（資料層稽核）→ `diff-report.mjs`（版本 diff 骨架）。
+
+### 產出筆數（id 慣例 `wa_/ww_/wd_/wc_/wsb_/wg_`）
+
+| 檔 | 筆數 | 備註 |
+|---|---|---|
+| armors.json | 714 | setBonusId/extraSetBonusIds/groupId derive；defense=base、rankLabel 上/下位 |
+| weapons.json | 1188 | 14 武種；attack=damage.display（同 World 尺度）；斬味 base=max 佔位；Artian 28 tag |
+| decorations.json | 361 | pool=kind（weapon 295/armor 66）；複合珠 173 帶 SkillMap |
+| charms.json | 183 | 60 可生產家族**攤平逐級**（比照 World per-rank）；無洞 slots:[] |
+| skills.json | 179 | kind 四類 + maxLevel（=max rank level）|
+| setBonuses.json | 25 | ranks 承載自身效果@門檻（全 [2,4]）；skillName=自身 zh 名 |
+| groupSkills.json | 17 | 門檻恆 [3]（資料驅動）|
+| weaponTypes.json | 14 | zh 官方標準名（固定對照）|
+| manifest.json | — | dataVersion "1.041" + mhdb snapshot 2026-08-02 + 筆數指紋 + kiranico 1.040 |
+
+**重跑決定性**：`import-wilds.mjs` 連跑兩次，`src/data/wilds/*.json` sha256 逐位元一致 ✓。
+
+### 數量級對照（vs Phase 0）差異分類
+
+- armor 714 / weapons 1188 / decorations 361 / skills 179：**與 Phase 0 完全一致**。
+- **charms**：Phase 0 記「可生產 64 系列 + RNG 4」為**低估性誤植**（實為 60 可生產 + 4 RNG = 64 total）；
+  攤平逐級後 183 筆。RNG 4 筆不進候選池（Phase 3/5 使用者庫），留存供 UI 驗證：
+  Unknown(r5)/Historical(r6)/Secret(r7)/Golden Age(r8)，皆 skills:[]、slots:[]。
+- setBonuses 25 / groupSkills 17：與 Phase 0 set/group 技能數一致。
+
+### 稽核結果（`audit-wilds.mjs` 全 PASS）
+
+- 收支：slot ∈ {1,2,3}、rarity ∈ [1,8]。
+- set/group 歸屬完整（無 dangling 引用、無孤兒表項）；extraSetBonusIds 無含自身、恰 10 件（Gogmazios）。
+- **池別一致性：武器珠/防具珠技能池別零跨池例外**。
+- **武器無 seed 技能 98/1188 分佈查明**：每武種均 7 把（14×7=98）。按 rarity {1:14, 6:14, 7:14, 8:56}；
+  其中 **Artian 基底 28/28**（隨機強化不在資料 → seed 空，正確）+ 14 rarity-1 起始武器 + 其餘高 rarity。
+  非資料缺陷，為 Artian/起始武器的合理分佈。
+
+### Kiranico 交叉抽驗 + 1.041 白名單
+
+- **技能**（Phase 0）：40+ 筆 zh 名與 mhdb 逐一吻合。
+- **裝飾珠**（本輪瀏覽器渲染 `mhwilds.kiranico.com/zh-Hant/data/decorations`）：15 筆珠名+技能組成與 mhdb
+  **15/15 完全一致**（含複合珠：守勢・匠珠【3】=攻擊守勢+匠、火炎・屬會珠【3】=火屬性攻擊強化+會心擊【屬性】…）。
+- **1.041-only 白名單**（Kiranico 停 1.040，下列在 Kiranico 缺席＝**版本差非缺陷**）：
+  Sororal α 系列、Shatterseal/Shatterseal Drakesnest、Gogmazios α/β + Gogmapocalypse、γ 系列（Rey Sand* γ 等 AT 獎勵）。
+- 防具逐項數值 + 斬味色帶的完整 Kiranico 交叉：斬味語意屬 **Phase 4 考證**（`wilds-sharpness-audit.md`）；
+  數值面以本輪資料層稽核（收支/歸屬/池別全 PASS）+ 名稱強對齊背書，完整逐值 Kiranico scrape 依 SPA 成本
+  **deferred**（proportionate，點名）。
+
+### zh 覆蓋率終值
+
+- **zh-Hant 100%**：import 全量 EN-fallback = **0**；audit 複驗 armor/deco/skill 名皆含非 ASCII，無殘留。
+  真缺清單：**空**（Phase 0 宣稱 100% 經全量匯入證實）。
+
+### manifest pin 方式與理由
+
+- 純 live API，mhdb-wilds 無可直接 pin 的資料 commit（GitHub repo 為工具鏈非快照），
+  故 pin = **snapshot 日期（2026-08-02）+ 全類目筆數指紋（armor714/weapons1188/deco361/charms64/skills179）**，
+  寫入 `.cache/_meta.json`（首抓一次、重跑不覆蓋 → import 決定性），再由 manifest.json 落地。

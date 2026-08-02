@@ -52,3 +52,6 @@ scripts/world/.cache/
 
 # World 推薦配裝 Game8 文章快取（scrape-game8-mhwi.mjs 用；重跑零抓取）
 scripts/world/.game8-mhwi-cache/
+
+# Wilds 匯入管線快取（mhdb-wilds API en+zh-Hant 抓取；重跑零抓取）
+scripts/wilds/.cache/

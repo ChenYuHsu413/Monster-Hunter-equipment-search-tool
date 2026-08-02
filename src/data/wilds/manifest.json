@@ -1,0 +1,18 @@
+{
+  "dataVersion": "1.041",
+  "sources": {
+    "mhdb": {
+      "snapshotDate": "2026-08-02",
+      "counts": {
+        "armor": 714,
+        "weapons": 1188,
+        "decorations": 361,
+        "charms": 64,
+        "skills": 179
+      }
+    },
+    "kiranico": {
+      "ver": "1.040"
+    }
+  }
+}

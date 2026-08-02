@@ -1,0 +1,19 @@
+[
+  {"id":"wg_4","nameZh":"護龍的守護","nameEn":"Guardian's Protection","ranks":[{"pieces":3,"skillName":"護龍的守護","skillLevel":1}]},
+  {"id":"wg_10","nameZh":"霸主的自尊","nameEn":"Lord's Favor","ranks":[{"pieces":3,"skillName":"霸主的自尊","skillLevel":1}]},
+  {"id":"wg_17","nameZh":"堆疊鱗片的手藝","nameEn":"Scale Layering","ranks":[{"pieces":3,"skillName":"堆疊鱗片的手藝","skillLevel":1}]},
+  {"id":"wg_19","nameZh":"皮革製品的柔韌性","nameEn":"Flexible Leathercraft","ranks":[{"pieces":3,"skillName":"皮革製品的柔韌性","skillLevel":1}]},
+  {"id":"wg_20","nameZh":"前輩的指引","nameEn":"Imparted Wisdom","ranks":[{"pieces":3,"skillName":"前輩的指引","skillLevel":1}]},
+  {"id":"wg_27","nameZh":"護龍的脈動","nameEn":"Guardian's Pulse","ranks":[{"pieces":3,"skillName":"護龍的脈動","skillLevel":1}]},
+  {"id":"wg_73","nameZh":"榮光嘉譽","nameEn":"Glory's Favor","ranks":[{"pieces":3,"skillName":"榮光嘉譽","skillLevel":1}]},
+  {"id":"wg_74","nameZh":"慶典巡禮","nameEn":"Festival Spirit","ranks":[{"pieces":3,"skillName":"慶典巡禮","skillLevel":1}]},
+  {"id":"wg_89","nameZh":"皮革製品的滑順質感","nameEn":"Buttery Leathercraft","ranks":[{"pieces":3,"skillName":"皮革製品的滑順質感","skillLevel":1}]},
+  {"id":"wg_97","nameZh":"毛皮的誘惑","nameEn":"Alluring Pelt","ranks":[{"pieces":3,"skillName":"毛皮的誘惑","skillLevel":1}]},
+  {"id":"wg_131","nameZh":"霸主之魂","nameEn":"Lord's Soul","ranks":[{"pieces":3,"skillName":"霸主之魂","skillLevel":1}]},
+  {"id":"wg_132","nameZh":"鋪排鱗片的技巧","nameEn":"Scaling Prowess","ranks":[{"pieces":3,"skillName":"鋪排鱗片的技巧","skillLevel":1}]},
+  {"id":"wg_139","nameZh":"甲蟲的擬態","nameEn":"Neopteron Camouflage","ranks":[{"pieces":3,"skillName":"甲蟲的擬態","skillLevel":1}]},
+  {"id":"wg_148","nameZh":"甲蟲的直覺","nameEn":"Neopteron Alert","ranks":[{"pieces":3,"skillName":"甲蟲的直覺","skillLevel":1}]},
+  {"id":"wg_150","nameZh":"毛皮的昂揚","nameEn":"Fortifying Pelt","ranks":[{"pieces":3,"skillName":"毛皮的昂揚","skillLevel":1}]},
+  {"id":"wg_155","nameZh":"霸主的盛怒","nameEn":"Lord's Fury","ranks":[{"pieces":3,"skillName":"霸主的盛怒","skillLevel":1}]},
+  {"id":"wg_157","nameZh":"拳法的極意者","nameEn":"Master of the Fist","ranks":[{"pieces":3,"skillName":"拳法的極意者","skillLevel":1}]}
+]
