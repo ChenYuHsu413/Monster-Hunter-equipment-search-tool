@@ -265,6 +265,38 @@ const SCENARIOS = [
       resultLimit: 20,
     },
   },
+  {
+    // 複合珠有界修復（尾巴 D）**實際觸發**：釘死 find-repair-combo 掃出的 (E) 案例
+    // （貪婪過度搶 slot4 給奪氣‧攻擊珠、餓死只能用 slot2 的無傷 → 貪婪失敗；修復偏好單珠救活）。
+    // 洞池 [4,1,1]；block 12 顆覆蓋 req 的護石逼 NO_CHARM（重現無護石掃描場景）。決定性釘死修復分支。
+    name: "W11_repair-trigger_fixed-combo_exact",
+    req: {
+      weaponType: "great-sword",
+      weaponSearchMode: "fixed",
+      fixedWeaponId: GS_R12.id,
+      charms: [],
+      fixedParts: {
+        head: "warmor_542",
+        chest: "warmor_843",
+        arms: "warmor_70",
+        waist: "warmor_1170",
+        legs: "warmor_252",
+      },
+      excludedItems: {
+        armorIds: [],
+        weaponIds: [],
+        charmIds: [
+          "wcharm_4", "wcharm_5", "wcharm_6", "wcharm_235", "wcharm_58", "wcharm_59",
+          "wcharm_60", "wcharm_208", "wcharm_209", "wcharm_234", "wcharm_304", "wcharm_315",
+        ],
+      },
+      requiredSkills: { 攻擊: 2, 奪取耐力: 1, 無傷: 1 },
+      excludedSkills: [],
+      reservedSlots: RESERVED0,
+      searchMode: "exact",
+      resultLimit: 5,
+    },
+  },
 ];
 
 // ---- 每套結果的精簡序列化（保留所有影響行為的欄位；含 World 複合珠 decorationName）----

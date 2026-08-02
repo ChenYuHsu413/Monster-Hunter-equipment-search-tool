@@ -8826,5 +8826,79 @@
         "decorations": []
       }
     ]
+  },
+  "W11_repair-trigger_fixed-combo_exact": {
+    "fixedWeaponId": "wweapon_2009",
+    "meta": {
+      "combosEvaluated": 1,
+      "validBuilds": 1,
+      "truncated": false,
+      "mode": "exact",
+      "candidatesPerPart": {
+        "head": 1,
+        "chest": 1,
+        "arms": 1,
+        "waist": 1,
+        "legs": 1
+      },
+      "weaponsTried": 1,
+      "charmsTried": 0
+    },
+    "resultCount": 1,
+    "results": [
+      {
+        "id": "wweapon_2009|warmor_542|warmor_843|warmor_70|warmor_1170|warmor_252|none",
+        "efr": {
+          "raw": 1787,
+          "element": 276,
+          "total": 2891
+        },
+        "finalSkills": {
+          "屬性解放／裝填擴充": 1,
+          "龍耐性": 1,
+          "迴避距離UP": 1,
+          "攻擊": 2,
+          "飛身躍入": 1,
+          "收刀術": 2,
+          "體力回復量UP": 2,
+          "適應水場‧深雪": 2,
+          "水屬性攻擊強化": 1,
+          "奪取耐力": 1,
+          "無傷": 1
+        },
+        "remainingSlots": [],
+        "totalDefense": 378,
+        "charmId": null,
+        "decorations": [
+          {
+            "decorationId": "wdeco_83",
+            "decorationName": "攻擊珠【１】",
+            "skillName": "攻擊",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_64",
+            "decorationName": "奪氣珠【１】",
+            "skillName": "奪取耐力",
+            "skillLevel": 1,
+            "slotLevel": 1,
+            "placedInSlotLevel": 1,
+            "source": "head"
+          },
+          {
+            "decorationId": "wdeco_84",
+            "decorationName": "無傷珠【２】",
+            "skillName": "無傷",
+            "skillLevel": 1,
+            "slotLevel": 2,
+            "placedInSlotLevel": 4,
+            "source": "head"
+          }
+        ]
+      }
+    ]
   }
 }
