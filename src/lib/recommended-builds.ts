@@ -33,6 +33,10 @@ export const CATEGORY_LABELS: Record<RecommendedCategory, string> = {
   worldEndgame: "畢業旗艦裝（Meta）",
   worldMeta: "畢業 Meta 裝",
   worldProgression: "進度拓荒裝",
+  // Wilds（Game8 MHWilds，實測收斂 3 階，見 docs/wilds-game8-audit.md）
+  wildsProgression: "進度拓荒裝（HR9–36）",
+  wildsHighRank: "上位裝（HR50+）",
+  wildsEndgame: "畢業裝（HR100+ Meta）",
 };
 
 /** World 分區顯示順序（實力遞增：上位 HR → Iceborne 進度 → Meta → 畢業旗艦）。
@@ -43,6 +47,13 @@ export const WORLD_STAGE_CATEGORY_ORDER: RecommendedCategory[] = [
   "worldProgression",
   "worldMeta",
   "worldEndgame",
+];
+
+/** Wilds 分區顯示順序（HR 遞增：進度 HR9–36 → 上位 HR50 → 畢業 HR100+）。 */
+export const WILDS_STAGE_CATEGORY_ORDER: RecommendedCategory[] = [
+  "wildsProgression",
+  "wildsHighRank",
+  "wildsEndgame",
 ];
 
 /** 分區顯示順序（下位 → 上位過渡 → 上位畢業 → 大師位拓荒 → 大師位畢業）。 */
@@ -135,6 +146,58 @@ export async function createWorldNameResolver(): Promise<WorldNameResolver> {
     loadGameData("world"),
     import("@/data/world/decorations.json"),
     import("@/data/world/charms.json"),
+  ]);
+  const decoName: Record<string, string> = Object.fromEntries(
+    (decMod.default as unknown as { id: string; nameZh: string }[]).map((d) => [d.id, d.nameZh])
+  );
+  const charmName: Record<string, string> = Object.fromEntries(
+    (chMod.default as unknown as { id: string; name: string }[]).map((c) => [c.id, c.name])
+  );
+  return {
+    armor: (id, rawEn) => {
+      const a = id ? gd.armorById[id] : undefined;
+      return a ? { name: a.nameZh, resolved: true } : worldFallback(rawEn);
+    },
+    weapon: (id, rawEn) => {
+      const w = id ? gd.weaponById[id] : undefined;
+      return w ? { name: w.nameZh, resolved: true } : worldFallback(rawEn);
+    },
+    deco: (id, rawEn) => {
+      const n = id ? decoName[id] : undefined;
+      return n ? { name: n, resolved: true } : worldFallback(rawEn);
+    },
+    charm: (id, rawEn) => {
+      const n = id ? charmName[id] : undefined;
+      return n ? { name: n, resolved: true } : worldFallback(rawEn);
+    },
+  };
+}
+
+// ═══════════════════════ Wilds（Phase 6b）推薦資料 ═══════════════════════
+// 與 World 同策略：獨立 lazy chunk + 簡化名稱解析（schema 同 World）。
+
+let wildsCache: RecommendedIndex | null = null;
+let wildsInflight: Promise<RecommendedIndex> | null = null;
+
+/** 載入 Wilds 推薦配裝索引（獨立動態 chunk，不進首屏）。 */
+export function loadWildsRecommendedBuilds(): Promise<RecommendedIndex> {
+  if (wildsCache) return Promise.resolve(wildsCache);
+  if (!wildsInflight) {
+    wildsInflight = import("@/data/wilds/recommended-builds.json").then((mod) => {
+      const file = mod.default as unknown as RecommendedBuildsFile;
+      wildsCache = buildIndex(file.builds);
+      return wildsCache;
+    });
+  }
+  return wildsInflight;
+}
+
+/** Wilds 名稱解析器（沿用 WorldNameResolver 型別；珠/護石對 wilds 資料 nameZh/name）。 */
+export async function createWildsNameResolver(): Promise<WorldNameResolver> {
+  const [gd, decMod, chMod] = await Promise.all([
+    loadGameData("wilds"),
+    import("@/data/wilds/decorations.json"),
+    import("@/data/wilds/charms.json"),
   ]);
   const decoName: Record<string, string> = Object.fromEntries(
     (decMod.default as unknown as { id: string; nameZh: string }[]).map((d) => [d.id, d.nameZh])

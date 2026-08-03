@@ -136,6 +136,8 @@ export type RecommendedBuild = {
   kind: RecommendedKind;
   buildName: string;
   stageName?: string;
+  /** Wilds：來源資料版本（Game8 Ver，如 "1.041"）。 */
+  metaVersion?: string;
   weapons?: RecoWeapon[];
   armor?: RecoArmor[];
   talisman?: RecoTalisman | null;

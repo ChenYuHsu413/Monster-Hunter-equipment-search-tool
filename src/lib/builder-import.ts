@@ -232,12 +232,15 @@ export function buildFullBuildImport(
 
 /** World 核心技能項數（由 validate-mhwi-builds.mjs 校準；預設值見該腳本輸出）。 */
 export const WORLD_CORE_SKILL_COUNT = 5;
+/** Wilds 核心技能項數（校準：endgame top-4 → 12/12 有結果，見 docs/wilds-game8-audit.md §2）。 */
+export const WILDS_CORE_SKILL_COUNT = 4;
 
 /** 未模擬系統 → 中文標籤（提示點名）。 */
 export const WORLD_UNMODELED_LABELS: Record<string, string> = {
   awakened: "Safi 覺醒武器能力",
   kjarr: "Kjarr 武器自帶技",
   customAugment: "武器客製強化加成",
+  artian: "Artian 武器隨機強化",
 };
 
 /**
@@ -282,7 +285,8 @@ export function selectWorldCoreSkillRows(
 export function buildWorldFullBuildImport(
   build: RecommendedBuild,
   resolveMax: (name: string) => number,
-  n: number = WORLD_CORE_SKILL_COUNT
+  n: number = WORLD_CORE_SKILL_COUNT,
+  gameId: GameId = "world"
 ): BuilderImport {
   const core = selectWorldCoreSkillRows(build, resolveMax, n);
   const requiredSkills: SkillMap = {};
@@ -292,7 +296,7 @@ export function buildWorldFullBuildImport(
     .map(([k]) => WORLD_UNMODELED_LABELS[k] ?? k);
   return {
     kind: "full-build",
-    gameId: "world",
+    gameId,
     weaponType: build.weaponType,
     requiredSkills,
     // World 護石直接對 id 匯入固定（非 reco 取代制）。

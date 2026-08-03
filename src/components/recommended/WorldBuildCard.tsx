@@ -52,7 +52,14 @@ export function WorldBuildCard({
     <Card className="overflow-hidden">
       <CardHeader className="flex-row items-start justify-between gap-2 space-y-0 border-b bg-muted/30 py-2.5">
         <div className="min-w-0">
-          <div className="truncate text-sm font-bold">{build.buildName}</div>
+          <div className="flex items-center gap-1.5">
+            <div className="truncate text-sm font-bold">{build.buildName}</div>
+            {build.metaVersion && (
+              <Badge variant="outline" className="shrink-0 px-1 py-0 text-[10px] font-normal">
+                Ver {build.metaVersion}
+              </Badge>
+            )}
+          </div>
           <a
             href={build.sourceUrl}
             target="_blank"
@@ -119,6 +126,22 @@ export function WorldBuildCard({
             </span>
           </div>
         </div>
+
+        {/* 防具珠總表（Wilds：珠不逐部位標，統一列此，同 Rise buildDecorations 慣例）。 */}
+        {build.buildDecorations && build.buildDecorations.length > 0 && (
+          <div className="flex items-start gap-1.5 text-[11px] text-muted-foreground">
+            <Gem className="mt-0.5 h-3.5 w-3.5 shrink-0" />
+            <span className="min-w-0">
+              防具珠：
+              {build.buildDecorations
+                .map((d) => {
+                  const r = resolver.deco(d.id, d.rawNameEn);
+                  return `${r.name}${d.count && d.count > 1 ? `×${d.count}` : ""}`;
+                })
+                .join("・")}
+            </span>
+          </div>
+        )}
 
         <Separator />
 

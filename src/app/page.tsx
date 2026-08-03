@@ -32,11 +32,6 @@ const GAMES: { key: GameId; label: string }[] = [
   { key: "wilds", label: "Wilds" },
 ];
 
-/** 各遊戲可用分頁：Wilds 推薦配裝為 Phase 6，本輪只有配裝器（推薦 tab 不出現）。 */
-function tabsForGame(game: GameId): typeof TABS {
-  return game === "wilds" ? TABS.filter((t) => t.key === "builder") : TABS;
-}
-
 const GAME_TITLE: Record<GameId, string> = {
   rise: "魔物獵人 Rise：破曉配裝",
   world: "魔物獵人 World：Iceborne 配裝",
@@ -59,9 +54,8 @@ export default function Home() {
       const p = new URLSearchParams(window.location.search);
       const gp = p.get("game");
       const g: GameId = gp === "world" ? "world" : gp === "wilds" ? "wilds" : "rise";
-      // 推薦配裝 + 配裝器分頁；Wilds 無推薦 tab（Phase 6）→ 恆 builder。
-      const t: Tab =
-        g === "wilds" || p.get("tab") === "builder" ? "builder" : "recommend";
+      // 推薦配裝 + 配裝器分頁（三款遊戲皆有推薦；Wilds 推薦於 Phase 6b 落地）。
+      const t: Tab = p.get("tab") === "builder" ? "builder" : "recommend";
       setGame(g);
       setTabState(t);
       if (t === "builder") setBuilderMounted(true);
@@ -149,9 +143,9 @@ export default function Home() {
             ))}
           </div>
 
-          {/* 分頁（Wilds 只有配裝器；推薦配裝為 Phase 6，本輪不出現） */}
+          {/* 分頁：三款遊戲皆有推薦配裝 + 配裝器（Wilds 推薦於 Phase 6b 落地）。 */}
           <div className="inline-flex rounded-lg bg-muted p-1">
-            {tabsForGame(game).map((t) => (
+            {TABS.map((t) => (
               <button
                 key={t.key}
                 type="button"
@@ -173,17 +167,14 @@ export default function Home() {
 
       {/* ---- 內容 ---- */}
       <div className="flex min-h-0 flex-1 flex-col">
-        {/* 推薦配裝：key=game 重掛載（per-game 資料源），以 hidden 切換。
-            Wilds 無推薦配裝（Phase 6）→ 不渲染 RecommendedView（避免載入不存在的 wilds 推薦資料）。 */}
-        {game !== "wilds" && (
-          <div
-            className={cn(
-              tab === "recommend" ? "flex min-h-0 flex-1 flex-col" : "hidden"
-            )}
-          >
-            <RecommendedView key={game} gameId={game} onExport={exportToBuilder} />
-          </div>
-        )}
+        {/* 推薦配裝：key=game 重掛載（per-game 資料源），以 hidden 切換。三款遊戲皆有。 */}
+        <div
+          className={cn(
+            tab === "recommend" ? "flex min-h-0 flex-1 flex-col" : "hidden"
+          )}
+        >
+          <RecommendedView key={game} gameId={game} onExport={exportToBuilder} />
+        </div>
         {/* 配裝器：key=game 重掛載，per-game 狀態互不污染 */}
         {showBuilder && (
           <div

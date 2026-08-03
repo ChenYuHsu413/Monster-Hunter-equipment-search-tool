@@ -6,10 +6,13 @@ import {
   CATEGORY_LABELS,
   STAGE_CATEGORY_ORDER,
   WORLD_STAGE_CATEGORY_ORDER,
+  WILDS_STAGE_CATEGORY_ORDER,
   createNameResolver,
   createWorldNameResolver,
+  createWildsNameResolver,
   loadRecommendedBuilds,
   loadWorldRecommendedBuilds,
+  loadWildsRecommendedBuilds,
   type NameResolver,
   type WorldNameResolver,
   type RecommendedIndex,
@@ -21,7 +24,11 @@ import {
 import { useLocalStorage } from "@/lib/use-local-storage";
 import type { GameId } from "@/types/build";
 import type { RecommendedBuild, RecommendedCategory } from "@/types/recommended";
-import { buildWorldFullBuildImport, type BuilderImport } from "@/lib/builder-import";
+import {
+  buildWorldFullBuildImport,
+  WILDS_CORE_SKILL_COUNT,
+  type BuilderImport,
+} from "@/lib/builder-import";
 import { GameIdProvider } from "@/lib/game-context";
 import { WeaponIcon } from "@/components/EquipmentIcon";
 import { BuildCard } from "./BuildCard";
@@ -111,7 +118,10 @@ export function RecommendedView({
   onExport: (payload: BuilderImport) => void;
 }) {
   const isWorld = gameId === "world";
-  const prefix = isWorld ? "mhwib." : "mhsb.";
+  const isWilds = gameId === "wilds";
+  // World 與 Wilds schema 相同（charm/buildDecorations/skillTotals/WorldBuildCard），共用「world-like」路徑。
+  const isWorldLike = isWorld || isWilds;
+  const prefix = isWilds ? "mhwd." : isWorld ? "mhwib." : "mhsb.";
   const [index, setIndex] = useState<RecommendedIndex | null>(null);
   const [resolver, setResolver] = useState<NameResolver | null>(null);
   const [worldResolver, setWorldResolver] = useState<WorldNameResolver | null>(null);
@@ -132,31 +142,41 @@ export function RecommendedView({
 
   useEffect(() => {
     let alive = true;
-    if (isWorld) {
-      Promise.all([loadWorldRecommendedBuilds(), createWorldNameResolver()]).then(
-        ([idx, res]) => {
-          if (!alive) return;
-          setIndex(idx);
-          setWorldResolver(res);
-        }
-      );
-      // World 匯入 context（動態 import world-registry，維持 lazy）。
-      (async () => {
-        const [{ ensureWorldRegistered }, { getGameProfile }, { loadGameData }] =
-          await Promise.all([
-            import("@/lib/world-registry"),
-            import("@/lib/game-profile"),
-            import("@/lib/game-data"),
-          ]);
-        const ws = await ensureWorldRegistered();
-        const profile = getGameProfile("world");
-        const gd = await loadGameData("world");
+    if (isWorldLike) {
+      const loadBuilds = isWilds ? loadWildsRecommendedBuilds : loadWorldRecommendedBuilds;
+      const makeResolver = isWilds ? createWildsNameResolver : createWorldNameResolver;
+      Promise.all([loadBuilds(), makeResolver()]).then(([idx, res]) => {
         if (!alive) return;
-        setWorldImportCtx({
-          resolveSkillMax: profile.resolveSkillMax,
-          setBonusById: ws.setBonusById as never,
-          armorById: gd.armorById as never,
-        });
+        setIndex(idx);
+        setWorldResolver(res);
+      });
+      // 匯入 context（動態 import 對應 registry，維持 lazy）。Wilds resolveSkillMax 為靜態上限。
+      (async () => {
+        const { getGameProfile } = await import("@/lib/game-profile");
+        const { loadGameData } = await import("@/lib/game-data");
+        if (isWilds) {
+          const { ensureWildsRegistered } = await import("@/lib/wilds-registry");
+          const ws = await ensureWildsRegistered();
+          const profile = getGameProfile("wilds");
+          const gd = await loadGameData("wilds");
+          if (!alive) return;
+          setWorldImportCtx({
+            resolveSkillMax: profile.resolveSkillMax,
+            setBonusById: ws.setBonusById as never,
+            armorById: gd.armorById as never,
+          });
+        } else {
+          const { ensureWorldRegistered } = await import("@/lib/world-registry");
+          const ws = await ensureWorldRegistered();
+          const profile = getGameProfile("world");
+          const gd = await loadGameData("world");
+          if (!alive) return;
+          setWorldImportCtx({
+            resolveSkillMax: profile.resolveSkillMax,
+            setBonusById: ws.setBonusById as never,
+            armorById: gd.armorById as never,
+          });
+        }
       })();
       return () => {
         alive = false;
@@ -177,9 +197,10 @@ export function RecommendedView({
       alive = false;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isWorld]);
+  }, [gameId]);
 
-  /** World「以此為基礎修改」：算該套 set bonus 動態上限，走 buildWorldFullBuildImport。 */
+  /** World/Wilds「以此為基礎修改」：算該套 set bonus 動態上限（Wilds 為靜態，active 被忽略），
+   *  走 buildWorldFullBuildImport（gameId 與 N 依遊戲）。 */
   const useWorldBuild = (build: RecommendedBuild) => {
     if (!worldImportCtx) return;
     const { resolveSkillMax, setBonusById, armorById } = worldImportCtx;
@@ -194,7 +215,8 @@ export function RecommendedView({
       if (!sb) continue;
       for (const r of sb.ranks) if (cnt >= r.pieces) active[r.skillName] = (active[r.skillName] ?? 0) + r.skillLevel;
     }
-    onExport(buildWorldFullBuildImport(build, (name) => resolveSkillMax(name, active)));
+    const n = isWilds ? WILDS_CORE_SKILL_COUNT : undefined;
+    onExport(buildWorldFullBuildImport(build, (name) => resolveSkillMax(name, active), n, gameId));
   };
 
   const isOpen = (cat: string) => openStages.includes(cat);
@@ -204,14 +226,14 @@ export function RecommendedView({
     );
 
   const byCat = weaponType ? index?.byWeaponType.get(weaponType) : undefined;
-  const sectionOrder = isWorld ? WORLD_STAGE_CATEGORY_ORDER : RISE_SECTION_ORDER;
+  const sectionOrder = isWilds ? WILDS_STAGE_CATEGORY_ORDER : isWorld ? WORLD_STAGE_CATEGORY_ORDER : RISE_SECTION_ORDER;
   const sections = sectionOrder
     .map((cat) => ({ cat, builds: byCat?.get(cat) ?? [] }))
     .filter((s) => s.builds.length > 0);
 
   // 社群配裝：Rise 專屬（World 無）。
   const communityBuilds =
-    !isWorld && weaponType
+    !isWorldLike && weaponType
       ? [
           ...(community?.byWeaponType.get(weaponType) ?? []),
           ...(community?.unbound ?? []),
@@ -219,9 +241,9 @@ export function RecommendedView({
       : [];
 
   // 資料就緒判定：rise 看 resolver、world 看 worldResolver。
-  const ready = isWorld ? !!worldResolver && !!index : !!resolver && !!index;
+  const ready = isWorldLike ? !!worldResolver && !!index : !!resolver && !!index;
   // community 只在 rise 有意義；world 直接視為「已載入」以免卡零結果分支。
-  const communityLoaded = isWorld ? true : community !== null;
+  const communityLoaded = isWorldLike ? true : community !== null;
 
   return (
     <GameIdProvider value={gameId}>
@@ -286,7 +308,7 @@ export function RecommendedView({
                   onToggle={() => toggleStage(cat)}
                 >
                   {builds.map((b) =>
-                    isWorld ? (
+                    isWorldLike ? (
                       <WorldBuildCard
                         key={b.id}
                         build={b}
