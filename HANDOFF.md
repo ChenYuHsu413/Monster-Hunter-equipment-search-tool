@@ -1,11 +1,50 @@
 # HANDOFF — 換機接續開發交接
 
 > 給接手的新機器 session。先讀本檔快速定位，深入的裁決與教訓在 `CLAUDE.md`（repo 根）。
-> 最後更新：**2026-07-22**。本輪完成 **World: Iceborne 擴充（多遊戲）Phase 0–6** 與**四條尾巴**
-> （World 推薦分頁、期望斬味倍率、武器強化簡化輸入、複合珠 solver 有界修復）。全部已 commit
-> **並 push**（`origin/main` 同步於 `463cee2`）。以下 §0 為本輪主軸，§1 起為原 Rise 專案背景。
+> 最後更新：**2026-08-03**（Phase Z 收尾）。**數字一律以 repo 實際資料/程式為準**（本檔任何敘述皆視為
+> 「宣稱」，動手前用 `git`/乾淨 build/`src/data/` 實檔交叉核對——本計畫 Phase R 曾抓到交接文件含過時數字）。
+> **現狀：三款遊戲皆完成**（Rise: Sunbreak / World: Iceborne / Wilds）。以下 §00 為最新輪（Wilds）快照，
+> §0 為 World 主軸，§1 起為原 Rise 背景。
 
-## 0. World: Iceborne 擴充（本輪主軸，多遊戲）
+## 00. Wilds 擴充完成態（最新輪，2026-08-03）
+
+**現狀快照（以實測為準）**：`origin/main` @ `44b3987`；結案 tag **`wilds-v1`**（打在文件收尾 commit）；
+錨點 `pre-wilds`。首屏 **296 kB**（`next build` 實測，含 Wilds；推薦資料為 lazy chunk）。
+三綠燈：`regression-all.mjs --check`（Rise 10 + World 11 逐位元）、`tsc --noEmit`、乾淨 build 全綠；
+Wilds 冒煙 21、efr-wilds 32。
+
+**Wilds 各 Phase 一行摘要 + 關鍵裁決**（詳見 `CLAUDE.md` §7 與 `docs/wilds-*.md`）：
+- **Phase 0–5**：抽象層（`wilds-registry`/`efr-wilds`）、mhdb-wilds 匯入管線、UI 三遊戲切換、
+  Artian 簡化輸入、複合珠 solver 共用。**斬味 base/max 方向與 World 相反**（Wilds mhdb 單列=匠0 base、
+  handicraft 延展 max）；**attack=raw**（Phase 4a 翻案 display→raw）；charm 混合制（可生產自動進池 +
+  RNG 護石庫逐洞池別）；Gogmazios 擬態（`setBonusId`+`extraSetBonusIds` 件數聯集）；set 2/4 + group 3
+  雙軌；珠雙池（武器 295 / 防具 66，零跨池例外→池分割解法）；分區三收斂（**不照抄 World 四分區**）。
+- **Phase 6b**（Game8 推薦匯入）：14 頁 `fetch → 靜態表解析 → 抽取快取進版控`（premise 翻案：
+  非 JS-render-gated）；`import-game8-mhwd` EN→id 映射 **2175/2175 直通、override 空**；
+  **173 筆**推薦（進度拓荒 39 / 上位 38 / 畢業 96，每筆 metaVersion 1.041）；UI 三分區 tab（`WorldBuildCard`
+  複用，Ver badge + Artian 旗標 + buildDecorations）。N=4（endgame top-4→12/12 有結果）。
+- **Phase Z**（收尾 + achievability 翻案）：抽查證實 **Game8 `skillTotals` 是人工摘要、非其自列裝備的
+  忠實加總**，故原「exact 12/173」表述誤導。重構為**三層可歸因**（`validate-wilds-builds.mjs`）：
+  **(a) 裝備層重現 173/173、(b) 引擎自洽 173/173（真實 skill-calculator 聚合==各件加總，逐位元）**
+  ＝我方硬保證；**(c) Game8 偏差**為雙向噪音（引擎多算：元素/內建/set-group 摘要漏列；引擎少算：
+  Artian roll 259 實例主體 + 非 Artian 邊際 41）。**核心主張＝(a)+(b)「忠實重現裝備並正確計算」，
+  非某個 exact 率。**
+
+**遺留清單（Wilds，終版）**：
+- ⏳ **EFR `EXPECTED_SHARPNESS_USE=60` 待 Wilds 實測校準**（佔位常數，禁當定值）。
+- ⏳ **傷口（wound）/ 集中模式（Focus Mode）不建模**（v1；EFR 為同武器種相對排序，影響次要）。
+- ⏳ **Low Rank 推薦 deferred**（`wildsLowRank`）：Game8 有獨立 LR 頁（來源存在），未匯入、列尾巴候選。
+- 🔹 珠池視覺分組、set/group 觸發件數區塊：v1-deferred（UI 增益，非正確性）。
+- 🔹 使用者護石池別預設 armor 相容行為（RNG 護石逐洞池別，預設池相容）。
+- 🔹 `regression-all.mjs` 尚未串接 wilds 冒煙 + efr（現為 Rise+World；單指令三遊戲閘門待補）。
+- 🔹 映射 **2175/2175 直通、零 override** 是異常乾淨的記錄——Ascendance 重灌時**複驗此性質是否維持**
+  （若出現 override 需求，代表命名體系變動）。
+
+**Ascendance（2027）起手指引**：資料版本跳升、可能重排 id 的已知事件。升級前先驗：
+`scripts/wilds/diff-report.mjs`（新舊 snapshot 差異）+ `manifest.dataVersion` + `docs/PLAN-wilds.md` §A。
+**池分割解法（珠雙池）依賴「零跨池例外」**——Ascendance 若引入跨池珠，此假設失效需重審 solver 分池邏輯。
+
+## 0. World: Iceborne 擴充（多遊戲）
 
 Rise 專案上疊加 **MHW: Iceborne** 為第二款遊戲（同一 UI、`gameId` 切換、`key=gameId` 重掛載）。
 **最高原則：Rise 現有行為逐位元零改變**，由 `scripts/regression-baseline.mjs --check`（10/10）背書；

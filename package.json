@@ -2,7 +2,7 @@
   "name": "mhsb-armor-builder",
   "version": "0.1.0",
   "private": true,
-  "description": "Multi-game Monster Hunter build finder — skill-driven armor/decoration search with EFR ranking for Rise: Sunbreak and World: Iceborne.",
+  "description": "Multi-game Monster Hunter build finder — skill-driven armor/decoration search with EFR ranking for Rise: Sunbreak, World: Iceborne, and Wilds.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

@@ -130,6 +130,12 @@ Game8 5 個 HR 層級 → 收斂 **3 分區**：
 
 ## §3 achievability 重算 + EFR sanity（`validate-wilds-builds.mjs`，World 179 方法）
 
+> ★ **Phase Z 抽查翻案（保留原記載、加註，比照 attack display→raw 留痕慣例）**：下方原「exact
+> 12 / off Artian 135 / 非 Artian 26」把兩件事混為一談——「我方能否忠實重現裝備並正確計算」vs
+> 「Game8 skillTotals 是否為其自列裝備的忠實加總」。Phase Z 機械抽查證實**後者不成立**：Game8 總表
+> 是人工摘要，**雙向**與其自列裝備不符（漏列武器內建/元素技；偶爾等級與自列珠不符）。故 achievability
+> 不可用單一 exact 率表述。**正解見下方 §3b 三層分析**（(a)+(b) 為我方保證、(c) 為對照噪音刻畫）。
+
 - **重算 vs Game8（±1 容忍）**：exact **Artian 6/141、非 Artian 6/32、合計 12/173**。off 分兩類：
   - **Artian 135**：Artian 武器隨機 roll（set skill / group skill / focus / 攻擊強化）**不在資料**
     → 重算 < Game8。**這是 Wilds 版的「World 覺醒未模擬」**；占比高（meta 78% 用 Artian）是 Wilds
@@ -142,6 +148,27 @@ Game8 5 個 HR 層級 → 收斂 **3 分區**：
   （聯集）**計數，借用 set 門檻可達；由 `smoke-wilds.mjs` ⑦/⑦b 逐位元背書。
 - **EFR 排序 sanity（§3.2）**：4 武種（bow/charge-blade/dual-blades/great-sword）以 endgame 核心
   技能搜尋，結果皆 **EFR 降冪、首位非平凡**（top efr GS 2506 / CB 1809 / DB 1025 / bow 195）。4/4 通過。
+
+## §3b achievability 三層可歸因分析（Phase Z 重構，`validate-wilds-builds.mjs`）
+
+把「exact vs off」拆成三層，**我方保證＝(a)+(b)**，(c) 為對照噪音源的誠實刻畫（非我方達成率）：
+
+- **(a) 裝備層重現**：build 列出的防具/武器/珠/護石全對到 DB 實體（id 級）。**173/173（100%）**。
+- **(b) 引擎自洽**：對「該套實際裝備」，**真實引擎函式**（`skill-calculator` 的 `calculateSkills` /
+  `computeSetBonusSkills` / `computeGroupSkills` / `clampSkillsToMax`）算出的技能，與各件裝備資料的
+  獨立加總**逐位元一致**。**173/173（100%）** → 引擎對已知裝備計算正確、無我方 bug。**(a)+(b) 即
+  「忠實重現裝備並正確計算」的硬保證。**
+- **(c) Game8 skillTotals 偏差**：引擎自洽值 vs Game8 宣稱（±1 容忍），**按方向分類**。**11/173** 兩者
+  ±1 全合；其餘的差異**雙向**且逐項歸因：
+  - **引擎多算（Game8 摘要漏列其自列裝備提供的技能）**：set/group 名 15（Game8 列 groupSetSkills
+    顯示、不入 skillTotals）／元素技（屬性攻擊強化・會心擊【屬性】）49／武器內建技 21／其他 24。
+  - **引擎少算（Game8 宣稱較多）**：Artian roll 未模擬 **259 技能實例**（主體）／非 Artian **41 實例**
+    （我方 mhdb 武器資料缺內建技、或 Game8 摘要與其自列裝備不一致；如 `great-sword_wildsHighRank_0`
+    火場怪力 4 在其自列 Bale 裝備無來源）。
+  - **關鍵結論**：Game8 `skillTotals` 是**人工摘要參考值，非其所列裝備的忠實加總**；故它不是乾淨的逐級
+    對照基準。我方推薦資料（裝備/珠/護石）本身正確（(a)+(b) 背書），差異全在此摘要噪音。
+- **Gogmazios 借用件**：29 套；`computeSetBonusSkills` 對 `setBonusId`+`extraSetBonusIds` 聯集計數
+  （smoke-wilds ⑦/⑦b 背書）。**N=4**（endgame top-4 → 12/12 有結果）。**EFR sanity 4/4** 降冪。
 
 ## §5 進度與續跑（快取固化，跨輪）
 

@@ -5,7 +5,9 @@
 > 通用工程守則在 repo 上層的 `AI Class ChenYu/CLAUDE.md`（clone 本 repo 不會帶走，新機器另備）。
 > 詳細記錄見 `~/.claude` 備份與各 `docs/*.md`；本檔只留高價值、每個 session 都該先讀的部分。
 >
-> **現行計畫**：Monster Hunter Wilds 擴充，規劃書 `docs/PLAN-wilds.md`；動工前錨點 tag `pre-wilds`。
+> **計畫現狀**：Monster Hunter Wilds 擴充**已結案**（Phase 0–5 + 6b 推薦匯入 + Z 收尾），結案 tag
+> `wilds-v1`（動工前錨點 `pre-wilds`）。三款遊戲皆完成。裁決見下方 §7。**下一計畫＝Ascendance（2027）
+> 資料重灌**，先驗 `docs/PLAN-wilds.md` §A + `scripts/wilds/diff-report.mjs` + `manifest.dataVersion`。
 
 ---
 
@@ -163,3 +165,38 @@
   疊加會使 port 遞增（3000→3001→…），且清 `.next` 會讓仍存活的舊實例 CSS／chunk 失效，呈現
   「全站無樣式」的假故障。人類若回報「localhost 樣式全裸」，第一優先懷疑殭屍 server ＋ 瀏覽器快取
   （Ctrl+F5），而非最近的 commit。
+
+## 7. Wilds 擴充（三遊戲第三款；Phase 0–5 + 6b + Z 已完成，狀態同 HANDOFF §00）
+
+> 全部裁決由 `docs/wilds-*.md` audit 與 git 歷史提取（非憑記憶）。與 §6（World）同格式。
+
+- **attack 尺度：display→raw 翻案**（Phase 4a，`docs/efr-wilds-notes.md`）：Phase 2 初判 attack=`damage.display`
+  （假設同 World 尺度）；考證發現 Wilds Kiranico 顯示值即 raw、無 World 式膨脹 → **attack=`damage.raw`**，
+  efr-wilds 不除武器種倍率（與 World「display 需還原 raw」相反）。
+- **斬味 base/max 方向與 World 相反**（`docs/wilds-sharpness-audit.md`）：Wilds mhdb `weapon_sharpness` 單列
+  ＝**匠0 base**、`handicraft[]` 給 max 延展；而 World 單列＝**匠5 maxed**。二者方向相反，`efr-world` 與
+  `efr-wilds` 各自處理，勿混用。全 947 把自洽驗證。
+- **Gogmazios 擬態＝additive 聯集建模**（mechanics #10）：多套裝件的借用 set 以 `setBonusId`（原生
+  Gogmapocalypse `wsb_178`）+ `extraSetBonusIds` 表達；`computeSetBonusSkills` 對主 set 與每個 extra
+  **各 +1 件（聯集）**計數，借用 set 湊門檻可觸發。Rise/World 無 `extraSetBonusIds`（迴圈零迭代、逐位元
+  不變，回歸背書）。`smoke-wilds.mjs` ⑦/⑦b 背書。
+- **珠雙池 → 池分割解法**（Phase 0 定案 #2）：珠分武器池（295）/ 防具池（66），技能亦分武器系（66）/
+  防具系（71）。solver 依此分池補珠。**依賴「零跨池例外」的前提**——Ascendance 若引入跨池珠，此假設
+  失效、需重審分池邏輯（重審條件已記 HANDOFF §00）。
+- **charm 混合制**（`charmMode:"mixed"`）：可生產護石（183 逐級）自動進候選池 + RNG 護石走使用者護石庫
+  輸入；RNG 護石**逐洞池別**正確性（Phase 6 前置翻案：Wilds 珠雙池下護石洞需標池別）。
+- **W04→W11 基準補強**：Wilds 引擎差異（`deps.wilds` 閘門）上線時，`regression-world.mjs` 基準由 W04
+  補至 W11（複合珠有界修復實觸發等），確保 World 逐位元不因 Wilds 共用路徑改動而漂移。
+- **Game8 快取固化爬取（Phase 6b）**：Game8 Wilds 頁**非 JS-render-gated**（premise 翻案，實測 `fetch()`
+  得完整靜態 HTML）→ `fetch → 靜態表解析 → 抽取結果進版控（.cache/game8/*.json）`，原始 HTML 續 gitignore。
+  版控修正理由：跨機單副本風險已實際發生（Phase 6b 開工即遇快取遺失），provenance 由 git 歷史強制。
+- **分區三收斂（不照抄 World 四分區）**：Game8 Wilds 5 個 HR 層級 → 收斂 3 分區（wildsEndgame HR100 /
+  wildsHighRank HR50 / wildsProgression HR9–36）。**以實測收斂，非套用 World 的四分區。**
+- **lowRank defer 裁決**：Game8 有獨立 Low Rank 頁（來源存在），本輪未匯入、列尾巴候選（`wildsLowRank`）；
+  方向與尾巴 A 禁的「建來源不存在的幽靈分類」**相反**（記載存在但 defer），合規。
+- **Phase Z achievability 翻案**（`docs/wilds-game8-audit.md` §3b）：抽查證實 **Game8 `skillTotals` 是
+  人工編修摘要、非其自列裝備的忠實加總**（雙向不符：漏列武器內建/元素技；偶爾等級與自列珠不符）。故
+  achievability **不可用單一 exact 率表述**。重構為三層：**(a) 裝備層重現 173/173、(b) 引擎自洽 173/173
+  （真實 skill-calculator 聚合 == 各件加總，逐位元）＝我方硬保證**；(c) Game8 偏差為對照噪音刻畫（引擎
+  多算 = 摘要漏列；引擎少算 = Artian roll 259 主體 + 非 Artian 41）。**核心主張＝(a)+(b)，非 exact 率。**
+  文件措辭紀律：Game8 skillTotals 一律定性「人工摘要參考值」，禁用「173 筆全驗證」類措辭。
