@@ -9,13 +9,13 @@ import { builderHasConditions, type BuilderImport } from "@/lib/builder-import";
 import type { GameId } from "@/types/build";
 
 /**
- * 雙遊戲 × 雙 Tab 殼：遊戲（破曉 / Iceborne）與分頁（推薦配裝 / 配裝器）。
+ * 三遊戲 × 雙 Tab 殼：遊戲（破曉 / Iceborne / Wilds）與分頁（推薦配裝 / 配裝器）。
  *
- * - 遊戲反映在 URL 的 ?game=（world 才寫；rise 省略＝預設）。切換以 key=game 重掛載
- *   BuilderView，讓兩款遊戲的元件狀態與 localStorage（mhsb. / mhwib.）互不污染、
- *   各自由存檔還原（互不遺失）。
- * - 分頁反映在 ?tab=（pushState/popstate/重整還原，沿用既有機制）。**推薦配裝為 Rise 專屬**
- *   （World 推薦配裝為 Phase 6，本次不做），故 World 只有配裝器、不顯示分頁。
+ * - 遊戲反映在 URL 的 ?game=（world/wilds 才寫；rise 省略＝預設）。切換以 key=game 重掛載
+ *   RecommendedView / BuilderView，讓三款遊戲的元件狀態與 localStorage
+ *   （mhsb. / mhwib. / mhwd.）互不污染、各自由存檔還原（互不遺失）。
+ * - 分頁反映在 ?tab=（popstate/重整還原，沿用既有機制）。**三款遊戲皆有推薦配裝 + 配裝器**
+ *   （Wilds 推薦於 Phase 6b 落地）；切換遊戲時保留當前分頁（見 selectGame / TABS_BY_GAME）。
  * - 不使用 useSearchParams（避開 App Router 的 Suspense/預渲染限制），不引入新套件。
  */
 
@@ -26,6 +26,14 @@ const TABS: { key: Tab; label: string }[] = [
   { key: "builder", label: "配裝器" },
 ];
 
+// 各遊戲可用分頁（Phase 6b 起三款皆有推薦配裝 + 配裝器）。切換遊戲時據此保留當前分頁、
+// 缺則回退配裝器——目前恆為兩者，此表為「未來若某遊戲缺某分頁」預留的收窄防禦點。
+const TABS_BY_GAME: Record<GameId, Tab[]> = {
+  rise: ["recommend", "builder"],
+  world: ["recommend", "builder"],
+  wilds: ["recommend", "builder"],
+};
+
 const GAMES: { key: GameId; label: string }[] = [
   { key: "rise", label: "破曉" },
   { key: "world", label: "Iceborne" },
@@ -35,17 +43,15 @@ const GAMES: { key: GameId; label: string }[] = [
 const GAME_TITLE: Record<GameId, string> = {
   rise: "魔物獵人 Rise：破曉配裝",
   world: "魔物獵人 World：Iceborne 配裝",
-  // Wilds：Phase 1 僅為 GameId 型別完整所需（未列入 GAMES 切換、URL parser 不解析 'wilds'，
-  // 故此標題永不顯示）；真正 UI 於 Phase 5。
   wilds: "魔物獵人 Wilds 配裝",
 };
 
 export default function Home() {
   const [game, setGame] = useState<GameId>("rise");
   const [tab, setTabState] = useState<Tab>("recommend");
-  // 配裝器首次被選到才掛載，之後保留於 DOM（hidden）以留住狀態。World 恆掛載（無分頁）。
+  // 配裝器首次被選到才掛載，之後保留於 DOM（hidden）以留住狀態。
   const [builderMounted, setBuilderMounted] = useState(false);
-  // 推薦配裝→配裝器的待套用匯入指令；BuilderView 套用後回呼清空。（Rise 專屬）
+  // 推薦配裝→配裝器的待套用匯入指令；BuilderView 套用後回呼清空。（三款遊戲共用）
   const [pendingImport, setPendingImport] = useState<BuilderImport | null>(null);
 
   // 初始化與 popstate（上一頁/分享連結）同步：由 URL ?game= / ?tab= 決定。
@@ -76,8 +82,8 @@ export default function Home() {
 
   const selectGame = (g: GameId) => {
     if (g === game) return;
-    // Wilds 無推薦 tab（Phase 6）→ 切到 wilds 時強制 builder。
-    const nextTab: Tab = g === "wilds" ? "builder" : tab;
+    // 切換遊戲保留當前分頁；目標遊戲若無該分頁則回退配裝器（防禦，未來遊戲缺分頁仍安全）。
+    const nextTab: Tab = TABS_BY_GAME[g].includes(tab) ? tab : "builder";
     setGame(g);
     setTabState(nextTab);
     if (nextTab === "builder") setBuilderMounted(true);
