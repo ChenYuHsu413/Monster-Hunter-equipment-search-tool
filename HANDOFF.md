@@ -44,9 +44,10 @@ Wilds 冒煙 21、efr-wilds 32。
   （Rise 10 + World 11 逐位元 + Wilds 冒煙 21 + Wilds EFR 32），總結行列四段狀態、任一 FAIL 整體 exit 1。
 - 🔹 映射 **2175/2175 直通、零 override** 是異常乾淨的記錄——Ascendance 重灌時**複驗此性質是否維持**
   （若出現 override 需求，代表命名體系變動）。
-- 🔹 **（optional value-add，僅 jolen 機可跑、非阻擋）Game8 快取 diff 檢核**：該機 gitignored 的
-  `scripts/wilds/.cache/game8/` 若留有 Phase 6 前半的**瀏覽器擷取樣本**，可與版控的 `fetch` 版擷取
-  diff（預期：舊樣本多導覽/related 雜訊項，真 build 逐筆對得上＝通過）。**該機快取被清則此項自然作廢。**
+- ⛔ ~~**（optional value-add，僅 jolen 機可跑、非阻擋）Game8 快取 diff 檢核**~~ → **作廢**（2026-08-03，
+  jolen 機實查）：該機 `scripts/wilds/.cache/` 僅存 mhdb 抓取快取 + `game8/` 14 檔**版控 fetch 版**
+  （與 HEAD 逐位元一致），**無 Phase 6 前半瀏覽器擷取樣本殘留**（無 `html/` 或舊格式檔）→ 無對照基準、
+  此項自然作廢。
 
 **Ascendance（2027）起手指引**：資料版本跳升、可能重排 id 的已知事件。升級前先驗：
 `scripts/wilds/diff-report.mjs`（新舊 snapshot 差異）+ `manifest.dataVersion` + `docs/PLAN-wilds.md` §A。
