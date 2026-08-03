@@ -157,6 +157,7 @@
         "Guts (Tenacity)",
         "Thunderous Roar I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -323,6 +324,7 @@
         "Mutual Hostility II",
         "Black Eclipse I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -462,6 +464,7 @@
         "Guts (Tenacity)",
         "Black Eclipse I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -612,6 +615,7 @@
         "Resonance I",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -758,6 +762,7 @@
         "Super Recovery I",
         "Ward of Wyveria"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -900,6 +905,7 @@
         "Guts (Tenacity)",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1050,6 +1056,7 @@
         "Guts (Tenacity)",
         "Black Eclipse I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1199,6 +1206,7 @@
         "Black Eclipse I",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1328,6 +1336,7 @@
         "Thunderous Roar II",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1477,6 +1486,7 @@
         "Ward of Wyveria",
         "Super Recovery II"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1622,6 +1632,7 @@
         "Black Eclipse I",
         "Binding Counter I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1669,7 +1680,20 @@
           "nameEn": "Conga Greaves β"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Protection Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Steadfast Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Destroyer Jewel【2】",
+          "count": 2
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -1722,6 +1746,7 @@
         }
       ],
       "groupSetSkills": [],
+      "armorDecoSource": "slots",
       "complete": true
     }
   ]

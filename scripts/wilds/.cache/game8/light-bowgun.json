@@ -160,6 +160,7 @@
         "Mutual Hostility II",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -303,6 +304,7 @@
         "Guts (Tenacity)",
         "Second Wind I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -453,6 +455,7 @@
         "Black Eclipse II",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -505,7 +508,20 @@
           "nameEn": "Gore Greaves β"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 3
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 2
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 1
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -561,6 +577,7 @@
         "Black Eclipse II",
         "Adrenaline"
       ],
+      "armorDecoSource": "slots",
       "complete": true
     },
     {
@@ -706,6 +723,7 @@
         "Razor's Edge I",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -856,6 +874,7 @@
         "Guts (Tenacity)",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -990,6 +1009,7 @@
         "Black Eclipse I",
         "Adrenaline"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1116,6 +1136,7 @@
         "Second Wind I",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1176,7 +1197,28 @@
           "nameEn": "Rey Sandgreaves γ"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Jumping Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Bandolier Jewel II【2】",
+          "count": 1
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -1241,6 +1283,7 @@
         "Super Recovery I",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "slots",
       "complete": true
     },
     {
@@ -1297,7 +1340,24 @@
           "nameEn": "Gore Greaves β"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Phoenix Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 1
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -1357,6 +1417,7 @@
         "Black Eclipse II",
         "Adrenaline I"
       ],
+      "armorDecoSource": "slots",
       "complete": true
     },
     {
@@ -1409,7 +1470,20 @@
           "nameEn": "Gore Greaves β"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Foray Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 3
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 1
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -1477,6 +1551,7 @@
         "Black Eclipse II",
         "Adrenaline I"
       ],
+      "armorDecoSource": "slots",
       "complete": true
     },
     {
@@ -1524,7 +1599,16 @@
           "nameEn": "G. Rathalos Greaves β"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 3
+        },
+        {
+          "nameEn": "Refresh Jewel【2】",
+          "count": 2
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -1573,6 +1657,7 @@
         "Burst Boost I",
         "Ward of Wyveria I"
       ],
+      "armorDecoSource": "slots",
       "complete": true
     },
     {
@@ -1620,7 +1705,20 @@
           "nameEn": "Conga Greaves β"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Refresh Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 2
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -1665,6 +1763,7 @@
         }
       ],
       "groupSetSkills": [],
+      "armorDecoSource": "slots",
       "complete": true
     }
   ]

@@ -154,6 +154,7 @@
         "Guts (Tenacity)",
         "–"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -306,6 +307,7 @@
         "Azure Bolt I",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -447,6 +449,7 @@
         "Guts (Tenacity)",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -597,6 +600,7 @@
         "Guts (Tenacity)",
         "Black Eclipse I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -743,6 +747,7 @@
         "Black Eclipse I",
         "Adrenaline"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -889,6 +894,7 @@
         "Guts (Tenacity)",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1014,6 +1020,7 @@
         "Guts (Tenacity)",
         "Thunderous Roar I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1151,6 +1158,7 @@
         "Ward of Wyveria",
         "Super Recovery I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1288,6 +1296,7 @@
         "Black Eclipse I",
         "Hasten Recovery I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1411,6 +1420,7 @@
         "Ward of Wyveria",
         "War Cry I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1458,7 +1468,20 @@
           "nameEn": "Alloy Greaves α"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Protection Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Evasion Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Sheath Jewel【1】",
+          "count": 1
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -1501,6 +1524,7 @@
       "groupSetSkills": [
         "Adrenaline I"
       ],
+      "armorDecoSource": "slots",
       "complete": true
     }
   ]

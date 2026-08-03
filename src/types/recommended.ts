@@ -21,7 +21,11 @@ export type RecommendedCategory =
   | "worldEndgame"
   | "worldMeta"
   | "worldProgression"
-  | "worldHighRank";
+  | "worldHighRank"
+  // Wilds（Game8 MHWilds，實測收斂 3 階，見 docs/wilds-game8-audit.md）
+  | "wildsEndgame"
+  | "wildsHighRank"
+  | "wildsProgression";
 
 export type RecommendedKind =
   | "full-build"
@@ -142,6 +146,8 @@ export type RecommendedBuild = {
     awakened?: boolean;
     kjarr?: boolean;
     customAugment?: boolean;
+    /** Wilds：Artian 武器（隨機強化 roll 不在資料，引擎不模擬）。 */
+    artian?: boolean;
   };
   /** 全裝珠總計（僅上位畢業格式；該格式不逐部位標珠）。 */
   buildDecorations?: RecoDecoration[] | null;

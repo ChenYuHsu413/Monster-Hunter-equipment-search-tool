@@ -153,6 +153,7 @@
         "Burst Boost II",
         "Binding Counter I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -300,6 +301,7 @@
         "Burst Boost I",
         "Super Recovery I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -447,6 +449,7 @@
         "Burst Boost I",
         "Super Recovery I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -595,6 +598,7 @@
         "Burst Boost II",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -733,6 +737,7 @@
         "Thunderous Roar I",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -879,6 +884,7 @@
         "Protective Veil I",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1037,6 +1043,7 @@
         "Guts (Tenacity)",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1183,6 +1190,7 @@
         "Guts (Tenacity)",
         "Bad Blood I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1325,6 +1333,7 @@
         "Razor's Edge I",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1475,6 +1484,7 @@
         "Hasten Recovery I",
         "Diversion"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1596,6 +1606,7 @@
         "Burst Boost I",
         "Binding Counter I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1723,6 +1734,7 @@
         "Burst Boost I",
         "War Cry I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1770,7 +1782,20 @@
           "nameEn": "Conga Greaves β"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Sheath Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 1
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -1815,6 +1840,7 @@
         }
       ],
       "groupSetSkills": [],
+      "armorDecoSource": "slots",
       "complete": true
     }
   ]

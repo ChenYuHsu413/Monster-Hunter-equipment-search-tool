@@ -157,6 +157,7 @@
         "Azure Bolt I",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -309,6 +310,7 @@
         "Second Wind I",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -455,6 +457,7 @@
         "Mutual Hostility II",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -595,6 +598,7 @@
         "Burst Boost I",
         "Ward of Wyveria"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -727,6 +731,7 @@
       "groupSetSkills": [
         "Resonance II"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -865,6 +870,7 @@
         "Super Recovery I",
         "Ward of Wyveria"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1011,6 +1017,7 @@
         "Thunderous Roar I",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1149,6 +1156,7 @@
         "Super Recovery I",
         "Second Wind I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1290,6 +1298,7 @@
         "Black Eclipse I",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1423,6 +1432,7 @@
         "Black Eclipse I",
         "Hasten Recovery I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1564,6 +1574,7 @@
         "Black Eclipse I",
         "Bad Blood I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1679,6 +1690,7 @@
       "groupSetSkills": [
         "War Cry I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1726,7 +1738,12 @@
           "nameEn": "Rathian Greaves α"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 3
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -1765,6 +1782,7 @@
       "groupSetSkills": [
         "Master Mounter I"
       ],
+      "armorDecoSource": "slots",
       "complete": true
     }
   ]

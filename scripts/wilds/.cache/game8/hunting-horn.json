@@ -164,6 +164,7 @@
         "Mutual Hostility II",
         "Lord's Soul"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -318,6 +319,7 @@
         "Burst Boost II",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -486,6 +488,7 @@
         "Guts (Tenacity)",
         "–"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -643,6 +646,7 @@
         "Guts (Tenacity)",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -789,6 +793,7 @@
         "Protective Veil I",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -919,6 +924,7 @@
         "Thunderous Roar I",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1080,6 +1086,7 @@
         "Black Eclipse I",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1213,6 +1220,7 @@
         "Black Eclipse I",
         "Super Recovery I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1362,6 +1370,7 @@
         "Ward of Wyveria",
         "Super Recovery II"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1506,6 +1515,7 @@
       "groupSetSkills": [
         "Black Eclipse I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1553,7 +1563,16 @@
           "nameEn": "Conga Greaves β"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Protection Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Destroyer Jewel【2】",
+          "count": 2
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -1598,6 +1617,7 @@
         }
       ],
       "groupSetSkills": [],
+      "armorDecoSource": "slots",
       "complete": true
     }
   ]

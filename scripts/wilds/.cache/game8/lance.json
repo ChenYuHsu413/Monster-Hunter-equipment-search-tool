@@ -146,6 +146,7 @@
         "Black Eclipse I",
         "–"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -296,6 +297,7 @@
         "Mutual Hostility II",
         "Hasten Recovery I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -444,6 +446,7 @@
         "Black Eclipse I",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -590,6 +593,7 @@
         "Binding Counter II",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -754,6 +758,7 @@
         "Guts (Tenacity)",
         "–"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -903,6 +908,7 @@
         "Guts (Tenacity)",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1041,6 +1047,7 @@
         "Guts (Tenacity)",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1187,6 +1194,7 @@
         "Super Recovery I",
         "Ward of Wyveria"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1316,6 +1324,7 @@
         "Second Wind I",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1457,6 +1466,7 @@
         "Ward of Wyveria",
         "Super Recovery II"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1609,6 +1619,7 @@
       "groupSetSkills": [
         "Black Eclipse I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1664,7 +1675,20 @@
           "nameEn": "G. Rathalos Greaves β"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Furor Jewel【2】",
+          "count": 1
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -1717,6 +1741,7 @@
         "Second Wind I",
         "Scorcher I"
       ],
+      "armorDecoSource": "slots",
       "complete": true
     },
     {
@@ -1764,7 +1789,16 @@
           "nameEn": "Conga Greaves β"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Jumping Jewel【2】",
+          "count": 1
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -1817,6 +1851,7 @@
         }
       ],
       "groupSetSkills": [],
+      "armorDecoSource": "slots",
       "complete": true
     }
   ]

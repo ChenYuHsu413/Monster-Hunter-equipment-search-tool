@@ -13,6 +13,18 @@
     },
     "kiranico": {
       "ver": "1.040"
+    },
+    "game8": {
+      "scrapedAt": "2026-08-03",
+      "attribution": "https://game8.co/games/Monster-Hunter-Wilds",
+      "recommendedBuilds": {
+        "total": 173,
+        "byCategory": {
+          "wildsEndgame": 96,
+          "wildsHighRank": 38,
+          "wildsProgression": 39
+        }
+      }
     }
   }
 }

@@ -157,6 +157,7 @@
         "Guts (Tenacity)",
         "Thunderous Roar I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -312,6 +313,7 @@
         "Guts (Tenacity)",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -464,6 +466,7 @@
         "Bad Blood I",
         "Second Wind I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -605,6 +608,7 @@
         "Resonance I",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -746,6 +750,7 @@
         "Black Eclipse I",
         "Super Recovery I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -895,6 +900,7 @@
         "Black Eclipse I",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1037,6 +1043,7 @@
         "Guts (Tenacity)",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1178,6 +1185,7 @@
         "Thunderous Roar I",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1320,6 +1328,7 @@
         "Black Eclipse I",
         "Adrenaline"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1458,6 +1467,7 @@
         "Thunderous Roar I",
         "Lord's Soul"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1594,6 +1604,7 @@
       "groupSetSkills": [
         "Hasten Recovery I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1727,6 +1738,7 @@
         "Black Eclipse I",
         "Second Wind I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1860,6 +1872,7 @@
         "Black Eclipse I",
         "Binding Counter I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1915,7 +1928,20 @@
           "nameEn": "Mizutsune Greaves β"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 1
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -1966,6 +1992,7 @@
       "groupSetSkills": [
         "Second Wind I"
       ],
+      "armorDecoSource": "slots",
       "complete": true
     },
     {
@@ -2012,7 +2039,16 @@
           "nameEn": "Chatacabra Greaves β"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Jumping Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Protection Jewel【1】",
+          "count": 1
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -2053,6 +2089,7 @@
         }
       ],
       "groupSetSkills": [],
+      "armorDecoSource": "slots",
       "complete": true
     }
   ]

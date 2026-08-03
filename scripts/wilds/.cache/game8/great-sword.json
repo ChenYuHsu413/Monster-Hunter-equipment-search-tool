@@ -150,6 +150,7 @@
         "Binding Counter I",
         "Dark Arts"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -309,6 +310,7 @@
         "Hasten Recovery I",
         "Second Wind I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -468,6 +470,7 @@
         "Dark Arts",
         "Hasten Recovery I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -619,6 +622,7 @@
         "Second Wind I",
         "Super Recovery I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -776,6 +780,7 @@
         "Guts (Tenacity)",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -908,6 +913,7 @@
       "groupSetSkills": [
         "The Blackest Night"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1058,6 +1064,7 @@
         "Guts (Tenacity)",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1196,6 +1203,7 @@
         "Super Recovery I",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1346,6 +1354,7 @@
         "Second Wind I",
         "Black Eclipse I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1500,6 +1509,7 @@
         "Guts (Tenacity)",
         "Black Eclipse I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1625,6 +1635,7 @@
         "Decimator I",
         "Binding Counter I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1746,6 +1757,7 @@
         "Second Wind I",
         "Ward of Wyveria I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1793,7 +1805,12 @@
           "nameEn": "Chatacabra Greaves β"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 3
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -1838,6 +1855,7 @@
         }
       ],
       "groupSetSkills": [],
+      "armorDecoSource": "slots",
       "complete": true
     }
   ]

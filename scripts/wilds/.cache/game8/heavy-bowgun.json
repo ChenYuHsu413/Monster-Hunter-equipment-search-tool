@@ -156,6 +156,7 @@
         "Mutual Hostility II",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -299,6 +300,7 @@
         "Guts (Tenacity)",
         "Second Wind I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -449,6 +451,7 @@
         "Black Eclipse II",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -602,6 +605,7 @@
         "Black Eclipse II",
         "Adrenaline"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -751,6 +755,7 @@
         "Black Eclipse I",
         "Second Wind I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -901,6 +906,7 @@
         "Guts (Tenacity)",
         "Azure Bolt I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1043,6 +1049,7 @@
         "Guts (Tenacity)",
         "Black Eclipse I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1181,6 +1188,7 @@
         "Super Recovery I",
         "Ward of Wyveria"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1338,6 +1346,7 @@
         "Black Eclipse I",
         "Super Recovery I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1464,6 +1473,7 @@
         }
       ],
       "groupSetSkills": [],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1581,6 +1591,7 @@
         "Scorcher I",
         "Ward of Wyveria I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1628,7 +1639,12 @@
           "nameEn": "Chatacabra Greaves β"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 1
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -1673,6 +1689,7 @@
         }
       ],
       "groupSetSkills": [],
+      "armorDecoSource": "slots",
       "complete": true
     }
   ]

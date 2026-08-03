@@ -110,6 +110,38 @@ Game8 5 個 HR 層級 → 收斂 **3 分區**：
 
 - Rise N=4、World N=5。Wilds skillTotals 每筆技能數多（GS endgame ~14–15 個），**N 待以來源結構
   校準**（匯入時取「紅字/定義性技能」前 N，比照 builder-import extractCoreSkills）——續輪定 N 並記理由。
+- **Phase 6b 定案：N=4**（`WILDS_CORE_SKILL_COUNT`）。實測（`validate-wilds-builds.mjs`）：
+  endgame top-N 跑搜尋 **N=4 → 12/12 有結果**、N=5 → 10/12、N≥6 遞減；highRank N=4/5/6 → 11/12。
+  技能數分佈 endgame 眾數 13–15。**取 importability 最優的 N=4**（同 Rise「匯入必有結果」優先原則；
+  Wilds 珠密度高，N 過大會過度約束搜尋）。extractCoreSkills 排序沿用 `selectWorldCoreSkillRows`
+  （game-agnostic）：ratio（等級÷上限）→ 等級 → 原順序（Wilds 無 Game8 紅字標記，故無 required 首鍵）。
+
+## §2b 映射 + 匯入結果（Phase 6b，`import-game8-mhwd.mjs`）
+
+- **映射統計**：實體 **2175 / 直通 2175（100%）/ 屬性佔位 38 / 真缺 0**。`game8-en-overrides.json`
+  **空**（無需 override）。映射鍵：防具/武器＝`{armors,weapons}.json` nameEn；珠/護石＝mhdb en
+  locale（`.cache/*.en.json` 的 id → wd_/wc_，與 committed 資料 0 漂移，已驗全 id 可解）；技能＝
+  skills.json nameEn→繁中。屬性佔位（Elemental Attack 等 38 筆）＝Game8 泛稱屬性珠，標 placeholder。
+- **產出**：`src/data/wilds/recommended-builds.json` **173 build**（endgame 96 / highRank 38 /
+  progression 39；Artian 141），每筆 `metaVersion:"1.041"`；**連跑兩次逐位元一致**。schema 對齊 World
+  （weapons/armor/charm/buildDecorations/skillTotals/unmodeled），Artian → `unmodeled.artian`。
+- **clamp**：skillTotals 逐級 clamp 到靜態 skillMax（Wilds `secretSkills:false`，無動態上限 → 不虛構
+  secret；set/group 由防具件數表達）。
+
+## §3 achievability 重算 + EFR sanity（`validate-wilds-builds.mjs`，World 179 方法）
+
+- **重算 vs Game8（±1 容忍）**：exact **Artian 6/141、非 Artian 6/32、合計 12/173**。off 分兩類：
+  - **Artian 135**：Artian 武器隨機 roll（set skill / group skill / focus / 攻擊強化）**不在資料**
+    → 重算 < Game8。**這是 Wilds 版的「World 覺醒未模擬」**；占比高（meta 78% 用 Artian）是 Wilds
+    生態特性，非資料錯（Phase 5 已定「Artian 簡化輸入、不逐能力模擬」）。
+  - **非 Artian 26**：小幅邊際差（多 1 技能差 2–3 級），源自武器內建技超出 mhdb 記載、Game8「Armor
+    Decorations」總表偶有省略等——**與 World 自身 26 套「其他」off 同級同因**（珠位/防具欄邊際差）。
+  - recompute 邏輯正確性：以 Bale Dahaad 手驗 **13/14 吻合**（唯一缺項為 Artian roll 的逆襲）背書。
+- **Gogmazios 借用件（§3.1 點名）**：29 套用 Gogmazios 件。借用件 `setBonusId=wsb_178`（原生
+  Gogmapocalypse）+ `extraSetBonusIds`（如 wsb_25），recompute 對主 set 與每個 extra **各 +1 件
+  （聯集）**計數，借用 set 門檻可達；由 `smoke-wilds.mjs` ⑦/⑦b 逐位元背書。
+- **EFR 排序 sanity（§3.2）**：4 武種（bow/charge-blade/dual-blades/great-sword）以 endgame 核心
+  技能搜尋，結果皆 **EFR 降冪、首位非平凡**（top efr GS 2506 / CB 1809 / DB 1025 / bow 195）。4/4 通過。
 
 ## §5 進度與續跑（快取固化，跨輪）
 

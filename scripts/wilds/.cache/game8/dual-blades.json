@@ -161,6 +161,7 @@
         "Guts (Tenacity)",
         "Hasten Recovery I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -316,6 +317,7 @@
         "Guts (Tenacity)",
         "Binding Counter I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -474,6 +476,7 @@
         "Mutual Hostility II",
         "Ebony Odogaron's Power I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -604,6 +607,7 @@
         "Guts (Tenacity)",
         "Bad Blood I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -737,6 +741,7 @@
         "Black Eclipse I",
         "Super Recovery I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -883,6 +888,7 @@
         "Black Eclipse I",
         "Adrenaline"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1029,6 +1035,7 @@
         "Razor's Edge I",
         "Guts (Tenacity)"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1175,6 +1182,7 @@
         "Black Eclipse I",
         "Adrenaline"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1324,6 +1332,7 @@
         "Hasten Recovery I",
         "Black Eclipse I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1458,6 +1467,7 @@
         "Thunderous Roar I",
         "Black Eclipse I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1608,6 +1618,7 @@
         "Guts (Tenacity)",
         "Black Eclipse I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1745,6 +1756,7 @@
         "Black Eclipse I",
         "Adrenaline I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1853,6 +1865,7 @@
         "Burst Boost I",
         "Second Wind I"
       ],
+      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1900,7 +1913,16 @@
           "nameEn": "Conga Greaves β"
         }
       ],
-      "armorDecos": [],
+      "armorDecos": [
+        {
+          "nameEn": "Refresh Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Evasion Jewel【2】",
+          "count": 2
+        }
+      ],
       "talisman": null,
       "skillTotals": [
         {
@@ -1937,6 +1959,7 @@
         }
       ],
       "groupSetSkills": [],
+      "armorDecoSource": "slots",
       "complete": true
     }
   ]

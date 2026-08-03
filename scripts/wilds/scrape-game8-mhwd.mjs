@@ -139,37 +139,51 @@ function parseArtian(tableHtml) {
   };
 }
 
-/** 解析 Armor Loadout 表 → { armor[{slot,nameEn}], armorDecos[{nameEn,count}], talisman }。 */
+/**
+ * 逐槽珠抽取（layout-agnostic）：掃整表所有 `<div class="align">` 珠塊，取**無 <b>xN</b>** 者
+ * （＝逐槽顯示，每塊 1 顆），合併同名。避開「Armor Decorations」總表列（該列珠帶 xN）。
+ * 動機：部分 build（尤其 bow）**無總表列** → 逐槽是唯一可靠來源；有總表列時逐槽合併＝總表（已驗）。
+ */
+function parseSlotDecos(tableHtml) {
+  const m = new Map();
+  for (const blk of tableHtml.split(/<div class="align">/).slice(1)) {
+    const head = blk.slice(0, 400); // 只看塊首，避免吃到下一塊
+    const alt = (head.match(/alt="([^"]*?)\s*(?:Icon)?"/) || [])[1];
+    if (!alt || !/【\d+】/.test(alt)) continue;
+    if (/<b[^>]*>\s*x\s*\d+/i.test(head)) continue; // 帶 xN → 總表列，跳過（逐槽無 xN）
+    m.set(alt.trim(), (m.get(alt.trim()) ?? 0) + 1);
+  }
+  return [...m.entries()].map(([nameEn, count]) => ({ nameEn, count }));
+}
+
+/**
+ * 解析 Armor Loadout 表 → { armor[{slot,nameEn}], armorDecos[{nameEn,count}], talisman }。
+ * armorDecos 取自逐槽珠（parseSlotDecos，總表列缺時仍可靠）；逐槽歸屬對技能總表無影響故不逐件建模。
+ */
 function parseArmorLoadout(tableHtml) {
   const rows = rowsOf(tableHtml);
   const armor = [];
-  let armorDecos = [];
   let talisman = null;
+  let summaryDecos = null; // 「Armor Decorations」總表列（含 xN，最可靠）
   let armorIdx = 0;
   for (const r of rows) {
     const cells = cellsOf(r);
     const label = (cells[0] || "").toLowerCase();
     if (label === "armor" && cells.some((c) => /slots/i.test(c))) continue; // 標頭
-    if (label.startsWith("armor decorations")) {
-      const td = r.split(/<th[^>]*>[\s\S]*?<\/th>/i).join("") ; // 去 th
-      armorDecos = parseDecoCell(r);
-      continue;
-    }
+    if (label.startsWith("armor decorations")) { summaryDecos = parseDecoCell(r); continue; }
     if (label.startsWith("talisman")) {
       talisman = firstEquipName(r) || textOf(cells[1] || "") || null;
-      // 護石名常為純文字（非連結）：退回第二格文字
       if (!talisman || /【\d+】/.test(talisman)) talisman = textOf((r.match(/<td[^>]*>([\s\S]*?)<\/td>/) || [])[1] || "") || talisman;
       continue;
     }
-    if (label.startsWith("def and res") || label.startsWith("def") ) continue;
-    // 一般防具列：首格為裝備名
+    if (label.startsWith("def and res") || label.startsWith("def")) continue;
+    // 一般防具列：首格為裝備名。
     const nameEn = firstEquipName(r);
-    if (nameEn && armorIdx < 5) {
-      armor.push({ slot: ARMOR_SLOTS[armorIdx], nameEn });
-      armorIdx++;
-    }
+    if (nameEn && armorIdx < 5) { armor.push({ slot: ARMOR_SLOTS[armorIdx], nameEn }); armorIdx++; }
   }
-  return { armor, armorDecos, talisman };
+  // 珠：優先總表列（xN 計數可靠）；缺總表列（部分 bow build）退回逐槽合併。
+  const armorDecos = summaryDecos && summaryDecos.length ? summaryDecos : parseSlotDecos(tableHtml);
+  return { armor, armorDecos, talisman, armorDecoSource: summaryDecos && summaryDecos.length ? "summary" : "slots" };
 }
 
 /** 疑似技能名（濾掉 Game8「Skill Buffs Breakdown」內的 EFR/親和分析行污染）。 */
@@ -266,6 +280,7 @@ function parseBuild(seg, weaponType, category, buildName, url, idx) {
         const a = parseArmorLoadout(tbl);
         build.armor = a.armor;
         build.armorDecos = a.armorDecos;
+        build.armorDecoSource = a.armorDecoSource;
         build.talisman = a.talisman;
         break;
       }
