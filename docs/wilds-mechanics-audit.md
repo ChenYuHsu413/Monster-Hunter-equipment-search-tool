@@ -1,5 +1,6 @@
 # wilds-mechanics-audit.md — MH Wilds 機制定案（Phase 0）
 
+> **狀態**：Phase 0｜結案版本 `wilds-v1`（@ `40e25c4`）｜9 條機制定案已於 Phase 3–6 落地；#2 珠雙池「零跨池例外」為 solver 前提（Ascendance 若引入跨池珠需重審）。
 > 產出日期：2026-08-02。對 PLAN-wilds §A 的 9 條先驗逐條以 **mhdb-wilds 實抓資料**定案。
 > 每條格式：先驗 → 證據（實抓片段）→ 定案 → 引擎影響。所有證據為本日 API 實抓，非訓練記憶。
 > 取證主指令（locale 可換 zh-Hant）：`curl -s 'https://wilds.mhdb.io/en/<category>?limit=N&q=<json>'`

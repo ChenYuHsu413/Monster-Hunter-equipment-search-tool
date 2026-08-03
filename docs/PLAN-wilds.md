@@ -1,6 +1,24 @@
 # PLAN-wilds.md — Monster Hunter Wilds 擴充規劃書
 
-> 撰寫日期:2026-08-02。前置文件:`HANDOFF-wilds.md`(交接)、`PLAN-iceborne.md`(格式模板)、`CLAUDE.md`(§0 禁區 / §5 閘門制 / §6 裁決)。
+> ## ✅ 已結案 — 結案版本 `wilds-v1`（@ `40e25c4`，2026-08-03）
+> 本規劃書為**史料**（計畫如當初所寫）。以下為各 Phase 落地 commit 與**重大偏離指標**
+> （實測翻案處，指向對應 audit 節；Phase 條文本體不改，偏離以此加註記錄）：
+>
+> | Phase | 落地 commit | 重大偏離／翻案指標 |
+> |---|---|---|
+> | R 文件現代化 | `4a93e4a` | — |
+> | 0 資料源選型+機制定案 | `8b53a53` | charm 「64 系列」為低估性誤植（實 60 可生產+4 RNG），Phase 2 校正 |
+> | 1a World 回歸基準 / 1b schema | `7e14d16` / `2a6f205` | 版本策略改**集中 manifest**（非資料檔頂層 dataVersion；`wilds-data-source-audit.md` §5） |
+> | 2 匯入管線（+schema `cd0f741`） | `22ff5a5` | attack 初判 =`damage.display`，**Phase 4a 翻案→`damage.raw`**（`efr-wilds-notes.md` §1） |
+> | 3a W11 基準 / 3 引擎閘門 | `52400a6` / `db07f7f` | 珠雙池 solver 依「零跨池例外」前提（`wilds-mechanics-audit.md` #2） |
+> | 4a 斬味考證+attack 修正 / 4b efr-wilds | `94cda36` / `9bc13a6` | **斬味 base/max 方向與 World 相反**（單列=匠0 base；`wilds-sharpness-audit.md` §2） |
+> | 5 UI/持久化/lazy | `debdd72` | — |
+> | 6 → **拆 6/6b**（前置 `18f890b`、基建 `12cd232`） | `fd54a42` `97102b0` `44b3987` | Game8 頁 premise「JS-render-gated」**翻案→靜態 `fetch()`**；快取 gitignore 裁決**翻案→進版控**（`wilds-game8-audit.md` §6②③） |
+> | Z 收尾+achievability | `40e25c4` | 「exact 12/173」**三層翻案**（Game8 skillTotals＝人工摘要非忠實加總；`wilds-game8-audit.md` §3b） |
+>
+> **結案後尾巴**（比照 iceborne-v2-tails）：W-C regression-all 統一 `dfb6a85` + 結果卡 UI `4093b7f`；W-D 文件盤點（本輪）。
+>
+> 撰寫日期:2026-08-02。前置文件:`HANDOFF-wilds.md`(交接)、`PLAN-iceborne.md`(格式模板；實檔名 `WORLD-ICEBORNE-EXPANSION-PLAN.md`)、`CLAUDE.md`(§0 禁區 / §5 閘門制 / §6 裁決)。
 > 本規劃書已依 2026-08 網路查證修正交接文件 §5 的兩處重大出入(見 §A)。
 > **實測與本 PLAN 衝突時,以實測為準並在回報中點名條目**——前兩計畫此原則救場 6+ 次。
 

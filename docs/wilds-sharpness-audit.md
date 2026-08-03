@@ -1,5 +1,6 @@
 # wilds-sharpness-audit.md — MH Wilds 斬味考證（Phase 4）
 
+> **狀態**：Phase 4｜結案版本 `wilds-v1`（@ `40e25c4`）｜考證定案：`sharpness` 單列＝**匠0 base**、`handicraft[]`＝延展（**方向與 World 相反**，§2）；已於 `efr-wilds.ts` 落地（全 947 把自洽）。
 > 產出日期：2026-08-02。**方法參照前代（efr-world/world-sharpness-audit）但數字禁沿用**
 > （World「CSV 單列＝匠5」二度自我推翻的教訓）。本輪結論全部以 **mhdb-wilds 資料自洽 + 400 bar cap
 > 證據 + Kiranico 1.040 攻擊值交叉**支撐，非憑記憶。

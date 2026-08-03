@@ -1,5 +1,6 @@
 # wilds-data-source-audit.md — MH Wilds 資料源實測選型（Phase 0）
 
+> **狀態**：Phase 0（+§6 Phase 2 匯入落地）｜結案版本 `wilds-v1`（@ `40e25c4`）｜史料，含後續加註（§6 line 144 attack `display→raw` 翻案）。
 > 產出日期：2026-08-02。格式比照 `docs/world-data-source-audit.md`。
 > **Ground truth 順位**：實際 API/頁面回傳 > repo 文件 > PLAN/HANDOFF 先驗。本輪每格數字皆為
 > 本日實抓（mhdb-wilds API 抽樣 + Kiranico 瀏覽器渲染），非訓練記憶。抽樣上限每類目 ≤10 筆結構樣本；

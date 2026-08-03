@@ -1,4 +1,7 @@
 # 擴充計畫：新增 Monster Hunter World: Iceborne 配裝搜尋（多遊戲架構）
+> **✅ 已結案 — 結案版本 `iceborne-v1`（核心）＋ `iceborne-v2-tails`（尾巴 A–D，@ `463cee2`）。**
+> 本文件為史料（計畫如當初所寫）；各 Phase 完成情況與四條尾巴裁決見 `HANDOFF.md` §0、`CLAUDE.md` §6。
+> 本文內「兩款遊戲」等敘述為 World 輪當時語境（現為三遊戲，最新見 `HANDOFF.md` §00）。
 > 本文件是給實作 agent 的完整規劃書。開工前必讀 repo 根目錄 `CLAUDE.md`（禁區 §0、
 > 工作協議 §5 全部適用於本計畫）。本計畫的最高原則：**Rise 現有行為零改變**。
 > 每個 Phase 結束必須附「當下真實工具輸出」作為佐證，無佐證的宣稱不算完成。

@@ -8,7 +8,8 @@
 
 ## 00. Wilds 擴充完成態（最新輪，2026-08-03）
 
-**現狀快照（以實測為準）**：`origin/main` @ `44b3987`；結案 tag **`wilds-v1`**（打在文件收尾 commit）；
+**現狀快照（以實測為準）**：結案 tag **`wilds-v1`** @ `40e25c4`（Phase Z 核心+文件收尾）；
+其後尾巴 **W-C**（`dfb6a85` regression-all 統一 + `4093b7f` 結果卡 UI）、**W-D**（文件盤點，本輪）；
 錨點 `pre-wilds`。首屏 **296 kB**（`next build` 實測，含 Wilds；推薦資料為 lazy chunk）。
 三綠燈：`regression-all.mjs --check`（Rise 10 + World 11 逐位元）、`tsc --noEmit`、乾淨 build 全綠；
 Wilds 冒煙 21、efr-wilds 32。
@@ -34,12 +35,18 @@ Wilds 冒煙 21、efr-wilds 32。
 - ⏳ **EFR `EXPECTED_SHARPNESS_USE=60` 待 Wilds 實測校準**（佔位常數，禁當定值）。
 - ⏳ **傷口（wound）/ 集中模式（Focus Mode）不建模**（v1；EFR 為同武器種相對排序，影響次要）。
 - ⏳ **Low Rank 推薦 deferred**（`wildsLowRank`）：Game8 有獨立 LR 頁（來源存在），未匯入、列尾巴候選。
-- 🔹 珠池視覺分組、set/group 觸發件數區塊：v1-deferred（UI 增益，非正確性）。
+- ✅ ~~珠池視覺分組、set/group 觸發件數區塊：v1-deferred（UI 增益，非正確性）~~ → **尾巴 W-C 已完成**
+  （`4093b7f`）：DecorationSummary 依 pool 分武器珠/防具珠、BuildResultCard set/group 觸發區塊（setBonusId∪extraSetBonusIds 聯集件數 + groupId 3 件雙軌）。
+- 🔹 **空洞池別標記（v1-deferred）**：結果卡「剩餘空洞」目前 `remainingSlots` 為裸 `number[]`，
+  需引擎補 `pool` 欄位（每個空洞歸屬武器/防具池）後，UI 才能對**空洞**標池別；**已放置珠的分組已完成**（W-C）。
 - 🔹 使用者護石池別預設 armor 相容行為（RNG 護石逐洞池別，預設池相容）。
-- ✅ ~~`regression-all.mjs` 尚未串接 wilds 冒煙 + efr~~ → **尾巴 W-C 已統一**：單指令四段
+- ✅ ~~`regression-all.mjs` 尚未串接 wilds 冒煙 + efr~~ → **尾巴 W-C §1 已統一**（`dfb6a85`）：單指令四段
   （Rise 10 + World 11 逐位元 + Wilds 冒煙 21 + Wilds EFR 32），總結行列四段狀態、任一 FAIL 整體 exit 1。
 - 🔹 映射 **2175/2175 直通、零 override** 是異常乾淨的記錄——Ascendance 重灌時**複驗此性質是否維持**
   （若出現 override 需求，代表命名體系變動）。
+- 🔹 **（optional value-add，僅 jolen 機可跑、非阻擋）Game8 快取 diff 檢核**：該機 gitignored 的
+  `scripts/wilds/.cache/game8/` 若留有 Phase 6 前半的**瀏覽器擷取樣本**，可與版控的 `fetch` 版擷取
+  diff（預期：舊樣本多導覽/related 雜訊項，真 build 逐筆對得上＝通過）。**該機快取被清則此項自然作廢。**
 
 **Ascendance（2027）起手指引**：資料版本跳升、可能重排 id 的已知事件。升級前先驗：
 `scripts/wilds/diff-report.mjs`（新舊 snapshot 差異）+ `manifest.dataVersion` + `docs/PLAN-wilds.md` §A。
@@ -97,7 +104,7 @@ localStorage 前綴 rise `mhsb.*` / world `mhwib.*`（Rise 既有鍵一個未動
 
 MHR: Sunbreak 破曉配裝網站（Next.js 14 / React 18 / TypeScript）。雙 Tab：**推薦配裝**
 （Game8 各階段實戰配裝）＋**配裝器**（以「選技能 + 選武器」驅動、EFR 排序搜尋、護石清單、
-可分享連結、可匯入推薦配裝）。**現為雙遊戲**（Rise 破曉 / World Iceborne，見 §0）。
+可分享連結、可匯入推薦配裝）。**現為三遊戲**（Rise 破曉 / World Iceborne / Wilds 荒野；本 §1 為 Rise 背景，World 見 §0、Wilds 見 §00）。
 
 > ⚠️ 前一輪（2026-07-10）移除「流派 preset」下拉與 `/guide` 新手引導模式——兩者定位與推薦配裝
 > 頁籤重疊。配裝器主軸回歸「選技能 + 選武器」。刪除面：`BuildPresetSelector.tsx`、

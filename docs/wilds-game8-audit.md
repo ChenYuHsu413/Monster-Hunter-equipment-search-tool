@@ -1,5 +1,7 @@
 # wilds-game8-audit.md — MH Wilds 推薦配裝來源調查與匯入（Phase 6 / 6b）
 
+> **狀態**：Phase 6 / 6b（+§3b Phase Z achievability）｜結案版本 `wilds-v1`（@ `40e25c4`）｜**本文件含後續翻案加註**：
+> §3★ achievability「exact 12」→三層可歸因（§3b）；§6② Game8「JS-render-gated」→靜態 `fetch()`；§6③ 快取 gitignore→進版控。
 > 產出日期：2026-08-03。方法參照 `docs/world-game8-audit.md`（尾巴 A），但**分區不照抄 World，以實測收斂**。
 > 本檔隨進度更新。
 
