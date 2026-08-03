@@ -6,8 +6,10 @@ import type {
   ArmorPiece,
   BuildResult,
   Decoration,
+  DecorationPool,
   ElementResistanceKey,
   FixedParts,
+  GroupSkill,
   SetBonus,
   Skill,
   SkillMap,
@@ -69,6 +71,10 @@ export type WorldResultInfo = {
    * 使 3 件門檻可用 2 件防具達成。undefined＝無（一般搜尋）。
    */
   virtualSetBonus?: Record<string, number>;
+  /** Wilds group skill：groupId → GroupSkill（3 件門檻獨立軌）。World 為 undefined。 */
+  groupById?: Record<string, GroupSkill>;
+  /** Wilds 旗標：啟用珠雙池視覺分組 + group 觸發區塊。World/Rise 為 undefined。 */
+  isWilds?: boolean;
 };
 
 const SHARP_COLOR_ZH = ["紅", "橙", "黃", "綠", "藍", "白", "紫"];
@@ -116,6 +122,9 @@ function worldSetBonusRows(
   const counts: Record<string, number> = virtualSetBonus ? { ...virtualSetBonus } : {};
   for (const p of pieces) {
     if (p.setBonusId) counts[p.setBonusId] = (counts[p.setBonusId] ?? 0) + 1;
+    // Wilds Gogmazios 借用件：件數吃 setBonusId ∪ extraSetBonusIds 聯集（與引擎 computeSetBonusSkills
+    // 同一規則，skill-calculator.ts）。Rise/World 無 extraSetBonusIds → 零迭代、行為不變。
+    for (const e of p.extraSetBonusIds ?? []) counts[e] = (counts[e] ?? 0) + 1;
   }
   const rows: {
     name: string;
@@ -131,6 +140,28 @@ function worldSetBonusRows(
       .map((r) => ({ skill: r.skillName, pieces: r.pieces }));
     if (triggered.length)
       rows.push({ name: sb.nameZh, count, virtual: virtualSetBonus?.[id] ?? 0, triggered });
+  }
+  return rows;
+}
+
+/**
+ * Wilds group skill：統計防具 groupId 件數（門檻恆 3，見 computeGroupSkills），回傳達門檻的 rank。
+ * 與 set bonus 為獨立雙軌；件數/門檻直接由引擎選出的裝備 groupId 導出（同 computeGroupSkills 規則）。
+ */
+function wildsGroupRows(
+  pieces: ArmorPiece[],
+  groupById: Record<string, GroupSkill>
+): { name: string; count: number; triggered: { skill: string; pieces: number }[] }[] {
+  const counts: Record<string, number> = {};
+  for (const p of pieces) if (p.groupId) counts[p.groupId] = (counts[p.groupId] ?? 0) + 1;
+  const rows: { name: string; count: number; triggered: { skill: string; pieces: number }[] }[] = [];
+  for (const [id, count] of Object.entries(counts)) {
+    const g = groupById[id];
+    if (!g) continue;
+    const triggered = g.ranks
+      .filter((r) => count >= r.pieces)
+      .map((r) => ({ skill: r.skillName, pieces: r.pieces }));
+    if (triggered.length) rows.push({ name: g.nameZh, count, triggered });
   }
   return rows;
 }
@@ -314,6 +345,16 @@ export function BuildResultCard({
   const setBonusRows = world
     ? worldSetBonusRows(armorPieces, world.setBonusById, world.virtualSetBonus)
     : [];
+  // Wilds group skill 觸發（3 件門檻；獨立雙軌）。World/Rise 無 groupById → 空。
+  const groupRows = world?.groupById ? wildsGroupRows(armorPieces, world.groupById) : [];
+  // Wilds 珠雙池：decorationId → pool（供 DecorationSummary 分組）。Rise/World 無 pool → undefined（攤平）。
+  const decoPoolById = useMemo(() => {
+    if (!world?.isWilds) return undefined;
+    const m: Record<string, DecorationPool> = {};
+    for (const list of Object.values(decorationsBySkill))
+      for (const d of list) if (d.pool) m[d.id] = d.pool;
+    return m;
+  }, [world?.isWilds, decorationsBySkill]);
   const secretRows = useMemo(() => {
     if (!world) return [];
     const active = activeSetBonusSkills(
@@ -557,8 +598,8 @@ export function BuildResultCard({
           </div>
         </div>
 
-        {/* World：set bonus 觸發、secret 解放後分母、生效斬味色 */}
-        {world && (setBonusRows.length > 0 || secretRows.length > 0 || sharpIdx >= 0) && (
+        {/* World：set bonus 觸發、secret 解放後分母、生效斬味色。Wilds：另加 group skill 觸發雙軌。 */}
+        {world && (setBonusRows.length > 0 || groupRows.length > 0 || secretRows.length > 0 || sharpIdx >= 0) && (
           <div className="space-y-1.5 rounded-md border border-border/60 bg-muted/20 px-2.5 py-2">
             {sharpIdx >= 0 && (
               <div className="flex items-center gap-1.5 text-xs">
@@ -614,6 +655,27 @@ export function BuildResultCard({
                 </div>
               </div>
             )}
+            {groupRows.length > 0 && (
+              <div className="flex items-start gap-1.5 text-xs">
+                <Layers className="mt-0.5 h-3.5 w-3.5 shrink-0 text-emerald-500/70" />
+                <div className="min-w-0 flex-1 space-y-0.5">
+                  {groupRows.map((r) => (
+                    <div key={r.name} className="flex flex-wrap items-center gap-x-1.5">
+                      <span className="font-medium text-foreground">{r.name}</span>
+                      {r.triggered.map((t) => (
+                        <Badge
+                          key={t.skill + t.pieces}
+                          variant="outline"
+                          className="border-emerald-500/40 px-1.5 py-0 text-[11px] text-emerald-500"
+                        >
+                          群組技能：{t.skill}（{r.count}/{t.pieces} 件）
+                        </Badge>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
             {secretRows.length > 0 && (
               <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[11px]">
                 <span className="text-muted-foreground">解放上限</span>
@@ -645,7 +707,7 @@ export function BuildResultCard({
           <div className="flex items-center gap-1.5 text-xs font-medium text-muted-foreground">
             <Gem className="h-3.5 w-3.5" /> 裝飾珠配置
           </div>
-          <DecorationSummary decorations={result.decorations} />
+          <DecorationSummary decorations={result.decorations} poolByDecoId={decoPoolById} />
         </div>
 
         {/* 自動技能（依武器屬性加入，由搜尋引擎 autoRules 產生）。

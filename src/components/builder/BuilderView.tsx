@@ -11,6 +11,7 @@ import type {
   FixedParts,
   ExcludedItems,
   GameId,
+  GroupSkill,
   ReservedSlots,
   SetBonus,
   SearchMode,
@@ -144,6 +145,8 @@ export function BuilderView({
     needsRegistry ? null : getGameProfile("rise")
   );
   const [worldCharmPool, setWorldCharmPool] = useState<Charm[]>([]);
+  // Wilds group skill 索引（結果卡 group 觸發區塊用；由 wilds-registry 提供，UI 只消費）。
+  const [wildsGroupById, setWildsGroupById] = useState<Record<string, GroupSkill>>({});
   useEffect(() => {
     if (!needsRegistry) return;
     let alive = true;
@@ -157,10 +160,11 @@ export function BuilderView({
         setWorldCharmPool(ws.charms);
       } else if (isWilds) {
         const { ensureWildsRegistered } = await import("@/lib/wilds-registry");
-        await ensureWildsRegistered();
+        const ws = await ensureWildsRegistered();
         if (!alive) return;
         setGameStatic(getGameStaticData("wilds"));
         setProfile(getGameProfile("wilds"));
+        setWildsGroupById(ws.groupById); // 結果卡 group 觸發區塊（UI 消費引擎靜態資料）
         // 可生產護石自動進候選池（引擎 build-search wilds 分支）；UI 護石庫收 RNG 護石，故不設 worldCharmPool。
       }
     })();
@@ -234,21 +238,24 @@ export function BuilderView({
       ? worldWeaponAugment
       : undefined;
 
-  // World 結果卡顯示所需（set bonus / secret 分母 / 虛擬件數）。Rise 為 undefined。
+  // 結果卡進階顯示（set bonus / secret 分母 / 虛擬件數；Wilds 另加 group + 珠雙池）。Rise 為 undefined。
   const worldResultInfo = useMemo(
     () =>
-      isWorld && profile && gameStatic
+      (isWorld || isWilds) && profile && gameStatic
         ? {
             setBonusById: worldSetBonusById,
             skillByName: gameStatic.skillByName,
             resolveSkillMax: profile.resolveSkillMax,
-            // 武器覺醒賦予的虛擬 set bonus（+1 件）：結果卡件數統計種入。
+            // 武器覺醒賦予的虛擬 set bonus（+1 件）：結果卡件數統計種入（World 專屬）。
             virtualSetBonus: activeWeaponAugment?.setBonusId
               ? { [activeWeaponAugment.setBonusId]: 1 }
               : undefined,
+            // Wilds：group skill 雙軌 + 珠雙池視覺分組旗標。
+            groupById: isWilds ? wildsGroupById : undefined,
+            isWilds: isWilds || undefined,
           }
         : undefined,
-    [isWorld, profile, gameStatic, worldSetBonusById, activeWeaponAugment]
+    [isWorld, isWilds, profile, gameStatic, worldSetBonusById, activeWeaponAugment, wildsGroupById]
   );
 
   // ---- World 護石選擇（craftable-list）：固定一顆 / 排除若干顆。Rise 不用。 ----
