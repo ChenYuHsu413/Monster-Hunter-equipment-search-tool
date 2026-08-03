@@ -1,0 +1,1679 @@
+{
+  "url": "https://game8.co/games/Monster-Hunter-Wilds/archives/502810",
+  "weaponType": "heavy-bowgun",
+  "scrapedAt": "2026-08-03",
+  "dataVersion": "1.041",
+  "builds": [
+    {
+      "id": "heavy-bowgun_wildsEndgame_0",
+      "weaponType": "heavy-bowgun",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Gogmapocalypse Guts Elemental HBG",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502810",
+      "weapon": "Trembling Hels",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Bandolier/Precise Jwl【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Blaze/Precise Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Crit Element/Precise Jwl【3】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": "Element or Attack Focus",
+        "setSkill": "Gogmapocalypse",
+        "groupSkill": "Lord's Soul",
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +1 • Attack +5 • Attack +5 • Attack +5 Element Type: Any (Except Status Effects) | • Attack +5 • Attack +5 • Attack +5 • Capacity Boost +1-2 (EX) • Capacity Boost +1-2 (EX)",
+          "Focus : Element or Attack Focus Set Skill : Gogmapocalypse Group Skill : Lord's Soul"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Duna Wildhelm γ"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Dahaad Shardmail γ"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Gogmazios Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Gogmazios Coil α"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Gogmazios Greaves α"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Evasion Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Jumping Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Gobbler Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Shockproof Jewel【1】",
+          "count": 1
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Attack Boost",
+          "level": 4
+        },
+        {
+          "nameEn": "Critical Element",
+          "level": 3
+        },
+        {
+          "nameEn": "Ballistics",
+          "level": 3
+        },
+        {
+          "nameEn": "Tetrad Shot",
+          "level": 3
+        },
+        {
+          "nameEn": "Element Attack",
+          "level": 3
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Peak Performance",
+          "level": 5
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 3
+        },
+        {
+          "nameEn": "Speed Eating",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 2
+        },
+        {
+          "nameEn": "Evade Window",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 2
+        },
+        {
+          "nameEn": "Shock Absorber",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Mutual Hostility II",
+        "Guts (Tenacity)"
+      ],
+      "complete": true
+    },
+    {
+      "id": "heavy-bowgun_wildsEndgame_1",
+      "weaponType": "heavy-bowgun",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Crit Elemental Gog HBG",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502810",
+      "weapon": "Trembling Hels",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Bandolier/Precise Jwl【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Opener/Precise Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Crit Element/Precise Jwl【3】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": "Element Focus",
+        "setSkill": "Fulgur Anhanath's Will",
+        "groupSkill": "Lord's Soul",
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +1 • Attack +5 • Attack +5 • Attack +5 Element Type: Any (Except Status Effects) | • Attack +5 • Attack +5 • Attack +5 • Capacity Boost +1 • Capacity Boost +1",
+          "Focus : Element Focus Set Skill : Fulgur Anhanath's Will Group Skill : Lord's Soul"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Rey Sandhelm γ"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "G. Ebony Mail β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Gogmazios Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "G. Ebony Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Duna Wildgreaves γ"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 3
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 2
+        },
+        {
+          "nameEn": "Jumping Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 3
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Ballistics",
+          "level": 3
+        },
+        {
+          "nameEn": "Critical Element",
+          "level": 3
+        },
+        {
+          "nameEn": "Opening Shot",
+          "level": 3
+        },
+        {
+          "nameEn": "Tetrad Shot",
+          "level": 3
+        },
+        {
+          "nameEn": "Attack Boost",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Quick Sheathe",
+          "level": 3
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 1
+        },
+        {
+          "nameEn": "Stamina Surge",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Burst Boost I",
+        "Guts (Tenacity)",
+        "Second Wind I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "heavy-bowgun_wildsEndgame_2",
+      "weaponType": "heavy-bowgun",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Gore General-Purpose Pierce HBG",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502810",
+      "weapon": "Trembling Hels",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Guardian/Ironwall Jwl【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Opener/Ironwall Jwl【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": "Element Focus",
+        "setSkill": "Gore Magala's Tyranny",
+        "groupSkill": "Lord's Soul",
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +1 • Attack +5 • Attack +5 • Attack +5 Element Type: Paralysis | • Attack +5 • Attack +5 • Attack +5 • Capacity Boost +1-2 (EX) • Capacity Boost +1-2 (EX)",
+          "Focus : Element Focus Set Skill : Gore Magala's Tyranny Group Skill : Lord's Soul"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Sororal Earrings α"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Dahaad Shardmail γ"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Rey Sandbraces γ"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Gore Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Gore Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 3
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Gobbler Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 3
+        },
+        {
+          "nameEn": "Sane Jewel【1】",
+          "count": 2
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Attack Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Guard",
+          "level": 3
+        },
+        {
+          "nameEn": "Offensive Guard",
+          "level": 3
+        },
+        {
+          "nameEn": "Opening Shot",
+          "level": 3
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Antivirus",
+          "level": 3
+        },
+        {
+          "nameEn": "Divine Blessing",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 2
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 2
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 2
+        },
+        {
+          "nameEn": "Speed Eating",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Flinch Free",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Black Eclipse II",
+        "Guts (Tenacity)"
+      ],
+      "complete": true
+    },
+    {
+      "id": "heavy-bowgun_wildsEndgame_3",
+      "weaponType": "heavy-bowgun",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "4x Gore-Zoh AGI Elemental HBG",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502810",
+      "weapon": "Mountainous Roar",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Pierce Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Bandolier Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element Infusion +1 • Attack +5 • Attack +5 • Attack +5 Element Type: (Fire, Water, Thunder, Ice) | • Capacity Boost +1 • Capacity Boost +1 • Attack +5 • Attack +5 • Attack +5"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Gore Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Gore Mail β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Gore Vambraces β"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Numinous Overlay β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Gore Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Adapt Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 3
+        },
+        {
+          "nameEn": "Phoenix Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Sane Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 1
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Element",
+          "level": 3
+        },
+        {
+          "nameEn": "Elemental Attack",
+          "level": 3
+        },
+        {
+          "nameEn": "Opening Shot",
+          "level": 3
+        },
+        {
+          "nameEn": "Tetrad Shot",
+          "level": 3
+        },
+        {
+          "nameEn": "Ballistics",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Evade Window",
+          "level": 4
+        },
+        {
+          "nameEn": "Antivirus",
+          "level": 3
+        },
+        {
+          "nameEn": "Coalescence",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Adaptability",
+          "level": 1
+        },
+        {
+          "nameEn": "Flinch Free",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Black Eclipse II",
+        "Adrenaline"
+      ],
+      "complete": true
+    },
+    {
+      "id": "heavy-bowgun_wildsEndgame_4",
+      "weaponType": "heavy-bowgun",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Fulgur-Gore Spread HBG",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502810",
+      "weapon": "Insurrection Cannon",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Precise Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Attack Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": null,
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "G. Fulgur Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Gore Mail β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "G. Fulgur Vambraces β"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Lagiacrus Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Gore Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Jumping Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Protection Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Sane Jewel【1】",
+          "count": 2
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Attack Boost",
+          "level": 5
+        },
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Ballistics",
+          "level": 2
+        },
+        {
+          "nameEn": "Evading Reload",
+          "level": 1
+        },
+        {
+          "nameEn": "Bladescale Loading",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 4
+        },
+        {
+          "nameEn": "Antivirus",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 2
+        },
+        {
+          "nameEn": "Evade Window",
+          "level": 2
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 2
+        },
+        {
+          "nameEn": "Divine Blessing",
+          "level": 2
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 1
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Flinch Free",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Black Eclipse I",
+        "Second Wind I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "heavy-bowgun_wildsEndgame_5",
+      "weaponType": "heavy-bowgun",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Lagi-Rey Thunder Sniper HBG",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502810",
+      "weapon": "Thunderblitz Cannon",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Bolt/Bandolier Jwl【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Precise Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Precise Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": null,
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Lagiacrus Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Rey Sandmail γ"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Rey Sandbraces γ"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Lagiacrus Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Duna Wildgreaves γ"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 3
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Jumping Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Protection Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Thunder Res Jewel【1】",
+          "count": 3
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Ballistics",
+          "level": 3
+        },
+        {
+          "nameEn": "Critical Element",
+          "level": 3
+        },
+        {
+          "nameEn": "Tetrad Shot",
+          "level": 3
+        },
+        {
+          "nameEn": "Thunder Attack",
+          "level": 3
+        },
+        {
+          "nameEn": "Convert Thunder Resistance",
+          "level": 1
+        },
+        {
+          "nameEn": "Opening Shot",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 3
+        },
+        {
+          "nameEn": "Latent Power",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Quick Sheathe",
+          "level": 3
+        },
+        {
+          "nameEn": "Thunder Resistance",
+          "level": 3
+        },
+        {
+          "nameEn": "Divine Blessing",
+          "level": 2
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Thunderous Roar I",
+        "Guts (Tenacity)",
+        "Azure Bolt I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "heavy-bowgun_wildsEndgame_6",
+      "weaponType": "heavy-bowgun",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "ReyGoreDuna Max Frenzy HBG",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502810",
+      "weapon": "Insurrection Cannon",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Precise Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": null,
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Rey Sandhelm γ"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Gore Mail β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Rey Sandbraces γ"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Gore Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Duna Wildgreaves γ"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 2
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Sane Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 2
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Slicked Blade",
+          "level": 3
+        },
+        {
+          "nameEn": "Opening Shot",
+          "level": 2
+        },
+        {
+          "nameEn": "Tetrad Shot",
+          "level": 2
+        },
+        {
+          "nameEn": "Critical Element",
+          "level": 1
+        },
+        {
+          "nameEn": "Piercing Shots",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Antivirus",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Quick Sheathe",
+          "level": 3
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 3
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 2
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 2
+        },
+        {
+          "nameEn": "Evade Window",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Stamina Surge",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Thunderous Roar I",
+        "Guts (Tenacity)",
+        "Black Eclipse I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "heavy-bowgun_wildsEndgame_7",
+      "weaponType": "heavy-bowgun",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Max Frenzied Agitated HBG",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502810",
+      "weapon": "Ableben Abzug",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Pierce Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Bandolier Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Precise Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": null,
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Numinous Crown β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Numinous Shroud β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "G. Arkveld Vambraces β"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Gore Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Gore Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 2
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 2
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Sane Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Recovery Jewel【1】",
+          "count": 1
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Slicked Blade",
+          "level": 3
+        },
+        {
+          "nameEn": "Opening Shot",
+          "level": 2
+        },
+        {
+          "nameEn": "Tetrad Shot",
+          "level": 2
+        },
+        {
+          "nameEn": "Critical Element",
+          "level": 1
+        },
+        {
+          "nameEn": "Piercing Shots",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 4
+        },
+        {
+          "nameEn": "Antivirus",
+          "level": 3
+        },
+        {
+          "nameEn": "Burst",
+          "level": 2
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 2
+        },
+        {
+          "nameEn": "Recovery Speed",
+          "level": 2
+        },
+        {
+          "nameEn": "Flinch Free",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Black Eclipse I",
+        "Super Recovery I",
+        "Ward of Wyveria"
+      ],
+      "complete": true
+    },
+    {
+      "id": "heavy-bowgun_wildsEndgame_8",
+      "weaponType": "heavy-bowgun",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Comfy Elemental HBG",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502810",
+      "weapon": "Greifen",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Opener/Blaze Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Bandolier/Blaze Jwl【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Crit Elem/Blaze Jwl【3】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element Infusion +1 • Attack +5 • Attack +5 • Attack +5 Element Type: (Fire, Water, Thunder, Ice) | • Capacity Boost +1 • Capacity Boost +1 • Attack +5 • Attack +5 • Attack +5"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Gore Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Numinous Shroud β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Rey Sandbraces γ"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Numinous Overlay β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Gore Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Phoenix Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Sane Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Adapt Jewel【1】",
+          "count": 1
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Element",
+          "level": 3
+        },
+        {
+          "nameEn": "Element Attack",
+          "level": 3
+        },
+        {
+          "nameEn": "Opening Shot",
+          "level": 3
+        },
+        {
+          "nameEn": "Tetrad Shot",
+          "level": 3
+        },
+        {
+          "nameEn": "Special Ammo Boost",
+          "level": 2
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Antivirus",
+          "level": 3
+        },
+        {
+          "nameEn": "Coalescence",
+          "level": 3
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 2
+        },
+        {
+          "nameEn": "Evade Window",
+          "level": 1
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Flinch Free",
+          "level": 1
+        },
+        {
+          "nameEn": "Adaptability",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Black Eclipse I",
+        "Super Recovery I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "heavy-bowgun_wildsEndgame_9",
+      "weaponType": "heavy-bowgun",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Max Agitator WEX HBG",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502810",
+      "weapon": "Ableben Abzug",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Pierce Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Bandolier Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Precise Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element Infusion +1 • Affinity +5 • Attack +5 • Attack +5 Element Type: Paralysis | • Capacity Boost +1 • Attack +5 • Attack +5 • Affinity +5 • Affinity +5"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Dahaad Shardhelm α"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Arkvulcan Mail β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Dahaad Shardbraces β"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Arkvulcan Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Dahaad Shardgreaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 3
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Opening Shot",
+          "level": 3
+        },
+        {
+          "nameEn": "Tetrad Shot",
+          "level": 3
+        },
+        {
+          "nameEn": "Ballistics",
+          "level": 2
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 3
+        },
+        {
+          "nameEn": "Burst",
+          "level": 2
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 2
+        },
+        {
+          "nameEn": "Adaptability",
+          "level": 1
+        },
+        {
+          "nameEn": "Recovery Speed",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [],
+      "complete": true
+    },
+    {
+      "id": "heavy-bowgun_wildsProgression_0",
+      "weaponType": "heavy-bowgun",
+      "category": "wildsProgression",
+      "kind": "full-build",
+      "buildName": "Agitated Max Burst HBG",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502810",
+      "weapon": "Grounding Fulgur I",
+      "weaponSlots": [
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Bandolier Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Bandolier Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element Infusion +1 • Affinity +5 • Attack +5 • Attack +5 Element Type: Paralysis | • Capacity Boost +1 • Attack +5 • Attack +5 • Affinity +5 • Affinity +5"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "G. Ebony Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Blango Mail β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "G. Rathalos Vambraces β"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "G. Ebony Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "G. Rathalos Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 3
+        },
+        {
+          "nameEn": "Refresh Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 2
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Special Ammo Boost",
+          "level": 2
+        },
+        {
+          "nameEn": "Opening Shot",
+          "level": 2
+        },
+        {
+          "nameEn": "Critical Boost",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 4
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 2
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 2
+        },
+        {
+          "nameEn": "Stamina Surge",
+          "level": 2
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 2
+        },
+        {
+          "nameEn": "Windproof",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Burst Boost I",
+        "Scorcher I",
+        "Ward of Wyveria I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "heavy-bowgun_wildsProgression_1",
+      "weaponType": "heavy-bowgun",
+      "category": "wildsProgression",
+      "kind": "full-build",
+      "buildName": "Wex Burst HBG",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502810",
+      "weapon": "Power Stinger II",
+      "weaponSlots": [
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Opener Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Trueshot Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": null,
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Bulaqchi Specs α"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Conga Mail α"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Talioth Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Balahara Coil α"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Chatacabra Greaves β"
+        }
+      ],
+      "armorDecos": [],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Opening Shot",
+          "level": 3
+        },
+        {
+          "nameEn": "Special Ammo Boost",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 3
+        },
+        {
+          "nameEn": "Intimidator",
+          "level": 2
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 2
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 1
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 1
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 1
+        },
+        {
+          "nameEn": "Evade Window",
+          "level": 1
+        },
+        {
+          "nameEn": "Leap of Faith",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [],
+      "complete": true
+    }
+  ]
+}

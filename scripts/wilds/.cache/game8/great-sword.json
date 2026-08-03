@@ -1,0 +1,1844 @@
+{
+  "url": "https://game8.co/games/Monster-Hunter-Wilds/archives/502430",
+  "weaponType": "great-sword",
+  "scrapedAt": "2026-08-03",
+  "dataVersion": "1.041",
+  "builds": [
+    {
+      "id": "great-sword_wildsEndgame_0",
+      "weaponType": "great-sword",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Bale Dahaad Gore GS",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502430",
+      "weapon": "Ostrak Oblivion",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Focus/Handicraft Jewel【3】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": "Attack Focus",
+        "setSkill": "Gore Magala's Tyranny",
+        "groupSkill": "Lord's Soul",
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +30 • Attack +5 • Attack +5 • Attack +5 Element Type: Any | • Attack +5 • Attack +5 • Attack +5 • Affinity +10 (EX) • Sharpness +30",
+          "Focus : Attack Focus Set Skill : Gore Magala's Tyranny Group Skill : Lord's Soul"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Bale Burgeonet α"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Dahaad Shardmail γ"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Bale Gauntlets α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Dahaad Shardcoil γ"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Gore Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Throttle Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Sheath Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Sane Jewel【1】",
+          "count": 2
+        }
+      ],
+      "talisman": "Counter Charm III",
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 5
+        },
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Antivirus",
+          "level": 3
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Quick Sheathe",
+          "level": 3
+        },
+        {
+          "nameEn": "Resentment",
+          "level": 3
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 2
+        },
+        {
+          "nameEn": "Latent Power",
+          "level": 2
+        },
+        {
+          "nameEn": "Bind Resistance",
+          "level": 2
+        },
+        {
+          "nameEn": "Flinch Free",
+          "level": 1
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Guts (Tenacity)",
+        "Black Eclipse I",
+        "Binding Counter I",
+        "Dark Arts"
+      ],
+      "complete": true
+    },
+    {
+      "id": "great-sword_wildsEndgame_1",
+      "weaponType": "great-sword",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Comfy Arkveld Gamma GS",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502430",
+      "weapon": "Ostrak Oblivion",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Guardian/Handicraft Jwl【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Focus/Handicraft Jewel【3】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": "Attack Focus",
+        "setSkill": "Fulgur Anjanath's Will",
+        "groupSkill": "Any",
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +30 • Attack +5 • Attack +5 • Attack +5 Element Type: Any | • Attack +5 • Attack +5 • Attack +5 • Affinity +10 (EX) • Sharpness +30",
+          "Focus : Attack Focus Set Skill : Fulgur Anjanath's Will Group Skill : Any"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Arkvulcan Helm γ"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Udra Miremail γ"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Gogmazios Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Arkvulcan Coil γ"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Duna Wildgreaves γ"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 2
+        },
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Medicine Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 2
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Offensive Guard",
+          "level": 3
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 2
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Elemental Absorption",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Quick Sheathe",
+          "level": 3
+        },
+        {
+          "nameEn": "Recovery Up",
+          "level": 3
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 2
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Flayer",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Guts (Tenacity)",
+        "Hasten Recovery I",
+        "Second Wind I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "great-sword_wildsEndgame_2",
+      "weaponType": "great-sword",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Offense Focus Arkveld Gamma GS",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502430",
+      "weapon": "Ostrak Oblivion",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Guardian/Handicraft Jwl【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Focus/Handicraft Jewel【3】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": "Attack Focus",
+        "setSkill": "Soul of the Dark Knight",
+        "groupSkill": "Any",
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +30 • Attack +5 • Attack +5 • Attack +5 Element Type: Any | • Attack +5 • Attack +5 • Attack +5 • Affinity +10 (EX) • Sharpness +30",
+          "Focus : Attack Focus Set Skill : Soul of the Dark Knight Group Skill : Any"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Arkvulcan Helm γ"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Udra Miremail γ"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Gogmazios Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Bale Flanchard α"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Arkvulcan Greaves γ"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Sheath Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 2
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Offensive Guard",
+          "level": 3
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 2
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Quick Sheathe",
+          "level": 3
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 2
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 2
+        },
+        {
+          "nameEn": "Flayer",
+          "level": 2
+        },
+        {
+          "nameEn": "Blight Resistance",
+          "level": 1
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Resentment",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Guts (Tenacity)",
+        "Dark Arts",
+        "Hasten Recovery I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "great-sword_wildsEndgame_3",
+      "weaponType": "great-sword",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "GogMax Agi Wex GS",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502430",
+      "weapon": "Ostrak Oblivion",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Guardian/Handicraft Jwl【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Focus/Handicraft Jewel【3】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": "Affinity Focus",
+        "setSkill": "Zoh Shia's Pulse",
+        "groupSkill": "Lord's Soul",
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +30 • Attack +5 • Attack +5 • Attack +5 Element Type: Sleep | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Attack +5",
+          "Focus : Affinity Focus Set Skill : Zoh Shia's Pulse Group Skill : Lord's Soul"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Numinous Crown β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Udra Miremail γ"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Gogmazios Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "G. Fulgur Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Duna Wildgreaves γ"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 3
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 2
+        },
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Recovery Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 2
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 3
+        },
+        {
+          "nameEn": "Offensive Guard",
+          "level": 3
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Quick Sheathe",
+          "level": 3
+        },
+        {
+          "nameEn": "Recovery Speed",
+          "level": 3
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Stamina Surge",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Guts (Tenacity)",
+        "Second Wind I",
+        "Super Recovery I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "great-sword_wildsEndgame_4",
+      "weaponType": "great-sword",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Lagi-Guts Critical GS",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502430",
+      "weapon": "Varianza",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Focus/Handicraft Jewel【3】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +30 • Attack +5 • Attack +5 • Attack +5 Element Type: Sleep | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Attack +5"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Lagiacrus Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Udra Miremail γ"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Rey Sandbraces γ"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Lagiacrus Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Duna Wildgreaves γ"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Adapt Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 3
+        },
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Steadfast Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 2
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 5
+        },
+        {
+          "nameEn": "Critical Eye",
+          "level": 4
+        },
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 3
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Quick Sheathe",
+          "level": 3
+        },
+        {
+          "nameEn": "Stun Resistance",
+          "level": 3
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 2
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 2
+        },
+        {
+          "nameEn": "Adaptability",
+          "level": 1
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Shock Absorber",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Guts (Tenacity)",
+        "Azure Bolt I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "great-sword_wildsHighRank_0",
+      "weaponType": "great-sword",
+      "category": "wildsHighRank",
+      "kind": "full-build",
+      "buildName": "Dark Knight GS",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502430",
+      "weapon": "True Shadowbringer",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Focus/Dragon Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Guardian Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Guardian Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": null,
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Bale Burgeonet α"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Bale Cuirass α"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Bale Gauntlets α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Bale Flanchard α"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Bale Sollerets α"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 3
+        },
+        {
+          "nameEn": "Protection Jewel【1】",
+          "count": 3
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Dragon Attack",
+          "level": 3
+        },
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Offensive Guard",
+          "level": 3
+        },
+        {
+          "nameEn": "Darkside",
+          "level": 1
+        },
+        {
+          "nameEn": "Latent Power",
+          "level": 5
+        },
+        {
+          "nameEn": "Resentment",
+          "level": 5
+        },
+        {
+          "nameEn": "Heroics",
+          "level": 4
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 3
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Divine Blessing",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Quick Sheathe",
+          "level": 2
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 1
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "The Blackest Night"
+      ],
+      "complete": true
+    },
+    {
+      "id": "great-sword_wildsHighRank_1",
+      "weaponType": "great-sword",
+      "category": "wildsHighRank",
+      "kind": "full-build",
+      "buildName": "Lagi-Rey Guts Counterstrike GS",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502430",
+      "weapon": "Blazing Veiah",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Focus Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Dragon Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +30 • Attack +5 • Affinity +5 • Affinity +5 Element Type: Sleep | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Affinity +5"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Lagiacrus Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Rey Sandmail γ"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Rey Sandbraces γ"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Lagiacrus Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Duna Wildgreaves γ"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 4
+        },
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Gobbler Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Protection Jewel【1】",
+          "count": 3
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Attack Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Offensive Guard",
+          "level": 3
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 2
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Divine Blessing",
+          "level": 3
+        },
+        {
+          "nameEn": "Latent Power",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Quick Sheathe",
+          "level": 3
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 2
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 2
+        },
+        {
+          "nameEn": "Speed Eating",
+          "level": 2
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Thunderous Roar I",
+        "Guts (Tenacity)",
+        "Azure Bolt I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "great-sword_wildsHighRank_2",
+      "weaponType": "great-sword",
+      "category": "wildsHighRank",
+      "kind": "full-build",
+      "buildName": "LAgiZoh Crit Sleep GS",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502430",
+      "weapon": "Blazing Veiah",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Focus Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Dragon Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +30 • Attack +5 • Attack +5 • Affinity +5 Element Type: Sleep | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Attack +5"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Lagiacrus Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Numinous Shroud β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "G. Arkveld Vambraces β"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Lagiacrus Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Numinous Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 3
+        },
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Recovery Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Sheath Jewel【1】",
+          "count": 3
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 3
+        },
+        {
+          "nameEn": "Offensive Guard",
+          "level": 3
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Quick Sheathe",
+          "level": 3
+        },
+        {
+          "nameEn": "Recovery Speed",
+          "level": 3
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 2
+        },
+        {
+          "nameEn": "Elemental Absorption",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Ward of Wyveria",
+        "Super Recovery I",
+        "Azure Bolt I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "great-sword_wildsHighRank_3",
+      "weaponType": "great-sword",
+      "category": "wildsHighRank",
+      "kind": "full-build",
+      "buildName": "Ful-Gore Zoh Agitator Great Sword",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502430",
+      "weapon": "Blazing Veiah",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Focus Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Dragon Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +30 • Attack +5 • Attack +5 • Attack +5 Element Type: Sleep | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Attack +5"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "G. Fulgur Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Numinous Shroud β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "G. Fulgur Vambraces β"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Gore Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Gore Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Sane Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 1
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Offensive Guard",
+          "level": 3
+        },
+        {
+          "nameEn": "Attack Boost",
+          "level": 2
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 2
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Antivirus",
+          "level": 3
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 2
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Flinch Free",
+          "level": 1
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Ward of Wyveria",
+        "Second Wind I",
+        "Black Eclipse I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "great-sword_wildsHighRank_4",
+      "weaponType": "great-sword",
+      "category": "wildsHighRank",
+      "kind": "full-build",
+      "buildName": "GoreDuna Comfort GS",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502430",
+      "weapon": "Blazing Veiah",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Focus Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Dragon Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +30 • Attack +5 • Attack +5 • Affinity +5 Element Type: Sleep | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Attack +5"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Gore Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Gore Mail α"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Rey Sandbraces γ"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Duna Wildcoil γ"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Duna Wildgreaves γ"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Medicine Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Sane Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 5
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Offensive Guard",
+          "level": 3
+        },
+        {
+          "nameEn": "Attack Boost",
+          "level": 2
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 2
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Antivirus",
+          "level": 3
+        },
+        {
+          "nameEn": "Evade Window",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Quick Sheathe",
+          "level": 3
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 2
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 2
+        },
+        {
+          "nameEn": "Tool Specialist",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Coalescence",
+          "level": 1
+        },
+        {
+          "nameEn": "Recovery Up",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Protective Veil I",
+        "Guts (Tenacity)",
+        "Black Eclipse I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "great-sword_wildsProgression_0",
+      "weaponType": "great-sword",
+      "category": "wildsProgression",
+      "kind": "full-build",
+      "buildName": "Critical Sleep GS",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502430",
+      "weapon": "Düsterstolz",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Focus Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Dragon Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +30 • Affinity +5 • Affinity +5 • Attack +5 Element Type: Sleep | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Affinity +5"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Dahaad Shardhelm α"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Arkvulcan Mail β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "G. Arkveld Vambraces β"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "G. Arkveld Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Dahaad Shardgreaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 3
+        },
+        {
+          "nameEn": "Sheath Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 2
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Offensive Guard",
+          "level": 3
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 2
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Quick Sheathe",
+          "level": 3
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 2
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Flayer",
+          "level": 2
+        }
+      ],
+      "groupSetSkills": [
+        "Decimator I",
+        "Binding Counter I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "great-sword_wildsProgression_1",
+      "weaponType": "great-sword",
+      "category": "wildsProgression",
+      "kind": "full-build",
+      "buildName": "Agitated Max Might Exploiter",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502430",
+      "weapon": "Smiting Fulgur I",
+      "weaponSlots": [
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Focus Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel II【2】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Reinforcements",
+          "• Element +30 • Attack +5 • Attack +5 • Attack +5 Element Type: Sleep | • Attack +5 • Attack +5 • Attack +5 • Affinity +5 • Affinity +5"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "G. Fulgur Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "G. Rathalos Mail β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "G. Fulgur Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "G. Fulgur Coil α"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "G. Rathalos Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Destroyer Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 1
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 4
+        },
+        {
+          "nameEn": "Focus",
+          "level": 2
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 3
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Partbreaker",
+          "level": 2
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 2
+        },
+        {
+          "nameEn": "Flayer",
+          "level": 1
+        },
+        {
+          "nameEn": "Intimidator",
+          "level": 1
+        },
+        {
+          "nameEn": "Stamina Surge",
+          "level": 1
+        },
+        {
+          "nameEn": "Windproof",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Scorcher I",
+        "Second Wind I",
+        "Ward of Wyveria I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "great-sword_wildsProgression_2",
+      "weaponType": "great-sword",
+      "category": "wildsProgression",
+      "kind": "full-build",
+      "buildName": "WEX Agitator",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502430",
+      "weapon": "Immane Blade II",
+      "weaponSlots": [
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Focus Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Blaze Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": null,
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Bulaqchi Specs α"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Nerscylla Mail α"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Kut-Ku Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Kut-Ku Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Chatacabra Greaves β"
+        }
+      ],
+      "armorDecos": [],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Fire Attack",
+          "level": 1
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 3
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 2
+        },
+        {
+          "nameEn": "Ambush",
+          "level": 1
+        },
+        {
+          "nameEn": "Charge Master",
+          "level": 1
+        },
+        {
+          "nameEn": "Flayer",
+          "level": 1
+        },
+        {
+          "nameEn": "Entomologist",
+          "level": 1
+        },
+        {
+          "nameEn": "Recovery Up",
+          "level": 1
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 4
+        }
+      ],
+      "groupSetSkills": [],
+      "complete": true
+    }
+  ]
+}

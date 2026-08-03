@@ -1,0 +1,1771 @@
+{
+  "url": "https://game8.co/games/Monster-Hunter-Wilds/archives/502439",
+  "weaponType": "insect-glaive",
+  "scrapedAt": "2026-08-03",
+  "dataVersion": "1.041",
+  "builds": [
+    {
+      "id": "insect-glaive_wildsEndgame_0",
+      "weaponType": "insect-glaive",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Max Raw Insect Glaive",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502439",
+      "weapon": "Limbo Llor",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Flight/Attack Jwl【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Rzr Sharp/Handicraft Jwl【3】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": "Attack Focus or Element Focus",
+        "setSkill": "Leviathan's Fury",
+        "groupSkill": "Lord's Soul",
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +30 • Attack +5 • Attack +5 • Attack +5 Element Type: Any (except Status Effects) | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Sharpness +30",
+          "Focus : Attack Focus or Element Focus Set Skill : Leviathan's Fury Group Skill : Lord's Soul"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Lagiacrus Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Udra Miremail γ"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "G. Ebony Braces β"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Dahaad Shardcoil γ"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "G. Ebony Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Jumping Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Protection Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Shockproof Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 5
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Attack Boost",
+          "level": 5
+        },
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Razor Sharp",
+          "level": 3
+        },
+        {
+          "nameEn": "Airborne",
+          "level": 1
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 1
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 4
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Divine Blessing",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Bind Resistance",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 1
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 1
+        },
+        {
+          "nameEn": "Shock Absorber",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Burst Boost I",
+        "Azure Bolt I",
+        "Guts (Tenacity)"
+      ],
+      "complete": true
+    },
+    {
+      "id": "insect-glaive_wildsEndgame_1",
+      "weaponType": "insect-glaive",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Arkveld-Gore Affinity Insect Glaive",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502439",
+      "weapon": "Limbo Llor",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Flight/Attack Jwl【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Mastery Jewel【3】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": "Element Focus",
+        "setSkill": "Gore Magala's Tyranny",
+        "groupSkill": "Lord's Soul",
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +20 • Attack +5 • Attack +5 • Attack +5 Element Type: Any (except Status Effects) | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Sharpness +30",
+          "Focus : Element Focus Set Skill : Gore Magala's Tyranny Group Skill : Lord's Soul"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Arkvulcan Helm γ"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "G. Fulgur Mail β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Gogmazios Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Gore Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Arkvulcan Greaves γ"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 3
+        },
+        {
+          "nameEn": "Phoenix Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Sane Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 2
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Master's Touch",
+          "level": 1
+        },
+        {
+          "nameEn": "Airborne",
+          "level": 1
+        },
+        {
+          "nameEn": "Attack Boost",
+          "level": 1
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Antivirus",
+          "level": 3
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 2
+        },
+        {
+          "nameEn": "Flayer",
+          "level": 2
+        },
+        {
+          "nameEn": "Blight Resistance",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Coalescence",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Hasten Recovery I",
+        "Black Eclipse I",
+        "Second Wind I",
+        "Guts (Tenacity)"
+      ],
+      "complete": true
+    },
+    {
+      "id": "insect-glaive_wildsEndgame_2",
+      "weaponType": "insect-glaive",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Gogmazios Guts Insect Glaive",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502439",
+      "weapon": "Limbo Llor",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Mastery Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Blaze/Crit Elem Jwl【3】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": "Attack Focus",
+        "setSkill": "Gogmapocalypse",
+        "groupSkill": "Lord's Soul",
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +30 • Attack +5 • Attack +5 • Attack +5 Element Type: Any | • Attack +5 • Attack +5 • Attack +5 • Affinity +10 (EX) • Sharpness +30",
+          "*EX grade is a high priority for Affinity Boost. Focus : Attack Focus Set Skill : Gogmapocalypse Group Skill : Lord's Soul"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Rey Sandhelm γ"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Udra Miremail γ"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Gogmazios Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Gogmazios Coil α"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Gogmazios Greaves α"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Protection Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Shockproof Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 4
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Elemental Attack",
+          "level": 3
+        },
+        {
+          "nameEn": "Critical Element",
+          "level": 1
+        },
+        {
+          "nameEn": "Master's Touch",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Divine Blessing",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Peak Performance",
+          "level": 3
+        },
+        {
+          "nameEn": "Burst",
+          "level": 2
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 2
+        },
+        {
+          "nameEn": "Shock Absorber",
+          "level": 1
+        },
+        {
+          "nameEn": "Stamina Surge",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Mutual Hostility II",
+        "Guts (Tenacity)"
+      ],
+      "complete": true
+    },
+    {
+      "id": "insect-glaive_wildsEndgame_3",
+      "weaponType": "insect-glaive",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Fulgur-Odo Guts Insect Glaive",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502439",
+      "weapon": "Limbo Llor",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Mastery Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Flight/Expert Jewel【3】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": "Attack Focus",
+        "setSkill": "Fulgur Anjanath's Will",
+        "groupSkill": "Lord's Soul",
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +30 • Attack +5 • Attack +5 • Attack +5 Element Type: Any | • Attack +5 • Attack +5 • Attack +5 • Affinity +10 (EX) • Sharpness +30",
+          "*EX grade is a high priority for Affinity Boost. Focus : Attack Focus Set Skill : Fulgur Anjanath's Will Group Skill : Lord's Soul"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "G. Fulgur Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Udra Miremail γ"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "G. Ebony Braces β"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "G. Ebony Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Duna Wildgreaves γ"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 2
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Protection Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Shockproof Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 4
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Critical Eye",
+          "level": 2
+        },
+        {
+          "nameEn": "Master's Touch",
+          "level": 1
+        },
+        {
+          "nameEn": "Airborne",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Divine Blessing",
+          "level": 3
+        },
+        {
+          "nameEn": "Quick Sheathe",
+          "level": 3
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Burst",
+          "level": 2
+        },
+        {
+          "nameEn": "Shock Absorber",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Second Wind I",
+        "Guts (Tenacity)",
+        "Burst Boost I",
+        "Ward of Wyveria"
+      ],
+      "complete": true
+    },
+    {
+      "id": "insect-glaive_wildsEndgame_4",
+      "weaponType": "insect-glaive",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Omega Synergy Insect Glaive Build",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502439",
+      "weapon": "True Omega's Rod",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Flight Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": null,
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Omega Ear Cuffs α"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Numinous Shroud β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Omega Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Omega Accessory α"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Omega Boots α"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Jumping Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 3
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 3
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 4
+        },
+        {
+          "nameEn": "Razor Sharp",
+          "level": 3
+        },
+        {
+          "nameEn": "Airborne",
+          "level": 1
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 1
+        },
+        {
+          "nameEn": "Synergy",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 4
+        },
+        {
+          "nameEn": "Divine Blessing",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Evade Window",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 1
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Resonance II"
+      ],
+      "complete": true
+    },
+    {
+      "id": "insect-glaive_wildsEndgame_5",
+      "weaponType": "insect-glaive",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Zoh Shia Frenzy Insect Glaive Build",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502439",
+      "weapon": "Blazing Katir",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Mastery Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +20 • Attack +5 • Attack +5 • Attack +5 Element Type: Any Element | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Affinity +5"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Numinous Crown β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Numinous Shroud β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "G. Arkveld Vambraces β"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Gore Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Gore Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 3
+        },
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Phoenix Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Sane Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Recovery Jewel【1】",
+          "count": 1
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 5
+        },
+        {
+          "nameEn": "Master's Touch",
+          "level": 1
+        },
+        {
+          "nameEn": "Power Prolonger",
+          "level": 1
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 5
+        },
+        {
+          "nameEn": "Antivirus",
+          "level": 3
+        },
+        {
+          "nameEn": "Coalescence",
+          "level": 2
+        },
+        {
+          "nameEn": "Recovery Speed",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Flinch Free",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Black Eclipse I",
+        "Super Recovery I",
+        "Ward of Wyveria"
+      ],
+      "complete": true
+    },
+    {
+      "id": "insect-glaive_wildsEndgame_6",
+      "weaponType": "insect-glaive",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Rey Gore Agitator MM Insect Glaive",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502439",
+      "weapon": "Blazing Katir",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Mastery Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +20 • Attack +5 • Attack +5 • Attack +5 Element Type: Any Element | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Attack +5"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Rey Sandhelm γ"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Gore Mail β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Rey Sandbraces γ"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Rey Sandcoil γ"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Gore Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 3
+        },
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Sane Jewel【1】",
+          "count": 2
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 5
+        },
+        {
+          "nameEn": "Master's Touch",
+          "level": 1
+        },
+        {
+          "nameEn": "Power Prolonger",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Antivirus",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 2
+        },
+        {
+          "nameEn": "Evade Window",
+          "level": 2
+        },
+        {
+          "nameEn": "Latent Power",
+          "level": 2
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 1
+        },
+        {
+          "nameEn": "Flinch Free",
+          "level": 1
+        },
+        {
+          "nameEn": "Stamina Surge",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Black Eclipse I",
+        "Thunderous Roar I",
+        "Guts (Tenacity)"
+      ],
+      "complete": true
+    },
+    {
+      "id": "insect-glaive_wildsEndgame_7",
+      "weaponType": "insect-glaive",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Ful-Zoh Comfort Insect Glaive Build",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502439",
+      "weapon": "Blazing Katir",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Flight/Handicraft Jwl【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Artian Reinforcements",
+          "• Element +20 • Attack +5 • Attack +5 • Attack +5 Element Type: Paralysis | • Attack +5 • Attack +5 • Attack +5 • Affinity +5 • Sharpness +20"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Numinous Crown β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "G. Fulgur Mail β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Rey Sandbraces γ"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Numinous Overlay β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "G. Fulgur Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 4
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 3
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Critical Eye",
+          "level": 3
+        },
+        {
+          "nameEn": "Airborne",
+          "level": 1
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 2
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 4
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 3
+        },
+        {
+          "nameEn": "Coalescence",
+          "level": 2
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 2
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 2
+        },
+        {
+          "nameEn": "Recovery Speed",
+          "level": 1
+        },
+        {
+          "nameEn": "Stamina Surge",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Ward of Wyveria",
+        "Super Recovery I",
+        "Second Wind I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "insect-glaive_wildsEndgame_8",
+      "weaponType": "insect-glaive",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Lagia-Gore Critical Insect Glaive Build",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502439",
+      "weapon": "Fractal Glaive Boltlagia",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Flight Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": null,
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Lagiacrus Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Numinous Shroud β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Lagiacrus Braces β"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Gore Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Gore Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Adapt Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Sane Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 3
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Airborne",
+          "level": 1
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 4
+        },
+        {
+          "nameEn": "Antivirus",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 2
+        },
+        {
+          "nameEn": "Stamina Surge",
+          "level": 2
+        },
+        {
+          "nameEn": "Adaptability",
+          "level": 1
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 1
+        },
+        {
+          "nameEn": "Flinch Free",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Black Eclipse I",
+        "Azure Bolt I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "insect-glaive_wildsProgression_0",
+      "weaponType": "insect-glaive",
+      "category": "wildsProgression",
+      "kind": "full-build",
+      "buildName": "Raw Critical Insect Glaive Build",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502439",
+      "weapon": "Lala Stromatopelm",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Paralyzer Jwl III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Razor Sharp Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +20 • Attack +5 • Attack +5 • Attack +5 Element Type: Any Element | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Affinity +5"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Gore Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Arkvulcan Mail β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "G. Arkveld Vambraces β"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Arkvulcan Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Gore Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 3
+        },
+        {
+          "nameEn": "Phoenix Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 5
+        },
+        {
+          "nameEn": "Sane Jewel【1】",
+          "count": 2
+        },
+        {
+          "nameEn": "Adapt Jewel【1】",
+          "count": 1
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 5
+        },
+        {
+          "nameEn": "Master's Touch",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Antivirus",
+          "level": 3
+        },
+        {
+          "nameEn": "Coalescence",
+          "level": 2
+        },
+        {
+          "nameEn": "Adaptability",
+          "level": 1
+        },
+        {
+          "nameEn": "Evade Window",
+          "level": 1
+        },
+        {
+          "nameEn": "Flinch Free",
+          "level": 1
+        },
+        {
+          "nameEn": "Recovery Speed",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Black Eclipse I",
+        "Hasten Recovery I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "insect-glaive_wildsProgression_1",
+      "weaponType": "insect-glaive",
+      "category": "wildsProgression",
+      "kind": "full-build",
+      "buildName": "Artian Frenzy Burst Insect Glaive Build",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502439",
+      "weapon": "Precipice Geumgel",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Frost/Crit Elem Jwl【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Frost Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Expert Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Artian Reinforcements",
+          "• Element +20 • Affinity +5 • Affinity +5 • Affinity +5 Element Type: Any Element | • Element +30 • Element +30 • Element +30 • Element +30 • Affinity +5"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Gore Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Udra Miremail α"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Gore Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Gore Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Udra Miregreaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 3
+        },
+        {
+          "nameEn": "Phoenix Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Protection Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Adapt Jewel【1】",
+          "count": 1
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Elemental Attack",
+          "level": 3
+        },
+        {
+          "nameEn": "Critical Element",
+          "level": 3
+        },
+        {
+          "nameEn": "Critical Eye",
+          "level": 3
+        },
+        {
+          "nameEn": "Razor Sharp",
+          "level": 1
+        },
+        {
+          "nameEn": "Burst",
+          "level": 5
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 5
+        },
+        {
+          "nameEn": "Antivirus",
+          "level": 3
+        },
+        {
+          "nameEn": "Coalescence",
+          "level": 3
+        },
+        {
+          "nameEn": "Divine Blessing",
+          "level": 3
+        },
+        {
+          "nameEn": "Evade Window",
+          "level": 2
+        },
+        {
+          "nameEn": "Adaptability",
+          "level": 1
+        },
+        {
+          "nameEn": "Windproof",
+          "level": 1
+        },
+        {
+          "nameEn": "Resentment",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Black Eclipse I",
+        "Bad Blood I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "insect-glaive_wildsProgression_2",
+      "weaponType": "insect-glaive",
+      "category": "wildsProgression",
+      "kind": "full-build",
+      "buildName": "Blast Agitator Insect Glaive Build",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502439",
+      "weapon": "Graviafaren I",
+      "weaponSlots": [
+        2,
+        2
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Crit Status Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Crit Status Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Artian Reinforcements",
+          "• Element +20 • Affinity +5 • Affinity +5 • Affinity +5 Element Type: Any Element | • Affinity +5 • Affinity +5 • Affinity +5 • Attack +5 • Attack +5"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "G. Fulgur Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Blango Mail β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Rathalos Vambraces β"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Ajarakan Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Blango Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Jumping Jewel【2】",
+          "count": 3
+        },
+        {
+          "nameEn": "Refresh Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Destroyer Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Protection Jewel【1】",
+          "count": 2
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Status",
+          "level": 3
+        },
+        {
+          "nameEn": "Critical Eye",
+          "level": 2
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 5
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 3
+        },
+        {
+          "nameEn": "Partbreaker",
+          "level": 3
+        },
+        {
+          "nameEn": "Divine Blessing",
+          "level": 2
+        },
+        {
+          "nameEn": "Stamina Surge",
+          "level": 2
+        },
+        {
+          "nameEn": "Blast Resistance",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "War Cry I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "insect-glaive_wildsProgression_3",
+      "weaponType": "insect-glaive",
+      "category": "wildsProgression",
+      "kind": "full-build",
+      "buildName": "Status Mounter Insect Glaive Starter Build",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502439",
+      "weapon": "Barina Perche III",
+      "weaponSlots": [
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Venom Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Crit Status Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": null,
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Barina Headgear β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Rathian Mail α"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Kut-Ku Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Kut-Ku Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Rathian Greaves α"
+        }
+      ],
+      "armorDecos": [],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Status",
+          "level": 3
+        },
+        {
+          "nameEn": "Poison Attack",
+          "level": 2
+        },
+        {
+          "nameEn": "Poison Duration Up",
+          "level": 1
+        },
+        {
+          "nameEn": "Foray",
+          "level": 5
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 4
+        },
+        {
+          "nameEn": "Recovery Speed",
+          "level": 2
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 2
+        },
+        {
+          "nameEn": "Recovery Up",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Master Mounter I"
+      ],
+      "complete": true
+    }
+  ]
+}

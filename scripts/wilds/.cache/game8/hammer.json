@@ -1,0 +1,1438 @@
+{
+  "url": "https://game8.co/games/Monster-Hunter-Wilds/archives/502505",
+  "weaponType": "hammer",
+  "scrapedAt": "2026-08-03",
+  "dataVersion": "1.041",
+  "builds": [
+    {
+      "id": "hammer_wildsEndgame_0",
+      "weaponType": "hammer",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Dosha Gogma Guts Hammer",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502505",
+      "weapon": "Bound Admonition",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Mastery Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Charge Up/Attack Jwl【3】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": "Attack Focus",
+        "setSkill": "Fulgur Anjanath's Will",
+        "groupSkill": "Lord's Soul",
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +30 • Attack +5 • Attack +5 • Attack +5 Element Type: Paralysis | • Attack +5 • Attack +5 • Attack +5 • Affinity +10 (EX) • Sharpness +30",
+          "*EX grade is a high priority for Affinity Boost. Focus : Attack Focus Set Skill : Fulgur Anjanath's Will Group Skill : Lord's Soul"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Arkvulcan Helm γ"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Udra Miremail γ"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Gogmazios Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Doshaguma Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Gogmazios Greaves α"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 2
+        },
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Protection Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 2
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Attack Boost",
+          "level": 5
+        },
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Charge Up",
+          "level": 3
+        },
+        {
+          "nameEn": "Master's Touch",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 3
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Divine Blessing",
+          "level": 3
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Peak Performance",
+          "level": 2
+        },
+        {
+          "nameEn": "Latent Power",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Mutual Hostility I",
+        "Second Wind I",
+        "Powerhouse I",
+        "Guts (Tenacity)"
+      ],
+      "complete": true
+    },
+    {
+      "id": "hammer_wildsEndgame_1",
+      "weaponType": "hammer",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "AGI-WEX Gogma II Hammer",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502505",
+      "weapon": "Bound Admonition",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Mastery Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Charge Up/Handicraft Jwl【3】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": "Attack Focus",
+        "setSkill": "Gogmapocalypse",
+        "groupSkill": "Any",
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +30 • Attack +5 • Attack +5 • Attack +5 Element Type: Any | • Attack +5 • Attack +5 • Attack +5 • Affinity +10 (EX) • Sharpness +30",
+          "*EX grade is a high priority for Affinity Boost. Focus : Attack Focus Set Skill : Gogmapocalypse Group Skill : Any"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Arkvulcan Helm γ"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "G. Fulgur Mail β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Gogmazios Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Gogmazios Coil α"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Gogmazios Greaves α"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 3
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Protection Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 2
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Charge Up",
+          "level": 3
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 2
+        },
+        {
+          "nameEn": "Master's Touch",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 3
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Divine Blessing",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Peak Performance",
+          "level": 3
+        },
+        {
+          "nameEn": "Burst",
+          "level": 2
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 2
+        }
+      ],
+      "groupSetSkills": [
+        "Mutual Hostility II",
+        "Second Wind I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "hammer_wildsEndgame_2",
+      "weaponType": "hammer",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "Gogma-Lagi AGI-WEX Hammer",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502505",
+      "weapon": "Bound Admonition",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Mastery Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Charge Up/Attack Jwl【3】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": "Attack Focus",
+        "setSkill": "Leviathan's Fury",
+        "groupSkill": "Lord's Soul",
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Element +30 • Attack +5 • Attack +5 • Attack +5 Element Type: Paralysis | • Attack +5 • Attack +5 • Attack +5 • Affinity +10 (EX) • Sharpness +30",
+          "*EX grade is a high priority for Affinity Boost. Focus : Attack Focus Set Skill : Leviathan's Fury Group Skill : Lord's Soul"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "G. Fulgur Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Udra Miremail γ"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Gogmazios Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Lagiacrus Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Duna Wildgreaves γ"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 2
+        },
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Jumping Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Protection Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 2
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Attack Boost",
+          "level": 5
+        },
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Charge Up",
+          "level": 1
+        },
+        {
+          "nameEn": "Master's Touch",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 4
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Divine Blessing",
+          "level": 3
+        },
+        {
+          "nameEn": "Quick Sheathe",
+          "level": 3
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 2
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Shock Absorber",
+          "level": 1
+        },
+        {
+          "nameEn": "Adaptability",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Guts (Tenacity)",
+        "Second Wind I",
+        "Azure Bolt I",
+        "–"
+      ],
+      "complete": true
+    },
+    {
+      "id": "hammer_wildsHighRank_0",
+      "weaponType": "hammer",
+      "category": "wildsHighRank",
+      "kind": "full-build",
+      "buildName": "AGI-WEX Guts Counter Hammer",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502505",
+      "weapon": "Blazing Uria",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Rzr Sharp/Handicraft Jwl【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Attack Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Artian Reinforcements",
+          "• Attack +5 • Affinity +5 • Affinity +5 • Elemental Infusion +30 Element Type: | • Attack +5 • Attack +5 • Attack +5 • Affinity +5 • Sharpness +30"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Rey Sandhelm γ"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Numinous Shroud α"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Rey Sandbraces γ"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Lagiacrus Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Duna Wildgreaves γ"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Challenger Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Protection Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Shockproof Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 3
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Attack Boost",
+          "level": 4
+        },
+        {
+          "nameEn": "Razor Sharp",
+          "level": 3
+        },
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 2
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Divine Blessing",
+          "level": 3
+        },
+        {
+          "nameEn": "Quick Sheathe",
+          "level": 3
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 2
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 2
+        },
+        {
+          "nameEn": "Shock Absorber",
+          "level": 1
+        },
+        {
+          "nameEn": "Stamina Surge",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Thunderous Roar I",
+        "Guts (Tenacity)"
+      ],
+      "complete": true
+    },
+    {
+      "id": "hammer_wildsHighRank_1",
+      "weaponType": "hammer",
+      "category": "wildsHighRank",
+      "kind": "full-build",
+      "buildName": "Ful-Gore Critical Hammer",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502505",
+      "weapon": "Blazing Uria",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Expert Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Artian Reinforcements",
+          "• Attack +5 • Affinity +5 • Affinity +5 • Elemental Infusion +30 Element Type: | • Attack +5 • Attack +5 • Attack +5 • Affinity +5 • Sharpness +30"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "G. Fulgur Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Numinous Shroud β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "G. Fulgur Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Gore Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Gore Greaves β"
+        }
+      ],
+      "armorDecos": [],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 2
+        },
+        {
+          "nameEn": "Master's Touch",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 4
+        },
+        {
+          "nameEn": "Antivirus",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 3
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Flinch Free",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Black Eclipse I",
+        "Second Wind I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "hammer_wildsHighRank_2",
+      "weaponType": "hammer",
+      "category": "wildsHighRank",
+      "kind": "full-build",
+      "buildName": "Ful-Zoh-Lagi Hammer Build",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502505",
+      "weapon": "Blazing Uria",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Expert Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Artian Reinforcements",
+          "• Attack +5 • Affinity +5 • Affinity +5 • Elemental Infusion +30 Element Type: | • Attack +5 • Attack +5 • Attack +5 • Affinity +5 • Sharpness +30"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "G. Fulgur Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Numinous Shroud β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "G. Fulgur Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Lagiacrus Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Numinous Greaves α"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Counter Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Mighty Jewel【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 3
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 1
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 2
+        },
+        {
+          "nameEn": "Master's Touch",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 4
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 3
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 2
+        },
+        {
+          "nameEn": "Elemental Absorption",
+          "level": 1
+        },
+        {
+          "nameEn": "Recovery Speed",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Super Recovery I",
+        "Second Wind I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "hammer_wildsHighRank_3",
+      "weaponType": "hammer",
+      "category": "wildsHighRank",
+      "kind": "full-build",
+      "buildName": "AT Rey-Fulgur Hammer",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502505",
+      "weapon": "Moteurvankel",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Mastery Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Focus/Handicraft Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Artian Reinforcements",
+          "• Attack +5 • Attack +5 • Attack +5 • Elemental Infusion +30 Element Type: | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Sharpness +30"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Rey Sandhelm γ"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "G. Fulgur Mail β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Rey Sandbraces γ"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Rey Sandcoil γ"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "G. Fulgur Greaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 2
+        },
+        {
+          "nameEn": "Chain Jewel【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Earplugs Jewel【2】",
+          "count": 2
+        },
+        {
+          "nameEn": "Shockproof Jewel【1】",
+          "count": 1
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Master's Touch",
+          "level": 1
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 1
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 2
+        },
+        {
+          "nameEn": "Latent Power",
+          "level": 2
+        },
+        {
+          "nameEn": "Stamina Surge",
+          "level": 2
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 2
+        },
+        {
+          "nameEn": "Earplugs",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Coalescence",
+          "level": 1
+        },
+        {
+          "nameEn": "Shock Absorber",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Second Wind I",
+        "Thunderous Roar I",
+        "Guts (Tenacity)"
+      ],
+      "complete": true
+    },
+    {
+      "id": "hammer_wildsHighRank_4",
+      "weaponType": "hammer",
+      "category": "wildsHighRank",
+      "kind": "full-build",
+      "buildName": "Comfort AGI-WEX Evasion Hammer Build",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502505",
+      "weapon": "Binder Mace",
+      "weaponSlots": [
+        3,
+        3,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Expert Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Artian Reinforcements",
+          "• Attack +5 • Attack +5 • Attack +5 • Elemental Infusion +30 Element Type: or | • Attack +5 • Attack +5 • Attack +5 • Affinity +5 • Sharpness +30"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Numinous Crown β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Numinous Shroud β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "G. Arkveld Vambraces β"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Arkvulcan Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Dahaad Shardgreaves β"
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameEn": "Jumping Jewel【2】",
+          "count": 3
+        },
+        {
+          "nameEn": "Physique Jewel【1】",
+          "count": 5
+        },
+        {
+          "nameEn": "Shockproof Jewel【1】",
+          "count": 1
+        },
+        {
+          "nameEn": "Tenderizer Jewel【3】",
+          "count": 1
+        }
+      ],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 3
+        },
+        {
+          "nameEn": "Razor Sharp",
+          "level": 3
+        },
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Handicraft",
+          "level": 2
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 5
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 5
+        },
+        {
+          "nameEn": "Evade Window",
+          "level": 3
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 3
+        },
+        {
+          "nameEn": "Recovery Speed",
+          "level": 2
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Shock Absorber",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Ward of Wyveria",
+        "Super Recovery I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "hammer_wildsProgression_0",
+      "weaponType": "hammer",
+      "category": "wildsProgression",
+      "kind": "full-build",
+      "buildName": "100% Critical Blast Hammer",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502505",
+      "weapon": "Graviton Hammer",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Critical Jewel III【3】",
+          "count": 1
+        },
+        {
+          "nameEn": "Critical Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Expert Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Artian Reinforcements",
+          "• Affinity +5 • Affinity +5 • Affinity +5 • Elemental Infusion +30 Element Type: | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Sharpness +30"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "G. Fulgur Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Arkvulcan Mail β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "G. Fulgur Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Gore Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Gore Greaves β"
+        }
+      ],
+      "armorDecos": [],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Critical Boost",
+          "level": 5
+        },
+        {
+          "nameEn": "Critical Status",
+          "level": 3
+        },
+        {
+          "nameEn": "Slugger",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 5
+        },
+        {
+          "nameEn": "Antivirus",
+          "level": 3
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 2
+        },
+        {
+          "nameEn": "Adrenaline Rush",
+          "level": 1
+        },
+        {
+          "nameEn": "Burst",
+          "level": 1
+        },
+        {
+          "nameEn": "Counterstrike",
+          "level": 1
+        },
+        {
+          "nameEn": "Flinch Free",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Second Wind I",
+        "Black Eclipse I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "hammer_wildsProgression_1",
+      "weaponType": "hammer",
+      "category": "wildsProgression",
+      "kind": "full-build",
+      "buildName": "Blast Critical Hammer",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502505",
+      "weapon": "Shell Hammer I",
+      "weaponSlots": [
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameEn": "Focus Jewel II【2】",
+          "count": 1
+        },
+        {
+          "nameEn": "Blast Jewel【1】",
+          "count": 1
+        }
+      ],
+      "artian": {
+        "focus": null,
+        "setSkill": null,
+        "groupSkill": null,
+        "raw": [
+          "Production Bonus | Reinforcement Prioritization",
+          "• Attack +5 • Affinity +5 • Affinity +5 • Elemental Infusion +30 Element Type: | • Affinity +5 • Attack +5 • Attack +5 • Attack +5 • Sharpness +30"
+        ]
+      },
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "G. Fulgur Helm β"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "G. Rathalos Mail β"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "G. Fulgur Vambraces α"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "G. Rathalos Coil α"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "G. Rathalos Greaves β"
+        }
+      ],
+      "armorDecos": [],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Charge Master",
+          "level": 1
+        },
+        {
+          "nameEn": "Critical Status",
+          "level": 1
+        },
+        {
+          "nameEn": "Focus",
+          "level": 1
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 3
+        },
+        {
+          "nameEn": "Constitution",
+          "level": 3
+        },
+        {
+          "nameEn": "Marathon Runner",
+          "level": 3
+        },
+        {
+          "nameEn": "Maximum Might",
+          "level": 3
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 3
+        },
+        {
+          "nameEn": "Windproof",
+          "level": 2
+        },
+        {
+          "nameEn": "Intimidator",
+          "level": 1
+        },
+        {
+          "nameEn": "Stamina Surge",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        "Ward of Wyveria",
+        "Second Wind I",
+        "Scorcher I"
+      ],
+      "complete": true
+    },
+    {
+      "id": "hammer_wildsProgression_2",
+      "weaponType": "hammer",
+      "category": "wildsProgression",
+      "kind": "full-build",
+      "buildName": "Sleep Critical Hammer",
+      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502505",
+      "weapon": "Rompo Wrecker III",
+      "weaponSlots": [
+        3,
+        2
+      ],
+      "weaponDecos": [],
+      "artian": null,
+      "armor": [
+        {
+          "slot": "head",
+          "nameEn": "Bulaqchi Specs α"
+        },
+        {
+          "slot": "chest",
+          "nameEn": "Nerscylla Mail α"
+        },
+        {
+          "slot": "arms",
+          "nameEn": "Balahara Vambraces β"
+        },
+        {
+          "slot": "waist",
+          "nameEn": "Kut-Ku Coil β"
+        },
+        {
+          "slot": "legs",
+          "nameEn": "Chatacabra Greaves β"
+        }
+      ],
+      "armorDecos": [],
+      "talisman": null,
+      "skillTotals": [
+        {
+          "nameEn": "Focus",
+          "level": 3
+        },
+        {
+          "nameEn": "Weakness Exploit",
+          "level": 3
+        },
+        {
+          "nameEn": "Charge Master",
+          "level": 2
+        },
+        {
+          "nameEn": "Evade Extender",
+          "level": 2
+        },
+        {
+          "nameEn": "Marathon Runner",
+          "level": 2
+        },
+        {
+          "nameEn": "Agitator",
+          "level": 1
+        },
+        {
+          "nameEn": "Flayer",
+          "level": 1
+        },
+        {
+          "nameEn": "Ambush",
+          "level": 1
+        },
+        {
+          "nameEn": "Recovery Up",
+          "level": 1
+        },
+        {
+          "nameEn": "Entomologist",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [],
+      "complete": true
+    }
+  ]
+}

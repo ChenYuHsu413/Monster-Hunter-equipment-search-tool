@@ -53,8 +53,10 @@ scripts/world/.cache/
 # World 推薦配裝 Game8 文章快取（scrape-game8-mhwi.mjs 用；重跑零抓取）
 scripts/world/.game8-mhwi-cache/
 
-# Wilds 匯入管線快取（mhdb-wilds API en+zh-Hant 抓取；重跑零抓取）
-scripts/wilds/.cache/
-
-# Wilds 推薦配裝 Game8 頁渲染快取（逐頁固化，重跑不覆蓋、跨輪續跑）
-scripts/wilds/.cache/game8/
+# Wilds 匯入管線快取（mhdb-wilds API en+zh-Hant 抓取；重跑零抓取）。
+# ★ Phase 6b 修正：原本連 Game8 抽取結果一併忽略，導致跨機開發時快取遺失（單副本風險已實際
+#   發生）。改為：原始 HTML（.cache/html，大、可重抓）續忽略；Game8 **抽取結果**（.cache/game8/*.json，
+#   結構化事實資料、含 provenance）**進版控**——「首抓固化」由 git 歷史強制，比 gitignore 更忠於原意。
+#   理由與推翻留痕見 docs/wilds-game8-audit.md「快取版控修正」節。
+scripts/wilds/.cache/*
+!scripts/wilds/.cache/game8/
