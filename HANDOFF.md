@@ -36,7 +36,8 @@ Wilds 冒煙 21、efr-wilds 32。
 - ⏳ **Low Rank 推薦 deferred**（`wildsLowRank`）：Game8 有獨立 LR 頁（來源存在），未匯入、列尾巴候選。
 - 🔹 珠池視覺分組、set/group 觸發件數區塊：v1-deferred（UI 增益，非正確性）。
 - 🔹 使用者護石池別預設 armor 相容行為（RNG 護石逐洞池別，預設池相容）。
-- 🔹 `regression-all.mjs` 尚未串接 wilds 冒煙 + efr（現為 Rise+World；單指令三遊戲閘門待補）。
+- ✅ ~~`regression-all.mjs` 尚未串接 wilds 冒煙 + efr~~ → **尾巴 W-C 已統一**：單指令四段
+  （Rise 10 + World 11 逐位元 + Wilds 冒煙 21 + Wilds EFR 32），總結行列四段狀態、任一 FAIL 整體 exit 1。
 - 🔹 映射 **2175/2175 直通、零 override** 是異常乾淨的記錄——Ascendance 重灌時**複驗此性質是否維持**
   （若出現 override 需求，代表命名體系變動）。
 
