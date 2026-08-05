@@ -1,18 +1,23 @@
 /**
- * Game8 Wilds 推薦配裝爬取（fetch → 靜態 HTML 解析 → 快取固化）。方法見 docs/wilds-game8-audit.md。
+ * Game8 Wilds 推薦配裝爬取（**game8.jp 日文原站**，fetch → 靜態表解析 → 快取固化）。
+ * 尾巴 W-F 換源：game8.co（英文）→ game8.jp（日文）。定性/覆蓋對照/裁決見 docs/wilds-game8-audit.md §W-F。
  *
- * ★ 方法修正（Phase 6b，實測翻案）：Phase 6 前半 audit 記「Game8 build 頁為 JS 渲染、需瀏覽器」。
- *   實測 `fetch()` GS 頁得 923KB 靜態 HTML，build 明細表（Best Weapon / Armor Loadout / Skill
- *   Summary）**全在初始 HTML**（React 摘要表另有 fallback 靜態表）。故改用與 World
- *   `scrape-game8-mhwi.mjs` 同款「fetch → 解析 → 快取」可重跑管線，取代半自動瀏覽器 console 抽取。
+ * ★ 換源理由（非覆蓋）：JP 原生詞彙直通 mhdb ja locale（免英文有損轉譯）、技能表完整可拆解
+ *   （vs Phase Z 證 EN skillTotals 為人工摘要）、護石池別標註直對珠雙池、Rise 前例一致。
+ *   覆蓋量實測 EN 173 > JP 99（見 §W-F.2，據實記載，非覆蓋升級）。
  *
- * 快取兩層：
- *   - 原始 HTML：.cache/html/<archiveId>.html（gitignore，大、可重抓）。
- *   - 抽取結果：.cache/game8/<weaponType>.json（**進版控**，Phase 6b 裁決：跨機開發常態、
- *     單副本風險已實際發生、內容為結構化事實資料，見 audit「快取版控修正」節）。含 url+scrapedAt。
+ * 每武種兩分頁（實測結構，§W-F.4）：
+ *   - 最強装備（終盤 Meta）→ category `wildsEndgame`。build 為 h3；三表
+ *     `武器｜装飾品` / `防具｜スロット｜装飾品` / `武器スキル・防具スキル・シリーズ/グループ`。
+ *   - 上位おすすめ装備（HR9〜39 進度）→ category `wildsProgression`。build 為 h2；表頭變體
+ *     `武器｜武器スキル／装飾品`（技能+珠合併）、`発動スキル`（單一總表）、護石列 `["護石",名]`。
+ *   （序盤/下位頁為散文養成攻略、非結構化 build → 本輪 defer wildsLowRank，不爬。）
+ *
+ * 快取兩層：原始 HTML `.cache/html/jp-<id>.html`（gitignore）；抽取結果
+ *   `.cache/game8/<weaponType>.json`（**進版控**，含兩分頁 builds）。首抓固化不覆蓋。
  *
  * 用法：
- *   node scripts/wilds/scrape-game8-mhwd.mjs            # 抓+抽全 14 頁（cache-first）
+ *   node scripts/wilds/scrape-game8-mhwd.mjs            # 抓+抽全 14 武種（cache-first）
  *   node scripts/wilds/scrape-game8-mhwd.mjs --only=great-sword,bow
  *   node scripts/wilds/scrape-game8-mhwd.mjs --refresh  # 忽略 HTML 快取重抓
  *   node scripts/wilds/scrape-game8-mhwd.mjs status      # 列快取進度
@@ -30,25 +35,30 @@ mkdirSync(CACHE, { recursive: true });
 const DELAY_MS = 2500;
 const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36";
+const BASE = "https://game8.jp";
 
-/** 14 武器 build 頁（Game8 Wilds High Rank，Ver 1.041 體系）。archives id 由 GS 頁「All Weapon
- *  Builds」區塊站內交叉取得（Phase 6b 補齊 7 個待補；sword-shield/hammer 與前半已知一致，互證）。 */
+/** 14 武種 → { endgame:最強頁 id, progression:上位頁 id }。
+ *  provenance（§W-F.4）：最強 id 自 hub /mhwilds/673589 各武種連結；上位 id 自各最強頁「上位おすすめ装備」連結。
+ *  （最強編號跳過 668369；gunlance 最強實為 670772，以 hub 實連結為準。） */
 export const PAGES = {
-  "great-sword": "https://game8.co/games/Monster-Hunter-Wilds/archives/502430",
-  "long-sword": "https://game8.co/games/Monster-Hunter-Wilds/archives/502435",
-  "sword-shield": "https://game8.co/games/Monster-Hunter-Wilds/archives/503090",
-  "dual-blades": "https://game8.co/games/Monster-Hunter-Wilds/archives/501198",
-  hammer: "https://game8.co/games/Monster-Hunter-Wilds/archives/502505",
-  "hunting-horn": "https://game8.co/games/Monster-Hunter-Wilds/archives/502508",
-  lance: "https://game8.co/games/Monster-Hunter-Wilds/archives/503092",
-  gunlance: "https://game8.co/games/Monster-Hunter-Wilds/archives/503030",
-  "switch-axe": "https://game8.co/games/Monster-Hunter-Wilds/archives/502864",
-  "charge-blade": "https://game8.co/games/Monster-Hunter-Wilds/archives/503022",
-  "insect-glaive": "https://game8.co/games/Monster-Hunter-Wilds/archives/502439",
-  bow: "https://game8.co/games/Monster-Hunter-Wilds/archives/503042",
-  "light-bowgun": "https://game8.co/games/Monster-Hunter-Wilds/archives/502870",
-  "heavy-bowgun": "https://game8.co/games/Monster-Hunter-Wilds/archives/502810",
+  "great-sword": { endgame: 668362, progression: 675622 },
+  "long-sword": { endgame: 668363, progression: 675623 },
+  "sword-shield": { endgame: 668364, progression: 675620 },
+  "dual-blades": { endgame: 668365, progression: 675621 },
+  hammer: { endgame: 668366, progression: 675624 },
+  "hunting-horn": { endgame: 668367, progression: 675625 },
+  lance: { endgame: 668368, progression: 675626 },
+  gunlance: { endgame: 670772, progression: 675627 },
+  "switch-axe": { endgame: 668370, progression: 675619 },
+  "charge-blade": { endgame: 668371, progression: 675628 },
+  "insect-glaive": { endgame: 668372, progression: 675629 },
+  bow: { endgame: 668373, progression: 675630 },
+  "light-bowgun": { endgame: 668374, progression: 675631 },
+  "heavy-bowgun": { endgame: 668375, progression: 675632 },
 };
+
+const TIER_CATEGORY = { endgame: "wildsEndgame", progression: "wildsProgression" };
+const DATA_VERSION = "1.041"; // 遊戲資料版本（Ascendance 2027 前凍結）
 
 // ───────── HTML 工具 ─────────
 const decodeEnt = (s) =>
@@ -57,260 +67,226 @@ const decodeEnt = (s) =>
     .replace(/&quot;/g, '"').replace(/&#0?39;/g, "'").replace(/&nbsp;/g, " ");
 const textOf = (h) => decodeEnt(h.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ").trim();
 const rowsOf = (tableHtml) => [...tableHtml.matchAll(/<tr[^>]*>([\s\S]*?)<\/tr>/g)].map((m) => m[1]);
-// Game8 常有未閉合 <td>：以「開啟標籤」切格。
 const cellsOf = (rowHtml) =>
-  rowHtml.split(/<t[dh][^>]*>/i).slice(1).map((s) => textOf(s.replace(/<\/tr>[\s\S]*$/i, "")));
-const tablesOf = (html) => [...html.matchAll(/<table[\s\S]*?<\/table>/g)].map((m) => m[0]);
+  rowHtml.split(/<t[dh][^>]*>/i).slice(1).map((s) => textOf(s.replace(/<\/t[dh]>[\s\S]*$/i, "")));
+const cellsHtmlOf = (rowHtml) =>
+  rowHtml.split(/<t[dh][^>]*>/i).slice(1).map((s) => s.replace(/<\/t[dh]>[\s\S]*$/i, ""));
 
-/** 圈圈數字 → 各洞等級陣列（③③③ → [3,3,3]）。 */
+/** 圈圈數字（全/半形）→ 各洞等級陣列。ー/－/-＝空洞（跳過）。 */
 const SLOT_MAP = { "①": 1, "②": 2, "③": 3, "④": 4 };
 const parseSlots = (s) => [...(s || "")].filter((c) => SLOT_MAP[c]).map((c) => SLOT_MAP[c]);
-
-/**
- * 解析一格內的裝飾珠：每顆為 `<div class="align"> <a><img alt="Name Icon">Name</a> <b>xN</b> </div>`。
- * 珠名取自 img alt（去尾綴「 Icon」），數量取自 <b>xN</b>（缺則 1）。回傳 [{nameEn,count}]。
- */
-function parseDecoCell(cellHtml) {
+/** 護石池別洞（武①防①防① → [{pool:'weapon',size:1},{pool:'armor',size:1},...]）。 */
+function parsePoolSlots(s) {
   const out = [];
-  for (const blk of cellHtml.split(/<div class="align">/).slice(1)) {
-    const alt = (blk.match(/alt="([^"]*?)\s*(?:Icon)?"/) || [])[1];
-    if (!alt || !/【\d+】/.test(alt)) continue; // 只收帶【N】的珠
-    const cnt = (blk.match(/<b[^>]*>\s*x\s*(\d+)/i) || [])[1];
-    out.push({ nameEn: alt.trim(), count: cnt ? Number(cnt) : 1 });
+  let pool = null;
+  for (const c of s || "") {
+    if (c === "武") pool = "weapon";
+    else if (c === "防") pool = "armor";
+    else if (SLOT_MAP[c]) out.push({ pool: pool ?? "armor", size: SLOT_MAP[c] });
   }
   return out;
 }
 
-/** 一列首個 <td> 的裝備名。優先取連結文字（Game8 alt 遇撇號會截斷，如「True Omega」缺「's Rod」），
- *  退回 img alt（去「Monster Hunter Wilds - 」前綴／「 Icon」尾綴）。 */
-function firstEquipName(rowHtml) {
-  const firstTd = rowHtml.split(/<t[dh][^>]*>/i)[1] || "";
-  const anchor = (firstTd.match(/<a[^>]*>([\s\S]*?)<\/a>/) || [])[1] || "";
-  const linkText = textOf(anchor); // 去 img 等標籤後的錨文字＝完整裝備名
-  if (linkText) return linkText;
-  const alt = (firstTd.match(/alt="([^"]+)"/) || [])[1] || "";
-  return alt.replace(/^Monster Hunter Wilds\s*-\s*/, "").replace(/\s*Icon$/, "").trim();
+const isDecoName = (name) => /【\d+】/.test((name || "").normalize("NFKC"));
+const decoLevel = (name) => Number(((name || "").normalize("NFKC").match(/【(\d+)】/) || [])[1] || 0);
+
+/**
+ * 從一格 HTML 抽裝飾珠（layout-agnostic）：每顆為 `<a>珠名【N】</a>`，選填 `<b>xN</b>`。
+ * 僅收含【\d+】者（排除技能如 抜刀術【技】＝【技】非數字、見切り Lv3＝無【】）。同名合併計數。
+ */
+function parseDecosFromCell(cellHtml) {
+  const m = new Map();
+  const re = /<a[^>]*>([\s\S]*?)<\/a>(?:\s*<b[^>]*>\s*x\s*(\d+)\s*<\/b>)?/gi;
+  let mm;
+  while ((mm = re.exec(cellHtml))) {
+    const name = textOf(mm[1]);
+    if (!isDecoName(name)) continue;
+    const cnt = mm[2] ? Number(mm[2]) : 1;
+    m.set(name, (m.get(name) ?? 0) + cnt);
+  }
+  return [...m.entries()].map(([nameJa, count]) => ({ nameJa, count }));
+}
+
+// ───────── 表分類（內容驅動，跨兩 layout 穩定）─────────
+function classifyTable(tableHtml) {
+  const rows = rowsOf(tableHtml);
+  if (!rows.length) return null;
+  // 取首個「非空」列當表頭（部分技能表首列為空 <tr></tr>，真表頭在次列的 <th colspan>）。
+  const head = rows.map(cellsOf).find((c) => c.length) || [];
+  const h0 = head[0] || "";
+  if (h0 === "武器" && head.some((c) => c.includes("装飾品"))) return "weapon"; // 兩 layout 皆此頭
+  if (h0 === "防具" && head.some((c) => /スロット/.test(c))) return "armor";
+  // 技能表：表頭可能為空首列 + 次列 <th>武器スキル</th>，或散裝 <th> 於列外（malformed）。
+  // 以「緊接 < 的表頭字」偵測，避開上位武器表頭「武器スキル／装飾品」（其後非 <）。
+  if (/^(武器スキル|防具スキル|発動スキル|スキル)$/.test(h0)) return "skill";
+  if (/>\s*(武器スキル|防具スキル|発動スキル)\s*</.test(tableHtml)) return "skill";
+  return null;
+}
+
+/** 解析武器表 → { nameJa, artian, statsRaw, artianRaw, decos[], slots[] }。 */
+function parseWeaponTable(tableHtml) {
+  const rows = rowsOf(tableHtml);
+  const cellsHtml = cellsHtmlOf(rows[1] || "");
+  const firstCell = cellsHtml[0] || "";
+  const anchor = (firstCell.match(/<a[^>]*>([\s\S]*?)<\/a>/) || [])[1] || "";
+  const anchorText = textOf(anchor); // 「名 （…アーティア武器）」
+  const artian = /アーティア/.test(anchorText);
+  const nameJa = anchorText.replace(/（[^）]*）/g, "").replace(/\([^)]*\)/g, "").trim();
+  const statsRaw = textOf((firstCell.match(/<b[^>]*>([\s\S]*?)<\/b>/) || [])[1] || "");
+  const decos = parseDecosFromCell(cellsHtml[1] || ""); // 兩 layout 珠皆在第 2 格
+  // 生產ボーナス（Artian）列：最強頁 row2；上位頁無。
+  const artianRow = rows[2] ? cellsOf(rows[2]).join(" ") : "";
+  const artianRaw = /生産ボーナス|復元強化|変異パーツ/.test(artianRow) ? artianRow : null;
+  // 武器洞位：JP 表無獨立洞位欄 → 由已置珠的【N】推得（展開計數，降冪；display-only）。
+  const slots = decos.flatMap((d) => Array(d.count).fill(decoLevel(d.nameJa))).sort((a, b) => b - a);
+  return { nameJa, artian, statsRaw, artianRaw, decos, slots };
 }
 
 const ARMOR_SLOTS = ["head", "chest", "arms", "waist", "legs"];
 
-/** 分類單一 table 型別（內容驅動，跨 14 武種穩定，不靠 H4 標題）。 */
-function classifyTable(tableHtml) {
-  const rows = rowsOf(tableHtml);
-  if (!rows.length) return null;
-  const head = cellsOf(rows[0]).map((c) => c.toLowerCase());
-  const flat = rows.flatMap((r) => cellsOf(r).map((c) => c.toLowerCase()));
-  if (head[0] === "weapon" && head.includes("rarity")) return "weaponStats";
-  if (flat[0]?.startsWith("weapon decorations")) return "weaponDecos";
-  if (flat[0]?.startsWith("production bonus")) return "artian";
-  if (head[0] === "armor" && head.includes("slots")) return "armorLoadout";
-  // 技能總表標頭跨頁有變體："Weapon(s)/Armor Skills"（雙軌，含 Game8 錯字複數）或單一"Build Skill List"。
-  if (flat.some((c) => /^weapons? skills$/.test(c) || /^armor skills$/.test(c) || /build skill list/.test(c)))
-    return "skillSummary";
-  return null;
-}
-
-/** 解析裝備表（weaponStats）：回傳 { nameEn, slots[] }。 */
-function parseWeaponStats(tableHtml) {
-  const rows = rowsOf(tableHtml);
-  const nameEn = firstEquipName(rows[1] || "");
-  // 找 Slots 標頭後一列的圈圈數字
-  let slots = [];
-  for (let i = 0; i < rows.length; i++) {
-    if (cellsOf(rows[i]).some((c) => /^slots$/i.test(c))) {
-      const next = cellsOf(rows[i + 1] || "");
-      slots = parseSlots(next[0] || "");
-      break;
-    }
-  }
-  return { nameEn, slots };
-}
-
-/** 解析 Production Bonus（Artian）表 → 原文摘要（用於未模擬旗標與 UI 標示）。 */
-function parseArtian(tableHtml) {
-  const rows = rowsOf(tableHtml);
-  const lines = rows.map((r) => cellsOf(r).join(" | ")).filter(Boolean);
-  const joined = lines.join(" ");
-  return {
-    focus: (joined.match(/Focus\s*:\s*([^|]+?)(?:Set Skill|Group Skill|$)/i) || [])[1]?.trim() || null,
-    setSkill: (joined.match(/Set Skill\s*:\s*([^|]+?)(?:Group Skill|$)/i) || [])[1]?.trim() || null,
-    groupSkill: (joined.match(/Group Skill\s*:\s*([^|]+?)(?:Focus|Set Skill|$)/i) || [])[1]?.trim() || null,
-    raw: lines.slice(0, 4),
-  };
-}
-
 /**
- * 逐槽珠抽取（layout-agnostic）：掃整表所有 `<div class="align">` 珠塊，取**無 <b>xN</b>** 者
- * （＝逐槽顯示，每塊 1 顆），合併同名。避開「Armor Decorations」總表列（該列珠帶 xN）。
- * 動機：部分 build（尤其 bow）**無總表列** → 逐槽是唯一可靠來源；有總表列時逐槽合併＝總表（已驗）。
+ * 解析防具表 → { armor[{slot,nameJa,slots[],augmentRaw}], armorDecos[合併], talisman }。
+ * 護石列偵測（兩 layout）：最強頁 `[名(含護石), 武①防①防①, 技能+珠]`；上位頁 `["護石", 名]`。
  */
-function parseSlotDecos(tableHtml) {
-  const m = new Map();
-  for (const blk of tableHtml.split(/<div class="align">/).slice(1)) {
-    const head = blk.slice(0, 400); // 只看塊首，避免吃到下一塊
-    const alt = (head.match(/alt="([^"]*?)\s*(?:Icon)?"/) || [])[1];
-    if (!alt || !/【\d+】/.test(alt)) continue;
-    if (/<b[^>]*>\s*x\s*\d+/i.test(head)) continue; // 帶 xN → 總表列，跳過（逐槽無 xN）
-    m.set(alt.trim(), (m.get(alt.trim()) ?? 0) + 1);
-  }
-  return [...m.entries()].map(([nameEn, count]) => ({ nameEn, count }));
-}
-
-/**
- * 解析 Armor Loadout 表 → { armor[{slot,nameEn}], armorDecos[{nameEn,count}], talisman }。
- * armorDecos 取自逐槽珠（parseSlotDecos，總表列缺時仍可靠）；逐槽歸屬對技能總表無影響故不逐件建模。
- */
-function parseArmorLoadout(tableHtml) {
+function parseArmorTable(tableHtml) {
   const rows = rowsOf(tableHtml);
   const armor = [];
+  const decoAgg = new Map();
   let talisman = null;
-  let summaryDecos = null; // 「Armor Decorations」總表列（含 xN，最可靠）
   let armorIdx = 0;
+  const addDecos = (list) => { for (const d of list) decoAgg.set(d.nameJa, (decoAgg.get(d.nameJa) ?? 0) + d.count); };
+
   for (const r of rows) {
     const cells = cellsOf(r);
-    const label = (cells[0] || "").toLowerCase();
-    if (label === "armor" && cells.some((c) => /slots/i.test(c))) continue; // 標頭
-    if (label.startsWith("armor decorations")) { summaryDecos = parseDecoCell(r); continue; }
-    if (label.startsWith("talisman")) {
-      talisman = firstEquipName(r) || textOf(cells[1] || "") || null;
-      if (!talisman || /【\d+】/.test(talisman)) talisman = textOf((r.match(/<td[^>]*>([\s\S]*?)<\/td>/) || [])[1] || "") || talisman;
+    const cellsHtml = cellsHtmlOf(r);
+    const c0 = cells[0] || "";
+    if (c0 === "防具" && cells.some((c) => /スロット/.test(c))) continue; // 標頭
+    // 護石列：cell0='護石' 標籤（上位）或 cell0 含 '護石'（最強）。
+    const isCharmRow = c0 === "護石" || /護石/.test(c0);
+    if (isCharmRow) {
+      const nameJa = c0 === "護石" ? textOf(cellsHtml[1] || "") : c0;
+      const poolSlots = parsePoolSlots(cells.find((c) => /[武防][①②③④]/.test(c)) || "");
+      // 護石格技能+珠（<hr> 分隔）：珠進 armorDecos 聚合，技能忽略（skillTotals 為權威）。
+      const charmDecoCell = cellsHtml[cellsHtml.length - 1] || "";
+      const charmDecos = parseDecosFromCell(charmDecoCell);
+      addDecos(charmDecos);
+      talisman = { nameJa, poolSlots, decos: charmDecos };
       continue;
     }
-    if (label.startsWith("def and res") || label.startsWith("def")) continue;
-    // 一般防具列：首格為裝備名。
-    const nameEn = firstEquipName(r);
-    if (nameEn && armorIdx < 5) { armor.push({ slot: ARMOR_SLOTS[armorIdx], nameEn }); armorIdx++; }
+    // 一般防具列：cell0=名（可含（限界突破強化）等後綴）、cell1=slots、末格=珠。
+    if (armorIdx < 5 && c0) {
+      const augMatch = c0.match(/（([^）]*)）|\(([^)]*)\)/);
+      const nameJa = c0.replace(/（[^）]*）/g, "").replace(/\([^)]*\)/g, "").trim();
+      const slots = parseSlots(cells[1] || "");
+      const decos = parseDecosFromCell(cellsHtml[cellsHtml.length - 1] || "");
+      addDecos(decos);
+      armor.push({ slot: ARMOR_SLOTS[armorIdx], nameJa, slots, augmentRaw: augMatch ? (augMatch[1] || augMatch[2]) : null, decos });
+      armorIdx++;
+    }
   }
-  // 珠：優先總表列（xN 計數可靠）；缺總表列（部分 bow build）退回逐槽合併。
-  const armorDecos = summaryDecos && summaryDecos.length ? summaryDecos : parseSlotDecos(tableHtml);
-  return { armor, armorDecos, talisman, armorDecoSource: summaryDecos && summaryDecos.length ? "summary" : "slots" };
+  const armorDecos = [...decoAgg.entries()].map(([nameJa, count]) => ({ nameJa, count }));
+  return { armor, armorDecos, talisman };
 }
 
-/** 疑似技能名（濾掉 Game8「Skill Buffs Breakdown」內的 EFR/親和分析行污染）。 */
-const isSkillName = (s) =>
-  !!s && s !== "-" && s !== "ー" &&
-  !/[・%|]/.test(s) && !/lowest-highest/i.test(s) && s.length <= 35 &&
-  !/^skill buffs breakdown$/i.test(s);
+/** 疑似技能名（濾雜訊）。 */
+const isSkillName = (s) => !!s && s !== "-" && s !== "ー" && !/【\d+】/.test((s || "").normalize("NFKC")) && s.length <= 30;
 
-/** 解析 Skill Summary 表 → { skillTotals[{nameEn,level}], groupSetSkills[nameEn] }。 */
-function parseSkillSummary(tableHtml) {
+/**
+ * 解析技能表（兩 layout）→ { skillTotals[{nameJa,level}], groupSetSkills[{nameJa}] }。
+ * 最強頁：`武器スキル`/`防具スキル`（成對 name Lv.N）+ `シリーズスキル・グループスキル`（無 Lv 名）。
+ * 上位頁：`発動スキル` 單表（name Lv.N），尾端夾雜 series/group（無 Lv 名，如 毛皮の昂揚 / 闢獣の力（力自慢Ⅱ））。
+ */
+function parseSkillTable(tableHtml) {
   const rows = rowsOf(tableHtml);
   const skillTotals = [];
   const groupSetSkills = [];
   let mode = "skill";
+  const seenGroup = new Set();
   for (const r of rows) {
     const cells = cellsOf(r).map((c) => c.trim());
-    const joined = cells.join(" ").toLowerCase();
-    // 「Skill Buffs Breakdown」起為 EFR/親和分析區（非技能）→ 全段忽略。
-    if (/skill buffs breakdown/.test(joined)) { mode = "ignore"; continue; }
-    if (/group\s*\/?\s*set skills/.test(joined) && cells.length <= 2) { mode = "groupset"; continue; }
-    if (/^weapons? skills$/i.test(cells[0] || "") || /^armor skills$/i.test(cells[0] || "") || /^build skill list$/i.test(cells[0] || "")) { mode = "skill"; continue; }
-    if (mode === "ignore") continue;
-    if (mode === "groupset") {
-      for (const c of cells) if (isSkillName(c)) groupSetSkills.push(c);
-      continue;
-    }
-    // 技能列：成對 (name, level)
-    for (let i = 0; i + 1 < cells.length; i += 2) {
-      const name = cells[i];
-      if (!isSkillName(name)) continue;
-      const lv = Number((cells[i + 1] || "").match(/\d+/)?.[0] ?? NaN);
-      if (Number.isFinite(lv)) skillTotals.push({ nameEn: name, level: lv });
+    const joined = cells.join(" ");
+    if (cells.length <= 1 && /シリーズ|グループ/.test(joined)) { mode = "groupset"; continue; }
+    if (cells.length <= 1 && /^(武器スキル|防具スキル|発動スキル|スキル)$/.test(cells[0] || "")) { mode = "skill"; continue; }
+    for (const c of cells) {
+      if (!c || c === "-" || c === "ー") continue;
+      const lv = c.normalize("NFKC").match(/^(.+?)\s*Lv\.?\s*(\d+)\s*$/);
+      if (lv && isSkillName(lv[1].trim())) {
+        skillTotals.push({ nameJa: lv[1].trim(), level: Number(lv[2]) });
+      } else if (isSkillName(c)) {
+        // 無 Lv → series/group 效果名（含「毛皮の昂揚」「闢獣の力（力自慢Ⅱ）」「防具スロ2×2」等）。
+        const name = c.replace(/（[^）]*）/g, "").replace(/\s+/g, "").trim() || c;
+        if (!seenGroup.has(name)) { seenGroup.add(name); groupSetSkills.push({ nameJa: c }); }
+      }
     }
   }
   return { skillTotals, groupSetSkills };
 }
 
-// ───────── zone → category ─────────
-function categoryOf(h2) {
-  // 各武種頁 h2 有單複數混用（"...Build (HR 36++)" vs "...Builds (HR 100++)"）。
-  const m = h2.match(/High Rank Builds?\s*\(HR\s*(\d+)/i);
-  if (!m) return null; // 導覽/相關區塊
-  if (/Endgame/i.test(h2)) return "wildsEndgame";
-  return Number(m[1]) >= 50 ? "wildsHighRank" : "wildsProgression"; // 36/21/9 → progression
+// ───────── 整頁解析 ─────────
+/** 找出 body 內建置區（截掉「ユーザーが投稿した」使用者投稿 h2 之後）。 */
+function editorialBody(html) {
+  const h2s = [...html.matchAll(/<h2[^>]*id="[^"]+"[^>]*>([\s\S]*?)<\/h2>/g)];
+  for (const m of h2s) if (/投稿/.test(textOf(m[1]))) return html.slice(0, m.index);
+  return html;
 }
 
-/** 解析整頁 → builds[]。走 body h2/h3；h3 段內以內容分類 table。 */
-function parsePage(html, weaponType, url) {
-  const H = [...html.matchAll(/<h([234]) class="a-header--[234]" id="([^"]+)">([^<]*)<\/h[234]>/g)]
-    .map((m) => ({ lvl: +m[1], name: decodeEnt(m[3]).trim(), pos: m.index }));
+/** 解析一頁（單一 tier）→ builds[]。以 weapon 表為 build 錨，攔截其後 armor/skill 表（至下個 weapon 表）。 */
+function parsePage(html, weaponType, tier, url) {
+  const body = editorialBody(html);
+  const category = TIER_CATEGORY[tier];
+  const headings = [...body.matchAll(/<h([234])[^>]*id="[^"]+"[^>]*>([\s\S]*?)<\/h[234]>/g)]
+    .map((m) => ({ pos: m.index, name: textOf(m[2]) }));
+  const nearestHeading = (pos) => { let best = ""; for (const h of headings) { if (h.pos < pos) best = h.name; else break; } return best; };
+
+  const tables = [...body.matchAll(/<table[\s\S]*?<\/table>/g)].map((m) => ({ html: m[0], pos: m.index, type: classifyTable(m[0]) }));
   const builds = [];
-  let curCat = null;
-  const idxByCat = {};
+  let cur = null;
+  let idx = 0;
   const verWarnings = [];
-  for (let i = 0; i < H.length; i++) {
-    const hd = H[i];
-    if (hd.lvl === 2) { curCat = categoryOf(hd.name); continue; }
-    if (hd.lvl === 3 && curCat) {
-      const next = H.slice(i + 1).find((x) => x.lvl <= 3);
-      const seg = html.slice(hd.pos, next ? next.pos : hd.pos + 30000);
-      // 版號合規：段內不得出現 TU5/Abyssal（PLAN §A.3 假訊息）
-      if (/\bTU5\b|Abyssal/i.test(seg)) verWarnings.push(hd.name);
-      const b = parseBuild(seg, weaponType, curCat, hd.name, url, (idxByCat[curCat] = (idxByCat[curCat] ?? -1) + 1));
-      if (b) builds.push(b);
+  for (const t of tables) {
+    if (t.type === "weapon") {
+      if (cur) builds.push(cur);
+      const w = parseWeaponTable(t.html);
+      cur = {
+        id: `${weaponType}_${category}_${idx++}`,
+        weaponType, category, kind: "full-build",
+        buildName: nearestHeading(t.pos), sourceUrl: url,
+        weapon: w.nameJa, weaponStats: w.statsRaw, weaponSlots: w.slots,
+        weaponDecos: w.decos, artian: w.artian, artianRaw: w.artianRaw,
+        armor: [], armorDecos: [], talisman: null,
+        skillTotals: [], groupSetSkills: [],
+      };
+      if (/\bTU5\b|Abyssal/i.test(t.html)) verWarnings.push(cur.buildName);
+    } else if (t.type === "armor" && cur) {
+      const a = parseArmorTable(t.html);
+      cur.armor = a.armor; cur.armorDecos = a.armorDecos; cur.talisman = a.talisman;
+    } else if (t.type === "skill" && cur) {
+      const s = parseSkillTable(t.html);
+      cur.skillTotals = s.skillTotals; cur.groupSetSkills = s.groupSetSkills;
+    }
+  }
+  if (cur) builds.push(cur);
+  // 完整性：armor 5 件 + skillTotals 非空 + weapon。不完整逐筆分類（§1.2）：
+  //   (a) 源未提供 full-build（無「発動スキル」總表；只有武器建議側註「◯◯もおすすめ」、
+  //       或早期「防具｜スキル｜必要素材」素材養成表〔全 28 頁僅 CB HR9〜19 一例〕）→ 如實排除。
+  //   (b) 抽取器漏抽 → 修抽取器（本輪已修：技能表空首列 + 散裝 <th> 表頭變體）。
+  for (const b of builds) {
+    b.complete = b.armor.length === 5 && b.skillTotals.length > 0 && !!b.weapon;
+    if (!b.complete) {
+      b.excludeReason =
+        b.skillTotals.length === 0 && b.weapon
+          ? "a:non-fullbuild" // 無発動スキル總表 → 源提供側註/素材表，非 full-build
+          : "review"; // 有技能卻缺 armor＝抽取器漏抽（不應殘留）
     }
   }
   return { builds, verWarnings };
 }
 
-function parseBuild(seg, weaponType, category, buildName, url, idx) {
-  const build = {
-    id: `${weaponType}_${category}_${idx}`,
-    weaponType, category, kind: "full-build",
-    buildName, sourceUrl: url,
-    weapon: null, weaponSlots: [], weaponDecos: [], artian: null,
-    armor: [], armorDecos: [], talisman: null,
-    skillTotals: [], groupSetSkills: [],
-  };
-  for (const tbl of tablesOf(seg)) {
-    switch (classifyTable(tbl)) {
-      case "weaponStats": {
-        const w = parseWeaponStats(tbl);
-        build.weapon = w.nameEn;
-        build.weaponSlots = w.slots;
-        break;
-      }
-      case "weaponDecos":
-        build.weaponDecos = parseDecoCell(tbl);
-        break;
-      case "artian":
-        build.artian = parseArtian(tbl);
-        break;
-      case "armorLoadout": {
-        const a = parseArmorLoadout(tbl);
-        build.armor = a.armor;
-        build.armorDecos = a.armorDecos;
-        build.armorDecoSource = a.armorDecoSource;
-        build.talisman = a.talisman;
-        break;
-      }
-      case "skillSummary": {
-        const s = parseSkillSummary(tbl);
-        build.skillTotals = s.skillTotals;
-        build.groupSetSkills = s.groupSetSkills;
-        break;
-      }
-    }
-  }
-  // 完整性：需 armor 5 件 + skillTotals 非空。不完整逐筆分類（§1.2）：
-  //   (a) Game8 未提供 build（如「Build Playstyle and Combos」導覽段，無任何裝備表）→ 如實排除。
-  //   (b) 抽取器漏抽 → 修抽取器重抽（本輪已修：複數"Builds"分區標頭、"Build Skill List"／
-  //       "Weapons Skills"技能表變體）。
-  build.complete = build.armor.length === 5 && build.skillTotals.length > 0;
-  if (!build.complete) {
-    build.excludeReason =
-      build.armor.length === 0 && build.skillTotals.length === 0 && !build.weapon
-        ? "a:non-build-section" // 導覽/combos 段，非配裝
-        : "review"; // 需人工複核（不應殘留）
-  }
-  return build;
-}
-
 // ───────── 抓取（cache-first）─────────
-async function fetchHtml(url, refresh) {
-  const id = url.match(/archives\/(\d+)/)[1];
-  const f = path.join(HTML_CACHE, `${id}.html`);
+async function fetchHtml(id, refresh) {
+  const f = path.join(HTML_CACHE, `jp-${id}.html`);
   if (existsSync(f) && !refresh) return readFileSync(f, "utf8");
+  const url = `${BASE}/mhwilds/${id}`;
   const res = await fetch(url, { headers: { "User-Agent": UA } });
   if (!res.ok) throw new Error(`fetch ${url} → HTTP ${res.status}`);
   const html = await res.text();
@@ -319,15 +295,19 @@ async function fetchHtml(url, refresh) {
   return html;
 }
 
+const jpUpdatedAt = (html) => (html.match(/更新日：\s*([0-9.]+)/) || [])[1] || null;
+
 async function main() {
   const args = process.argv.slice(2);
   if (args[0] === "status") {
     const done = readdirSync(CACHE).filter((f) => f.endsWith(".json"));
-    console.log(`[game8] 抽取快取：${done.length}/14 武種`);
+    console.log(`[game8-jp] 抽取快取：${done.length}/14 武種`);
     for (const f of done) {
       const d = JSON.parse(readFileSync(path.join(CACHE, f), "utf8"));
       const comp = d.builds.filter((b) => b.complete).length;
-      console.log(`  ${f.replace(".json", "").padEnd(14)} ${d.builds.length} builds（完整 ${comp}）  ${d.scrapedAt}`);
+      const eg = d.builds.filter((b) => b.category === "wildsEndgame").length;
+      const pr = d.builds.filter((b) => b.category === "wildsProgression").length;
+      console.log(`  ${f.replace(".json", "").padEnd(14)} ${d.builds.length} builds（完整 ${comp}／最強 ${eg}／上位 ${pr}）  ${d.scrapedAt}`);
     }
     return;
   }
@@ -336,22 +316,35 @@ async function main() {
   const scrapedAt = args.find((a) => a.startsWith("--date="))?.slice(7) || new Date().toISOString().slice(0, 10);
 
   const targets = Object.entries(PAGES).filter(([wt]) => only.length === 0 || only.includes(wt));
-  for (const [wt, url] of targets) {
+  for (const [wt, ids] of targets) {
     const out = path.join(CACHE, `${wt}.json`);
     if (existsSync(out) && !refresh) {
       const d = JSON.parse(readFileSync(out, "utf8"));
-      console.log(`[game8] ${wt.padEnd(14)} 抽取快取已存在（${d.builds.length} builds）— 首抓固化不覆蓋`);
+      console.log(`[game8-jp] ${wt.padEnd(14)} 抽取快取已存在（${d.builds.length} builds）— 首抓固化不覆蓋`);
       continue;
     }
-    const html = await fetchHtml(url, refresh);
-    const { builds, verWarnings } = parsePage(html, wt, url);
-    const data = { url, weaponType: wt, scrapedAt, dataVersion: "1.041", builds };
+    const builds = [];
+    const sources = {};
+    const allVerWarnings = [];
+    let jpDate = null;
+    for (const tier of ["endgame", "progression"]) {
+      const html = await fetchHtml(ids[tier], refresh);
+      const url = `${BASE}/mhwilds/${ids[tier]}`;
+      const { builds: bs, verWarnings } = parsePage(html, wt, tier, url);
+      builds.push(...bs);
+      sources[tier] = { url, jpUpdatedAt: jpUpdatedAt(html) };
+      jpDate = jpDate || jpUpdatedAt(html);
+      allVerWarnings.push(...verWarnings);
+    }
+    const data = { weaponType: wt, scrapedAt, dataVersion: DATA_VERSION, jpUpdatedAt: jpDate, sources, builds };
     writeFileSync(out, JSON.stringify(data, null, 2) + "\n", "utf8");
     const comp = builds.filter((b) => b.complete).length;
     const artian = builds.filter((b) => b.artian).length;
+    const eg = builds.filter((b) => b.category === "wildsEndgame").length;
+    const pr = builds.filter((b) => b.category === "wildsProgression").length;
     console.log(
-      `[game8] ${wt.padEnd(14)} ${String(builds.length).padStart(2)} builds（完整 ${comp}／Artian ${artian}）` +
-        (verWarnings.length ? `  ⚠ 版號警告：${verWarnings.join(",")}` : "")
+      `[game8-jp] ${wt.padEnd(14)} ${String(builds.length).padStart(2)} builds（完整 ${comp}／最強 ${eg}／上位 ${pr}／Artian ${artian}）` +
+        (allVerWarnings.length ? `  ⚠ 版號警告：${allVerWarnings.join(",")}` : "")
     );
   }
 }

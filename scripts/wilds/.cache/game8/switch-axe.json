@@ -1,17 +1,28 @@
 {
-  "url": "https://game8.co/games/Monster-Hunter-Wilds/archives/502864",
   "weaponType": "switch-axe",
-  "scrapedAt": "2026-08-03",
+  "scrapedAt": "2026-08-05",
   "dataVersion": "1.041",
+  "jpUpdatedAt": "2026.08.05",
+  "sources": {
+    "endgame": {
+      "url": "https://game8.jp/mhwilds/668370",
+      "jpUpdatedAt": "2026.08.05"
+    },
+    "progression": {
+      "url": "https://game8.jp/mhwilds/675619",
+      "jpUpdatedAt": "2026.08.05"
+    }
+  },
   "builds": [
     {
       "id": "switch-axe_wildsEndgame_0",
       "weaponType": "switch-axe",
       "category": "wildsEndgame",
       "kind": "full-build",
-      "buildName": "Mutual Hostility II Lord's Soul Switch Axe",
-      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502864",
-      "weapon": "Wicked Regnum",
+      "buildName": "属性ビンの汎用装備",
+      "sourceUrl": "https://game8.jp/mhwilds/668370",
+      "weapon": "邪執のコンキエレガン",
+      "weaponStats": "（巨戟アーティア武器） 攻撃：787／任意の属性：320 ／会心：0%",
       "weaponSlots": [
         3,
         3,
@@ -19,145 +30,271 @@
       ],
       "weaponDecos": [
         {
-          "nameEn": "Critical Jewel III【3】",
+          "nameJa": "超心珠Ⅲ【3】",
           "count": 1
         },
         {
-          "nameEn": "Enhancer/Blaze Jewel【3】",
+          "nameJa": "破龍・匠珠【3】",
           "count": 1
         },
         {
-          "nameEn": "Rzr Sharp/Handicraft Jwl【3】",
+          "nameJa": "速変・匠珠【3】",
           "count": 1
         }
       ],
-      "artian": {
-        "focus": "Element Focus",
-        "setSkill": "Gogmapocalypse",
-        "groupSkill": "Lord's Soul",
-        "raw": [
-          "Production Bonus | Reinforcement Prioritization",
-          "・Element +20 ・Attack +5 ・Attack +5 ・Attack +5 Element Type: Any | ・Attack +5 ・Attack +5 ・Attack +5 ・Attack +5 ・Sharpness +30",
-          "Focus : Element Focus Set Skill : Gogmapocalypse Group Skill : Lord's Soul"
-        ]
-      },
+      "artian": true,
+      "artianRaw": "【生産ボーナス】 属性増強、攻撃増強×3 【復元強化】 攻撃増強EX×2、攻撃増強Ⅲ×2、斬れ味強化EX 【巨戟変異パーツ】 属性激化タイプ 【シリーズスキル】 闢獣の力 【グループスキル】 ヌシの魂",
       "armor": [
         {
           "slot": "head",
-          "nameEn": "Rey Sandhelm γ"
+          "nameJa": "護雷顎竜ヘルムβ",
+          "slots": [
+            3,
+            1
+          ],
+          "augmentRaw": "限界突破強化",
+          "decos": [
+            {
+              "nameJa": "挑戦珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "耐絶珠【1】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "chest",
-          "nameEn": "Gogmazios Mail α"
+          "nameJa": "エグゾルスメイルγ",
+          "slots": [
+            3,
+            3
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "痛撃珠【3】",
+              "count": 2
+            }
+          ]
         },
         {
           "slot": "arms",
-          "nameEn": "Rey Sandbraces γ"
+          "nameJa": "ゴグアームα",
+          "slots": [
+            2,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "逆襲珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "耐絶珠【1】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "waist",
-          "nameEn": "Gogmazios Coil α"
+          "nameJa": "シュバルカコイルγ",
+          "slots": [
+            2,
+            2,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "渾身珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "防音珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "耐絶珠【1】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "legs",
-          "nameEn": "Gogmazios Greaves α"
+          "nameJa": "ゴググリーヴα",
+          "slots": [
+            3,
+            2,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "痛撃珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "防音珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "早食珠【1】",
+              "count": 1
+            }
+          ]
         }
       ],
       "armorDecos": [
         {
-          "nameEn": "Challenger Jewel【3】",
+          "nameJa": "挑戦珠【3】",
           "count": 1
         },
         {
-          "nameEn": "Mighty Jewel【2】",
-          "count": 2
-        },
-        {
-          "nameEn": "Protection Jewel【1】",
+          "nameJa": "耐絶珠【1】",
           "count": 3
         },
         {
-          "nameEn": "Refresh Jewel【2】",
+          "nameJa": "痛撃珠【3】",
+          "count": 3
+        },
+        {
+          "nameJa": "逆襲珠【2】",
           "count": 1
         },
         {
-          "nameEn": "Tenderizer Jewel【3】",
-          "count": 4
+          "nameJa": "渾身珠【2】",
+          "count": 1
+        },
+        {
+          "nameJa": "防音珠【2】",
+          "count": 2
+        },
+        {
+          "nameJa": "早食珠【1】",
+          "count": 3
+        },
+        {
+          "nameJa": "攻撃珠【1】",
+          "count": 1
         }
       ],
-      "talisman": null,
+      "talisman": {
+        "nameJa": "鑑定護石",
+        "poolSlots": [
+          {
+            "pool": "weapon",
+            "size": 1
+          },
+          {
+            "pool": "armor",
+            "size": 1
+          },
+          {
+            "pool": "armor",
+            "size": 1
+          }
+        ],
+        "decos": [
+          {
+            "nameJa": "攻撃珠【1】",
+            "count": 1
+          },
+          {
+            "nameJa": "早食珠【1】",
+            "count": 2
+          }
+        ]
+      },
       "skillTotals": [
         {
-          "nameEn": "Critical Boost",
+          "nameJa": "超会心",
           "level": 3
         },
         {
-          "nameEn": "Razor Sharp",
+          "nameJa": "龍属性攻撃強化",
           "level": 3
         },
         {
-          "nameEn": "Power Prolonger",
+          "nameJa": "業物",
           "level": 3
         },
         {
-          "nameEn": "Handicraft",
+          "nameJa": "高速変形",
+          "level": 3
+        },
+        {
+          "nameJa": "匠",
+          "level": 2
+        },
+        {
+          "nameJa": "攻撃",
           "level": 1
         },
         {
-          "nameEn": "Fire Attack",
+          "nameJa": "挑戦者",
+          "level": 5
+        },
+        {
+          "nameJa": "弱点特効",
+          "level": 3
+        },
+        {
+          "nameJa": "逆襲",
+          "level": 3
+        },
+        {
+          "nameJa": "渾身",
+          "level": 3
+        },
+        {
+          "nameJa": "気絶耐性",
+          "level": 3
+        },
+        {
+          "nameJa": "属性吸収",
+          "level": 3
+        },
+        {
+          "nameJa": "早食い",
+          "level": 3
+        },
+        {
+          "nameJa": "フルチャージ",
+          "level": 2
+        },
+        {
+          "nameJa": "耳栓",
+          "level": 2
+        },
+        {
+          "nameJa": "連撃",
           "level": 1
         },
         {
-          "nameEn": "Agitator",
-          "level": 5
-        },
-        {
-          "nameEn": "Weakness Exploit",
-          "level": 5
-        },
-        {
-          "nameEn": "Divine Blessing",
-          "level": 3
-        },
-        {
-          "nameEn": "Maximum Might",
-          "level": 3
-        },
-        {
-          "nameEn": "Peak Performance",
-          "level": 3
-        },
-        {
-          "nameEn": "Adrenaline Rush",
-          "level": 2
-        },
-        {
-          "nameEn": "Burst",
-          "level": 2
-        },
-        {
-          "nameEn": "Evade Extender",
-          "level": 2
-        },
-        {
-          "nameEn": "Speed Eating",
-          "level": 2
-        },
-        {
-          "nameEn": "Stamina Surge",
-          "level": 2
-        },
-        {
-          "nameEn": "Aquatic/Oilsilt Mobility",
+          "nameJa": "鎖刃刺撃",
           "level": 1
         }
       ],
       "groupSetSkills": [
-        "Mutual Hostility II",
-        "Guts (Tenacity)",
-        "Thunderous Roar I"
+        {
+          "nameJa": "巨戟龍の黙示録 Ⅰ"
+        },
+        {
+          "nameJa": "雷顎竜の闘志 Ⅰ"
+        },
+        {
+          "nameJa": "闢獣の力 Ⅰ"
+        },
+        {
+          "nameJa": "ヌシの魂"
+        },
+        {
+          "nameJa": "‐"
+        }
       ],
-      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -165,9 +302,10 @@
       "weaponType": "switch-axe",
       "category": "wildsEndgame",
       "kind": "full-build",
-      "buildName": "Arkveld Gamma WEX Agitator",
-      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502864",
-      "weapon": "Wicked Regnum",
+      "buildName": "加速再生採用の体力安定装備",
+      "sourceUrl": "https://game8.jp/mhwilds/668370",
+      "weapon": "邪執のコンキエレガン",
+      "weaponStats": "（巨戟アーティア武器） 攻撃：787／任意の属性：320 ／会心：-10%",
       "weaponSlots": [
         3,
         3,
@@ -175,145 +313,226 @@
       ],
       "weaponDecos": [
         {
-          "nameEn": "Critical Jewel III【3】",
+          "nameJa": "超心珠Ⅲ【3】",
           "count": 1
         },
         {
-          "nameEn": "Rzr Sharp/Handicraft Jwl【3】",
+          "nameJa": "昂揚・匠珠【3】",
           "count": 1
         },
         {
-          "nameEn": "Enhancer/Handicraft Jwl【3】",
+          "nameJa": "業物・匠珠【3】",
           "count": 1
         }
       ],
-      "artian": {
-        "focus": "Attack Focus",
-        "setSkill": "Arkveld's Hunger",
-        "groupSkill": "Lord's Soul",
-        "raw": [
-          "Production Bonus | Reinforcement Prioritization",
-          "・Element +20 ・Attack +5 ・Attack +5 ・Attack +5 Element Type: Any | ・ Affinity +5 ・Attack +5 ・Attack +5 ・Sharpness +30 ・Sharpness +30",
-          "*Aim for at least one Affinity reinforcement to offset the negative Affinity from Attack Focus. Focus : Attack Focus Set Skill : Arkveld's Hunger Group Skill : Lord's Soul"
-        ]
-      },
+      "artian": true,
+      "artianRaw": "【生産ボーナス】 属性増強、攻撃増強×3 【復元強化】 攻撃増強EX×2、会心増強EX×1、斬れ味強化EX×2 【巨戟変異パーツ】 攻撃激化タイプ 【シリーズスキル】 鎖刃竜の飢餓 【グループスキル】 ヌシの魂",
       "armor": [
         {
           "slot": "head",
-          "nameEn": "Lagiacrus Helm β"
+          "nameJa": "ラギアヘルムβ",
+          "slots": [
+            3,
+            2,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "痛撃珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "逆襲珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "耐絶珠【1】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "chest",
-          "nameEn": "Arkvulcan Mail β"
+          "nameJa": "シュバルカメイルβ",
+          "slots": [
+            3,
+            2
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "連撃珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "逆襲珠【2】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "arms",
-          "nameEn": "Arkvulcan Vambraces γ"
+          "nameJa": "シュバルカアームγ",
+          "slots": [
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "耐絶珠【1】",
+              "count": 2
+            }
+          ]
         },
         {
           "slot": "waist",
-          "nameEn": "Lagiacrus Coil β"
+          "nameJa": "ラギアコイルβ",
+          "slots": [
+            2,
+            2,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "逆襲珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "跳躍珠【2】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "legs",
-          "nameEn": "Arkvulcan Greaves γ"
+          "nameJa": "シュバルカグリーヴγ",
+          "slots": [
+            3,
+            3
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "挑戦珠【3】",
+              "count": 2
+            },
+            {
+              "nameJa": "体術珠【1】",
+              "count": 1
+            }
+          ]
         }
       ],
       "armorDecos": [
         {
-          "nameEn": "Chain Jewel【3】",
+          "nameJa": "痛撃珠【3】",
           "count": 1
         },
         {
-          "nameEn": "Challenger Jewel【3】",
+          "nameJa": "逆襲珠【2】",
+          "count": 3
+        },
+        {
+          "nameJa": "耐絶珠【1】",
+          "count": 3
+        },
+        {
+          "nameJa": "連撃珠【3】",
+          "count": 1
+        },
+        {
+          "nameJa": "跳躍珠【2】",
+          "count": 1
+        },
+        {
+          "nameJa": "挑戦珠【3】",
           "count": 2
         },
         {
-          "nameEn": "Counter Jewel【2】",
-          "count": 3
-        },
-        {
-          "nameEn": "Jumping Jewel【2】",
-          "count": 1
-        },
-        {
-          "nameEn": "Shockproof Jewel【1】",
-          "count": 1
-        },
-        {
-          "nameEn": "Steadfast Jewel【1】",
-          "count": 3
-        },
-        {
-          "nameEn": "Tenderizer Jewel【3】",
+          "nameJa": "体術珠【1】",
           "count": 1
         }
       ],
-      "talisman": null,
+      "talisman": {
+        "nameJa": "挑戦の護石Ⅲ",
+        "poolSlots": [],
+        "decos": []
+      },
       "skillTotals": [
         {
-          "nameEn": "Power Prolonger",
+          "nameJa": "超会心",
           "level": 3
         },
         {
-          "nameEn": "Razor Sharp",
+          "nameJa": "強化持続",
           "level": 3
         },
         {
-          "nameEn": "Critical Boost",
+          "nameJa": "業物",
           "level": 3
         },
         {
-          "nameEn": "Handicraft",
+          "nameJa": "匠",
           "level": 2
         },
         {
-          "nameEn": "Agitator",
+          "nameJa": "挑戦者",
           "level": 5
         },
         {
-          "nameEn": "Weakness Exploit",
+          "nameJa": "弱点特効",
           "level": 5
         },
         {
-          "nameEn": "Flayer",
+          "nameJa": "鎖刃刺撃",
           "level": 4
         },
         {
-          "nameEn": "Counterstrike",
+          "nameJa": "逆襲",
           "level": 3
         },
         {
-          "nameEn": "Maximum Might",
+          "nameJa": "渾身",
           "level": 3
         },
         {
-          "nameEn": "Stun Resistance",
+          "nameJa": "気絶耐性",
           "level": 3
         },
         {
-          "nameEn": "Blight Resistance",
+          "nameJa": "属性やられ耐性",
           "level": 2
         },
         {
-          "nameEn": "Burst",
+          "nameJa": "体術",
           "level": 1
         },
         {
-          "nameEn": "Evade Extender",
+          "nameJa": "連撃",
           "level": 1
         },
         {
-          "nameEn": "Shock Absorber",
+          "nameJa": "回避距離UP",
           "level": 1
         }
       ],
       "groupSetSkills": [
-        "Hasten Recovery II",
-        "Guts (Tenacity)",
-        "Azure Bolt I"
+        {
+          "nameJa": "‐"
+        },
+        {
+          "nameJa": "鎖刃竜の飢餓 Ⅱ"
+        },
+        {
+          "nameJa": "海竜の渦雷 Ⅰ"
+        },
+        {
+          "nameJa": "ヌシの魂"
+        }
       ],
-      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -321,9 +540,10 @@
       "weaponType": "switch-axe",
       "category": "wildsEndgame",
       "kind": "full-build",
-      "buildName": "Gogma Lord's Soul Switch Axe Build",
-      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502864",
-      "weapon": "Wicked Regnum",
+      "buildName": "無尽蔵＋黒蝕の会心特化装備",
+      "sourceUrl": "https://game8.jp/mhwilds/668370",
+      "weapon": "邪執のコンキエレガン",
+      "weaponStats": "（巨戟アーティア武器） 攻撃：787／任意の属性：320 ／会心：-10%",
       "weaponSlots": [
         3,
         3,
@@ -331,142 +551,222 @@
       ],
       "weaponDecos": [
         {
-          "nameEn": "Critical Jewel III【3】",
+          "nameJa": "超心珠Ⅲ【3】",
           "count": 1
         },
         {
-          "nameEn": "Enhancer/Blaze Jewel【3】",
+          "nameJa": "昂揚・匠珠【3】",
           "count": 1
         },
         {
-          "nameEn": "Rzr Sharp/Handicraft Jwl【3】",
+          "nameJa": "業物・匠珠【3】",
           "count": 1
         }
       ],
-      "artian": {
-        "focus": "Element Focus",
-        "setSkill": "Any",
-        "groupSkill": "Lord's Soul",
-        "raw": [
-          "Production Bonus | Reinforcement Prioritization",
-          "・Element +20 ・Attack +5 ・Attack +5 ・Attack +5 Element Type: Any | ・Attack +5 ・Attack +5 ・Attack +5 ・Attack +5 ・Sharpness +30",
-          "Focus : Element Focus Set Skill : Any Group Skill : Lord's Soul"
-        ]
-      },
+      "artian": true,
+      "artianRaw": "【生産ボーナス】 属性増強、攻撃増強×3 【復元強化】 攻撃増強EX×2、会心増強EX×1、斬れ味強化EX×2 【巨戟変異パーツ】 攻撃激化タイプ 【シリーズスキル】 黒蝕竜の力 【グループスキル】 ヌシの魂",
       "armor": [
         {
           "slot": "head",
-          "nameEn": "G. Fulgur Helm β"
+          "nameJa": "シュバルカヘルムγ",
+          "slots": [
+            2,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "逆襲珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "耐絶珠【1】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "chest",
-          "nameEn": "Udra Miremail γ"
+          "nameJa": "護雷顎竜メイルβ",
+          "slots": [
+            3,
+            2,
+            1
+          ],
+          "augmentRaw": "限界突破強化",
+          "decos": [
+            {
+              "nameJa": "連撃珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "逆襲珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "耐絶珠【1】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "arms",
-          "nameEn": "Gogmazios Vambraces α"
+          "nameJa": "ゴグアームα",
+          "slots": [
+            2,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "逆襲珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "耐絶珠【1】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "waist",
-          "nameEn": "Udra Mirecoil γ"
+          "nameJa": "ゴアコイルα",
+          "slots": [
+            3,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "痛撃珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "体術珠【1】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "legs",
-          "nameEn": "Gogmazios Greaves α"
+          "nameJa": "トゥナムルグリーヴγ",
+          "slots": [
+            3,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "痛撃珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "抗狂珠【1】",
+              "count": 2
+            }
+          ]
         }
       ],
       "armorDecos": [
         {
-          "nameEn": "Challenger Jewel【3】",
-          "count": 1
-        },
-        {
-          "nameEn": "Counter Jewel【2】",
-          "count": 1
-        },
-        {
-          "nameEn": "Furor Jewel【2】",
-          "count": 1
-        },
-        {
-          "nameEn": "Mighty Jewel【2】",
-          "count": 1
-        },
-        {
-          "nameEn": "Steadfast Jewel【1】",
+          "nameJa": "逆襲珠【2】",
           "count": 3
         },
         {
-          "nameEn": "Tenderizer Jewel【3】",
+          "nameJa": "耐絶珠【1】",
           "count": 3
+        },
+        {
+          "nameJa": "連撃珠【3】",
+          "count": 1
+        },
+        {
+          "nameJa": "痛撃珠【3】",
+          "count": 2
+        },
+        {
+          "nameJa": "体術珠【1】",
+          "count": 1
+        },
+        {
+          "nameJa": "抗狂珠【1】",
+          "count": 2
         }
       ],
-      "talisman": null,
+      "talisman": {
+        "nameJa": "挑戦の護石Ⅲ",
+        "poolSlots": [],
+        "decos": []
+      },
       "skillTotals": [
         {
-          "nameEn": "Critical Boost",
+          "nameJa": "超会心",
           "level": 3
         },
         {
-          "nameEn": "Razor Sharp",
+          "nameJa": "強化持続",
           "level": 3
         },
         {
-          "nameEn": "Power Prolonger",
+          "nameJa": "業物",
           "level": 3
         },
         {
-          "nameEn": "Handicraft",
-          "level": 1
-        },
-        {
-          "nameEn": "Fire Attack",
-          "level": 1
-        },
-        {
-          "nameEn": "Agitator",
-          "level": 5
-        },
-        {
-          "nameEn": "Weakness Exploit",
-          "level": 5
-        },
-        {
-          "nameEn": "Counterstrike",
-          "level": 3
-        },
-        {
-          "nameEn": "Maximum Might",
-          "level": 3
-        },
-        {
-          "nameEn": "Stun Resistance",
-          "level": 3
-        },
-        {
-          "nameEn": "Burst",
+          "nameJa": "匠",
           "level": 2
         },
         {
-          "nameEn": "Peak Performance",
-          "level": 2
+          "nameJa": "挑戦者",
+          "level": 5
         },
         {
-          "nameEn": "Ambush",
-          "level": 1
+          "nameJa": "弱点特効",
+          "level": 5
         },
         {
-          "nameEn": "Resentment",
+          "nameJa": "逆襲",
+          "level": 3
+        },
+        {
+          "nameJa": "渾身",
+          "level": 3
+        },
+        {
+          "nameJa": "気絶耐性",
+          "level": 3
+        },
+        {
+          "nameJa": "無我の境地",
+          "level": 3
+        },
+        {
+          "nameJa": "納刀術",
+          "level": 3
+        },
+        {
+          "nameJa": "体術",
+          "level": 3
+        },
+        {
+          "nameJa": "連撃",
           "level": 1
         }
       ],
       "groupSetSkills": [
-        "Mutual Hostility I",
-        "Guts (Tenacity)",
-        "Bad Blood I",
-        "Second Wind I"
+        {
+          "nameJa": "‐"
+        },
+        {
+          "nameJa": "雷顎竜の闘志 Ⅰ"
+        },
+        {
+          "nameJa": "黒蝕竜の力 Ⅰ"
+        },
+        {
+          "nameJa": "ヌシの魂"
+        }
       ],
-      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -474,1137 +774,242 @@
       "weaponType": "switch-axe",
       "category": "wildsEndgame",
       "kind": "full-build",
-      "buildName": "Omega Lord's Soul Switch Axe Build",
-      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502864",
-      "weapon": "Blazing Mahaiah",
+      "buildName": "生産護石採用の汎用装備",
+      "sourceUrl": "https://game8.jp/mhwilds/668370",
+      "weapon": "邪執のコンキエレガン",
+      "weaponStats": "（巨戟アーティア武器） 攻撃：787／任意の属性：320 ／会心：0%",
       "weaponSlots": [
         3,
-        2,
-        1
+        3,
+        3
       ],
       "weaponDecos": [
         {
-          "nameEn": "Critical Jewel III【3】",
+          "nameJa": "超心珠Ⅲ【3】",
           "count": 1
         },
         {
-          "nameEn": "Enhancer Jewel II【2】",
+          "nameJa": "速変・匠珠【3】",
           "count": 1
         },
         {
-          "nameEn": "Enhancer Jewel【1】",
+          "nameJa": "業物・匠珠【3】",
           "count": 1
         }
       ],
-      "artian": {
-        "focus": null,
-        "setSkill": null,
-        "groupSkill": null,
-        "raw": [
-          "Production Bonus | Artian Reinforcements",
-          "• Attack +5 • Attack +5 • Attack +5 • Elemental Attack + 20 Element Type: Any element | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Sharpness +30"
-        ]
-      },
+      "artian": true,
+      "artianRaw": "【生産ボーナス】 属性増強、攻撃増強×3 【復元強化】 攻撃増強EX×2、攻撃増強Ⅲ×2、斬れ味強化EX 【巨戟変異パーツ】 属性激化タイプ 【シリーズスキル】 黒蝕竜の力 【グループスキル】 ヌシの魂",
       "armor": [
         {
           "slot": "head",
-          "nameEn": "Rey Sandhelm γ"
+          "nameJa": "ラギアヘルムβ",
+          "slots": [
+            3,
+            2,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "痛撃珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "逆襲珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "体術珠【1】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "chest",
-          "nameEn": "Udra Miremail γ"
+          "nameJa": "シュバルカメイルγ",
+          "slots": [
+            3,
+            2
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "痛撃珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "逆襲珠【2】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "arms",
-          "nameEn": "Omega Vambraces α"
+          "nameJa": "レダゼルトアームγ",
+          "slots": [
+            3,
+            3
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "挑戦珠【3】",
+              "count": 2
+            }
+          ]
         },
         {
           "slot": "waist",
-          "nameEn": "Omega Accessory α"
+          "nameJa": "ラギアコイルβ",
+          "slots": [
+            2,
+            2,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "逆襲珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "逆上珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "体術珠【1】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "legs",
-          "nameEn": "Duna Wildgreaves γ"
+          "nameJa": "ゴアグリーヴβ",
+          "slots": [
+            3,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "痛撃珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "抗狂珠【1】",
+              "count": 2
+            }
+          ]
         }
       ],
       "armorDecos": [
         {
-          "nameEn": "Challenger Jewel【3】",
-          "count": 2
-        },
-        {
-          "nameEn": "Counter Jewel【2】",
-          "count": 1
-        },
-        {
-          "nameEn": "Mighty Jewel【2】",
-          "count": 2
-        },
-        {
-          "nameEn": "Steadfast Jewel【1】",
-          "count": 2
-        },
-        {
-          "nameEn": "Tenderizer Jewel【3】",
+          "nameJa": "痛撃珠【3】",
           "count": 3
-        }
-      ],
-      "talisman": null,
-      "skillTotals": [
-        {
-          "nameEn": "Critical Boost",
-          "level": 5
         },
         {
-          "nameEn": "Rapid Morph",
-          "level": 3
+          "nameJa": "逆襲珠【2】",
+          "count": 3
         },
         {
-          "nameEn": "Master's Touch",
-          "level": 1
+          "nameJa": "体術珠【1】",
+          "count": 2
         },
         {
-          "nameEn": "Handicraft",
-          "level": 1
+          "nameJa": "挑戦珠【3】",
+          "count": 2
         },
         {
-          "nameEn": "Agitator",
-          "level": 5
-        },
-        {
-          "nameEn": "Weakness Exploit",
-          "level": 5
-        },
-        {
-          "nameEn": "Counterstrike",
-          "level": 3
-        },
-        {
-          "nameEn": "Maximum Might",
-          "level": 3
-        },
-        {
-          "nameEn": "Quick Sheathe",
-          "level": 3
-        },
-        {
-          "nameEn": "Stun Resistance",
-          "level": 3
-        },
-        {
-          "nameEn": "Divine Blessing",
-          "level": 2
-        },
-        {
-          "nameEn": "Burst",
-          "level": 1
-        },
-        {
-          "nameEn": "Stamina Surge",
-          "level": 1
-        }
-      ],
-      "groupSetSkills": [
-        "Resonance I",
-        "Guts (Tenacity)"
-      ],
-      "armorDecoSource": "summary",
-      "complete": true
-    },
-    {
-      "id": "switch-axe_wildsEndgame_4",
-      "weaponType": "switch-axe",
-      "category": "wildsEndgame",
-      "kind": "full-build",
-      "buildName": "Counterstrike Agitator Raw Switch Axe Build",
-      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502864",
-      "weapon": "Blazing Mahaiah",
-      "weaponSlots": [
-        3,
-        2,
-        1
-      ],
-      "weaponDecos": [
-        {
-          "nameEn": "Critical Jewel III【3】",
+          "nameJa": "逆上珠【2】",
           "count": 1
         },
         {
-          "nameEn": "Enhancer Jewel II【2】",
-          "count": 1
-        },
-        {
-          "nameEn": "Enhancer Jewel【1】",
-          "count": 1
+          "nameJa": "抗狂珠【1】",
+          "count": 2
         }
       ],
-      "artian": {
-        "focus": null,
-        "setSkill": null,
-        "groupSkill": null,
-        "raw": [
-          "Production Bonus | Artian Reinforcements",
-          "• Attack +5 • Attack +5 • Affinity +5 • Elemental Attack + 20 Element Type: Blast | • Affinity +5 • Affinity +5 • Affinity +5 • Attack +5 • Attack +5"
-        ]
+      "talisman": {
+        "nameJa": "挑戦の護石Ⅲ",
+        "poolSlots": [],
+        "decos": []
       },
-      "armor": [
-        {
-          "slot": "head",
-          "nameEn": "Numinous Crown β"
-        },
-        {
-          "slot": "chest",
-          "nameEn": "Numinous Shroud β"
-        },
-        {
-          "slot": "arms",
-          "nameEn": "Gore Vambraces α"
-        },
-        {
-          "slot": "waist",
-          "nameEn": "Gore Coil β"
-        },
-        {
-          "slot": "legs",
-          "nameEn": "Numinous Greaves α"
-        }
-      ],
-      "armorDecos": [
-        {
-          "nameEn": "Tenderizer Jewel【3】",
-          "count": 3
-        },
-        {
-          "nameEn": "Jumping Jewel【2】",
-          "count": 2
-        },
-        {
-          "nameEn": "Mighty Jewel【2】",
-          "count": 1
-        },
-        {
-          "nameEn": "Counter Jewel【2】",
-          "count": 1
-        },
-        {
-          "nameEn": "Sane Jewel【1】",
-          "count": 3
-        }
-      ],
-      "talisman": null,
       "skillTotals": [
         {
-          "nameEn": "Critical Boost",
-          "level": 5
-        },
-        {
-          "nameEn": "Power Prolonger",
+          "nameJa": "超会心",
           "level": 3
         },
         {
-          "nameEn": "Handicraft",
+          "nameJa": "業物",
+          "level": 3
+        },
+        {
+          "nameJa": "高速変形",
+          "level": 3
+        },
+        {
+          "nameJa": "匠",
           "level": 2
         },
         {
-          "nameEn": "Agitator",
+          "nameJa": "挑戦者",
           "level": 5
         },
         {
-          "nameEn": "Constitution",
+          "nameJa": "弱点特効",
           "level": 4
         },
         {
-          "nameEn": "Weakness Exploit",
+          "nameJa": "逆襲",
           "level": 3
         },
         {
-          "nameEn": "Counterstrike",
+          "nameJa": "渾身",
           "level": 3
         },
         {
-          "nameEn": "Antivirus",
+          "nameJa": "属性変換",
           "level": 3
         },
         {
-          "nameEn": "Recovery Speed",
+          "nameJa": "無我の境地",
+          "level": 3
+        },
+        {
+          "nameJa": "体術",
           "level": 2
         },
         {
-          "nameEn": "Evade Extender",
+          "nameJa": "回避距離UP",
           "level": 2
         },
         {
-          "nameEn": "Maximum Might",
+          "nameJa": "逆恨み",
           "level": 1
         },
         {
-          "nameEn": "Evade Window",
+          "nameJa": "属性やられ耐性",
           "level": 1
         },
         {
-          "nameEn": "Elemental Absorption",
+          "nameJa": "ひるみ軽減",
           "level": 1
         }
       ],
       "groupSetSkills": [
-        "Black Eclipse I",
-        "Super Recovery I"
-      ],
-      "armorDecoSource": "summary",
-      "complete": true
-    },
-    {
-      "id": "switch-axe_wildsEndgame_5",
-      "weaponType": "switch-axe",
-      "category": "wildsEndgame",
-      "kind": "full-build",
-      "buildName": "Lagi Gore Agitator Switch Axe Build",
-      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502864",
-      "weapon": "Blazing Mahaiah",
-      "weaponSlots": [
-        3,
-        2,
-        1
-      ],
-      "weaponDecos": [
         {
-          "nameEn": "Critical Jewel III【3】",
-          "count": 1
+          "nameJa": "‐"
         },
         {
-          "nameEn": "Enhancer Jewel II【2】",
-          "count": 1
+          "nameJa": "海竜の渦雷 Ⅰ"
         },
         {
-          "nameEn": "Enhancer Jewel【1】",
-          "count": 1
+          "nameJa": "黒蝕竜の力 Ⅰ"
+        },
+        {
+          "nameJa": "ヌシの魂"
         }
       ],
-      "artian": {
-        "focus": null,
-        "setSkill": null,
-        "groupSkill": null,
-        "raw": [
-          "Production Bonus | Artian Reinforcements",
-          "• Attack +5 • Attack +5 • Attack +5 • Elemental Attack + 20 Element Type: Any element | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Sharpness +30"
-        ]
-      },
-      "armor": [
-        {
-          "slot": "head",
-          "nameEn": "Lagiacrus Helm β"
-        },
-        {
-          "slot": "chest",
-          "nameEn": "Gore Mail β"
-        },
-        {
-          "slot": "arms",
-          "nameEn": "Numinous Vambraces β"
-        },
-        {
-          "slot": "waist",
-          "nameEn": "Lagiacrus Coil β"
-        },
-        {
-          "slot": "legs",
-          "nameEn": "Gore Greaves β"
-        }
-      ],
-      "armorDecos": [
-        {
-          "nameEn": "Challenger Jewel【3】",
-          "count": 4
-        },
-        {
-          "nameEn": "Counter Jewel【2】",
-          "count": 3
-        },
-        {
-          "nameEn": "Physique Jewel【1】",
-          "count": 1
-        },
-        {
-          "nameEn": "Sane Jewel【1】",
-          "count": 2
-        },
-        {
-          "nameEn": "Steadfast Jewel【1】",
-          "count": 3
-        }
-      ],
-      "talisman": null,
-      "skillTotals": [
-        {
-          "nameEn": "Critical Boost",
-          "level": 4
-        },
-        {
-          "nameEn": "Rapid Morph",
-          "level": 3
-        },
-        {
-          "nameEn": "Elemental Attack",
-          "level": 3
-        },
-        {
-          "nameEn": "Handicraft",
-          "level": 3
-        },
-        {
-          "nameEn": "Attack Boost",
-          "level": 3
-        },
-        {
-          "nameEn": "Agitator",
-          "level": 5
-        },
-        {
-          "nameEn": "Antivirus",
-          "level": 3
-        },
-        {
-          "nameEn": "Counterstrike",
-          "level": 3
-        },
-        {
-          "nameEn": "Maximum Might",
-          "level": 3
-        },
-        {
-          "nameEn": "Stun Resistance",
-          "level": 3
-        },
-        {
-          "nameEn": "Elemental Absorption",
-          "level": 2
-        },
-        {
-          "nameEn": "Evade Window",
-          "level": 2
-        },
-        {
-          "nameEn": "Constitution",
-          "level": 1
-        },
-        {
-          "nameEn": "Flinch Free",
-          "level": 1
-        },
-        {
-          "nameEn": "Weakness Exploit",
-          "level": 1
-        }
-      ],
-      "groupSetSkills": [
-        "Black Eclipse I",
-        "Azure Bolt I"
-      ],
-      "armorDecoSource": "summary",
-      "complete": true
-    },
-    {
-      "id": "switch-axe_wildsEndgame_6",
-      "weaponType": "switch-axe",
-      "category": "wildsEndgame",
-      "kind": "full-build",
-      "buildName": "Lagi Thunder Switch Axe Build",
-      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502864",
-      "weapon": "High Bolt Axe",
-      "weaponSlots": [
-        3,
-        2,
-        1
-      ],
-      "weaponDecos": [
-        {
-          "nameEn": "Bolt/Enhancer Jwl【3】",
-          "count": 1
-        },
-        {
-          "nameEn": "Critical Jewel II【2】",
-          "count": 1
-        },
-        {
-          "nameEn": "Critical Jewel【1】",
-          "count": 1
-        }
-      ],
-      "artian": null,
-      "armor": [
-        {
-          "slot": "head",
-          "nameEn": "Lagiacrus Helm β"
-        },
-        {
-          "slot": "chest",
-          "nameEn": "Rey Sandmail γ"
-        },
-        {
-          "slot": "arms",
-          "nameEn": "Rey Sandbraces γ"
-        },
-        {
-          "slot": "waist",
-          "nameEn": "Lagiacrus Coil β"
-        },
-        {
-          "slot": "legs",
-          "nameEn": "Duna Wildgreaves γ"
-        }
-      ],
-      "armorDecos": [
-        {
-          "nameEn": "Chain Jewel【3】",
-          "count": 1
-        },
-        {
-          "nameEn": "Challenger Jewel【3】",
-          "count": 3
-        },
-        {
-          "nameEn": "Counter Jewel【2】",
-          "count": 2
-        },
-        {
-          "nameEn": "Steadfast Jewel【1】",
-          "count": 3
-        },
-        {
-          "nameEn": "Thunder Res Jewel【1】",
-          "count": 3
-        }
-      ],
-      "talisman": null,
-      "skillTotals": [
-        {
-          "nameEn": "Critical Boost",
-          "level": 4
-        },
-        {
-          "nameEn": "Power Prolonger",
-          "level": 3
-        },
-        {
-          "nameEn": "Rapid Morph",
-          "level": 3
-        },
-        {
-          "nameEn": "Thunder Attack",
-          "level": 3
-        },
-        {
-          "nameEn": "Convert Thunder Resistance",
-          "level": 1
-        },
-        {
-          "nameEn": "Agitator",
-          "level": 5
-        },
-        {
-          "nameEn": "Thunder Resistance",
-          "level": 3
-        },
-        {
-          "nameEn": "Latent Power",
-          "level": 3
-        },
-        {
-          "nameEn": "Maximum Might",
-          "level": 3
-        },
-        {
-          "nameEn": "Quick Sheathe",
-          "level": 3
-        },
-        {
-          "nameEn": "Counterstrike",
-          "level": 2
-        },
-        {
-          "nameEn": "Evade Extender",
-          "level": 2
-        },
-        {
-          "nameEn": "Stun Resistance",
-          "level": 3
-        },
-        {
-          "nameEn": "Burst",
-          "level": 1
-        },
-        {
-          "nameEn": "Weakness Exploit",
-          "level": 1
-        }
-      ],
-      "groupSetSkills": [
-        "Thunderous Roar I",
-        "Guts (Tenacity)",
-        "Azure Bolt I"
-      ],
-      "armorDecoSource": "summary",
-      "complete": true
-    },
-    {
-      "id": "switch-axe_wildsEndgame_7",
-      "weaponType": "switch-axe",
-      "category": "wildsEndgame",
-      "kind": "full-build",
-      "buildName": "Guts Counterstrike Switch Axe Build",
-      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502864",
-      "weapon": "Blazing Mahaiah",
-      "weaponSlots": [
-        3,
-        2,
-        1
-      ],
-      "weaponDecos": [
-        {
-          "nameEn": "Critical Jewel III【3】",
-          "count": 1
-        },
-        {
-          "nameEn": "Enhancer Jewel II【2】",
-          "count": 1
-        },
-        {
-          "nameEn": "Enhancer Jewel【1】",
-          "count": 1
-        }
-      ],
-      "artian": {
-        "focus": null,
-        "setSkill": null,
-        "groupSkill": null,
-        "raw": [
-          "Production Bonus | Artian Reinforcements",
-          "• Attack +5 • Attack +5 • Affinity +5 • Elemental Attack + 20 Element Type: Blast | • Affinity +5 • Affinity +5 • Affinity +5 • Attack +5 • Attack +5"
-        ]
-      },
-      "armor": [
-        {
-          "slot": "head",
-          "nameEn": "Rey Sandhelm γ"
-        },
-        {
-          "slot": "chest",
-          "nameEn": "Numinous Shroud β"
-        },
-        {
-          "slot": "arms",
-          "nameEn": "Rey Sandbraces γ"
-        },
-        {
-          "slot": "waist",
-          "nameEn": "Lagiacrus Coil β"
-        },
-        {
-          "slot": "legs",
-          "nameEn": "Duna Wildgreaves γ"
-        }
-      ],
-      "armorDecos": [
-        {
-          "nameEn": "Chain Jewel【3】",
-          "count": 1
-        },
-        {
-          "nameEn": "Challenger Jewel【3】",
-          "count": 2
-        },
-        {
-          "nameEn": "Earplugs Jewel【2】",
-          "count": 2
-        },
-        {
-          "nameEn": "Protection Jewel【1】",
-          "count": 3
-        },
-        {
-          "nameEn": "Tenderizer Jewel【3】",
-          "count": 2
-        }
-      ],
-      "talisman": null,
-      "skillTotals": [
-        {
-          "nameEn": "Critical Boost",
-          "level": 5
-        },
-        {
-          "nameEn": "Power Prolonger",
-          "level": 3
-        },
-        {
-          "nameEn": "Handicraft",
-          "level": 2
-        },
-        {
-          "nameEn": "Agitator",
-          "level": 5
-        },
-        {
-          "nameEn": "Weakness Exploit",
-          "level": 4
-        },
-        {
-          "nameEn": "Counterstrike",
-          "level": 3
-        },
-        {
-          "nameEn": "Divine Blessing",
-          "level": 3
-        },
-        {
-          "nameEn": "Quick Sheathe",
-          "level": 3
-        },
-        {
-          "nameEn": "Earplugs",
-          "level": 2
-        },
-        {
-          "nameEn": "Evade Extender",
-          "level": 2
-        },
-        {
-          "nameEn": "Maximum Might",
-          "level": 2
-        },
-        {
-          "nameEn": "Burst",
-          "level": 1
-        },
-        {
-          "nameEn": "Stamina Surge",
-          "level": 1
-        }
-      ],
-      "groupSetSkills": [
-        "Thunderous Roar I",
-        "Guts (Tenacity)"
-      ],
-      "armorDecoSource": "summary",
-      "complete": true
-    },
-    {
-      "id": "switch-axe_wildsEndgame_8",
-      "weaponType": "switch-axe",
-      "category": "wildsEndgame",
-      "kind": "full-build",
-      "buildName": "Regios Gore Comfy Build",
-      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502864",
-      "weapon": "Baran Defiance",
-      "weaponSlots": [
-        3,
-        2,
-        1
-      ],
-      "weaponDecos": [
-        {
-          "nameEn": "Enhancer/Handicraft Jwl【3】",
-          "count": 1
-        },
-        {
-          "nameEn": "Critical Jewel II【2】",
-          "count": 1
-        },
-        {
-          "nameEn": "Critical Jewel【1】",
-          "count": 1
-        }
-      ],
-      "artian": {
-        "focus": null,
-        "setSkill": null,
-        "groupSkill": null,
-        "raw": [
-          "Production Bonus | Artian Reinforcements",
-          "• Attack +5 • Attack +5 • Attack +5 Element Type: | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Sharpness +30"
-        ]
-      },
-      "armor": [
-        {
-          "slot": "head",
-          "nameEn": "Gore Helm β"
-        },
-        {
-          "slot": "chest",
-          "nameEn": "Gore Mail β"
-        },
-        {
-          "slot": "arms",
-          "nameEn": "Rey Sandbraces γ"
-        },
-        {
-          "slot": "waist",
-          "nameEn": "Regios Coil β"
-        },
-        {
-          "slot": "legs",
-          "nameEn": "Regios Greaves β"
-        }
-      ],
-      "armorDecos": [
-        {
-          "nameEn": "Chain Jewel【3】",
-          "count": 1
-        },
-        {
-          "nameEn": "Challenger Jewel【3】",
-          "count": 1
-        },
-        {
-          "nameEn": "Sane Jewel【1】",
-          "count": 3
-        },
-        {
-          "nameEn": "Shockproof Jewel【1】",
-          "count": 1
-        },
-        {
-          "nameEn": "Tenderizer Jewel【3】",
-          "count": 3
-        }
-      ],
-      "talisman": null,
-      "skillTotals": [
-        {
-          "nameEn": "Power Prolonger",
-          "level": 3
-        },
-        {
-          "nameEn": "Rapid Morph",
-          "level": 3
-        },
-        {
-          "nameEn": "Critical Boost",
-          "level": 3
-        },
-        {
-          "nameEn": "Handicraft",
-          "level": 3
-        },
-        {
-          "nameEn": "Adrenaline Rush",
-          "level": 5
-        },
-        {
-          "nameEn": "Evade Window",
-          "level": 4
-        },
-        {
-          "nameEn": "Agitator",
-          "level": 3
-        },
-        {
-          "nameEn": "Antivirus",
-          "level": 3
-        },
-        {
-          "nameEn": "Weakness Exploit",
-          "level": 3
-        },
-        {
-          "nameEn": "Evade Extender",
-          "level": 2
-        },
-        {
-          "nameEn": "Burst",
-          "level": 1
-        },
-        {
-          "nameEn": "Coalescence",
-          "level": 1
-        },
-        {
-          "nameEn": "Shock Absorber",
-          "level": 1
-        }
-      ],
-      "groupSetSkills": [
-        "Razor's Edge I",
-        "Black Eclipse I",
-        "Adrenaline"
-      ],
-      "armorDecoSource": "summary",
-      "complete": true
-    },
-    {
-      "id": "switch-axe_wildsEndgame_9",
-      "weaponType": "switch-axe",
-      "category": "wildsEndgame",
-      "kind": "full-build",
-      "buildName": "Rey Gore Agitator Build",
-      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502864",
-      "weapon": "Blazing Mahaiah",
-      "weaponSlots": [
-        3,
-        2,
-        1
-      ],
-      "weaponDecos": [
-        {
-          "nameEn": "Critical Jewel III【3】",
-          "count": 1
-        },
-        {
-          "nameEn": "Enhancer Jewel II【2】",
-          "count": 1
-        },
-        {
-          "nameEn": "Enhancer Jewel【1】",
-          "count": 1
-        }
-      ],
-      "artian": {
-        "focus": null,
-        "setSkill": null,
-        "groupSkill": null,
-        "raw": [
-          "Production Bonus | Artian Reinforcements",
-          "• Attack +5 • Attack +5 • Affinity +5 • Elemental Attack + 20 Element Type: Paralysis | • Attack +5 • Attack +5 • Attack +5 • Attack +5 • Sharpness +30"
-        ]
-      },
-      "armor": [
-        {
-          "slot": "head",
-          "nameEn": "Rey Sandhelm γ"
-        },
-        {
-          "slot": "chest",
-          "nameEn": "Gore Mail β"
-        },
-        {
-          "slot": "arms",
-          "nameEn": "Rey Sandbraces γ"
-        },
-        {
-          "slot": "waist",
-          "nameEn": "Rey Sandcoil γ"
-        },
-        {
-          "slot": "legs",
-          "nameEn": "Gore Greaves β"
-        }
-      ],
-      "armorDecos": [
-        {
-          "nameEn": "Challenger Jewel【3】",
-          "count": 5
-        },
-        {
-          "nameEn": "Sane Jewel【1】",
-          "count": 2
-        },
-        {
-          "nameEn": "Protection Jewel【1】",
-          "count": 1
-        }
-      ],
-      "talisman": null,
-      "skillTotals": [
-        {
-          "nameEn": "Critical Boost",
-          "level": 5
-        },
-        {
-          "nameEn": "Power Prolonger",
-          "level": 3
-        },
-        {
-          "nameEn": "Handicraft",
-          "level": 1
-        },
-        {
-          "nameEn": "Agitator",
-          "level": 5
-        },
-        {
-          "nameEn": "Counterstrike",
-          "level": 3
-        },
-        {
-          "nameEn": "Maximum Might",
-          "level": 3
-        },
-        {
-          "nameEn": "Antivirus",
-          "level": 3
-        },
-        {
-          "nameEn": "Evade Window",
-          "level": 2
-        },
-        {
-          "nameEn": "Evade Extender",
-          "level": 2
-        },
-        {
-          "nameEn": "Latent Power",
-          "level": 2
-        },
-        {
-          "nameEn": "Weakness Exploit",
-          "level": 1
-        },
-        {
-          "nameEn": "Stamina Surge",
-          "level": 1
-        },
-        {
-          "nameEn": "Divine Blessing",
-          "level": 1
-        },
-        {
-          "nameEn": "Flinch Free",
-          "level": 1
-        }
-      ],
-      "groupSetSkills": [
-        "Black Eclipse I",
-        "Thunderous Roar I",
-        "Lord's Soul"
-      ],
-      "armorDecoSource": "summary",
-      "complete": true
-    },
-    {
-      "id": "switch-axe_wildsEndgame_10",
-      "weaponType": "switch-axe",
-      "category": "wildsEndgame",
-      "kind": "full-build",
-      "buildName": "Evasive Earplugs Switch Axe Build",
-      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502864",
-      "weapon": "Blazing Mahaiah",
-      "weaponSlots": [
-        3,
-        2,
-        1
-      ],
-      "weaponDecos": [
-        {
-          "nameEn": "Critical Jewel III【3】",
-          "count": 1
-        },
-        {
-          "nameEn": "Enhancer Jewel II【2】",
-          "count": 1
-        },
-        {
-          "nameEn": "Enhancer Jewel【1】",
-          "count": 1
-        }
-      ],
-      "artian": {
-        "focus": null,
-        "setSkill": null,
-        "groupSkill": null,
-        "raw": [
-          "Production Bonus | Artian Reinforcements",
-          "• Attack +5 • Attack +5 • Attack +5 • Element +20 Element Type: Paralysis | • Attack +5 • Attack +5 • Attack +5 • Affinity +5 • Sharpness +30"
-        ]
-      },
-      "armor": [
-        {
-          "slot": "head",
-          "nameEn": "Numinous Crown β"
-        },
-        {
-          "slot": "chest",
-          "nameEn": "Arkvulcan Mail β"
-        },
-        {
-          "slot": "arms",
-          "nameEn": "Rey Sandbraces γ"
-        },
-        {
-          "slot": "waist",
-          "nameEn": "Arkvulcan Coil β"
-        },
-        {
-          "slot": "legs",
-          "nameEn": "Dahaad Shardgreaves β"
-        }
-      ],
-      "armorDecos": [
-        {
-          "nameEn": "Chain Jewel【3】",
-          "count": 1
-        },
-        {
-          "nameEn": "Earplugs Jewel【2】",
-          "count": 3
-        },
-        {
-          "nameEn": "Jumping Jewel【2】",
-          "count": 1
-        },
-        {
-          "nameEn": "Physique Jewel【1】",
-          "count": 2
-        },
-        {
-          "nameEn": "Shockproof Jewel【1】",
-          "count": 1
-        },
-        {
-          "nameEn": "Tenderizer Jewel【3】",
-          "count": 2
-        }
-      ],
-      "talisman": null,
-      "skillTotals": [
-        {
-          "nameEn": "Critical Boost",
-          "level": 5
-        },
-        {
-          "nameEn": "Power Prolonger",
-          "level": 3
-        },
-        {
-          "nameEn": "Handicraft",
-          "level": 2
-        },
-        {
-          "nameEn": "Agitator",
-          "level": 5
-        },
-        {
-          "nameEn": "Weakness Exploit",
-          "level": 5
-        },
-        {
-          "nameEn": "Evade Extender",
-          "level": 3
-        },
-        {
-          "nameEn": "Earplugs",
-          "level": 3
-        },
-        {
-          "nameEn": "Constitution",
-          "level": 2
-        },
-        {
-          "nameEn": "Recovery Speed",
-          "level": 2
-        },
-        {
-          "nameEn": "Burst",
-          "level": 1
-        },
-        {
-          "nameEn": "Shock Absorber",
-          "level": 1
-        }
-      ],
-      "groupSetSkills": [
-        "Hasten Recovery I"
-      ],
-      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1612,133 +1017,135 @@
       "weaponType": "switch-axe",
       "category": "wildsProgression",
       "kind": "full-build",
-      "buildName": "Counterstrike Frenzied Raw Switch Axe Build",
-      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502864",
-      "weapon": "Eisengeist",
+      "buildName": "上位序盤から作れる汎用装備（HR9〜19）",
+      "sourceUrl": "https://game8.jp/mhwilds/675619",
+      "weapon": "竜姫の剣斧Ⅰ",
+      "weaponStats": "攻撃：560／属性：毒120 ／会心：15%",
       "weaponSlots": [
-        3,
         2,
         1
       ],
       "weaponDecos": [
         {
-          "nameEn": "Critical Jewel III【3】",
+          "nameJa": "速変珠Ⅱ【2】",
           "count": 1
         },
         {
-          "nameEn": "Enhancer Jewel II【2】",
-          "count": 1
-        },
-        {
-          "nameEn": "Enhancer Jewel【1】",
+          "nameJa": "速変珠【1】",
           "count": 1
         }
       ],
-      "artian": {
-        "focus": null,
-        "setSkill": null,
-        "groupSkill": null,
-        "raw": [
-          "Production Bonus | Artian Reinforcements",
-          "• Attack +5 • Attack +5 • Affinity +5 • Elemental Attack + 20 Element Type: Blast | • Affinity +5 • Affinity +5 • Affinity +5 • Attack +5 • Attack +5"
-        ]
-      },
+      "artian": false,
+      "artianRaw": null,
       "armor": [
         {
           "slot": "head",
-          "nameEn": "G. Fulgur Helm β"
+          "nameJa": "レイアヘルムα",
+          "slots": [
+            3,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": []
         },
         {
           "slot": "chest",
-          "nameEn": "Blango Mail β"
+          "nameJa": "レイアメイルα",
+          "slots": [
+            1,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": []
         },
         {
           "slot": "arms",
-          "nameEn": "G. Fulgur Vambraces β"
+          "nameJa": "レイアアームα",
+          "slots": [
+            1,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": []
         },
         {
           "slot": "waist",
-          "nameEn": "Gore Coil β"
+          "nameJa": "ブランゴコイルβ",
+          "slots": [
+            2,
+            2
+          ],
+          "augmentRaw": null,
+          "decos": []
         },
         {
           "slot": "legs",
-          "nameEn": "Gore Greaves β"
+          "nameJa": "ブランゴグリーヴβ",
+          "slots": [
+            3,
+            3
+          ],
+          "augmentRaw": null,
+          "decos": []
         }
       ],
-      "armorDecos": [
-        {
-          "nameEn": "Challenger Jewel【3】",
-          "count": 1
-        },
-        {
-          "nameEn": "Chain Jewel【3】",
-          "count": 1
-        },
-        {
-          "nameEn": "Mighty Jewel【2】",
-          "count": 2
-        },
-        {
-          "nameEn": "Jumping Jewel【2】",
-          "count": 3
-        },
-        {
-          "nameEn": "Sane Jewel【1】",
-          "count": 2
-        }
-      ],
-      "talisman": null,
+      "armorDecos": [],
+      "talisman": {
+        "nameJa": "逆襲の護石Ⅱ",
+        "poolSlots": [],
+        "decos": []
+      },
       "skillTotals": [
         {
-          "nameEn": "Critical Boost",
-          "level": 5
-        },
-        {
-          "nameEn": "Power Prolonger",
+          "nameJa": "高速変形",
           "level": 3
         },
         {
-          "nameEn": "Handicraft",
-          "level": 1
-        },
-        {
-          "nameEn": "Agitator",
-          "level": 5
-        },
-        {
-          "nameEn": "Antivirus",
-          "level": 3
-        },
-        {
-          "nameEn": "Counterstrike",
-          "level": 3
-        },
-        {
-          "nameEn": "Evade Extender",
-          "level": 3
-        },
-        {
-          "nameEn": "Maximum Might",
-          "level": 3
-        },
-        {
-          "nameEn": "Constitution",
+          "nameJa": "会心撃【特殊】",
           "level": 2
         },
         {
-          "nameEn": "Burst",
-          "level": 1
+          "nameJa": "毒ダメージ強化",
+          "level": 3
         },
         {
-          "nameEn": "Flinch Free",
+          "nameJa": "攻勢",
+          "level": 3
+        },
+        {
+          "nameJa": "精霊の加護",
+          "level": 3
+        },
+        {
+          "nameJa": "挑戦者",
+          "level": 3
+        },
+        {
+          "nameJa": "逆襲",
+          "level": 2
+        },
+        {
+          "nameJa": "回復速度",
           "level": 1
         }
       ],
       "groupSetSkills": [
-        "Black Eclipse I",
-        "Second Wind I"
+        {
+          "nameJa": "雪獅子の闘志 （2部位）"
+        },
+        {
+          "nameJa": "鱗張りの技法 （3部位）"
+        },
+        {
+          "nameJa": "防具スロ② ×3"
+        },
+        {
+          "nameJa": "防具スロ① ×2"
+        }
       ],
-      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1746,133 +1153,179 @@
       "weaponType": "switch-axe",
       "category": "wildsProgression",
       "kind": "full-build",
-      "buildName": "Frenzied Agitator Switch Axe Build",
-      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502864",
-      "weapon": "Eisengeist",
+      "buildName": "渾身＋連撃採用の鉱石派生装備（HR20〜39）",
+      "sourceUrl": "https://game8.jp/mhwilds/675619",
+      "weapon": "アイアンアクセルⅢ",
+      "weaponStats": "攻撃：665／ 属性：なし／会心：0%",
       "weaponSlots": [
-        3,
         2,
         1
       ],
       "weaponDecos": [
         {
-          "nameEn": "Critical Jewel III【3】",
+          "nameJa": "昂揚珠Ⅱ【2】",
           "count": 1
         },
         {
-          "nameEn": "Enhancer Jewel II【2】",
-          "count": 1
-        },
-        {
-          "nameEn": "Enhancer Jewel【1】",
+          "nameJa": "昂揚珠【1】",
           "count": 1
         }
       ],
-      "artian": {
-        "focus": null,
-        "setSkill": null,
-        "groupSkill": null,
-        "raw": [
-          "Production Bonus | Artian Reinforcements",
-          "• Attack +5 • Attack +5 • Affinity +5 • Elemental Attack + 20 Element Type: Blast | • Affinity +5 • Affinity +5 • Affinity +5 • Attack +5 • Attack +5"
-        ]
-      },
+      "artian": false,
+      "artianRaw": null,
       "armor": [
         {
           "slot": "head",
-          "nameEn": "Gore Helm β"
+          "nameJa": "護雷顎竜ヘルムβ",
+          "slots": [
+            3,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "渾身珠【2】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "chest",
-          "nameEn": "Gore Mail α"
+          "nameJa": "護雷顎竜メイルβ",
+          "slots": [
+            3,
+            2,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "渾身珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "加護珠【1】",
+              "count": 2
+            }
+          ]
         },
         {
           "slot": "arms",
-          "nameEn": "Dahaad Shardbraces α"
+          "nameJa": "護兇爪竜アームα",
+          "slots": [
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": []
         },
         {
           "slot": "waist",
-          "nameEn": "Arkvulcan Coil β"
+          "nameJa": "護兇爪竜コイルβ",
+          "slots": [
+            3,
+            2
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "逆襲珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "適応珠【1】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "legs",
-          "nameEn": "Dahaad Shardgreaves β"
+          "nameJa": "ブランゴグリーヴβ",
+          "slots": [
+            3,
+            3
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "逆襲珠【2】",
+              "count": 2
+            }
+          ]
         }
       ],
       "armorDecos": [
         {
-          "nameEn": "Challenger Jewel【3】",
-          "count": 1
-        },
-        {
-          "nameEn": "Tenderizer Jewel【3】",
-          "count": 1
-        },
-        {
-          "nameEn": "Phoenix Jewel【2】",
-          "count": 1
-        },
-        {
-          "nameEn": "Physique Jewel【1】",
-          "count": 1
-        },
-        {
-          "nameEn": "Sane Jewel【1】",
+          "nameJa": "渾身珠【2】",
           "count": 2
+        },
+        {
+          "nameJa": "加護珠【1】",
+          "count": 2
+        },
+        {
+          "nameJa": "逆襲珠【2】",
+          "count": 3
+        },
+        {
+          "nameJa": "適応珠【1】",
+          "count": 1
         }
       ],
-      "talisman": null,
+      "talisman": {
+        "nameJa": "挑戦の護石Ⅱ",
+        "poolSlots": [],
+        "decos": []
+      },
       "skillTotals": [
         {
-          "nameEn": "Critical Boost",
-          "level": 5
-        },
-        {
-          "nameEn": "Power Prolonger",
+          "nameJa": "会心撃【特殊】",
           "level": 3
         },
         {
-          "nameEn": "Handicraft",
+          "nameJa": "毒ダメージ強化",
           "level": 1
         },
         {
-          "nameEn": "Agitator",
-          "level": 5
-        },
-        {
-          "nameEn": "Antivirus",
+          "nameJa": "高速変形",
           "level": 3
         },
         {
-          "nameEn": "Evade Extender",
-          "level": 3
-        },
-        {
-          "nameEn": "Evade Window",
-          "level": 3
-        },
-        {
-          "nameEn": "Weakness Exploit",
-          "level": 3
-        },
-        {
-          "nameEn": "Coalescence",
+          "nameJa": "強化持続",
           "level": 2
         },
         {
-          "nameEn": "Constitution",
-          "level": 1
+          "nameJa": "連撃",
+          "level": 3
         },
         {
-          "nameEn": "Adaptability",
+          "nameJa": "逆襲",
+          "level": 3
+        },
+        {
+          "nameJa": "挑戦者",
+          "level": 5
+        },
+        {
+          "nameJa": "精霊の加護",
+          "level": 3
+        },
+        {
+          "nameJa": "環境適応",
           "level": 1
         }
       ],
       "groupSetSkills": [
-        "Black Eclipse I",
-        "Binding Counter I"
+        {
+          "nameJa": "護竜の守り （3部位）"
+        },
+        {
+          "nameJa": "兇爪竜の力 （2部位）"
+        },
+        {
+          "nameJa": "雷顎竜の闘志 （2部位）"
+        }
       ],
-      "armorDecoSource": "summary",
       "complete": true
     },
     {
@@ -1880,216 +1333,179 @@
       "weaponType": "switch-axe",
       "category": "wildsProgression",
       "kind": "full-build",
-      "buildName": "Second Wind Max Might Switch Axe Build",
-      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502864",
-      "weapon": "Rath Flamesplitter I",
+      "buildName": "攻勢＋連撃採用のレイアスラアク装備（HR32〜）",
+      "sourceUrl": "https://game8.jp/mhwilds/675619",
+      "weapon": "竜姫の剣斧Ⅱ",
+      "weaponStats": "攻撃：665／属性：毒150 ／会心：15%",
       "weaponSlots": [
-        2,
-        1
+        3,
+        2
       ],
       "weaponDecos": [
         {
-          "nameEn": "Quickswitch Jewel II【2】",
-          "count": 2
+          "nameJa": "速変珠Ⅲ【3】",
+          "count": 1
         },
         {
-          "nameEn": "Quickswitch Jewel【1】",
+          "nameJa": "昂揚珠Ⅱ【2】",
           "count": 1
         }
       ],
-      "artian": {
-        "focus": null,
-        "setSkill": null,
-        "groupSkill": null,
-        "raw": [
-          "Production Bonus | Reinforcement Prioritization",
-          "• Attack +5 • Attack +5 • Attack +5 • Element Infusion +20 Element Type: Blast or Paralysis | • Affinity +5 • Affinity +5 • Affinity +5 • Attack +5 • Attack +5"
-        ]
-      },
+      "artian": false,
+      "artianRaw": null,
       "armor": [
         {
           "slot": "head",
-          "nameEn": "G. Fulgur Helm β"
+          "nameJa": "護兇爪竜ヘルムβ",
+          "slots": [
+            3,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "逆襲珠【2】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "chest",
-          "nameEn": "G. Rathalos Mail β"
+          "nameJa": "レイアメイルα",
+          "slots": [
+            1,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": []
         },
         {
           "slot": "arms",
-          "nameEn": "G. Fulgur Vambraces α"
+          "nameJa": "護兇爪竜アームβ",
+          "slots": [
+            3,
+            2
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "逆襲珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "加護珠【1】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "waist",
-          "nameEn": "G. Rathalos Coil α"
+          "nameJa": "護兇爪竜コイルβ",
+          "slots": [
+            3,
+            2
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "逆襲珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "加護珠【1】",
+              "count": 1
+            }
+          ]
         },
         {
           "slot": "legs",
-          "nameEn": "Mizutsune Greaves β"
+          "nameJa": "エグゾルスグリーヴβ",
+          "slots": [
+            3,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "攻勢珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "研鑽珠【1】",
+              "count": 1
+            }
+          ]
         }
       ],
       "armorDecos": [
         {
-          "nameEn": "Mighty Jewel【2】",
+          "nameJa": "逆襲珠【2】",
+          "count": 3
+        },
+        {
+          "nameJa": "加護珠【1】",
           "count": 2
         },
         {
-          "nameEn": "Physique Jewel【1】",
-          "count": 2
+          "nameJa": "攻勢珠【3】",
+          "count": 1
         },
         {
-          "nameEn": "Counter Jewel【2】",
+          "nameJa": "研鑽珠【1】",
           "count": 1
         }
       ],
-      "talisman": null,
+      "talisman": {
+        "nameJa": "攻勢の護石Ⅱ",
+        "poolSlots": [],
+        "decos": []
+      },
       "skillTotals": [
         {
-          "nameEn": "Critical Boost",
-          "level": 4
-        },
-        {
-          "nameEn": "Rapid Morph",
-          "level": 2
-        },
-        {
-          "nameEn": "Agitator",
+          "nameJa": "会心撃【特殊】",
           "level": 3
         },
         {
-          "nameEn": "Constitution",
-          "level": 3
-        },
-        {
-          "nameEn": "Evade Extender",
-          "level": 3
-        },
-        {
-          "nameEn": "Maximum Might",
-          "level": 3
-        },
-        {
-          "nameEn": "Burst",
-          "level": 2
-        },
-        {
-          "nameEn": "Weakness Exploit",
-          "level": 2
-        },
-        {
-          "nameEn": "Windproof",
+          "nameJa": "毒ダメージ強化",
           "level": 1
         },
         {
-          "nameEn": "Counterstrike",
+          "nameJa": "高速変形",
+          "level": 3
+        },
+        {
+          "nameJa": "強化持続",
+          "level": 2
+        },
+        {
+          "nameJa": "連撃",
+          "level": 5
+        },
+        {
+          "nameJa": "逆襲",
+          "level": 3
+        },
+        {
+          "nameJa": "研鑽",
           "level": 1
         },
         {
-          "nameEn": "Intimidator",
+          "nameJa": "風圧耐性",
           "level": 1
         }
       ],
       "groupSetSkills": [
-        "Second Wind I"
-      ],
-      "armorDecoSource": "slots",
-      "complete": true
-    },
-    {
-      "id": "switch-axe_wildsProgression_3",
-      "weaponType": "switch-axe",
-      "category": "wildsProgression",
-      "kind": "full-build",
-      "buildName": "WEX Foray Switch Axe Build",
-      "sourceUrl": "https://game8.co/games/Monster-Hunter-Wilds/archives/502864",
-      "weapon": "Iron Accelerator II",
-      "weaponSlots": [
-        1
-      ],
-      "weaponDecos": [
         {
-          "nameEn": "Quickswitch Jewel II【2】",
-          "count": 1
+          "nameJa": "精霊の加護 Lv"
         },
         {
-          "nameEn": "Quickswitch Jewel【1】",
-          "count": 1
+          "nameJa": "兇爪竜の力 （2部位）"
+        },
+        {
+          "nameJa": "護竜の守り （3部位）"
         }
       ],
-      "artian": null,
-      "armor": [
-        {
-          "slot": "head",
-          "nameEn": "Bulaqchi Specs α"
-        },
-        {
-          "slot": "chest",
-          "nameEn": "Rathian Mail α"
-        },
-        {
-          "slot": "arms",
-          "nameEn": "Balahara Vambraces β"
-        },
-        {
-          "slot": "waist",
-          "nameEn": "Rathian Coil β"
-        },
-        {
-          "slot": "legs",
-          "nameEn": "Chatacabra Greaves β"
-        }
-      ],
-      "armorDecos": [
-        {
-          "nameEn": "Jumping Jewel【2】",
-          "count": 2
-        },
-        {
-          "nameEn": "Protection Jewel【1】",
-          "count": 1
-        }
-      ],
-      "talisman": null,
-      "skillTotals": [
-        {
-          "nameEn": "Rapid Morph",
-          "level": 3
-        },
-        {
-          "nameEn": "Critical Status",
-          "level": 2
-        },
-        {
-          "nameEn": "Poison Duration Up",
-          "level": 1
-        },
-        {
-          "nameEn": "Evade Extender",
-          "level": 3
-        },
-        {
-          "nameEn": "Foray",
-          "level": 3
-        },
-        {
-          "nameEn": "Weakness Exploit",
-          "level": 2
-        },
-        {
-          "nameEn": "Flayer",
-          "level": 1
-        },
-        {
-          "nameEn": "Divine Blessing",
-          "level": 1
-        },
-        {
-          "nameEn": "Entomologist",
-          "level": 1
-        }
-      ],
-      "groupSetSkills": [],
-      "armorDecoSource": "slots",
       "complete": true
     }
   ]
