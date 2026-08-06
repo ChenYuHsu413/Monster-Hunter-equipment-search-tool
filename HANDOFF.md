@@ -52,6 +52,9 @@ Wilds 冒煙 21、efr-wilds 32。
   （Rise 10 + World 11 逐位元 + Wilds 冒煙 21 + Wilds EFR 32），總結行列四段狀態、任一 FAIL 整體 exit 1。
 - 🔹 映射 **2175/2175 直通、零 override** 是異常乾淨的記錄——Ascendance 重灌時**複驗此性質是否維持**
   （若出現 override 需求，代表命名體系變動）。
+- 🔹 **World 推薦來源＝EN 站（game8.co），其 skillTotals 可靠性未經三層稽核**（尾巴 W-F (b) 前例修正的直接後果：
+  Rise/Wilds 用 game8.jp、**唯 World 仍用 EN 站**）。Wilds 換 JP 後三層驗證證實 JP 表較 EN 完整（clean 率 31% vs 7%）。
+  **Ascendance 前若翻修 World 推薦，考慮同步換 game8.jp 源**（`scripts/world/scrape-game8-mhwi.mjs`；本輪未動 World，避免擴大範圍）。
 - ⛔ ~~**（optional value-add，僅 jolen 機可跑、非阻擋）Game8 快取 diff 檢核**~~ → **作廢**（2026-08-03，
   jolen 機實查）：該機 `scripts/wilds/.cache/` 僅存 mhdb 抓取快取 + `game8/` 14 檔**版控 fetch 版**
   （與 HEAD 逐位元一致），**無 Phase 6 前半瀏覽器擷取樣本殘留**（無 `html/` 或舊格式檔）→ 無對照基準、
