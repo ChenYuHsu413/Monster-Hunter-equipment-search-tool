@@ -177,6 +177,10 @@
       },
       "skillTotals": [
         {
+          "nameJa": "火属性攻撃強化",
+          "level": 3
+        },
+        {
           "nameJa": "業物",
           "level": 3
         },
@@ -230,9 +234,6 @@
         }
       ],
       "groupSetSkills": [
-        {
-          "nameJa": "火属性攻撃強化 Lv3 （各属性で使い分け可）"
-        },
         {
           "nameJa": "巨戟龍の黙示録 Ⅱ (宣戦呼応Ⅱ)"
         },
@@ -409,6 +410,10 @@
           "level": 4
         },
         {
+          "nameJa": "火属性攻撃強化",
+          "level": 3
+        },
+        {
           "nameJa": "業物",
           "level": 3
         },
@@ -455,9 +460,6 @@
       ],
       "groupSetSkills": [
         {
-          "nameJa": "火属性攻撃強化 Lv3 （各属性で使い分け可）"
-        },
-        {
           "nameJa": "千刃竜の闘志 Ⅱ (千刃竜の身躱しⅡ)"
         },
         {
@@ -499,6 +501,887 @@
       ],
       "artian": true,
       "artianRaw": "【生産ボーナス】 属性増強、攻撃増強×3 【復元強化】 斬れ味強化EX×2、攻撃力強化EX×2、会心強化EX×1 【巨戟変異パーツ】 属性激化タイプ 【シリーズスキル】 黒蝕竜の力 【グループスキル】 ヌシの魂",
+      "armor": [
+        {
+          "slot": "head",
+          "nameJa": "護火竜ヘルムβ",
+          "slots": [
+            3,
+            3
+          ],
+          "augmentRaw": "限界突破強化",
+          "decos": [
+            {
+              "nameJa": "痛撃珠【3】",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "slot": "chest",
+          "nameJa": "ダハディラメイルγ",
+          "slots": [
+            2,
+            2
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "早気珠【2】",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "slot": "arms",
+          "nameJa": "護火竜アームβ",
+          "slots": [
+            3,
+            2,
+            1
+          ],
+          "augmentRaw": "限界突破強化",
+          "decos": [
+            {
+              "nameJa": "痛撃珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "早気珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "強走珠【1】",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "slot": "waist",
+          "nameJa": "ダハディラコイルγ",
+          "slots": [
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "強走珠【1】",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "slot": "legs",
+          "nameJa": "ゴアグリーヴβ",
+          "slots": [
+            3,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "連撃珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "抗狂珠【1】",
+              "count": 2
+            }
+          ]
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameJa": "痛撃珠【3】",
+          "count": 3
+        },
+        {
+          "nameJa": "早気珠【2】",
+          "count": 3
+        },
+        {
+          "nameJa": "強走珠【1】",
+          "count": 2
+        },
+        {
+          "nameJa": "連撃珠【3】",
+          "count": 1
+        },
+        {
+          "nameJa": "抗狂珠【1】",
+          "count": 2
+        },
+        {
+          "nameJa": "達人珠【1】",
+          "count": 1
+        }
+      ],
+      "talisman": {
+        "nameJa": "武①",
+        "poolSlots": [
+          {
+            "pool": "weapon",
+            "size": 1
+          }
+        ],
+        "decos": [
+          {
+            "nameJa": "達人珠【1】",
+            "count": 1
+          }
+        ]
+      },
+      "skillTotals": [
+        {
+          "nameJa": "超会心",
+          "level": 5
+        },
+        {
+          "nameJa": "見切り",
+          "level": 4
+        },
+        {
+          "nameJa": "業物",
+          "level": 3
+        },
+        {
+          "nameJa": "匠",
+          "level": 1
+        },
+        {
+          "nameJa": "挑戦者",
+          "level": 5
+        },
+        {
+          "nameJa": "弱点特効",
+          "level": 5
+        },
+        {
+          "nameJa": "体術",
+          "level": 4
+        },
+        {
+          "nameJa": "無我の境地",
+          "level": 3
+        },
+        {
+          "nameJa": "スタミナ急速回復",
+          "level": 3
+        },
+        {
+          "nameJa": "ランナー",
+          "level": 2
+        },
+        {
+          "nameJa": "拘束耐性",
+          "level": 2
+        },
+        {
+          "nameJa": "連撃",
+          "level": 1
+        },
+        {
+          "nameJa": "ひるみ軽減",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        {
+          "nameJa": "火竜の力 Ⅰ"
+        },
+        {
+          "nameJa": "凍峰竜の反逆 Ⅰ"
+        },
+        {
+          "nameJa": "黒蝕竜の力 Ⅰ"
+        },
+        {
+          "nameJa": "ヌシの魂"
+        }
+      ],
+      "complete": true
+    },
+    {
+      "id": "dual-blades_wildsEndgame_3",
+      "weaponType": "dual-blades",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "オメガ＋ヌシのマルチ専用装備",
+      "sourceUrl": "https://game8.jp/mhwilds/668365",
+      "weapon": "ティルトクライス",
+      "weaponStats": "攻撃：266／属性：350 会心：5%",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameJa": "火炎・昂揚珠【3】",
+          "count": 1
+        },
+        {
+          "nameJa": "超心珠Ⅲ【3】",
+          "count": 1
+        },
+        {
+          "nameJa": "業物・匠珠【3】",
+          "count": 1
+        }
+      ],
+      "artian": false,
+      "artianRaw": "【生産ボーナス】 属性増強、攻撃力増強×3 【復元ボーナス】 攻撃強化×4、切れ味×1",
+      "armor": [
+        {
+          "slot": "head",
+          "nameJa": "オメガイヤーカフα",
+          "slots": [
+            3,
+            2
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "反攻珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "早気珠【2】",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "slot": "chest",
+          "nameJa": "レダゼルトメイルγ",
+          "slots": [
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "強走珠【1】",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "slot": "arms",
+          "nameJa": "レダゼルトアームγ",
+          "slots": [
+            3,
+            3
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "痛撃珠【3】",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "slot": "waist",
+          "nameJa": "オメガアクセサリーα",
+          "slots": [
+            3,
+            2
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "痛撃珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "早気珠【2】",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "slot": "legs",
+          "nameJa": "トゥナムルグリーヴγ",
+          "slots": [
+            3,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "痛撃珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "強走珠【1】",
+              "count": 2
+            }
+          ]
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameJa": "反攻珠【3】",
+          "count": 1
+        },
+        {
+          "nameJa": "早気珠【2】",
+          "count": 2
+        },
+        {
+          "nameJa": "強走珠【1】",
+          "count": 3
+        },
+        {
+          "nameJa": "痛撃珠【3】",
+          "count": 4
+        }
+      ],
+      "talisman": {
+        "nameJa": "全開の護石Ⅱ",
+        "poolSlots": [],
+        "decos": []
+      },
+      "skillTotals": [
+        {
+          "nameJa": "弱点特効",
+          "level": 5
+        },
+        {
+          "nameJa": "力の解放",
+          "level": 5
+        },
+        {
+          "nameJa": "ランナー",
+          "level": 3
+        },
+        {
+          "nameJa": "納刀術",
+          "level": 3
+        },
+        {
+          "nameJa": "スタミナ急速回復",
+          "level": 2
+        },
+        {
+          "nameJa": "精霊の加護",
+          "level": 2
+        },
+        {
+          "nameJa": "回避距離UP",
+          "level": 2
+        },
+        {
+          "nameJa": "巧撃",
+          "level": 1
+        },
+        {
+          "nameJa": "連撃",
+          "level": 1
+        },
+        {
+          "nameJa": "挑戦者",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        {
+          "nameJa": "煌雷竜の力"
+        },
+        {
+          "nameJa": "オメガレゾナンス"
+        },
+        {
+          "nameJa": "ヌシの魂"
+        }
+      ],
+      "complete": true
+    },
+    {
+      "id": "dual-blades_wildsEndgame_4",
+      "weaponType": "dual-blades",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "歴戦王ヌエグドラの汎用高火力装備",
+      "sourceUrl": "https://game8.jp/mhwilds/668365",
+      "weapon": "ティルトクライス",
+      "weaponStats": "攻撃：266／属性：350 会心：5%",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameJa": "業物・火炎珠【3】",
+          "count": 1
+        },
+        {
+          "nameJa": "集中・火炎珠【3】",
+          "count": 1
+        },
+        {
+          "nameJa": "昂揚・火炎珠【3】",
+          "count": 1
+        }
+      ],
+      "artian": false,
+      "artianRaw": "【生産ボーナス】 属性増強、攻撃力増強×3 【復元ボーナス】 攻撃強化×4、切れ味×1",
+      "armor": [
+        {
+          "slot": "head",
+          "nameJa": "エグゾルスヘルムγ",
+          "slots": [
+            1,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "体術珠【1】",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "slot": "chest",
+          "nameJa": "エグゾルスメイルγ",
+          "slots": [
+            3,
+            3
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "挑戦珠【3】",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "slot": "arms",
+          "nameJa": "レギオスアームβ",
+          "slots": [
+            3,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "反攻珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "体術珠【1】",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "slot": "waist",
+          "nameJa": "エグゾルスコイルγ",
+          "slots": [
+            2
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "逆襲珠【2】",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "slot": "legs",
+          "nameJa": "レギオスグリーヴβ",
+          "slots": [
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "体術珠【1】",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameJa": "体術珠【1】",
+          "count": 5
+        },
+        {
+          "nameJa": "挑戦珠【3】",
+          "count": 2
+        },
+        {
+          "nameJa": "反攻珠【3】",
+          "count": 1
+        },
+        {
+          "nameJa": "逆襲珠【2】",
+          "count": 1
+        },
+        {
+          "nameJa": "攻撃珠【1】",
+          "count": 1
+        }
+      ],
+      "talisman": {
+        "nameJa": "栄世の護石",
+        "poolSlots": [
+          {
+            "pool": "weapon",
+            "size": 1
+          }
+        ],
+        "decos": [
+          {
+            "nameJa": "攻撃珠【1】",
+            "count": 1
+          }
+        ]
+      },
+      "skillTotals": [
+        {
+          "nameJa": "攻撃",
+          "level": 4
+        },
+        {
+          "nameJa": "火属性攻撃強化",
+          "level": 3
+        },
+        {
+          "nameJa": "業物",
+          "level": 3
+        },
+        {
+          "nameJa": "集中",
+          "level": 3
+        },
+        {
+          "nameJa": "強化持続",
+          "level": 3
+        },
+        {
+          "nameJa": "巧撃",
+          "level": 5
+        },
+        {
+          "nameJa": "体術",
+          "level": 5
+        },
+        {
+          "nameJa": "連撃",
+          "level": 5
+        },
+        {
+          "nameJa": "挑戦者",
+          "level": 4
+        },
+        {
+          "nameJa": "逆襲",
+          "level": 3
+        },
+        {
+          "nameJa": "急襲",
+          "level": 1
+        },
+        {
+          "nameJa": "攻撃",
+          "level": 3
+        },
+        {
+          "nameJa": "集中",
+          "level": 3
+        },
+        {
+          "nameJa": "強化持続",
+          "level": 3
+        },
+        {
+          "nameJa": "逆襲",
+          "level": 2
+        },
+        {
+          "nameJa": "匠",
+          "level": 2
+        },
+        {
+          "nameJa": "挑戦者",
+          "level": 5
+        },
+        {
+          "nameJa": "ランナー",
+          "level": 3
+        },
+        {
+          "nameJa": "納刀術",
+          "level": 3
+        },
+        {
+          "nameJa": "回避性能",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        {
+          "nameJa": "獄焔蛸の反逆 Ⅰ"
+        },
+        {
+          "nameJa": "千刃竜の闘志 Ⅰ"
+        },
+        {
+          "nameJa": "ヌシの魂"
+        },
+        {
+          "nameJa": "生産護石構成からの変更点"
+        }
+      ],
+      "complete": true
+    },
+    {
+      "id": "dual-blades_wildsEndgame_5",
+      "weaponType": "dual-blades",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "生産護石版の装備構成",
+      "sourceUrl": "https://game8.jp/mhwilds/668365",
+      "weapon": "ティルトクライス",
+      "weaponStats": "攻撃：266／属性：350 会心：5%",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameJa": "攻撃珠Ⅲ【3】",
+          "count": 1
+        },
+        {
+          "nameJa": "火炎・匠珠【3】",
+          "count": 1
+        },
+        {
+          "nameJa": "業物・匠珠【3】",
+          "count": 1
+        }
+      ],
+      "artian": false,
+      "artianRaw": "【生産ボーナス】 属性増強、攻撃力増強×3 【復元ボーナス】 攻撃強化×4、切れ味×1",
+      "armor": [
+        {
+          "slot": "head",
+          "nameJa": "エグゾルスヘルムγ",
+          "slots": [
+            1,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "強走珠【1】",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "slot": "chest",
+          "nameJa": "エグゾルスメイルγ",
+          "slots": [
+            3,
+            3
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "挑戦珠【3】",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "slot": "arms",
+          "nameJa": "レギオスアームβ",
+          "slots": [
+            3,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "挑戦珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "体術珠【1】",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "slot": "waist",
+          "nameJa": "レギオスコイルβ",
+          "slots": [
+            3,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "連撃珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "体術珠【1】",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "slot": "legs",
+          "nameJa": "トゥナムルグリーヴγ",
+          "slots": [
+            3,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "連撃珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "体術珠【1】",
+              "count": 2
+            }
+          ]
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameJa": "強走珠【1】",
+          "count": 3
+        },
+        {
+          "nameJa": "挑戦珠【3】",
+          "count": 3
+        },
+        {
+          "nameJa": "体術珠【1】",
+          "count": 5
+        },
+        {
+          "nameJa": "連撃珠【3】",
+          "count": 2
+        }
+      ],
+      "talisman": {
+        "nameJa": "反攻の護石Ⅲ",
+        "poolSlots": [],
+        "decos": []
+      },
+      "skillTotals": [
+        {
+          "nameJa": "攻撃",
+          "level": 3
+        },
+        {
+          "nameJa": "火属性攻撃強化",
+          "level": 3
+        },
+        {
+          "nameJa": "業物",
+          "level": 3
+        },
+        {
+          "nameJa": "匠",
+          "level": 2
+        },
+        {
+          "nameJa": "巧撃",
+          "level": 5
+        },
+        {
+          "nameJa": "体術",
+          "level": 5
+        },
+        {
+          "nameJa": "挑戦者",
+          "level": 5
+        },
+        {
+          "nameJa": "連撃",
+          "level": 5
+        },
+        {
+          "nameJa": "ランナー",
+          "level": 3
+        },
+        {
+          "nameJa": "納刀術",
+          "level": 3
+        },
+        {
+          "nameJa": "逆襲",
+          "level": 2
+        },
+        {
+          "nameJa": "回避性能",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        {
+          "nameJa": "獄焔蛸の反逆 Ⅰ"
+        },
+        {
+          "nameJa": "千刃竜の闘志 Ⅰ"
+        },
+        {
+          "nameJa": "ヌシの魂"
+        }
+      ],
+      "complete": true
+    },
+    {
+      "id": "dual-blades_wildsEndgame_6",
+      "weaponType": "dual-blades",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "レギオス4部位の攻撃力特化装備",
+      "sourceUrl": "https://game8.jp/mhwilds/668365",
+      "weapon": "ティルトクライス",
+      "weaponStats": "攻撃：266／属性：350 会心：5%",
+      "weaponSlots": [
+        3,
+        3,
+        3
+      ],
+      "weaponDecos": [
+        {
+          "nameJa": "攻撃珠Ⅲ【3】",
+          "count": 1
+        },
+        {
+          "nameJa": "昂揚・匠珠【3】",
+          "count": 1
+        },
+        {
+          "nameJa": "業物・匠珠【3】",
+          "count": 1
+        }
+      ],
+      "artian": false,
+      "artianRaw": "【生産ボーナス】 属性増強、攻撃力増強×3 【復元ボーナス】 攻撃強化×4、切れ味×1",
       "armor": [
         {
           "slot": "head",
@@ -776,7 +1659,7 @@
       },
       "skillTotals": [
         {
-          "nameJa": "強化持続 Lv2 or 集中",
+          "nameJa": "強化持続",
           "level": 2
         },
         {
@@ -949,7 +1832,11 @@
       },
       "skillTotals": [
         {
-          "nameJa": "超会心 Lv3 or 強化持続 Lv3 or 会心撃【属性】",
+          "nameJa": "超会心",
+          "level": 3
+        },
+        {
+          "nameJa": "火属性攻撃強化",
           "level": 3
         },
         {

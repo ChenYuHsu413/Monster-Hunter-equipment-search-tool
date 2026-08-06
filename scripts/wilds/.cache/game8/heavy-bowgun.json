@@ -47,6 +47,243 @@
       "armor": [
         {
           "slot": "head",
+          "nameJa": "トゥナムルヘルムγ",
+          "slots": [
+            2,
+            2
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "跳躍珠【2】",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "slot": "chest",
+          "nameJa": "ダハディラメイルγ",
+          "slots": [
+            2,
+            2
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "防音珠【2】",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "slot": "arms",
+          "nameJa": "ゴグアームα",
+          "slots": [
+            2,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "回避珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "早食珠【1】",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "slot": "waist",
+          "nameJa": "ゴグコイルα",
+          "slots": [
+            2,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "回避珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "早食珠【1】",
+              "count": 2
+            }
+          ]
+        },
+        {
+          "slot": "legs",
+          "nameJa": "ゴググリーヴα",
+          "slots": [
+            3,
+            2,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "挑戦珠【3】",
+              "count": 1
+            },
+            {
+              "nameJa": "渾身珠【2】",
+              "count": 1
+            },
+            {
+              "nameJa": "緩衝珠【1】",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameJa": "跳躍珠【2】",
+          "count": 2
+        },
+        {
+          "nameJa": "防音珠【2】",
+          "count": 2
+        },
+        {
+          "nameJa": "回避珠【2】",
+          "count": 2
+        },
+        {
+          "nameJa": "早食珠【1】",
+          "count": 3
+        },
+        {
+          "nameJa": "挑戦珠【3】",
+          "count": 1
+        },
+        {
+          "nameJa": "渾身珠【2】",
+          "count": 1
+        },
+        {
+          "nameJa": "緩衝珠【1】",
+          "count": 1
+        },
+        {
+          "nameJa": "攻撃珠【1】",
+          "count": 1
+        }
+      ],
+      "talisman": {
+        "nameJa": "鑑定護石",
+        "poolSlots": [],
+        "decos": [
+          {
+            "nameJa": "攻撃珠【1】",
+            "count": 1
+          }
+        ]
+      },
+      "skillTotals": [
+        {
+          "nameJa": "攻撃",
+          "level": 4
+        },
+        {
+          "nameJa": "火属性攻撃強化",
+          "level": 3
+        },
+        {
+          "nameJa": "会心撃【属性】",
+          "level": 3
+        },
+        {
+          "nameJa": "フォースショット",
+          "level": 3
+        },
+        {
+          "nameJa": "弾導強化",
+          "level": 3
+        },
+        {
+          "nameJa": "フルチャージ",
+          "level": 5
+        },
+        {
+          "nameJa": "挑戦者",
+          "level": 5
+        },
+        {
+          "nameJa": "渾身",
+          "level": 3
+        },
+        {
+          "nameJa": "耳栓",
+          "level": 3
+        },
+        {
+          "nameJa": "早食い",
+          "level": 3
+        },
+        {
+          "nameJa": "連撃",
+          "level": 2
+        },
+        {
+          "nameJa": "回避性能",
+          "level": 2
+        },
+        {
+          "nameJa": "回避距離UP",
+          "level": 2
+        },
+        {
+          "nameJa": "緩衝",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [
+        {
+          "nameJa": "巨戟龍の黙示録"
+        },
+        {
+          "nameJa": "ヌシの魂"
+        }
+      ],
+      "complete": true
+    },
+    {
+      "id": "heavy-bowgun_wildsEndgame_1",
+      "weaponType": "heavy-bowgun",
+      "category": "wildsEndgame",
+      "kind": "full-build",
+      "buildName": "無尽蔵+ヌシの魂の散弾ヘビィ",
+      "sourceUrl": "https://game8.jp/mhwilds/668375",
+      "weapon": "叛砲アルシャマリ",
+      "weaponStats": "攻撃：300／会心：20",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameJa": "超心珠Ⅲ【3】",
+          "count": 1
+        },
+        {
+          "nameJa": "射法珠Ⅱ【2】",
+          "count": 1
+        },
+        {
+          "nameJa": "超心珠【1】",
+          "count": 1
+        }
+      ],
+      "artian": false,
+      "artianRaw": null,
+      "armor": [
+        {
+          "slot": "head",
           "nameJa": "護雷顎竜ヘルムβ",
           "slots": [
             3,
@@ -255,7 +492,7 @@
       "complete": true
     },
     {
-      "id": "heavy-bowgun_wildsEndgame_1",
+      "id": "heavy-bowgun_wildsEndgame_2",
       "weaponType": "heavy-bowgun",
       "category": "wildsEndgame",
       "kind": "full-build",
@@ -481,7 +718,7 @@
       "complete": true
     },
     {
-      "id": "heavy-bowgun_wildsEndgame_2",
+      "id": "heavy-bowgun_wildsEndgame_3",
       "weaponType": "heavy-bowgun",
       "category": "wildsEndgame",
       "kind": "full-build",
@@ -713,7 +950,7 @@
       "complete": true
     },
     {
-      "id": "heavy-bowgun_wildsEndgame_3",
+      "id": "heavy-bowgun_wildsEndgame_4",
       "weaponType": "heavy-bowgun",
       "category": "wildsEndgame",
       "kind": "full-build",
@@ -941,6 +1178,172 @@
       "weaponDecos": [
         {
           "nameJa": "射法珠Ⅱ【2】",
+          "count": 1
+        },
+        {
+          "nameJa": "初弾珠【1】",
+          "count": 1
+        }
+      ],
+      "artian": false,
+      "artianRaw": null,
+      "armor": [
+        {
+          "slot": "head",
+          "nameJa": "護兇爪竜ヘルム",
+          "slots": [
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "治癒珠【1】",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "slot": "chest",
+          "nameJa": "ラバラメイルα",
+          "slots": [
+            1,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": []
+        },
+        {
+          "slot": "arms",
+          "nameJa": "シーウーアーム",
+          "slots": [
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "研鑽珠【1】",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "slot": "waist",
+          "nameJa": "シーウーコイル",
+          "slots": [],
+          "augmentRaw": null,
+          "decos": []
+        },
+        {
+          "slot": "legs",
+          "nameJa": "バーラグリーヴβ",
+          "slots": [
+            2,
+            2,
+            2
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "速納珠【1】",
+              "count": 3
+            }
+          ]
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameJa": "治癒珠【1】",
+          "count": 1
+        },
+        {
+          "nameJa": "研鑽珠【1】",
+          "count": 1
+        },
+        {
+          "nameJa": "速納珠【1】",
+          "count": 3
+        }
+      ],
+      "talisman": {
+        "nameJa": "渾身の護石Ⅰ",
+        "poolSlots": [],
+        "decos": []
+      },
+      "skillTotals": [
+        {
+          "nameJa": "体力回復量UP",
+          "level": 3
+        },
+        {
+          "nameJa": "渾身",
+          "level": 3
+        },
+        {
+          "nameJa": "納刀術",
+          "level": 1
+        },
+        {
+          "nameJa": "スタミナ急速回復",
+          "level": 1
+        },
+        {
+          "nameJa": "回避距離UP",
+          "level": 1
+        },
+        {
+          "nameJa": "研鑽",
+          "level": 1
+        },
+        {
+          "nameJa": "回避性能",
+          "level": 1
+        },
+        {
+          "nameJa": "ガード強化",
+          "level": 2
+        },
+        {
+          "nameJa": "弾導強化",
+          "level": 3
+        },
+        {
+          "nameJa": "ファーストショット",
+          "level": 3
+        },
+        {
+          "nameJa": "特殊射撃強化",
+          "level": 2
+        }
+      ],
+      "groupSetSkills": [
+        {
+          "nameJa": "武器依存発動スキル"
+        }
+      ],
+      "complete": true
+    },
+    {
+      "id": "heavy-bowgun_wildsProgression_1",
+      "weaponType": "heavy-bowgun",
+      "category": "wildsProgression",
+      "kind": "full-build",
+      "buildName": "ラギア+ゴア2部位の汎用火力装備（HR31～）",
+      "sourceUrl": "https://game8.jp/mhwilds/675632",
+      "weapon": "あしひきの山砲の御車",
+      "weaponStats": "攻撃：315／会心：15",
+      "weaponSlots": [
+        3,
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameJa": "超心珠Ⅲ【3】",
+          "count": 1
+        },
+        {
+          "nameJa": "特射珠Ⅱ【2】",
           "count": 1
         },
         {

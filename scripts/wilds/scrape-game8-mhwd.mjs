@@ -114,8 +114,11 @@ function classifyTable(tableHtml) {
   // 取首個「非空」列當表頭（部分技能表首列為空 <tr></tr>，真表頭在次列的 <th colspan>）。
   const head = rows.map(cellsOf).find((c) => c.length) || [];
   const h0 = head[0] || "";
-  if (h0 === "武器" && head.some((c) => c.includes("装飾品"))) return "weapon"; // 兩 layout 皆此頭
-  if (h0 === "防具" && head.some((c) => /スロット/.test(c))) return "armor";
+  // 武器表頭變體（全 28 頁實測）：武器｜装飾品、武器｜武器スキル／装飾品、武器｜武器スキル／スロット、
+  //   武器｜武器スキル、メイン武器｜…（CB 終盤）、武器／強化パーツ｜…。技能表 h0=「武器スキル」須排除。
+  const isWeaponHead = (h0 === "武器" || h0 === "メイン武器" || h0.startsWith("武器／")) && head.length >= 2;
+  if (isWeaponHead) return "weapon";
+  if (h0 === "防具" && head.some((c) => /スロット/.test(c))) return "armor"; // 素材表「防具｜スキル｜必要素材」不含スロット→不匹配（如實排除）
   // 技能表：表頭可能為空首列 + 次列 <th>武器スキル</th>，或散裝 <th> 於列外（malformed）。
   // 以「緊接 < 的表頭字」偵測，避開上位武器表頭「武器スキル／装飾品」（其後非 <）。
   if (/^(武器スキル|防具スキル|発動スキル|スキル)$/.test(h0)) return "skill";
@@ -209,7 +212,8 @@ function parseSkillTable(tableHtml) {
     if (cells.length <= 1 && /^(武器スキル|防具スキル|発動スキル|スキル)$/.test(cells[0] || "")) { mode = "skill"; continue; }
     for (const c of cells) {
       if (!c || c === "-" || c === "ー") continue;
-      const lv = c.normalize("NFKC").match(/^(.+?)\s*Lv\.?\s*(\d+)\s*$/);
+      // 取「首個」name LvN（非末端錨定）：Game8「A Lv2 or B Lv2」擇一列取主技能 A、丟棄 or 後備選。
+      const lv = c.normalize("NFKC").match(/^(.+?)\s*Lv\.?\s*(\d+)/);
       if (lv && isSkillName(lv[1].trim())) {
         skillTotals.push({ nameJa: lv[1].trim(), level: Number(lv[2]) });
       } else if (isSkillName(c)) {

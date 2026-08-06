@@ -1196,6 +1196,123 @@
       "weaponType": "light-bowgun",
       "category": "wildsProgression",
       "kind": "full-build",
+      "buildName": "上位序盤で作成できるクック装備（HR9〜19）",
+      "sourceUrl": "https://game8.jp/mhwilds/675631",
+      "weapon": "ホープバレットⅣ",
+      "weaponStats": "攻撃：208／会心：0",
+      "weaponSlots": [
+        2,
+        1
+      ],
+      "weaponDecos": [
+        {
+          "nameJa": "攻撃珠Ⅱ【2】",
+          "count": 1
+        },
+        {
+          "nameJa": "射法珠【1】",
+          "count": 1
+        }
+      ],
+      "artian": false,
+      "artianRaw": null,
+      "armor": [
+        {
+          "slot": "head",
+          "nameJa": "ヒラバミヘルムα",
+          "slots": [
+            1,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": []
+        },
+        {
+          "slot": "chest",
+          "nameJa": "クックメイルβ",
+          "slots": [
+            3,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": []
+        },
+        {
+          "slot": "arms",
+          "nameJa": "クックアームα",
+          "slots": [
+            2,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": []
+        },
+        {
+          "slot": "waist",
+          "nameJa": "クックコイルα",
+          "slots": [
+            1,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": []
+        },
+        {
+          "slot": "legs",
+          "nameJa": "トリスグリーヴα",
+          "slots": [
+            2,
+            1,
+            1
+          ],
+          "augmentRaw": null,
+          "decos": []
+        }
+      ],
+      "armorDecos": [],
+      "talisman": {
+        "nameJa": "挑戦の護石Ⅰ",
+        "poolSlots": [],
+        "decos": []
+      },
+      "skillTotals": [
+        {
+          "nameJa": "挑戦者",
+          "level": 4
+        },
+        {
+          "nameJa": "回避距離UP",
+          "level": 2
+        },
+        {
+          "nameJa": "回避性能",
+          "level": 1
+        },
+        {
+          "nameJa": "体術",
+          "level": 1
+        },
+        {
+          "nameJa": "体力回復量UP",
+          "level": 2
+        },
+        {
+          "nameJa": "ひるみ軽減",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [],
+      "complete": true
+    },
+    {
+      "id": "light-bowgun_wildsProgression_1",
+      "weaponType": "light-bowgun",
+      "category": "wildsProgression",
+      "kind": "full-build",
       "buildName": "ラギア+ゴア2部位の汎用火力装備（HR31～）",
       "sourceUrl": "https://game8.jp/mhwilds/675631",
       "weapon": "レ・メドルギシュⅢ",

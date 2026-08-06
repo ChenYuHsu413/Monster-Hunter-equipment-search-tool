@@ -949,6 +949,10 @@
           "level": 3
         },
         {
+          "nameJa": "龍耐性",
+          "level": 3
+        },
+        {
           "nameJa": "属性吸収",
           "level": 3
         },
@@ -971,9 +975,6 @@
       ],
       "groupSetSkills": [
         {
-          "nameJa": "龍耐性 Lv3 （自由枠）"
-        },
-        {
           "nameJa": "兇爪竜の力 Ⅰ"
         },
         {
@@ -987,6 +988,121 @@
     },
     {
       "id": "sword-shield_wildsProgression_0",
+      "weaponType": "sword-shield",
+      "category": "wildsProgression",
+      "kind": "full-build",
+      "buildName": "リオレイア片手剣装備（HR9〜19）",
+      "sourceUrl": "https://game8.jp/mhwilds/675620",
+      "weapon": "プリンセスレイピアⅠ",
+      "weaponStats": "攻撃：224／属性：毒120 ／会心：15%",
+      "weaponSlots": [],
+      "weaponDecos": [],
+      "artian": false,
+      "artianRaw": null,
+      "armor": [
+        {
+          "slot": "head",
+          "nameJa": "護兇爪竜ヘルム",
+          "slots": [
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "加護珠【1】",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "slot": "chest",
+          "nameJa": "護鎖刃竜メイル",
+          "slots": [],
+          "augmentRaw": null,
+          "decos": []
+        },
+        {
+          "slot": "arms",
+          "nameJa": "護兇爪竜アーム",
+          "slots": [
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "加護珠【1】",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "slot": "waist",
+          "nameJa": "護兇爪竜コイル",
+          "slots": [],
+          "augmentRaw": null,
+          "decos": []
+        },
+        {
+          "slot": "legs",
+          "nameJa": "護兇爪竜グリーヴ",
+          "slots": [
+            1
+          ],
+          "augmentRaw": null,
+          "decos": [
+            {
+              "nameJa": "加護珠【1】",
+              "count": 1
+            }
+          ]
+        }
+      ],
+      "armorDecos": [
+        {
+          "nameJa": "加護珠【1】",
+          "count": 3
+        }
+      ],
+      "talisman": {
+        "nameJa": "鎖刃の護石Ⅰ",
+        "poolSlots": [],
+        "decos": []
+      },
+      "skillTotals": [
+        {
+          "nameJa": "ガード性能",
+          "level": 2
+        },
+        {
+          "nameJa": "攻めの守勢",
+          "level": 1
+        },
+        {
+          "nameJa": "連撃",
+          "level": 3
+        },
+        {
+          "nameJa": "精霊の加護",
+          "level": 3
+        },
+        {
+          "nameJa": "鎖刃刺撃",
+          "level": 2
+        },
+        {
+          "nameJa": "属性やられ耐性",
+          "level": 1
+        },
+        {
+          "nameJa": "裂傷耐性",
+          "level": 1
+        }
+      ],
+      "groupSetSkills": [],
+      "complete": true
+    },
+    {
+      "id": "sword-shield_wildsProgression_1",
       "weaponType": "sword-shield",
       "category": "wildsProgression",
       "kind": "full-build",

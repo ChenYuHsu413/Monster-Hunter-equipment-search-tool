@@ -1126,6 +1126,27 @@
       "weaponType": "long-sword",
       "category": "wildsProgression",
       "kind": "full-build",
+      "buildName": "ドドブランゴの武器もリオレウス武器並みに優秀",
+      "sourceUrl": "https://game8.jp/mhwilds/675623",
+      "weapon": "ブランベルジュⅠ",
+      "weaponStats": "攻撃：660／属性：氷160／会心：-10%",
+      "weaponSlots": [],
+      "weaponDecos": [],
+      "artian": false,
+      "artianRaw": null,
+      "armor": [],
+      "armorDecos": [],
+      "talisman": null,
+      "skillTotals": [],
+      "groupSetSkills": [],
+      "complete": false,
+      "excludeReason": "a:non-fullbuild"
+    },
+    {
+      "id": "long-sword_wildsProgression_2",
+      "weaponType": "long-sword",
+      "category": "wildsProgression",
+      "kind": "full-build",
       "buildName": "連撃5＋兇爪竜の力4部位の高火力装備（HR20〜39）",
       "sourceUrl": "https://game8.jp/mhwilds/675623",
       "weapon": "飛竜刀【朱】Ⅰ",
@@ -1286,6 +1307,27 @@
         }
       ],
       "complete": true
+    },
+    {
+      "id": "long-sword_wildsProgression_3",
+      "weaponType": "long-sword",
+      "category": "wildsProgression",
+      "kind": "full-build",
+      "buildName": "HR35〜はラバラバリナ武器への乗り換えがおすすめ",
+      "sourceUrl": "https://game8.jp/mhwilds/675623",
+      "weapon": "刺花刀オルニトクス",
+      "weaponStats": "攻撃：660／属性：麻痺250／会心：15%",
+      "weaponSlots": [],
+      "weaponDecos": [],
+      "artian": false,
+      "artianRaw": null,
+      "armor": [],
+      "armorDecos": [],
+      "talisman": null,
+      "skillTotals": [],
+      "groupSetSkills": [],
+      "complete": false,
+      "excludeReason": "a:non-fullbuild"
     }
   ]
 }
