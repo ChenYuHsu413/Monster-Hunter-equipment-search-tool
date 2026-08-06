@@ -150,6 +150,31 @@ armor `防具｜スロット｜装飾品`（另 1 例 `防具｜スキル｜必�
   一致（JP 資料複核仍最優）。**(f) EFR sanity 4/4** 降冪且首位非平凡（GS 2540／CB 1453／DB 284／bow 1038）。
 - **(d) Gogmazios 借用件 32 套**：`setBonusId=wsb_178`+`extraSetBonusIds` 聯集計數（smoke-wilds ⑦/⑦b 背書）。
 
+### §W-G 推薦頁日文殘留：診斷分類 + 修正（2026-08-05）
+
+使用者目視 Wilds 推薦頁日文殘留。dev server 逐卡掃描 + 資料層全量列舉，分三類（兩類修法不同、禁混修）：
+
+| 類別 | 出現點 | 筆數 | 例 | 判定 → 修法 |
+|---|---|---|---|---|
+| **(A1)** | RNG 護石名（有 mhdb zh）| 17 | `栄世の護石` | 解析鏈未達 zh（無池 id、只存 rawNameJa）→ importer 補 `rawNameZh`（mhdb zh-Hant→`榮世護石`）|
+| **(A2)** | RNG 護石名（泛稱、無 mhdb zh）| 15 | `鑑定護石` | mhdb 無此項、字形本即 CJK 可讀 → 保留 |
+| **(A3 bug)** | 護石名解析錯誤 | 1 | `武①` | scraper talisman 3-cell 泛稱 RNG 變體 `["護石",武①,珠]` 把池洞標記誤當名 → 修 parseArmorTable |
+| **(B)** | buildName 標題 | 105 | `束縛反攻+力自慢+無尽蔵型の高火力装備` | 來源自帶、DB 無譯名 → 機械合成 zh `synthName` + JP 原題小字次要保留 |
+| 遊戲實體（武/防/珠/技）| — | **0** | — | 全走 id→zh，映射 100%、fallback 0（實測 weapon/armor/deco 無 id 者＝0）|
+| (C) UI 靜態字串 | — | **0** | — | 既有 i18n 已全 zh，無殘留 |
+
+- **(A) 修解析鏈（非硬翻）**：實體名一律 id→zh-Hant；RNG 護石雖無「可搜尋池 id」（設計上不建模），但
+  具名者（栄世/未解/秘歴/史伝）在 mhdb 有 zh rank name → importer 補 `charm.rawNameZh`，UI fallback 序
+  `rawNameZh ?? rawNameJa ?? rawNameEn`。`武①` 為抽取 bug（非翻譯問題），修 scraper 後重抽（僅 dual-blades 1 檔變動、逐位元）。
+- **(B) 合成規則（決定性、可重跑，`synthTitle`）**：`synthName` = 已解析 skillTotals 依
+  **（等級÷上限 降冪 → 等級 → 名序）取前 3 軸心技能，以「／」連接**（達人藝 1/1 等定義性低上限技能不被
+  裸等級砍掉）。**不含武器種前綴**（卡片已在該武器分頁下、且推薦頁武器網格 zh 標籤源＝`@/lib/data`
+  與 wilds `weaponTypes.json` 不一致〔盾斧 vs 充能斧〕，避免引入 zh↔zh 矛盾）。UI 主標題顯示 synthName、
+  JP `buildName` 降為小字（`原題：…`，tooltip 帶全文）→ 資料不丟。World 無 synthName → 卡片零變化。
+- **驗收**：dev server 全 14 武種兩分區逐卡掃描，**假名（ひらがな/カタカナ）殘留＝0**（排除刻意保留的 (B) 原題小字）；
+  零 console error。**Rise/World 推薦頁 DOM 零變化**：World `recommended-builds.json` 無 `synthName`/`rawNameZh`
+  欄（UI 分支以資料存在 gated、World 不觸發）、Rise 走 `BuildCard`（未動）；World 卡實測標題仍＝buildName、無原題小字。
+
 ## Phase 6b 續跑（2026-08-03）— 快取遺失事件、方法修正、版控修正
 
 **① 快取遺失事件（開工驗上一手）**：Phase 6 前半的 Game8 抽取快取產於上一手機器

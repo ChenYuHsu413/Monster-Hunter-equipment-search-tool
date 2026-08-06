@@ -54,13 +54,19 @@ export function WorldBuildCard({
       <CardHeader className="flex-row items-start justify-between gap-2 space-y-0 border-b bg-muted/30 py-2.5">
         <div className="min-w-0">
           <div className="flex items-center gap-1.5">
-            <div className="truncate text-sm font-bold">{build.buildName}</div>
+            {/* Wilds（W-G）：synthName＝zh 合成標題（主要）；無 synthName（World）維持 buildName，DOM 零變化。 */}
+            <div className="truncate text-sm font-bold">{build.synthName || build.buildName}</div>
             {build.metaVersion && (
               <Badge variant="outline" className="shrink-0 px-1 py-0 text-[10px] font-normal">
                 Ver {build.metaVersion}
               </Badge>
             )}
           </div>
+          {build.synthName && (
+            <div className="truncate text-[11px] text-muted-foreground/80" title={build.buildName}>
+              原題：{build.buildName}
+            </div>
+          )}
           <a
             href={build.sourceUrl}
             target="_blank"
@@ -123,7 +129,7 @@ export function WorldBuildCard({
               護石
             </Badge>
             <span className="min-w-0 flex-1 truncate text-[13px]">
-              {build.charm ? resolver.charm(build.charm.id, build.charm.rawNameJa ?? build.charm.rawNameEn).name : "無"}
+              {build.charm ? resolver.charm(build.charm.id, build.charm.rawNameZh ?? build.charm.rawNameJa ?? build.charm.rawNameEn).name : "無"}
             </span>
           </div>
         </div>

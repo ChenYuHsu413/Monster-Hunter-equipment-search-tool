@@ -164,11 +164,20 @@ function parseArmorTable(tableHtml) {
     const cellsHtml = cellsHtmlOf(r);
     const c0 = cells[0] || "";
     if (c0 === "防具" && cells.some((c) => /スロット/.test(c))) continue; // 標頭
-    // 護石列：cell0='護石' 標籤（上位）或 cell0 含 '護石'（最強）。
+    // 護石列：cell0='護石' 標籤（上位/泛稱）或 cell0 含 '護石'（最強具名）。
     const isCharmRow = c0 === "護石" || /護石/.test(c0);
     if (isCharmRow) {
-      const nameJa = c0 === "護石" ? textOf(cellsHtml[1] || "") : c0;
-      const poolSlots = parsePoolSlots(cells.find((c) => /[武防][①②③④]/.test(c)) || "");
+      const poolCell = cells.find((c) => /[武防][①②③④]/.test(c)) || "";
+      // c0='護石' 時 cell1 可能是①具名護石（上位 2-cell）或②池洞標記（最強泛稱 RNG 3-cell，如「武①」）。
+      // cell1 為純池洞標記 → 泛稱鑑定護石（無具名，避免把「武①」誤當護石名）。
+      let nameJa;
+      if (c0 === "護石") {
+        const c1 = (cells[1] || "").trim();
+        nameJa = c1 && /^[武防①②③④ー－\-\s]+$/.test(c1) ? "鑑定護石" : (textOf(cellsHtml[1] || "") || "鑑定護石");
+      } else {
+        nameJa = c0; // 最強具名護石
+      }
+      const poolSlots = parsePoolSlots(poolCell);
       // 護石格技能+珠（<hr> 分隔）：珠進 armorDecos 聚合，技能忽略（skillTotals 為權威）。
       const charmDecoCell = cellsHtml[cellsHtml.length - 1] || "";
       const charmDecos = parseDecosFromCell(charmDecoCell);

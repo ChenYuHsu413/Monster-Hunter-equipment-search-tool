@@ -135,14 +135,17 @@ export type RecommendedBuild = {
   category: RecommendedCategory;
   kind: RecommendedKind;
   buildName: string;
+  /** Wilds（尾巴 W-G）：JP buildName 無譯名 → 機械合成 zh 顯示標題（主要顯示，buildName 降為小字）。 */
+  synthName?: string;
   stageName?: string;
   /** Wilds：來源資料版本（Game8 Ver，如 "1.041"）。 */
   metaVersion?: string;
   weapons?: RecoWeapon[];
   armor?: RecoArmor[];
   talisman?: RecoTalisman | null;
-  /** World：護石（資料裝備，直接對 id）。Rise 用 talisman。Wilds（尾巴 W-F）用 rawNameJa。 */
-  charm?: { id?: string; rawNameEn?: string; rawNameJa?: string } | null;
+  /** World：護石（資料裝備，直接對 id）。Rise 用 talisman。Wilds（尾巴 W-F）用 rawNameJa；
+   *  RNG 鑑定護石無 id，rawNameZh 為 mhdb zh-Hant 顯示名（尾巴 W-G）。 */
+  charm?: { id?: string; rawNameEn?: string; rawNameJa?: string; rawNameZh?: string } | null;
   /** World：此配裝依賴的未模擬系統旗標（引擎不模擬，UI 標示＋匯入點名）。 */
   unmodeled?: {
     awakened?: boolean;

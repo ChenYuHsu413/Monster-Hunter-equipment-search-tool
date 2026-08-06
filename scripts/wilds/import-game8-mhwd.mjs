@@ -39,6 +39,7 @@ const decoJa = load(path.join(CACHE, "decorations.ja.json"));
 const charmJa = load(path.join(CACHE, "charms.ja.json"));
 const skillJa = load(path.join(CACHE, "skills.ja.json"));
 const skillZh = load(path.join(CACHE, "skills.zh-Hant.json")); // id → 繁中 name 橋接
+const charmZhData = load(path.join(CACHE, "charms.zh-Hant.json")); // RNG 護石顯示名（zh-Hant）
 const skills = loadRepo("src/data/wilds/skills.json"); // 繁中 name → maxLevel
 const projCharms = loadRepo("src/data/wilds/charms.json"); // 可搜尋護石池（183；RNG 鑑定 4 家族已排除）
 const manifest = loadRepo("src/data/wilds/manifest.json");
@@ -54,6 +55,16 @@ for (const c of charmJa) for (const r of c.ranks || []) charmMap.set(normJa(r.na
 const zhById = new Map(skillZh.map((s) => [s.id, s.name]));
 const skillMap = new Map(skillJa.map((s) => [normJa(s.name), zhById.get(s.id)]).filter(([, zh]) => zh));
 const skillMax = Object.fromEntries(skills.map((s) => [s.name, s.maxLevel]));
+// RNG 護石顯示名：ja rank name → zh-Hant rank name（同 rank id 橋接）。具名鑑定護石（栄世→榮世護石）有 zh；
+// 泛稱「鑑定護石」mhdb 無此項 → 無 zh（其字形本即 CJK 可讀）。
+const charmZhByRankId = new Map();
+for (const c of charmZhData) for (const r of c.ranks || []) charmZhByRankId.set(r.id, r.name);
+const charmRankIdByJa = new Map();
+for (const c of charmJa) for (const r of c.ranks || []) charmRankIdByJa.set(normJa(r.name), r.id);
+const charmZhFor = (name) => {
+  const rid = charmRankIdByJa.get(normJa(name));
+  return rid != null ? charmZhByRankId.get(rid) : undefined;
+};
 
 // 屬性泛稱技（generic，依武器屬性自選 → placeholder，非單一 id）。具體元素技（火属性攻撃強化 等）不在此、正常解析。
 const PLACEHOLDER_SKILLS = new Set(
@@ -115,6 +126,21 @@ function mapSkillTotals(list) {
   return out;
 }
 
+/**
+ * (B) buildName 為 JP 來源自帶標題、DB 無譯名 → 機械合成 zh 顯示名（決定性、可重跑）。
+ * 規則：`<軸心技能 zh × top-3，以／連接>`；軸心＝已解析 skillTotals 依（等級÷上限 降冪 → 等級 → 名序）
+ * 取前 3（達人藝 1/1 等定義性低上限技能不被裸等級砍掉）。武器種不入標題（卡片已在該武器分頁下、避免與
+ * 網格 zh 標籤源不一致）。JP 原題於 UI 以小字次要保留（不丟資料）。回傳 null＝無可解析技能（UI 退回 buildName）。
+ */
+function synthTitle(mappedSkillTotals) {
+  const rows = mappedSkillTotals
+    .filter((s) => s.id)
+    .map((s) => ({ name: s.id, level: s.level, ratio: s.level / (skillMax[s.id] || s.level) }));
+  rows.sort((a, b) => b.ratio - a.ratio || b.level - a.level || (a.name < b.name ? -1 : 1));
+  const top = rows.slice(0, 3).map((r) => r.name);
+  return top.length ? top.join("／") : null;
+}
+
 // ───────── 匯入 ─────────
 const allBuilds = [];
 for (const f of readdirSync(G8).filter((x) => x.endsWith(".json")).sort()) {
@@ -139,14 +165,19 @@ for (const f of readdirSync(G8).filter((x) => x.endsWith(".json")).sort()) {
       const name = b.talisman.nameJa;
       const id = resolveCharm(name);
       if (id) { stat.entities++; stat.direct++; charm = { id, rawNameJa: name }; }
-      else { stat.rngCharm++; rngCharm = true; charm = { rawNameJa: name }; } // RNG/鑑定 → 不建模
+      else {
+        // RNG/鑑定 → 不建模；顯示名優先 mhdb zh-Hant（栄世→榮世護石），無則保留 rawNameJa（泛稱本即 CJK 可讀）。
+        stat.rngCharm++; rngCharm = true;
+        const zh = charmZhFor(name);
+        charm = zh ? { rawNameJa: name, rawNameZh: zh } : { rawNameJa: name };
+      }
     }
     const build = {
       id: b.id,
       weaponType: b.weaponType,
       category: b.category,
       kind: "full-build",
-      buildName: b.buildName,
+      buildName: b.buildName, // JP 原題（UI 小字次要保留）
       metaVersion,
       sourceUrl: b.sourceUrl,
       weapons: [weapon],
@@ -156,6 +187,8 @@ for (const f of readdirSync(G8).filter((x) => x.endsWith(".json")).sort()) {
       skillTotals: mapSkillTotals(b.skillTotals),
       groupSetSkills: b.groupSetSkills.map((g) => ({ rawNameJa: g.nameJa })),
     };
+    const synth = synthTitle(build.skillTotals); // (B) zh 合成標題（主要顯示）
+    if (synth) build.synthName = synth;
     const unmodeled = {};
     if (b.artian) unmodeled.artian = true;
     if (rngCharm) unmodeled.rngCharm = true;
