@@ -1,5 +1,6 @@
 /**
- * Wilds 主源抓取：mhdb-wilds API（wilds.mhdb.io），en + zh-Hant 兩 locale。
+ * Wilds 主源抓取：mhdb-wilds API（wilds.mhdb.io），en + zh-Hant + ja 三 locale
+ * （ja 為尾巴 W-F 推薦來源換 game8.jp 後、映射用；重跑零抓取、缺檔才抓）。
  * 產出快取到 scripts/wilds/.cache/{category}.{locale}.json（gitignore，重跑零抓取）。
  *
  *   node scripts/wilds/fetch-mhdb.mjs          # 缺檔才抓（快取在時零抓取）
@@ -17,7 +18,7 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const CACHE = path.join(HERE, ".cache");
 const BASE = "https://wilds.mhdb.io";
 const CATEGORIES = ["armor", "weapons", "decorations", "charms", "skills"];
-const LOCALES = ["en", "zh-Hant"];
+const LOCALES = ["en", "zh-Hant", "ja"]; // ja：尾巴 W-F 推薦來源換 game8.jp 後，映射走 ja locale
 const force = process.argv.includes("--force");
 
 mkdirSync(CACHE, { recursive: true });

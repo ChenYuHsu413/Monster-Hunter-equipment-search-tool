@@ -97,10 +97,11 @@ function engineSum(b) {
 let aOk = 0, aBad = 0; const aEx = [];
 for (const b of builds) {
   const miss = [];
-  for (const a of b.armor ?? []) if (!a.id || !armorById[a.id]) miss.push(`armor:${a.rawNameEn}`);
-  if (!b.weapons?.[0]?.id || !weaponById[b.weapons[0].id]) miss.push(`weapon:${b.weapons?.[0]?.rawNameEn}`);
-  for (const d of allDecosOf(b)) if (!d.id || !decoById[d.id]) miss.push(`deco:${d.rawNameEn}`);
-  if (b.charm && (!b.charm.id || !charmById[b.charm.id])) miss.push(`charm:${b.charm.rawNameEn}`);
+  for (const a of b.armor ?? []) if (!a.id || !armorById[a.id]) miss.push(`armor:${a.rawNameJa}`);
+  if (!b.weapons?.[0]?.id || !weaponById[b.weapons[0].id]) miss.push(`weapon:${b.weapons?.[0]?.rawNameJa}`);
+  for (const d of allDecosOf(b)) if (!d.id || !decoById[d.id]) miss.push(`deco:${d.rawNameJa}`);
+  // 護石：RNG「鑑定護石」無 id 為 unmodeled，非未解析（不計為缺）。
+  if (b.charm && !b.unmodeled?.rngCharm && (!b.charm.id || !charmById[b.charm.id])) miss.push(`charm:${b.charm.rawNameJa}`);
   if (miss.length === 0) aOk++; else { aBad++; if (aEx.length < 8) aEx.push(`${b.id}: ${miss.join(",")}`); }
 }
 console.log("━━━ (a) 裝備層重現（build 列裝備全對到 DB id）━━━");
@@ -159,13 +160,15 @@ console.log(`  引擎少算（Game8 多）：Artian roll 未模擬 ${cat.deficit
 if (deficitOtherEx.length) { console.log("  非 Artian 少算範例（Game8 摘要噪音/邊際差）："); deficitOtherEx.forEach((e) => console.log("    " + e)); }
 
 // ═══ (d) Gogmazios 借用件：extraSetBonusIds 聯集計數 ═══
-const gog = builds.filter((b) => b.armor?.some((a) => /Gogmazios/i.test(a.rawNameEn || "")));
+// JP 名為「ゴグ○○」（ゴグマジオス）；以裝備資料的 extraSetBonusIds 為準（借用件才有）。
+const isGog = (a) => a.id && (armorById[a.id]?.extraSetBonusIds?.length || /ゴグ/.test(a.rawNameJa || ""));
+const gog = builds.filter((b) => b.armor?.some(isGog));
 console.log(`\n━━━ (d) Gogmazios 借用件 set 聯集計數（${gog.length} 套）━━━`);
-{
+if (gog.length) {
   const b = gog.find((x) => x.id.includes("charge-blade")) ?? gog[0];
-  const piece = b.armor.find((a) => /Gogmazios/i.test(a.rawNameEn || ""));
+  const piece = b.armor.find(isGog);
   const ar = armorById[piece.id];
-  console.log(`  例 ${b.id} ${piece.rawNameEn}：setBonusId=${ar?.setBonusId} + extra=${JSON.stringify(ar?.extraSetBonusIds)}（computeSetBonusSkills 聯集 +1，smoke-wilds ⑦/⑦b 背書）`);
+  console.log(`  例 ${b.id} ${piece.rawNameJa}：setBonusId=${ar?.setBonusId} + extra=${JSON.stringify(ar?.extraSetBonusIds)}（computeSetBonusSkills 聯集 +1，smoke-wilds ⑦/⑦b 背書）`);
 }
 
 // ═══ (e) N 校準 ═══
@@ -194,7 +197,8 @@ function calibrateN(label, pool) {
   }
 }
 calibrateN("wildsEndgame", builds.filter((b) => b.category === "wildsEndgame"));
-calibrateN("wildsHighRank", builds.filter((b) => b.category === "wildsHighRank"));
+// JP（尾巴 W-F）：最強→endgame、上位→progression；wildsHighRank 無 JP 對應層（空）。校準改用 progression。
+calibrateN("wildsProgression", builds.filter((b) => b.category === "wildsProgression"));
 
 // ═══ (f) EFR 排序 sanity ═══
 console.log("\n━━━ (f) EFR 排序 sanity（endgame 核心技能 → 搜尋結果 EFR 降冪）━━━");

@@ -15,13 +15,15 @@
       "ver": "1.040"
     },
     "game8": {
-      "scrapedAt": "2026-08-03",
-      "attribution": "https://game8.co/games/Monster-Hunter-Wilds",
+      "scrapedAt": "2026-08-05",
+      "site": "game8.jp",
+      "jpUpdatedAt": "2026.08.05",
+      "attribution": "https://game8.jp/mhwilds/673589",
+      "note": "尾巴 W-F 換源 game8.co→game8.jp（日文原站）；見 docs/wilds-game8-audit.md §W-F。",
       "recommendedBuilds": {
-        "total": 173,
+        "total": 105,
         "byCategory": {
-          "wildsEndgame": 96,
-          "wildsHighRank": 38,
+          "wildsEndgame": 66,
           "wildsProgression": 39
         }
       }
