@@ -33,7 +33,7 @@
 | 複合珠 solver | 珠皆單技能（複合珠 gate 恆空，逐位元不變） | Lv4 雙技能珠支援 + 貪婪失敗後**有界交換後處理**（見「誠實揭露」） | 複合珠 173，沿用同一有界修復 gate（`.skills` ≥2 必要技能時觸發） |
 | EFR 模型 | 有效攻擊 × 斬味 × 期望會心 ＋ 屬性 | 同介面；另含 **World 斬味期望倍率模型**（見下） | 同介面 `efr-wilds`；**attack = raw 尺度**（Wilds 顯示即 raw）、斬味 base=匠0 + handicraft 延展 |
 | 簡化輸入 | 傀異鍊成（輸入鍊成後技能與洞數） | 武器強化（覺醒／客製強化，僅固定武器；輸入結果值 delta） | **Artian 武器**（隨機強化結果值，不逐能力模擬；結果卡標未模擬旗標） |
-| 推薦配裝 | **542 筆**（14 武種 × 6 分類：下位／上位過渡／上位畢業／大師拓荒／大師畢業／推薦武器） | **179 筆四分區**（上位 55／進度拓荒 42／畢業 Meta 69／畢業旗艦 13） | **173 筆三分區**（進度拓荒 39／上位 38／畢業 96；每筆 `metaVersion` 1.041） |
+| 推薦配裝 | **542 筆**（14 武種 × 6 分類：下位／上位過渡／上位畢業／大師拓荒／大師畢業／推薦武器） | **179 筆四分區**（上位 55／進度拓荒 42／畢業 Meta 69／畢業旗艦 13） | **105 筆二分區**（進度拓荒 39／畢業 66；來源 game8.jp，每筆 `metaVersion` 1.041 + JP 更新日） |
 
 > 「簡化輸入」共通哲學：**輸入結果值、不模擬取得過程**。傀異鍊成／武器強化／Artian 都套用到裝備**淺拷貝**（原資料不動）後進搜尋／EFR。
 
@@ -67,15 +67,16 @@
 - **Low Rank 推薦配裝 deferred**：Game8 有獨立 Low Rank 頁（來源存在），本輪未匯入，列計畫尾巴候選（`wildsLowRank`）——記載存在但 defer，非虛構分類（見 `docs/wilds-game8-audit.md` §2）。
 
 ### Wilds 推薦配裝：資料保證 vs Game8 摘要噪音（重要，勿誤讀為「全驗證」）
+> **來源＝日文原站 game8.jp**（尾巴 W-F 換源，原英文 game8.co 為計畫層選型偏差；見 `docs/wilds-game8-audit.md §W-F`）。
 - **推薦資料本身的硬保證（`validate-wilds-builds.mjs` 三層分析，Phase Z）**：
-  - **(a) 裝備層重現 173/173（100%）**：每筆 build 列出的防具/武器/珠/護石全對到 DB 實體（映射 2175/2175 直通、override 空）。
-  - **(b) 引擎自洽 173/173（100%）**：對每套實際裝備，**真實引擎函式**（`skill-calculator`）算出的技能與各件資料獨立加總**逐位元一致**——引擎對已知裝備計算正確。
+  - **(a) 裝備層重現 105/105（100%）**：每筆 build 列出的防具/武器/珠/池內護石全對到 DB 實體（映射 1487/1487 直通、別名 6、真缺 0；RNG 鑑定護石 32 為 unmodeled、不計缺）。
+  - **(b) 引擎自洽 105/105（100%）**：對每套實際裝備，**真實引擎函式**（`skill-calculator`）算出的技能與各件資料獨立加總**逐位元一致**——引擎對已知裝備計算正確。
   - **(a)+(b) 即本工具保證的：忠實重現裝備 ＋ 正確計算技能。**
-- **Game8 的 `skillTotals` 是人工編修的摘要參考值，非其所列裝備的忠實加總**：三層分析的 (c) 層顯示兩者差異**雙向**且逐項可歸因——
-  - **引擎多算（Game8 摘要漏列其自列裝備提供的技能）**：元素技 49／武器內建 21／set·group 顯示分離 15／其他 24 技能實例。
-  - **引擎少算（Game8 宣稱較多）**：**Artian 武器隨機 roll 未模擬 259 技能實例（主體）**／非 Artian 邊際 41（mhdb 武器缺內建技、或 Game8 摘要與其自列裝備不一致）。
-  - 僅 **11/173** 套引擎自洽值與 Game8 摘要 ±1 全合——**這不是達成率，而是 Game8 摘要作為對照基準的噪音程度**。
-- **UI 揭露**：Artian build（141/173）結果卡標「**此配裝依賴 Artian 武器隨機強化，引擎不模擬**」旗標，匯入搜尋時略過其能力、EFR 會低於 Game8 實際值。
+- **Game8 的 `skillTotals` 是人工編修的摘要參考值，非其所列裝備的忠實加總**（JP 表較 EN 完整、但仍為摘要）：三層分析的 (c) 層顯示兩者差異**雙向**且逐項可歸因——
+  - **引擎多算（Game8 摘要漏列其自列裝備提供的技能）**：set·group 顯示分離 22／元素技 7／武器內建 13／其他 22 技能實例。
+  - **引擎少算（Game8 宣稱較多）**：**Artian 武器隨機 roll 未模擬 30 套（主體）**／非 Artian 21（Wilds 武器內建技不在資料模型〔`weapons.json` 無 skills 欄、mhdb 源亦 `skills:[]`〕、或 Game8 摘要噪音）。
+  - **33/105（31%）** 套引擎自洽值與 Game8 摘要 ±1 全合（**遠高於 EN 時代 12/173＝7%**，JP 表較完整）——**但這不是達成率，而是 Game8 摘要作為對照基準的噪音程度**。
+- **UI 揭露**：Artian build（51/105）結果卡標「**此配裝依賴 Artian 武器隨機強化，引擎不模擬**」旗標；RNG 鑑定護石 build 標「**RNG 鑑定護石（隨機錬成、不建模）**」；匯入搜尋時略過其能力、EFR 會低於 Game8 實際值。
 
 ## 技術棧與架構
 
@@ -172,7 +173,7 @@ node scripts/world/build-zh-name-map.mjs # Kiranico id 配對補 zh
 node scripts/world/audit-world-data.mjs  # 獨立外部源交叉稽核
 ```
 
-**Wilds**：主源＝**mhdb-wilds**（`wilds.mhdb.io`，en + zh-Hant 兩 locale，snapshot 日期 + 全類目筆數指紋固化於 `manifest.json`，重跑決定性、pin Ver 1.041）；wilds id 由 mhdb id 派生（`wa_/ww_/wd_/wc_`）。推薦配裝＝Game8 Wilds High Rank 14 頁（`fetch → 靜態表解析 → 抽取結果進版控 .cache/game8/*.json`；原始 HTML 續 gitignore）。產出檔一律機械產生、**絕不手改**。
+**Wilds**：主源＝**mhdb-wilds**（`wilds.mhdb.io`，en + zh-Hant + **ja** 三 locale〔ja 為推薦來源 game8.jp 映射用〕，snapshot 日期 + 全類目筆數指紋固化於 `manifest.json`，重跑決定性、pin Ver 1.041）；wilds id 由 mhdb id 派生（`wa_/ww_/wd_/wc_`）。推薦配裝＝**game8.jp**「最強装備・おすすめ装備」14 武種 × 2 分頁（最強＋上位；`fetch → 靜態表解析 → 抽取結果進版控 .cache/game8/*.json`；原始 HTML 續 gitignore）。JP nameJa 僅映射鍵、顯示走 zh-Hant。產出檔一律機械產生、**絕不手改**。
 
 ```bash
 node scripts/wilds/fetch-mhdb.mjs            # 抓 mhdb-wilds en+zh locale 到 .cache
@@ -188,7 +189,7 @@ node scripts/wilds/diff-report.mjs           # 版本漂移 diff（Ascendance �
 ## 資料致謝
 
 - 遊戲資料來源：[Kiranico](https://mhrise.kiranico.com/)（Rise）、[MHWorldData](https://github.com/gatheringhallstudios/MHWorldData) / [Kiranico MH:World](https://mhworld.kiranico.com/)（World）、[mhdb-wilds](https://wilds.mhdb.io/)（Wilds）。
-- 推薦配裝參考自 [Game8](https://game8.co/)（Rise / World / Wilds Builds），並對齊官方譯名。
+- 推薦配裝參考自 Game8（Rise [game8.jp/mhrise](https://game8.jp/mhrise) ／ World [game8.co](https://game8.co/games/Monster-Hunter-World) ／ Wilds [game8.jp/mhwilds](https://game8.jp/mhwilds)），並對齊官方譯名。
 - 武器／防具部位圖示：[OthelloRhin/MHW_Icons_SVG](https://github.com/OthelloRhin/MHW_Icons_SVG)（MIT License, © 2020 Thibault "Othello" BENOIT）。
 
 本專案為個人非商業用途的配裝工具。《Monster Hunter Rise: Sunbreak》／《Monster Hunter World: Iceborne》／《Monster Hunter Wilds》© CAPCOM。

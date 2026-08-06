@@ -190,13 +190,22 @@
 - **Game8 快取固化爬取（Phase 6b）**：Game8 Wilds 頁**非 JS-render-gated**（premise 翻案，實測 `fetch()`
   得完整靜態 HTML）→ `fetch → 靜態表解析 → 抽取結果進版控（.cache/game8/*.json）`，原始 HTML 續 gitignore。
   版控修正理由：跨機單副本風險已實際發生（Phase 6b 開工即遇快取遺失），provenance 由 git 歷史強制。
-- **分區三收斂（不照抄 World 四分區）**：Game8 Wilds 5 個 HR 層級 → 收斂 3 分區（wildsEndgame HR100 /
-  wildsHighRank HR50 / wildsProgression HR9–36）。**以實測收斂，非套用 World 的四分區。**
+- **推薦來源換 game8.co→game8.jp（尾巴 W-F，`docs/wilds-game8-audit.md §W-F`）**：Phase 6 誤用英文站
+  （計畫層 prompt 未指明來源、World 已先改用 game8.co、Wilds 沿用）。W-F 換回日文原站。**兩前提實測部分反轉、
+  據實記錄，不迎合原述**：① 前例＝Rise 用 game8.jp、World 才是 EN 者；② 覆蓋 EN 173 > JP 105（原述「遠遜」
+  反向）。**換源理由改立於保真度**：JP 原生詞彙**直通 mhdb `ja` locale**（`import-game8-mhwd` 映射鍵，顯示
+  仍走 zh-Hant）、免英文有損轉譯、技能表較完整、護石池別標註、Rise 前例一致。**RNG 護石判定＝解析不到
+  「池內」wc_id**（涵蓋泛稱鑑定護石 + 具名 未解/秘歴/栄世/史伝の護石＝mhdb skills 空、import-wilds「RNG 4 排除」），
+  非硬編名單。scraper 兩 layout（最強＋上位）+ **6 表頭變體容錯**（`武器`/`メイン武器`/`武器／強化パーツ`；
+  漏認即靜默合併 build，Phase 1 探測 99→定版 105）。metaVersion「1.041 + JP 更新日」。
+- **分區收斂（尾巴 W-F 定版）**：JP 僅 **2 editorial 層** → `wildsEndgame`←最強(66)、`wildsProgression`←上位(39)；
+  `wildsHighRank` 無 JP 對應層＝空（UI `.filter(len>0)` 自動隱藏，零 label 改動）。序盤 defer（`wildsLowRank`）。
+  〔Phase 6b 原「三收斂 96/38/39」為 EN 結構，已被 W-F 取代。〕**照 JP 實測收斂，不硬湊 EN 分區筆數感。**
 - **lowRank defer 裁決**：Game8 有獨立 Low Rank 頁（來源存在），本輪未匯入、列尾巴候選（`wildsLowRank`）；
   方向與尾巴 A 禁的「建來源不存在的幽靈分類」**相反**（記載存在但 defer），合規。
 - **Phase Z achievability 翻案**（`docs/wilds-game8-audit.md` §3b）：抽查證實 **Game8 `skillTotals` 是
   人工編修摘要、非其自列裝備的忠實加總**（雙向不符：漏列武器內建/元素技；偶爾等級與自列珠不符）。故
-  achievability **不可用單一 exact 率表述**。重構為三層：**(a) 裝備層重現 173/173、(b) 引擎自洽 173/173
-  （真實 skill-calculator 聚合 == 各件加總，逐位元）＝我方硬保證**；(c) Game8 偏差為對照噪音刻畫（引擎
-  多算 = 摘要漏列；引擎少算 = Artian roll 259 主體 + 非 Artian 41）。**核心主張＝(a)+(b)，非 exact 率。**
-  文件措辭紀律：Game8 skillTotals 一律定性「人工摘要參考值」，禁用「173 筆全驗證」類措辭。
+  achievability **不可用單一 exact 率表述**。重構為三層：**(a) 裝備層重現、(b) 引擎自洽（真實 skill-calculator
+  聚合 == 各件加總，逐位元）＝我方硬保證**；(c) Game8 偏差為對照噪音刻畫。**核心主張＝(a)+(b)，非 exact 率。**
+  〔**W-F 換 JP 後數字**：105 筆，(a)/(b) 105/105、(c) 33/105 clean（遠高於 EN 12/173）；此定性對 JP 仍成立。〕
+  文件措辭紀律：Game8 skillTotals 一律定性「人工摘要參考值」，禁用「筆數全驗證」類措辭。

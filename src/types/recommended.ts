@@ -141,8 +141,8 @@ export type RecommendedBuild = {
   weapons?: RecoWeapon[];
   armor?: RecoArmor[];
   talisman?: RecoTalisman | null;
-  /** World：護石（資料裝備，直接對 id）。Rise 用 talisman。 */
-  charm?: { id?: string; rawNameEn?: string } | null;
+  /** World：護石（資料裝備，直接對 id）。Rise 用 talisman。Wilds（尾巴 W-F）用 rawNameJa。 */
+  charm?: { id?: string; rawNameEn?: string; rawNameJa?: string } | null;
   /** World：此配裝依賴的未模擬系統旗標（引擎不模擬，UI 標示＋匯入點名）。 */
   unmodeled?: {
     awakened?: boolean;

@@ -34,13 +34,14 @@ export function WorldBuildCard({
     .map(([k]) => WORLD_UNMODELED_LABELS[k] ?? k);
   const skillRows = (build.skillTotals ?? []).filter((s) => s.id);
 
-  const renderDecos = (decos?: { id?: string; rawNameEn?: string; count?: number }[]) => {
+  // 顯示名走 id→zh-Hant；對不上時 fallback 原名（World=rawNameEn／Wilds 尾巴 W-F=rawNameJa）。
+  const renderDecos = (decos?: { id?: string; rawNameEn?: string; rawNameJa?: string; count?: number }[]) => {
     if (!decos || decos.length === 0) return null;
     return (
       <div className="truncate text-[11px] text-muted-foreground">
         {decos
           .map((d) => {
-            const r = resolver.deco(d.id, d.rawNameEn);
+            const r = resolver.deco(d.id, d.rawNameJa ?? d.rawNameEn);
             return `${r.name}${d.count && d.count > 1 ? `×${d.count}` : ""}`;
           })
           .join("・")}
@@ -92,7 +93,7 @@ export function WorldBuildCard({
           {weapon && <WeaponIcon type={build.weaponType} className="h-7 w-7 text-foreground/80" title="武器" />}
           <div className="min-w-0 flex-1">
             <div className="truncate text-[15px]">
-              {resolver.weapon(weapon?.id, weapon?.rawNameEn).name}
+              {resolver.weapon(weapon?.id, weapon?.rawNameJa ?? weapon?.rawNameEn).name}
             </div>
             {renderDecos(weapon?.decorations)}
           </div>
@@ -103,7 +104,7 @@ export function WorldBuildCard({
           {ARMOR_SLOTS.map((slot) => {
             const a = armorBySlot.get(slot);
             if (!a) return null;
-            const r = resolver.armor(a.id, a.rawNameEn);
+            const r = resolver.armor(a.id, a.rawNameJa ?? a.rawNameEn);
             return (
               <div key={slot} className="flex items-center gap-2 py-1">
                 <ArmorIcon part={slot} className="h-6 w-6" />
@@ -122,7 +123,7 @@ export function WorldBuildCard({
               護石
             </Badge>
             <span className="min-w-0 flex-1 truncate text-[13px]">
-              {build.charm ? resolver.charm(build.charm.id, build.charm.rawNameEn).name : "無"}
+              {build.charm ? resolver.charm(build.charm.id, build.charm.rawNameJa ?? build.charm.rawNameEn).name : "無"}
             </span>
           </div>
         </div>
@@ -135,7 +136,7 @@ export function WorldBuildCard({
               防具珠：
               {build.buildDecorations
                 .map((d) => {
-                  const r = resolver.deco(d.id, d.rawNameEn);
+                  const r = resolver.deco(d.id, d.rawNameJa ?? d.rawNameEn);
                   return `${r.name}${d.count && d.count > 1 ? `×${d.count}` : ""}`;
                 })
                 .join("・")}

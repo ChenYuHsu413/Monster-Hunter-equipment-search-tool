@@ -241,6 +241,7 @@ export const WORLD_UNMODELED_LABELS: Record<string, string> = {
   kjarr: "Kjarr 武器自帶技",
   customAugment: "武器客製強化加成",
   artian: "Artian 武器隨機強化",
+  rngCharm: "RNG 鑑定護石（隨機錬成、不建模）",
 };
 
 /**

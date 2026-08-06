@@ -30,16 +30,19 @@
 從 hub `game8.jp/mhwilds/673589`（全武器種の最強装備・おすすめ装備まとめ）逐一實抓 14 武種三分頁，
 以 `武器｜装飾品` 表為 build 訊號機械計數（排除「ユーザーが投稿した」使用者投稿區）：
 
-| 來源 | 終盤（最強／endgame） | 高階（上位／highRank） | 進度（序盤／progression） | **合計** |
+| 來源 | 終盤（最強→endgame） | 進度（上位→progression） | 序盤（下位） | **可匯 full-build** |
 |---|---|---|---|---|
-| **EN game8.co（現行）** | 96 | 38 | 39 | **173**（Artian 141＝81%） |
-| **JP game8.jp** | 59 | 40 | 0＊ | **99** |
+| **EN game8.co（現行）** | 96 | 38（HR50）+ 39（進度） | — | **173**（Artian 141＝81%） |
+| **JP game8.jp（Phase 1 探測）** | 59 | 40 | 0＊ | ~99 |
+| **JP game8.jp（Phase 3 定版）** | **66** | **39**（46 抓－7 側註） | 0＊ | **105**（Artian 51＝49%） |
 
 ＊JP「序盤おすすめ装備（下位）」頁是**散文式武器養成攻略**（`武器｜武器スキル／スロット` 升級表 +
 防具進度建議），**非結構化三表 full-build** → 0 筆可匯。與現行 `wildsLowRank` defer 同性質。
 
-**結論（據實，不迎合原述）**：**筆數層面 EN 173 > JP 99（EN 多約 75%）**，使用者原述「英文站 build
-覆蓋遠遜日文原站」**在筆數上經實測反向**。EN 的 173 筆中 141（81%）為 Artian 變體近似複本。
+**數字修正留痕**：Phase 1 探測以 `武器｜装飾品` 單一表頭計數，**漏計** 上位頁的 `メイン武器`／
+`武器／強化パーツ` 表頭變體（Phase 3 抽取器補齊、見 §W-F.4b），故 99→**105**。**結論不變**：
+**筆數層面 EN 173 > JP 105（EN 多約 65%）**，使用者原述「覆蓋遠遜」**在筆數上經實測反向**。
+EN 173 筆中 141（81%）為 Artian 變體近似複本；JP 105 筆 Artian 佔比僅 49%（curation 較嚴）。
 
 ### §W-F.3 換源裁決（使用者 方案 1，理由改為保真度而非覆蓋）
 
@@ -56,7 +59,7 @@
 4. **前例一致**：Rise（初代）用 game8.jp；換源使三遊戲回到初代 JP 前例（World 的 EN 為當時的偏離）。
 5. **使用者裁決**：覆蓋反轉後仍取質重於量（本輪 W-F 開工 DECISION GATE，使用者選方案 1）。
 
-**權衡如實記載**：換源**以 74 筆覆蓋換取保真度 + 映射乾淨度 + 技能可靠度 + 前例一致**。非覆蓋升級。
+**權衡如實記載**：換源**以 68 筆覆蓋（173→105）換取保真度 + 映射乾淨度 + 技能可靠度 + 前例一致**。非覆蓋升級。
 
 ### §W-F.4 game8.jp 結構調查（實測收斂，Phase 2）
 
@@ -86,26 +89,66 @@
 （註：最強頁編號 668362–668375 連號但**跳過 668369**；gunlance 最強實為 `670772`〔hub 連結取得〕，
 668369 疑為舊 gunlance 頁重導。switch-axe＝668370。以 hub 實連結為準，不硬套連號。）
 
-**每分頁 build 數（實測，排除ユーザー投稿區）**：
+**每武種 build 數（Phase 3 定版，完整 build；排除ユーザー投稿區 + 側註）**：
 
 | 武器 | 最強 | 上位 | | 武器 | 最強 | 上位 |
 |---|---|---|---|---|---|---|
 | great-sword | 4 | 4 | | switch-axe | 4 | 3 |
-| long-sword | 4 | 2 | | charge-blade | 4 | 3 |
-| sword-shield | 4 | 1 | | insect-glaive | 4 | 3 |
-| dual-blades | 3 | 3 | | bow | 3 | 6 |
-| hammer | 5 | 3 | | light-bowgun | 5 | 1 |
-| hunting-horn | 3 | 2 | | heavy-bowgun | 4 | 1 |
-| lance | 7 | 2 | | **合計** | **59** | **40** |
+| long-sword | 4 | 2 | | charge-blade | 6 | 2 |
+| sword-shield | 4 | 2 | | insect-glaive | 4 | 3 |
+| dual-blades | 7 | 3 | | bow | 3 | 3 |
+| hammer | 5 | 3 | | light-bowgun | 5 | 2 |
+| hunting-horn | 3 | 2 | | heavy-bowgun | 5 | 2 |
+| lance | 7 | 2 | | **合計（完整）** | **66** | **39** |
+
+**§W-F.4b 表頭變體（Phase 3 實測，抽取器容錯全覆蓋）**：weapon 表頭跨 28 頁有 6 變體——
+`武器｜装飾品`、`武器｜武器スキル／装飾品`、`武器｜武器スキル／スロット`、`武器｜武器スキル`、
+`メイン武器｜…`（CB 終盤）、`武器／強化パーツ｜…`；skill 表頭 `武器スキル`／`防具スキル`／`発動スキル`；
+armor `防具｜スロット｜装飾品`（另 1 例 `防具｜スキル｜必要素材` 為 CB HR9〜19 素材養成表→排除）。
+`classifyTable` 以 h0∈{武器,メイン武器,武器／…} 判 weapon（Phase 1 探測僅認 `武器｜装飾品`、漏 メイン武器／
+強化パーツ → 多筆 build 靜默合併；補齊後 99→105）。skill 表另容錯「空首列 + 散裝 `<th>` 表頭」（hammer 3 筆）。
+
+**不完整分類（§1.2，Phase 3 定版）**：112 抓 → **105 完整** + **7 a:non-fullbuild**（有據排除：
+無「発動スキル」總表——3 bow「◯◯もおすすめ」武器側註 + 1 CB HR9〜19 素材表 + 3 其他側註）+ review 0。
 
 **分區收斂（照 JP 實測結構，不硬湊 EN 三分區，使用者裁決 #3）**：JP 僅 **2 個 editorial 層**（最強＋上位）。
 映射到現有 3 分區 enum（HR 區間對齊，**零 label 改動**）：
-- **`wildsEndgame`（畢業裝 HR100+ Meta）← 最強装備**（59）：終盤 Meta，區間對齊。
-- **`wildsProgression`（進度拓荒裝 HR9–36）← 上位おすすめ装備**（40）：JP 上位 builds 標題實測 HR9〜19／
+- **`wildsEndgame`（畢業裝 HR100+ Meta）← 最強装備**（**66**）：終盤 Meta，區間對齊。
+- **`wildsProgression`（進度拓荒裝 HR9–36）← 上位おすすめ装備**（**39**）：JP 上位 builds 標題實測 HR9〜19／
   HR20〜39，**語意即高難度前的進度拓荒**（非「次強 endgame」），區間對齊 HR9–36。
 - **`wildsHighRank`（上位裝 HR50+）← 無 JP 對應層**（0）：JP 結構自 上位(HR〜39) 直跳 最強(終盤)，
   無獨立 HR50+ 層。UI 已 `.filter(builds.length>0)` 自動隱藏空分區（`RecommendedView.tsx:232`），零改動。
 - 序盤 → `wildsLowRank`（defer）。
+
+### §W-F.5 JP→id 映射 + 匯入 + 三層驗證（Phase 4/5）
+
+**映射（全走 mhdb `ja` locale，`import-game8-mhwd.mjs`）**：
+- **通路（使用者裁決 #3 確認）**：nameJa 僅為**映射鍵**；顯示名仍走 id 側 zh-Hant（`createWildsNameResolver`
+  對 wilds 資料 nameZh；對不上才 fallback rawNameJa）。防具/武器/珠 → `wa_/ww_/wd_${mhdb id}`；
+  技能 nameJa → mhdb ja skill id → mhdb zh-Hant name（＝skills.json 繁中，橋接 179/179 驗）。
+- **統計**：實體 **1487 / 直通 1487（100%）**，其中**別名修正 6**（`game8-jp-overrides.json` 逐筆附據：
+  weapon `暗黒→闇黒のテルプリティカ` 用字差 ×2、deco `超心珠【3】→超心珠Ⅲ【３】` 略羅馬數字 ×4）、
+  **屬性佔位 7**（`属性強化`/`属性攻撃強化`/`各/◯属性攻撃強化` generic，依武器屬性自選）、**真缺 0**。
+- **RNG 護石 32**（不建模，`unmodeled.rngCharm`）：泛稱「鑑定護石」+ 具名鑑定護石
+  `未解/秘歴/栄世/史伝の護石`（mhdb 有名但 **skills 空**、import-wilds「RNG 4 排除」不入可搜尋池 183）。
+  以「解析不到**池內** wc_id」統一判定，非硬編名單。護石技能仍在 skillTotals 顯示（見下 (c)）。
+- **mhdb ja 可用性（Phase 4 §1）**：skills/decorations/armor/weapons 全 name 非 null；charms 頂層 name
+  為 null 但 **`ranks[].name` 有值**（映射走 rank name，已驗）。**無須 fallback Kiranico ja。**
+
+**三層驗證（`validate-wilds-builds.mjs`，Phase Z 框架複用；105 build）**：
+- **(a) 裝備層重現：105/105（100%）** — 防具/武器/珠/池內護石全對到 DB id（RNG 護石為 unmodeled、不計缺）。
+- **(b) 引擎自洽：105/105（100%）** — 真實引擎（skill-calculator）聚合 == 各件資料獨立加總，逐位元一致。
+- **(a)+(b) 即硬保證「忠實重現裝備並正確計算」。** 連跑兩次逐位元一致。
+- **(c) Game8 skillTotals 偏差（升級為真對照，使用者裁決 #2）**：**33/105（31%）** 引擎自洽值與 JP 總表
+  ±1 全合——**遠高於 EN 時代 12/173（7%）**（JP 表較完整）；但**仍非乾淨逐級 oracle**：引擎多算 39 套
+  （Game8 摘要漏列 set/group 22／元素 7／武器內建 13／其他 22）、引擎少算 38 套（**Artian roll 未模擬 30**
+  + 非 Artian 21）。**逐筆歸因**：非 Artian 少算主因＝**Wilds 武器內建技不在資料模型**（`weapons.json` 無
+  skills 欄，且 mhdb 源本身 weapon `skills:[]`）+ Game8 人工摘要噪音（列出其自列裝備未提供的技能）——
+  **與 EN 時代同因，非換源引入**。**結論**：Phase Z「Game8 skillTotals 是人工摘要參考值、非忠實加總」
+  對 JP **仍成立**（雙向差異證實）；核心主張＝(a)+(b)，(c) 為誠實刻畫。
+- **(e) N 校準**：endgame/progression 皆 **N=4 → 12/12 有結果**（≥N=6 遞減），與現行 `WILDS_CORE_SKILL_COUNT=4`
+  一致（JP 資料複核仍最優）。**(f) EFR sanity 4/4** 降冪且首位非平凡（GS 2540／CB 1453／DB 284／bow 1038）。
+- **(d) Gogmazios 借用件 32 套**：`setBonusId=wsb_178`+`extraSetBonusIds` 聯集計數（smoke-wilds ⑦/⑦b 背書）。
 
 ## Phase 6b 續跑（2026-08-03）— 快取遺失事件、方法修正、版控修正
 

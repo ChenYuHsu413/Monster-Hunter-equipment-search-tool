@@ -9,10 +9,19 @@
 ## 00. Wilds 擴充完成態（最新輪，2026-08-03）
 
 **現狀快照（以實測為準）**：結案 tag **`wilds-v1`** @ `40e25c4`（Phase Z 核心+文件收尾）；
-其後尾巴 **W-C**（`dfb6a85` regression-all 統一 + `4093b7f` 結果卡 UI）、**W-D**（文件盤點，本輪）；
-錨點 `pre-wilds`。首屏 **296 kB**（`next build` 實測，含 Wilds；推薦資料為 lazy chunk）。
+其後尾巴 **W-C**（`dfb6a85` + `4093b7f`）、**W-D**（文件盤點）、**W-E**（跨遊戲切換保留頁簽）、
+**W-F**（推薦來源 game8.co→game8.jp 換源，本輪）；錨點 `pre-wilds`。首屏 **296 kB**（含 Wilds；推薦為 lazy chunk）。
 三綠燈：`regression-all.mjs --check`（Rise 10 + World 11 逐位元）、`tsc --noEmit`、乾淨 build 全綠；
 Wilds 冒煙 21、efr-wilds 32。
+
+- **尾巴 W-F（推薦來源重建，2026-08-05）**：Wilds 推薦來源 **game8.co（英文）→ game8.jp（日文原站）**。
+  兩點任務前提經實測部分反轉、據實記錄（見 `docs/wilds-game8-audit.md §W-F`）：**① 前例**＝Rise 用 game8.jp、
+  **World 才是改用 game8.co 者**（非「Rise/World 皆 JP」）；**② 覆蓋** EN 173 > JP **105**（EN 多約 65%，
+  原述「覆蓋遠遜」在筆數反向）。**換源理由改立於保真度**（JP 原生詞彙直通 mhdb **ja** locale、免英文有損
+  轉譯；技能表較完整；護石池別標註；Rise 前例一致；使用者 DECISION GATE 選方案 1）。**105 筆二分區**
+  （最強→endgame 66／上位→progression 39；wildsHighRank 無 JP 對應層＝空、UI 自動隱藏）。映射
+  **1487/1487 直通**（別名 6、真缺 0）；RNG 鑑定護石 32 不建模。三層驗證 **(a)/(b) 105/105**、
+  (c) 33/105 clean（遠高於 EN 12/173）。scraper/importer 重寫吃 JP（兩 layout + 6 表頭變體容錯）。
 
 **Wilds 各 Phase 一行摘要 + 關鍵裁決**（詳見 `CLAUDE.md` §7 與 `docs/wilds-*.md`）：
 - **Phase 0–5**：抽象層（`wilds-registry`/`efr-wilds`）、mhdb-wilds 匯入管線、UI 三遊戲切換、
@@ -20,10 +29,9 @@ Wilds 冒煙 21、efr-wilds 32。
   handicraft 延展 max）；**attack=raw**（Phase 4a 翻案 display→raw）；charm 混合制（可生產自動進池 +
   RNG 護石庫逐洞池別）；Gogmazios 擬態（`setBonusId`+`extraSetBonusIds` 件數聯集）；set 2/4 + group 3
   雙軌；珠雙池（武器 295 / 防具 66，零跨池例外→池分割解法）；分區三收斂（**不照抄 World 四分區**）。
-- **Phase 6b**（Game8 推薦匯入）：14 頁 `fetch → 靜態表解析 → 抽取快取進版控`（premise 翻案：
-  非 JS-render-gated）；`import-game8-mhwd` EN→id 映射 **2175/2175 直通、override 空**；
-  **173 筆**推薦（進度拓荒 39 / 上位 38 / 畢業 96，每筆 metaVersion 1.041）；UI 三分區 tab（`WorldBuildCard`
-  複用，Ver badge + Artian 旗標 + buildDecorations）。N=4（endgame top-4→12/12 有結果）。
+- **Phase 6b**（Game8 推薦匯入）〔**數字已被 W-F 取代，見上**〕：14 頁 `fetch → 靜態表解析 → 抽取快取進版控`
+  （premise 翻案：非 JS-render-gated）；當時 EN→id 映射 2175/2175、173 筆。UI 分區 tab（`WorldBuildCard`
+  複用，Ver badge + Artian 旗標 + buildDecorations）。N=4（endgame top-4→12/12 有結果，W-F 複核仍最優）。
 - **Phase Z**（收尾 + achievability 翻案）：抽查證實 **Game8 `skillTotals` 是人工摘要、非其自列裝備的
   忠實加總**，故原「exact 12/173」表述誤導。重構為**三層可歸因**（`validate-wilds-builds.mjs`）：
   **(a) 裝備層重現 173/173、(b) 引擎自洽 173/173（真實 skill-calculator 聚合==各件加總，逐位元）**
